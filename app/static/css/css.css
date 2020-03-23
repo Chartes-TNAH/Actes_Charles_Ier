@@ -566,6 +566,18 @@ blockquote p::after {
     text-indent: 2%;
 }
 
+/* CONTACT */
+.contact-global {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.contact-global > p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 /* ERREUR 404 */
 .erreur-global {
     display: flex;

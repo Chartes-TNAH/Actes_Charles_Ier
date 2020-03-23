@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash
 from lxml import etree
 
 from .app import app
@@ -56,9 +56,9 @@ def index_lieu():
 	output_index_lieux_doc = xslt_index_lieux_transformer(source_index_lieux_doc)
 	return render_template("pages/index-lieux.html", contenu_index_lieux=output_index_lieux_doc)
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET', 'POST'])
 def contact():
-    return render_template("pages/contact.html")
+	return render_template("pages/contact.html")
 
 @app.route("/sommaire/<int:acte_id>")
 def acte(acte_id):
