@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+{% include "partials/css_projet.html" %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actes de Charles Ier de Bourbon</title>
+</head>
+
+<body>
+    <nav class="nav-global fixed-top">
+        <a href="{{url_for('accueil')}}">Accueil</a>
+        <div class="nav-list">
+            <div class="nav-item">
+                <li class="dropdown">
+                  <button class="dropbtn">Projet</button>
+                  <div class="dropdown-content">
+                    <a href="{{url_for('projet')}}">À propos</a>
+                    <a href="{{url_for('bibliographie')}}">Bibliographie</a>
+                  </div>
+                </li>
+                <li><a href="{{url_for('duc')}}">Le&nbsp;duc</a></li>
+                <li><a href="{{url_for('sommaire')}}">Actes</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">Index</button>
+                  <div class="dropdown-content">
+                    <a href="{{url_for('index_noms')}}">Index nominum</a>
+                    <a href="{{url_for('index_prosopo')}}">Index prosopographique</a>
+                    <a href="{{url_for('index_lieu')}}">Index locorum</a>
+                  </div>
+                </li> 
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <header class="header-global">
+            <div class="header-text-global">
+                <h1 class="header-h1">
+                    <p class="l1">Actes</p>
+                    <p class="l2">de <hi class="charles">Charles I</hi><sup>er</sup></p>
+                    <p class="l3">de <hi class="bourbon">Bourbon</hi></p>
+                </h1>
+            </div>
+            <div class="rotate header-img-global">
+                <div>
+                    <img src="{{url_for('static', filename='img/sceau_accueil.png')}}" class="header-img" alt="Sceau de Charles Ier">
+                </div>
+            </div>
+        </header>
+        <div class="arriere_plan">
+            {% block corps%}{%endblock%}
+        </div>
+    </div>
+    <div>
+        <footer class="bloc-footer">
+            <div>
+                <div class="global-footer">
+                    <div class="text-footer">
+                        <p class="name-footer">© Jean-Damien Généro</p>
+                        <p class="credit-footer">Application développée en 2020 dans le cadre du <a href="http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire">Master &#171; Technologies numériques appliquées à l'histoire &#187;</a> de l'École nationale des chartes, à partir d'un mémoire de Master recherche soutenu en 2018 à l'École d'histoire de la Sorbonne (Université Paris I).</p>
+                    </div>
+                    <div class="box-img-footer">
+                        <a href="http://www.chartes.psl.eu/fr"><img src="{{url_for('static', filename='img/logo_enc.png')}}" alt="Logo de l'École des chartes" class="img-footer"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="index-global">
+	<div>
+		<h1 class="h1_global">Index général des noms de lieu</h1>
+	</div>
+	{{contenu_index_lieux|safe}}
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="index-global">
+	<div>
+		<h1 class="h1_global">Index prosopographique</h1>
+		<p class="index-rules">L'index présente les individus cités selon un modèle prosopographique. Une attention particulière est portée aux hommes du duc de Bourbon, pour lesquels il est indiqué leur appartenance aux différentes structures administratives et domestiques. Le duc Charles I<sup>er</sup> est exclu de l'index.</p>
+	</div>
+	{{contenu_index_prosopo|safe}}
+</div>
+{% endblock %}

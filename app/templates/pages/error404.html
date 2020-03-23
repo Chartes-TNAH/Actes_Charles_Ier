@@ -1,0 +1,31 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="erreur-global">
+	<figure class="erreur-figure">
+		<!--
+			Code rédigé avec l'aide de :
+			* https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Ajouter_carte_zones_cliquables_sur_image
+			* https://github.com/stowball/jQuery-rwdImageMaps
+		-->
+		<img src="{{url_for('static', filename='img/img_404.jpeg')}}" usemap="#imgErreur404" alt="" />
+	<map name="imgErreur404">
+		<area shape="rect" coords="633,74,744,202" href="{{url_for('accueil')}}" alt="imgErreur404" />
+    </map>
+        <figcaption>
+            <p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b60005361/f265">Le livre du Coeur d'amour épris (BnF, ms. fr. 24399, folio 91r. &mdash; XV<sup>e</sup> siècle)</a></p>
+        </figcaption>
+    </figure>
+	<div style="width: 80%;">
+		<div>
+			<h1>Erreur 404.</h1>
+			<h2>Cette page n'existe pas.</h2>
+		</div>
+		<div style="padding-left: 5%; margin-top: 5%;">
+			<p>Vous vous êtes perdu ! Un peu comme le chevalier du <i>Livre du Coeur d'amour épris</i> devant ce portail surmonté d'une vingtaine d'écus... D'ailleurs, sauriez-vous retrouver celui de Charles I<sup>er</sup> ?</p>
+			<p>Si l'héraldique médiévale ne vous est pas familière, <a href="{{url_for('accueil')}}">vous pouvez toujours cliquer ici pour retourner à l'accueil</a>.</p>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.rwdImageMaps.js')}}"></script>
+{% endblock %}

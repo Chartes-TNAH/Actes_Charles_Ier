@@ -1,0 +1,591 @@
+/* LIENS */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVBAR */
+.nav-global {
+    display: flex;
+    flex-direction: row;
+    background: #f8f9fa;
+    padding: 1.25%;
+    margin: auto;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav-item > li {
+    margin-right: 5%;
+    margin-left: 5%;
+    list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-global > a {
+    margin-right: 5%;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.nav-item > li > a {
+    text-decoration: none;
+}
+
+.nav-global > a:hover, .nav-item > li > a:hover {
+    color: #B1B0B0;
+    text-decoration: none;
+}
+
+/* DROPDOWN > https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.dropbtn {
+  background-color: inherit;
+  color: black;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #DBDBDB;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* TITRES GLOBAL */
+.h1_global {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h2_global {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 4%;
+}
+
+.h3_global {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: large;
+    font-style: bold;
+    margin-top: 4%;
+}
+
+/* CONTENEUR */
+.arriere_plan {
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* HEADER */
+.header-global {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    padding-left: 3%;
+    margin-top: 4%;
+}
+
+.header-h1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header-text-global {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+}
+
+.l1 {
+    font-size: 90px;
+    line-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.l2 {
+    font-size: 50px;
+    line-height: 50%;
+    text-indent: 3%;
+    font-family: Helvetica;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.l3 {
+    font-size: 50px;
+    line-height: 150%;
+    text-indent: 8%;
+    font-family: Helvetica;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.charles {
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+}
+
+.bourbon {
+    font-size: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-img-global {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.header-img {
+    width: 60%;
+    height: auto;
+}
+
+.rotate div img {
+  -webkit-transition: all 0.75s ease;
+  transition: all 2s ease;
+}
+ 
+.rotate div:hover img {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(360deg);
+}
+
+
+/* FOOTER */
+.bloc-footer {
+    background: #f8f9fa;
+}
+
+.global-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+}
+
+.name-footer {
+    margin-bottom: 0.5%;
+    font-size: small;
+}
+
+.credit-footer {
+    font-size: x-small;
+    text-align: justify;
+    margin-bottom: 0%;
+}
+
+.box-img-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.img-footer {
+    width: 100%;
+    height: auto;
+}
+
+/* ACCUEIL */
+.img {
+    width: 90%;
+    height: auto;
+}
+
+.caption-main {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    margin-top: 1.5%;
+    margin-bottom: 0%;
+}
+
+.caption-sub {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin-top: none;
+}
+
+.global_home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.p_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* PROJET ET BIBLIO */
+.projet-desc-global {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+}
+
+.projet-desc-img-global {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: auto;
+}
+
+.projet-desc-img-legend {
+    width: 90%;
+}
+
+.projet-desc-text {
+    text-align: justify;
+    margin-top: 4%;
+}
+
+.biblio-text {
+    font-size: 11pt;
+}
+
+.biblio-text > p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-indent: -2%;
+}
+
+.biblio-img-legend {
+    width: 100%;
+}
+
+/* SOMMAIRE */
+.global-sommaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.sommaire {
+    text-align: justify;
+    margin: auto;
+    margin-top: 6%;
+    padding-left: 26%;
+    padding-right: 19%;
+}
+
+
+/* ACTES */
+.acte_global {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    flex-wrap: wrap;
+    padding-right: 21%;
+    padding-left: 21%;
+    width: auto;
+    margin: auto;
+}
+
+.prec_suiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prec {
+    padding-right: 8%;
+}
+
+.suiv {
+    padding-left: 8%;
+}
+
+.numero {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.date {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.analyse {
+    text-align: justify;
+    font-style: italic;
+    text-indent: 5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tradition {
+    font-size: small;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tradition > p {
+    margin: 0.5%;
+}
+
+.act {
+    text-align: justify;
+    text-indent: 5%;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text_etabli {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 14pt;
+    margin-bottom: 4%;
+}
+
+.mht {
+    text-indent: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signature {
+    text-indent: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.note-global {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.note-global > p {
+    font-size: smaller;
+    margin: 0.25%;
+}
+
+
+/* DUC */
+
+.duc-global {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+.duc-citation {
+    margin-right: 2%;
+    width: 90%;
+}
+
+.duc-image {
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+/* INDEX DES NOMS */
+.index-global {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.index-h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: x-large;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+.index-h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: large;
+    font-style: bold;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+
+.index-h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: large;
+    font-style: italic;
+    margin-top: 0%;
+    margin-left: 4%;
+    margin-bottom: 0%;
+}
+
+.index-rules {
+    margin-top: 4%;
+}
+
+.index-section-global {
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+.index-section-main {
+    margin-left: 3%;
+}
+
+.index-sub-section {
+    column-count: 3;
+    margin-left: 2.5%
+}
+
+.index-sub-sub-section {
+    column-count: 3;
+    margin-left: 4%
+}
+
+.index-entree {
+    margin-top: 0%;
+    margin-bottom: 0.5%;
+}
+
+.index-note {
+    margin-top: 0%;
+    margin-top: none;
+    text-indent: 2%;
+}
+
+/* ERREUR 404 */
+.erreur-global {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.erreur-figure {
+    width: 100%;
+}
+
+.erreur-figure > img[usemap] {
+    border: none;
+    width: 95%;
+    height: auto;
+    max-width: 100vh;
+    }

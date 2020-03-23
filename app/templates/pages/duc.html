@@ -1,0 +1,30 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="duc-global">
+	<div class="duc-citation">
+		<blockquote cite="https://gallica.bnf.fr/ark:/12148/btv1b60005361/f245.image">
+    	<p>Ung autre escu ensuivant estoit d’azur a trois fleurs de lis d’or a une bande de gueulles, autour duquel escu avoit paints potz d’or cassez dont yssoit grans flammes de feu gregeoys, et le champ sur quoy lesdiz pots estoient estoit my parti en quartier de noir et de bleu, soubz lequel tableau estoient escripz les vers qui s’ensuivent :<br />
+    		Charles de Bourbon suys, qui grant renom avoye<br />
+			En gracieuseté ou temps que je regnoye<br />
+			Entre tous me trouvay joyeulx et esbatant<br />
+			Comblé de plusieurs biens que l’omme est desirant<br />
+			Courtoisie, beaulté, bonté, tresor, largesse,<br />
+			Sens et honnesteté, bon advis, grant prouesse,<br />
+			De dames assailly plus que mon pere assez<br />
+			Dont, par l’ardeur d’amours, je prins, comme savez,<br />
+			Pour mon mot feu gregeoys, mais neantmoins mon feu<br />
+			D’alez a l’ospital en la fin contraint fu<br />
+			Hommaige au Dieu d’amours comme les autres fis, <br />
+			Et dessus le portal le mien blazon assis.</p>
+    	<footer>
+    		—<cite>Livre du coeur d’amour épris</cite> (BnF, ms. fr. 24399, f. 86 r/v).
+    	</footer>
+		</blockquote>
+	</div>
+	<div>
+		<div clas="duc-image">
+			<img src="{{url_for('static', filename='img/duc_devise.jpg')}}" alt="Livre du coeur d’amour épris, folio 86 recto et verso" width="100%" height="auto" />
+		</div>
+	</div>
+</div>
+{% endblock %}
