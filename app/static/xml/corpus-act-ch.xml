@@ -21,7 +21,7 @@
             <distributor>École nationale des chartes, Master &#171; Technologies numériques appliquées à l'histoire &#187;.</distributor>
          </publicationStmt>
          <sourceDesc>
-            <p>Les transcriptions sont effectuées à partir de documents issus de divers fonds d'archives et de bibliothèques, en partir les Archives nationales, la Bibliothèque nationale de France et les Archives départementales de la Côte-d'or.</p>
+            <p>Les transcriptions sont effectuées à partir de documents issus de divers fonds d'archives et de bibliothèques, en particulier les Archives nationales, la Bibliothèque nationale de France et les Archives départementales de la Côte-d'or.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
@@ -410,6 +410,18 @@
                <location>
                   <geo source="https://fr.wikipedia.org/wiki/Calvinet">44° 43′ 07″ nord, 2° 21′ 30″ est</geo>
                </location>
+            </place>
+            <place xml:id="Villemur">
+               <placeName>
+                  <name xml:lang="fr">Villemur</name>
+               </placeName>
+               <desc>vicomté et seigneurie de, Hautes-Pyrénées</desc>
+            </place>
+            <place xml:id="Combrailles">
+               <placeName>
+                  <name xml:lang="fr">Combrailles</name>
+               </placeName>
+               <desc>Les, pays de</desc>
             </place>
          </settingDesc>
          <particDesc>
@@ -820,6 +832,13 @@
                   </persName>
                   <note>Signe de 1429 à 1439.</note>
                </person>
+               <person xml:id="CousinM">
+                  <persName>
+                     <forename>Mahier</forename>
+                     <surname>Cousin</surname>
+                  </persName>
+                  <note>Mentionné en 1430 et 1431 ; également maître des étangs de Bourbonnais et Combraille.</note>
+               </person>
                <person xml:id="LAndraut_sign">
                   <persName>
                      <forename>Laurent</forename>
@@ -888,6 +907,14 @@
                      <surname>Bretagne</surname>
                   </persName>
                   <note>Duc de Bretagne (1399-1442).</note>
+               </person>
+               <person xml:id="FoixJ">
+                  <persName>
+                     <forename>Jean Ier</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Foix</surname>
+                  </persName>
+                  <note>Comte de Foix (1413-1436).</note>
                </person>
             </listPerson>
             <listPerson type="bourguignons">
@@ -1864,6 +1891,31 @@
                </div>
                <div type="sign">
                   <p><persName ref="#DB_sign">De Bar</persName></p>
+               </div>
+            </body>
+         </text>
+         <text type="acte" subtype="minute" xml:id="Ch-25" n="25">
+            <front>
+               <docDate>
+                  <date when="1430-02-01">1430 (n. st.), 1<hi rend="sup">er</hi> février</date>
+               </docDate>
+               <argument>
+                  <p>Procuration à Mahiet Cousin pour recevoir 2250 livres du vicomte de Villemur.</p>
+               </argument>
+               <argument>
+                  <p>Charles de Bourbon, comte de Clermont, fils aîné du duc de Bourbonnais et d’Auvergne, donne procuration à Mahiet Cousin, son secrétaire et maître des étangs de Bourbonnais et de Combraille, pour recevoir de Jacques, vicomte de Villemur, la somme de deux mille deux cent cinquante livres tournois, prêtée audit de Villemur par le duc de Bourbonnais à l’occasion du transport de la vicomté de Villemur, qui devait être fait audit duc et qui depuis a été fait au comte de Foix.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Minute raturée sur papier, non signée ; écriture du temps<note type="n1"><p>Analyse des <hi rend="i">Titres de Bourbon</hi>. Le document est un rectangle de papier, chargé de plusieurs ratures, où l’adresse et la salutation sont absentes mais la titulature développée, de même que la corroboration et la datation. Dans les autres minutes, ces trois derniers éléments sont toujours abrégés. Les seuls éléments qui plaident pour le fait que ce soit une minute sont donc les ratures et le support en papier.</p></note>. 235 x 100 mm. Archives nationales, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
+                  <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 242, n° 5361.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p>Nous Charles de Bourbon, comte de Clermont, ainsné filz de mon tres redoupté seigneur et pere, monseigneur <persName ref="#JeanI">Jehan, duc de Bourbonnois</persName> et d’Auvergne, comte de Forestz et seigneur de Beaujeu, per et chambrier de France, ayant le gouvernement de ses païs, terres et seigneuries, et de ses autres affers et choses qui lui peront toucher ;</p>
+                  <p>Confians a plain du sens, loyaulté et preudommie de nostre amé et feal secretaire et maistre des estangs des païs de <placeName ref="#Bourbonnais">Bourbonnois</placeName> et de <placeName ref="#Combrailles">Combraille</placeName>, <persName ref="#CousinM">Mahiet Cousin</persName><note type="na"><p><hi rend="i">Mahiet Cousin</hi> suivi de <hi rend="i">nous</hi> barré.</p></note>, icellui avons fait et constitué, et par la teneur de ces presentes faisons et constituons nostre procureur et messaigé certain, especial et exprez a prendre et recevoir de nostre tres chier et amé cousin messire <persName ref="#VillemurJ">Jacques, viconte de Villemur</persName>, la some de deux mille deux cens cinquante livres tournois advaluez a quinze cens cinquante six escus et demi d’or viez, laquelle some d’or ou la monnoie a l’equivalent, mondit seigneur et pere bailla ou fist bailler par maniere de prest ou autrement a nostredit cousin de Villemur sur et a occasion<note type="na"><p><hi rend="i">A occasion</hi> précédé de <hi rend="i">occasion</hi> barré.</p></note> de certain traictié de transport qui fere se devoit a mondit seigneur et pere de ladite <placeName ref="#Villemur">viconté et seigneurie de Villemur</placeName>, lequel traictié n’a esté fait ne acompli au regart de mondit seigneur et pere, mais depuis a esté faite vendicion et transport d’icelle viconté et seigneurie de Villemur a nostre tres chier et tres amé cousin le <persName ref="#FoixJ">comte de Foix</persName>, qui par icellui transport et vendicion, pour seurté de lui et pour acquicter et descharger ladicte viconté envers nostredit seigneur et pere et les siens, avoit retenu devers soy la somme de deux mille escus d’or, auquel Mahiet nous, au nom de nostredit seigneur et pere et mere, avons donné et donnons &lt;plein&gt; pouvoir &lt;et autorité&gt; de prendre et recevoir ladite somme de II<hi rend="sup">M</hi> II<hi rend="sup">C</hi> L l. t. advaluez comme dit est, et de bailler quitance ou quittances souffisant de ladite somme advaluee comme dit est, et aussi<note type="na"><p>Dans l’interligne au-dessus de <hi rend="i">et aussi</hi> se trouve <hi rend="i">auquel Mahiet</hi>, rayé.</p></note> lui avons baillé les lettres d’obligation de ladicte some &lt;deus a<note type="na"><p><hi rend="i">Deue a (cause)</hi> remplace <hi rend="i">et pour (cause)</hi>, rayé.</p></note>&gt; cause dudit traictié et transport que fere se devoit a mondit seigneur et pere, pour les rendre et bailler a nostredit cousin de Foix, apres et ensamble le paiement desdiz II<hi rend="sup">M</hi> II<hi rend="sup">C</hi> L l. t. advaluez comme dit est, et promectons &lt;en bonne foy et en parolle de prince, avoir<note type="na"><p><hi rend="i">(Et promectons) en bonnes foy et en parolle de prince avoir</hi> remplace <hi rend="i">(et promectons) avoir</hi>, rayé</p></note>&gt; ferme et agreable tout ce que es choses dessusdites sera fait, receu, quittié et baillé par nostredit procureur, et non venir au contraire, soubz l’obligacion de tous nos biens presens et ad venir.</p>
+                  <p>En tesmoing de ce, nous avons fait mectre nostre seel a ces presentes et signé de nostre main.</p>
+                  <p>Donné le premier jour de fevrier, l’an de grace mil CCCC vint et nuef.</p>
                </div>
             </body>
          </text>
