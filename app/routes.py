@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template
 from lxml import etree
 
 from .app import app
@@ -30,7 +30,6 @@ def sommaire():
 	source_sommaire_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 	output_sommaire_doc = xslt_sommaire_transformer(source_sommaire_doc)
 	return render_template("pages/sommaire2.html", contenu_sommaire=output_sommaire_doc)
-    #return render_template("pages/sommaire.html")
 
 @app.route("/index-nominum")
 def index_noms():
@@ -56,7 +55,7 @@ def index_lieu():
 	output_index_lieux_doc = xslt_index_lieux_transformer(source_index_lieux_doc)
 	return render_template("pages/index-lieux.html", contenu_index_lieux=output_index_lieux_doc)
 
-@app.route("/contact", methods=['GET', 'POST'])
+@app.route("/contact")
 def contact():
 	return render_template("pages/contact.html")
 
@@ -68,41 +67,9 @@ def acte(acte_id):
 	output_doc = xslt_transformer(source_doc, numero=str(acte_id))
 	return render_template("pages/acte.html", contenu_acte=output_doc, id=acte_id)
 
-
 @app.errorhandler(404)
 def page_not_found(error):
    return render_template('pages/error404.html', title = '404'), 404
-
-'''
-@app.route("/sommaire/<int:acte_id>")
-def acte(acte_id):
-	arbre = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	# Date de l'acte 
-	date = arbre.xpath("//text[" + str(acte_id) + "]/front/docDate/date/text()")
-	date_tps = "".join(date)
-	# Lieu de l'acte
-	lieu = arbre.xpath("//text[" + str(acte_id) + "]/front/docDate/placeName/text()")
-	lieu_tps = "".join(lieu)
-	# Regeste de l'acte
-	analyse = arbre.xpath("//text[" + str(acte_id) + "]/front/argument/p/text()")
-	regeste = "".join(analyse)
-	# Tableau de la tradition (1) : copies et autre
-	witnessA = arbre.xpath("//text[" + str(acte_id) + "]/front/witness[@n='A']//text()")
-	temoinA = "".join(witnessA)
-	# Tableau de la tradition (2) : copies et autre
-	witness = arbre.xpath("//text[" + str(acte_id) + "]/front/listWit//text()")
-	temoins = "".join(witness)
-	# Texte de l'acte
-	text = arbre.xpath("//text[" + str(acte_id) + "]/body/div[@type='acte']//text()")
-	charte = "".join(text)
-	# Mention hors teneur de l'acte
-	mention = arbre.xpath("//text[" + str(acte_id) + "]/body/div[@type='MHT']//text()")
-	mht = "".join(mention)
-	# Signatures
-	sign = arbre.xpath("//text[" + str(acte_id) + "]/body/div[@type='sign']//text()")
-	signature = "".join(sign)
-	return render_template("pages/acte.html", date=date_tps, lieu=lieu_tps, regeste=regeste, temoinA=temoinA, temoins=temoins, acte=charte, MHT=mht, signatures=signature, id=acte_id)
-'''
 
 # Ce if permet de vérifier que ce fichier est celui qui est courrament exécuté. Cela permet par exemple d'éviter
 # de lancer une fonction quand on importe ce fichier depuis un autre fichier.
