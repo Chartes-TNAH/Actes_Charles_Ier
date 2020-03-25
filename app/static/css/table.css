@@ -1,0 +1,48 @@
+table {
+	table-layout: auto; 
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid gray;
+}
+
+thead th:nth-child(1) {
+  width: 5%;
+}
+
+thead th:nth-child(2) {
+  width: 18%;
+}
+
+thead th:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+thead th:nth-child(4) {
+  width: 67%;
+}
+
+th {
+	letter-spacing: 2px;
+	border: 2px solid gray;
+}
+
+tbody td:nth-child(1) {
+  text-align: center;
+}
+
+tbody td:nth-child(3) {
+  text-align: center;
+}
+
+tbody td:nth-child(4) {
+  text-align: justify;
+}
+
+th, td {
+  padding: 1%;
+}
+
+td {
+	border: 0.75px solid gray;
+}

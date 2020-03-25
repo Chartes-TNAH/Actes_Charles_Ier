@@ -357,6 +357,13 @@ a:hover {
     padding-right: 19%;
 }
 
+/* CORPUS */
+.corpus-global {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
 
 /* ACTES */
 .acte_global {

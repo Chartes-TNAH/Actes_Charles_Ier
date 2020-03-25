@@ -1,6 +1,6 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-    <div>
+    <div class="corpus-global">
     	<h1 class="h1_global">Corpus des actes de Charles Ier de Bourbon</h1>
         <div>
             <h2 class="h2_global">Présentation du corpus</h2>
@@ -9,26 +9,32 @@
         </div>
         <div>
             <h2 class="h2_global">Liste des actes</h2>
-            <table>
-                <tr>
-                    <th>Acte</th>
-                    <th>Date</th>
-                    <th>Lieu</th>
-                    <th>Analyse</th>
-                </tr>
-                {% for x in acte %}
+            <div>
+                <table>
+                <thead>
                     <tr>
-                        <td>{{x.id}}</td>
-                        <td>{{x.date_temps}}</td>
-                        <td>
-                            {% if x.date_lieu %}
-                                {{x.date_lieu}}
-                            {% endif %}
-                        </td>
-                        <td>{{x.regeste}}.</td>
+                        <th>Acte</th>
+                        <th>Date</th>
+                        <th>Lieu</th>
+                        <th>Analyse</th>
                     </tr>
-                {% endfor %}
-            </table>
+                </thead>
+                    {% for x in acte %}
+                        <tbody>
+                            <tr>
+                                <td><a href="{{url_for('acte', acte_id=x.id)}}">{{x.id}}</a></td>
+                                <td>{{x.date_temps}}</td>
+                                <td>
+                                    {% if x.date_lieu %}
+                                        {{x.date_lieu}}
+                                    {% endif %}
+                                </td>
+                                <td><a href="{{url_for('acte', acte_id=x.id)}}">{{x.regeste}}.</a></td>
+                            </tr>
+                        </tbody>
+                    {% endfor %}
+                </table>
+            </div>
         </div>
     </div>
 {% endblock %}
