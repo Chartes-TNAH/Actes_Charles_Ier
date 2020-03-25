@@ -13,18 +13,19 @@
                 <tr>
                     <th>Acte</th>
                     <th>Date</th>
+                    <th>Lieu</th>
                     <th>Analyse</th>
                 </tr>
                 {% for x in acte %}
                     <tr>
                         <td>{{x.id}}</td>
+                        <td>{{x.date_temps}}</td>
                         <td>
-                            {{x.date_temps}}
                             {% if x.date_lieu %}
-                                ({{x.date_lieu}})
+                                {{x.date_lieu}}
                             {% endif %}
                         </td>
-                        <td>{{x.regeste}}</td>
+                        <td>{{x.regeste}}.</td>
                     </tr>
                 {% endfor %}
             </table>

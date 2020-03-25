@@ -1,3 +1,6 @@
+INSERT INTO actes VALUES
+	(2,1,"ch. XI, art. 2., n°32, f. 43v","1421","[Avant le 18 janvier 1421]","","Lettre close aux villes d’Auvergne",4,4,"","","");
+
 BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "conservation" (
 	"id"	INTEGER,
@@ -131,3 +134,16 @@ INSERT INTO "possedeEtat" VALUES (3,1);
 INSERT INTO "possedeEtat" VALUES (4,1);
 INSERT INTO "possedeEtat" VALUES (5,1);
 COMMIT;
+
+
+CREATE TABLE "actes" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT,
+"cote" TEXT,
+"annee" TEXT,
+"date_temps" TEXT NOT NULL,
+"date_lieu" TEXT NOT NULL,
+"regeste" TEXT,
+"hauteur" TEXT NOT NULL,
+"largeur" TEXT NOT NULL,
+"repli" TEXT NOT NULL,
+);
