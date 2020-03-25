@@ -1,0 +1,33 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+    <div>
+    	<h1 class="h1_global">Corpus des actes de Charles Ier de Bourbon</h1>
+        <div>
+            <h2 class="h2_global">Présentation du corpus</h2>
+            <p>Le corpus des actes de Charles I<sup>er</sup> de Bourbon et d'Agnès de Bourgogne se compose de 405 documents, dont 373 sont passés au nom du duc et 32 au nom de la duchesse ; parmi ceux-ci, le couple ducal passe six actes en commun.</p>
+            <p>L'ensemble du corpus n'a pas pu être mis en ligne. À ce jour, cette apptdcation compte {{acte|length}} actes enregistrés.</p>
+        </div>
+        <div>
+            <h2 class="h2_global">Liste des actes</h2>
+            <table>
+                <tr>
+                    <th>Acte</th>
+                    <th>Date</th>
+                    <th>Analyse</th>
+                </tr>
+                {% for x in acte %}
+                    <tr>
+                        <td>{{x.id}}</td>
+                        <td>
+                            {{x.date_temps}}
+                            {% if x.date_lieu %}
+                                ({{x.date_lieu}})
+                            {% endif %}
+                        </td>
+                        <td>{{x.regeste}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}
