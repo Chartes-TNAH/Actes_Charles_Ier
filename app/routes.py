@@ -1,7 +1,9 @@
 from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 
 from .app import app
+from .modeles.donnees import actes
 
 @app.route("/")
 def accueil():
@@ -14,6 +16,11 @@ def projet():
 	source_projet_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 	output_projet_doc = xslt_projet_transformer(source_projet_doc)
 	return render_template("pages/projet.html", contenu_projet=output_projet_doc)
+
+@app.route("/corpus")
+def corpus():
+	BDD = actes.query.all()
+	return render_template("pages/corpus.html", acte=BDD)
 
 @app.route("/bibliographie")
 def bibliographie():
