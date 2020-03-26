@@ -17,11 +17,6 @@ def projet():
 	output_projet_doc = xslt_projet_transformer(source_projet_doc)
 	return render_template("pages/projet.html", contenu_projet=output_projet_doc)
 
-@app.route("/corpus")
-def corpus():
-	BDD = actes.query.all()
-	return render_template("pages/corpus.html", acte=BDD)
-
 @app.route("/bibliographie")
 def bibliographie():
     return render_template("pages/bibliographie.html")
@@ -30,13 +25,10 @@ def bibliographie():
 def duc():
     return render_template("pages/duc.html")
 
-@app.route("/sommaire")
-def sommaire():
-	xslt_sommaire_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/sommaire-2.xsl")
-	xslt_sommaire_transformer = etree.XSLT(xslt_sommaire_doc)
-	source_sommaire_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	output_sommaire_doc = xslt_sommaire_transformer(source_sommaire_doc)
-	return render_template("pages/sommaire2.html", contenu_sommaire=output_sommaire_doc)
+@app.route("/corpus")
+def corpus():
+	BDD = actes.query.all()
+	return render_template("pages/corpus.html", acte=BDD)
 
 @app.route("/index-nominum")
 def index_noms():
