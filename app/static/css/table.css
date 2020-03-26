@@ -46,3 +46,7 @@ th, td {
 td {
 	border: 0.75px solid gray;
 }
+
+tbody:hover {
+  background-color: #DBDBDB;
+}
