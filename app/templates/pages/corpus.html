@@ -8,11 +8,6 @@
             <p>Seul un échantillon du corpus a été mis en ligne. À ce jour, cette application compte actes</b> enregistrés.</p>
         </div>
         <div>
-            {% for y in acte %}
-                <p>{{y.conserveDans}}</p>
-            {% endfor %}
-        </div>
-        <div>
             <h2 class="h2_global">Liste des actes</h2>
             <div>
                 <table>
@@ -24,17 +19,18 @@
                         <th>Analyse</th>
                     </tr>
                 </thead>
-                    {% for x in acte %}
+                    {% for acte in document %}
                         <tbody>
                             <tr>
-                                <td><a href="{{url_for('acte', acte_id=x.id)}}">{{x.id}}</a></td>
-                                <td>{{x.date_temps}}</td>
+                                <td><a href="{{url_for('acte', acte_id=acte.id_acte)}}">{{acte.id_acte}}</a></td>
+                                <td>{{acte.date_temps}}</td>
                                 <td>
-                                    {% if x.date_lieu %}
-                                        {{x.date_lieu}}
+                                    {% if acte.date_lieu %}
+                                        {{acte.date_lieu}}
                                     {% endif %}
                                 </td>
-                                <td><a href="{{url_for('acte', acte_id=x.id)}}">{{x.regeste}}.</a></td>
+                                <td><a href="{{url_for('acte', acte_id=acte.id_acte)}}">{{acte.regeste}}.</a>
+                            </td>
                             </tr>
                         </tbody>
                     {% endfor %}

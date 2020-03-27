@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 
 from .app import app
-from .modeles.donnees import actes, depots
+from .modeles.donnees import actes
 
 @app.route("/")
 def accueil():
@@ -27,8 +27,8 @@ def duc():
 
 @app.route("/actes")
 def corpus():
-	acte = actes.query.all()
-	return render_template("pages/corpus.html", acte=acte)
+	Actes_total = actes.query.all()
+	return render_template("pages/corpus.html", document=Actes_total)
 
 @app.route("/index-nominum")
 def index_noms():
