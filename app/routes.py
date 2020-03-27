@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 
 from .app import app
-from .modeles.donnees import actes
+from .modeles.donnees import actes, depots
 
 @app.route("/")
 def accueil():
@@ -25,10 +25,10 @@ def bibliographie():
 def duc():
     return render_template("pages/duc.html")
 
-@app.route("/corpus")
+@app.route("/actes")
 def corpus():
-	BDD = actes.query.all()
-	return render_template("pages/corpus.html", acte=BDD)
+	acte = actes.query.all()
+	return render_template("pages/corpus.html", acte=acte)
 
 @app.route("/index-nominum")
 def index_noms():
@@ -58,7 +58,7 @@ def index_lieu():
 def contact():
 	return render_template("pages/contact.html")
 
-@app.route("/sommaire/<int:acte_id>")
+@app.route("/actes/<int:acte_id>")
 def acte(acte_id):
 	source_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 	xslt_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/corpus-xslt.xslt")
