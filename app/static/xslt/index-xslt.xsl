@@ -214,7 +214,7 @@
                         <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                                 </xsl:attribute>
                                 <xsl:value-of select="ancestor::text/@n"/>
                             </xsl:element>
@@ -254,7 +254,7 @@
                         <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                                 </xsl:attribute>
                                 <xsl:value-of select="ancestor::text/@n"/>
                             </xsl:element>
@@ -293,7 +293,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -329,7 +329,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -365,7 +365,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -401,7 +401,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -437,7 +437,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -473,7 +473,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -509,7 +509,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -545,7 +545,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
@@ -581,7 +581,7 @@
                     <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:text>/sommaire/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
                             </xsl:attribute>
                             <xsl:value-of select="ancestor::text/@n"/>
                         </xsl:element>
