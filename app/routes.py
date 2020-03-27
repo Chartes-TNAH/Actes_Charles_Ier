@@ -66,6 +66,10 @@ def acte(acte_id):
 	output_doc = xslt_transformer(source_doc, numero=str(acte_id))
 	return render_template("pages/acte.html", contenu_acte=output_doc, id=acte_id)
 
+@app.route("/rechercher")
+def recherche():
+	return render_template("pages/recherche.html")
+
 @app.errorhandler(404)
 def page_not_found(error):
    return render_template('pages/error404.html', title = '404'), 404

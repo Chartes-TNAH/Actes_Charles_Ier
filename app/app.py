@@ -16,4 +16,4 @@ app = Flask(
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/jdgenero/Desktop/M2_Cours/dev/Actes_Charles_Ier/app/corpus.sqlite'
 db = SQLAlchemy(app)
 
-from .routes import accueil, projet, corpus, bibliographie, duc, index_noms, index_prosopo, index_lieu, contact, acte, page_not_found
+from .routes import accueil, projet, corpus, bibliographie, duc, index_noms, index_prosopo, index_lieu, contact, recherche, acte, page_not_found
