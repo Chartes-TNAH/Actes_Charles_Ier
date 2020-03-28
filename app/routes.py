@@ -73,14 +73,24 @@ def recherche():
 @app.route("/recherche/resultats")
 def resultats():
 	motclef = request.args.get("keyword", None)
+	motclef_annee = request.args.get("keyword_year", None)
+	motclef_lieu_conservation = request.args.get("keyword_archives", None)
 	resultats = []
+	resultats_annee = []
+	resultats_lieu_conservation = []
 	titre = "Recherche"
 	if motclef or motclef_annee or motclef_lieu_conservation:
 		resultats = actes.query.filter(
 			actes.regeste.like("%{}%".format(motclef))
 			).all()
-		titre = "Résultat de la recherche « " + motclef + " »"
-		return render_template("pages/resultats.html", resultats=resultats, titre=titre, motclef=motclef)
+		resultats_annee = actes.query.filter(
+			actes.annee.like("%{}%".format(motclef_annee))
+			).all()
+		resultats_lieu_conservation = actes.query.filter(
+			actes.lieu_conservation.like("%{}%".format(motclef_lieu_conservation))
+			).all()
+		#titre = "Résultat de la recherche « " + motclef + " »"
+		return render_template("pages/resultats.html", resultats=resultats, motclef=motclef, motclef_lieu_conservation=motclef_lieu_conservation, resultats_lieu_conservation=resultats_lieu_conservation)
 	else:
 		return render_template('pages/error404.html')
 

@@ -4,7 +4,7 @@
     	{% if resultats %}
             <div>
             	<h1>
-            		{{titre}}
+            		blabla1
             	</h1>
             	<ul>
             		{% for acte in resultats %}
@@ -12,6 +12,17 @@
                     {% endfor %}
             	</ul>
             </div>
-            {% endif %}
+        {% elif resultats_lieu_conservation %}
+            <div>
+                <h1>
+                    blabla
+                </h1>
+                <ul>
+                    {% for depot in resultats_lieu_conservation %}
+                        <li><a href="{{url_for('acte', acte_id=depot.id_acte)}}">Acte n°{{depot.id_acte}} : {{depot.regeste}}.</a></li>    
+                    {% endfor %}    
+                </ul>
+            </div>
+        {% endif %}
 </div>
 {% endblock %}
