@@ -576,7 +576,8 @@ blockquote p::after {
 
 /* RESULTATS */
 .result-global {
-
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .result-item {
