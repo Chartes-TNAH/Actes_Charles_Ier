@@ -28,16 +28,6 @@ a:hover {
     z-index: 1030;
 }
 
-.nav-form {
-    display: flex;
-    flex-direction: row;
-    margin-left: 3%;
-}
-
-.nav-form-input {
-    margin-right: 0%;
-}
-
 .nav-item {
     display: flex;
     flex-direction: row;
