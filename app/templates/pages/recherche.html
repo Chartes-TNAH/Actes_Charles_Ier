@@ -1,8 +1,16 @@
 {% extends "conteneur.html" %}
 {% block corps %}
 <div class="contact-global">
-    <h1>Formulaire de recherche</h1>
-    <p>En cours de construction.</p>
+    	<h1>Recherche avancée</h1>
+    	<form class="form-inline" action="{{url_for('resultats')}}" method="GET">
+			Année : 
+        	<input class="form-control" name="keyword" type="search" placeholder="Année" aria-label="	Recherche"> 
+        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
+        </form>
+        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
+        	Lieu de conservation : 
+        	<input class="form-control" name="blabla" type="search" placeholder="Lieu de conservation" aria-label="Recherche"> 
+        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
+        </form>
 </div>
-
 {% endblock %}

@@ -1,0 +1,17 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="contact-global">
+    	{% if resultats %}
+            <div>
+            	<h1>
+            		{{titre}}
+            	</h1>
+            	<ul>
+            		{% for acte in resultats %}
+                            <li><a href="{{url_for('acte', acte_id=acte.id_acte)}}">Acte n°{{acte.id_act}} : {{acte.regeste}}.</a></li>
+                    {% endfor %}
+            	</ul>
+            </div>
+            {% endif %}
+</div>
+{% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 
@@ -66,9 +66,23 @@ def acte(acte_id):
 	output_doc = xslt_transformer(source_doc, numero=str(acte_id))
 	return render_template("pages/acte.html", contenu_acte=output_doc, id=acte_id)
 
-@app.route("/rechercher")
+@app.route("/recherche")
 def recherche():
 	return render_template("pages/recherche.html")
+
+@app.route("/recherche/resultats")
+def resultats():
+	motclef = request.args.get("keyword", None)
+	resultats = []
+	titre = "Recherche"
+	if motclef or motclef_annee or motclef_lieu_conservation:
+		resultats = actes.query.filter(
+			actes.regeste.like("%{}%".format(motclef))
+			).all()
+		titre = "Résultat de la recherche « " + motclef + " »"
+		return render_template("pages/resultats.html", resultats=resultats, titre=titre, motclef=motclef)
+	else:
+		return render_template('pages/error404.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
