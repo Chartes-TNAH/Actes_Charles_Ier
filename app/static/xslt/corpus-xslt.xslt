@@ -38,8 +38,7 @@
     <xsl:template match="docDate/placeName">
        <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="argument[1]"/>
-    <xsl:template match="argument[2]/p">
+    <xsl:template match="argument/p">
         <xsl:element name="p">
             <xsl:attribute name="class">
                 <xsl:text>analyse</xsl:text>
