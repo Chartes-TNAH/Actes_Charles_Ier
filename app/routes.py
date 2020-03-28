@@ -76,11 +76,15 @@ def resultats():
 	motclef_annee = request.args.get("keyword_year", None)
 	motclef_lieu_conservation = request.args.get("keyword_archives", None)
 	motclef_lieu_production = request.args.get("keyword_place", None)
+	motclef_state = request.args.get("keyword_state", None)
+	motclef_type = request.args.get("keyword_type", None)
 	resultats = []
 	resultats_annee = []
 	resultats_lieu_conservation = []
 	resultats_lieu_production = []
-	if motclef or motclef_lieu_conservation or motclef_annee or motclef_lieu_production:
+	resultats_state = []
+	resultats_type = []
+	if motclef or motclef_lieu_conservation or motclef_annee or motclef_lieu_production or motclef_type or motclef_state:
 		resultats = actes.query.filter(
 			actes.regeste.like("%{}%".format(motclef))
 			).all()
@@ -93,7 +97,13 @@ def resultats():
 		resultats_lieu_production = actes.query.filter(
 			actes.date_lieu.like("%{}%".format(motclef_lieu_production))
 			).all()
-		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_lieu_conservation=resultats_lieu_conservation, resultats_lieu_production=resultats_lieu_production)
+		resultats_state = actes.query.filter(
+			actes.etatActe.like("%{}%".format(motclef_state))
+			).all()
+		resultats_type = actes.query.filter(
+			actes.typeActe.like("%{}%".format(motclef_type))
+			).all()
+		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_lieu_conservation=resultats_lieu_conservation, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 

@@ -27,6 +27,20 @@
                     <li><a href="{{url_for('acte', acte_id=lieu.id_acte)}}">Acte n°{{lieu.id_acte}} : {{lieu.regeste}}.</a></li>    
                 {% endfor %}    
             </ul>
+        {% elif resultats_state %}
+            <ul>
+                {% for etat in resultats_state %}
+                    <li><a href="{{url_for('acte', acte_id=etat.id_acte)}}">Acte n°{{etat.id_acte}} : {{etat.regeste}}.</a></li>    
+                {% endfor %}    
+            </ul>
+        {% elif resultats_type %}
+            <ul>
+                {% for type in resultats_type %}
+                    <li><a href="{{url_for('acte', acte_id=type.id_acte)}}">Acte n°{{type.id_acte}} : {{type.regeste}}.</a></li>    
+                {% endfor %}    
+            </ul>
+        {% else %}
+            <p>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
         {% endif %}
     </div>
 </div>
