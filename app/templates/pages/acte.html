@@ -1,7 +1,7 @@
 {% extends "conteneur.html" %}
 {% block corps %}
 <div class="acte-global">
-	{% if 1<=id<26 %}
+	{% if 1<=id<28 %}
         {% if id>1 %}
             <div class="h1_global">
                 <h1>Acte {{id}}</h1>
@@ -24,7 +24,7 @@
             Attention : la numérotation des actes commence à 1. <a href="{{url_for('acte', acte_id=1)}}">Afficher l'acte n° 1.</a>
         </p>
 	{% else %}
-        <p>L'acte n°{{id}} n'est pas encore transcrit. <a href="{{url_for('acte', acte_id=25)}}">Revenir au dernier acte transcrit (n°25)</a> ou <a href="{{url_for('accueil')}}">revenir à l'accueil.</a></p>
+        <p>L'acte n°{{id}} n'est pas encore transcrit. <a href="{{url_for('acte', acte_id=27)}}">Revenir au dernier acte transcrit (n°27)</a> ou <a href="{{url_for('accueil')}}">revenir à l'accueil.</a></p>
     {% endif %}
 </div>
 {% endblock %}

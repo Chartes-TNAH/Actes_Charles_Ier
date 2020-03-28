@@ -423,6 +423,32 @@
                </placeName>
                <desc>Les, pays de</desc>
             </place>
+            <place xml:id="BlancsFosses">
+               <placeName>
+                  <name xml:lang="frm">Blans Foussés</name>
+                  <name xml:lang="fr">Blancs-Fossés</name>
+               </placeName>
+               <desc>terre et forteresse de) (com. Couleuvre, Allier</desc>
+            </place>
+            <place xml:id="Chazeuil">
+               <placeName>
+                  <name xml:lang="frm">Chaseul</name>
+                  <name xml:lang="fr">Chazeuil</name>
+               </placeName>
+               <desc>com. Varennes-sur-Allier, Allier</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Chazeuil_(Allier)">46° 19′ 47″ nord, 3° 23′ 14″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Issoire">
+               <placeName>
+                  <name xml:lang="fr">Issoire</name>
+               </placeName>
+               <desc>Puy-de-Dôme</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Issoire">45° 32′ 42″ nord, 3° 14′ 59″ est</geo>
+               </location>
+            </place>
          </settingDesc>
          <particDesc>
             <listPerson type="rois">
@@ -611,6 +637,15 @@
                   </persName>
                   <note>Écuyer d'écurie (cité en 1429 et 1431).</note>
                </person>
+               <person xml:id="VillarsJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Villars</surname>
+                     <addName>Barrilhet</addName>
+                  </persName>
+                  <note>Écuyer d'écurie (cité en 1430).</note>
+               </person>
             </listPerson>
             <listPerson type="Bourbonnais">
                <person xml:id="DauphinR">
@@ -707,6 +742,14 @@
                   </persName>
                   <note>Seigneur de l'Astre ou Lastre.</note>
                </person>
+               <person xml:id="ChazeuilAnt">
+                  <persName>
+                     <forename>Antoine</forename>
+                     <nameLink>de</nameLink>
+                     <forename>L’Espinasse</forename>
+                  </persName>
+                  <note>Seigneur de Chazeuil.</note>
+               </person>
                <person xml:id="RocqueR">
                   <persName>
                      <forename>Roger</forename>
@@ -784,6 +827,13 @@
                      <surname>Cleppier</surname>
                   </persName>
                   <note>Président de la Chambre (1426-1433).</note>
+               </person>
+               <person xml:id="CholletG">
+                  <persName>
+                     <forename>Geoffroy</forename>
+                     <surname>Chollet</surname>
+                  </persName>
+                  <note>Président de la Chambre (cité de 1438 à 1445), prieur de Souvigny (1424-1454).</note>
                </person>
                <person xml:id="DenisC">
                   <persName>
@@ -1100,6 +1150,14 @@
                      <surname>Coppier</surname>
                   </persName>
                   <note>Laboureur de Riom.</note>
+               </person>
+               <person xml:id="ChazeuilA">
+                  <persName>
+                     <forename>Annette</forename>
+                     <nameLink>de</nameLink>
+                     <forename>La Pierre</forename>
+                  </persName>
+                  <note>Dame de Chazeuil.</note>
                </person>
             </listPerson>
          </particDesc>
@@ -1637,7 +1695,7 @@
             <body>
                <div type="acte">
                   <p>Charles de Bourbon, conte de Clermont, ainsné filz de monseigneur le duc de Bourbonnois et d’Auvergne, ayant le gouvernement de ses païs, terres et seignories en son absence, et lieutenant de <persName ref="#ChVII">monseigneur le roy</persName> esdiz païs et es marches et païs de <placeName ref="#Lyonnais">Lionnoiz</placeName> et <placeName ref="#Maconnais">Masconnoiz</placeName> et jusques a <placeName ref="#Charite">La Charité sur Loire</placeName> incluse, a tous ceulx qui ces presentes lettres verront, salut.</p>
-                  <p>Savoir faisons nous avoir receue humble supplicacion de noz bien amez les bourgois, manans et habitans de la ville de <placeName ref="#Villefranche">Villefranche en Beaujeulois</placeName>, contenant que comme mondit seigneur le roy leur ait octroyé certain aide de deux deniers pour livre sur chascune des denrees qui seroient vendues en ladite ville et traictés hors d’dicelle jusques a quatre ans ja finiz, pour tourner et convertir les deniers qui ystroient dudit aide a la reparacion de ladite ville, par le moïen duquel aide une partie des reparacions d’icelle ville a esté faite, mais encores en reste a faire une tres grant partie d’icelle reparacion, pour ce que la cloison et fermeture de ladicte ville est moult spacieuse et de grant extendue et la muraille d’icelle moult ruyneuse, parquoy ledit aide durant ledit temps y a esté de peu d’exploit, et toutesvoyes lesdiz supplians, qui sont moult chargés de grandes et cothidiennes tailles, aides et charges et autrement, ne pourroient supporter le fait de ladite reparacion avec les autres charges dessusdites se par nous ne leur estoit secouru de l’octroy dudit aide, si comme ilz dient, en nous requerant humblement qu’il nous plaise leur octroïer ledit aide a tel temps que il nous plaira ;</p>
+                  <p>Savoir faisons nous avoir receue humble supplicacion de noz bien amez les bourgois, manans et habitans de la ville de <placeName ref="#Villefranche">Villefranche en Beaujeulois</placeName>, contenant que comme mondit seigneur le roy leur ait octroyé certain aide de deux deniers pour livre sur chascune des denrees qui seroient vendues en ladite ville et traictés hors d’icelle jusques a quatre ans ja finiz, pour tourner et convertir les deniers qui ystroient dudit aide a la reparacion de ladite ville, par le moïen duquel aide une partie des reparacions d’icelle ville a esté faite, mais encores en reste a faire une tres grant partie d’icelle reparacion, pour ce que la cloison et fermeture de ladicte ville est moult spacieuse et de grant extendue et la muraille d’icelle moult ruyneuse, parquoy ledit aide durant ledit temps y a esté de peu d’exploit, et toutesvoyes lesdiz supplians, qui sont moult chargés de grandes et cothidiennes tailles, aides et charges et autrement, ne pourroient supporter le fait de ladite reparacion avec les autres charges dessusdites se par nous ne leur estoit secouru de l’octroy dudit aide, si comme ilz dient, en nous requerant humblement qu’il nous plaise leur octroïer ledit aide a tel temps que il nous plaira ;</p>
                   <p>Pour ce est il que nous, ces choses considerees, desirans le bien de ladicte ville et de la chose publique d’icelle, et le bon adrecement et emparement desdictes reparacions, aïans regart aux autres grans charges dessusdites que lesdiz supplians ont a supporter, et pour leur subvenir et secourir en ce et autrement de ce que faire pourrions, de notre certaine science et grace especial, et du pouvoir et auctorité de mondit seigneur le roy, de mondit seigneur et pere et nostre dont nous usons en ceste partie, ausdiz supplians avons octroyé et octroïons par ces presentes auctorité, licence et pouvoir de lever, cueillir et recevoir, ou faire lever, cueillir et recevoir par personne par eulx commis, ledit aide de deux deniers tournois pour livre et sur chascune livre tournoise sur toutes manieres de denrees et marchandises et a quelconque personne que elles soient, qui seront traictees et menees hors de ladite ville, jusques a quatre ans prouchains venans, commançans du jour que ledit aide commencera avoir cours, pareillement et par la fourme et maniere que il a esté levé par les quatre annees precedens par vertu de l’octroy a eulx fait par mondit seigneur le roy, pour convertir et emploïer les deniers qui ystront dudit aide ou fait de la fortifficacion et reparacion de ladite ville et non ailleurs, pourveu que a ce se consente la greigneur et plus saine partie desdiz bourgois et habitans, et que cellui ou ceulx qui recevront ledit aide seront tenuz d’en rendre compte par devant noz gens et officiers de mondit seigneur et pere et nostres a Villefranche.</p>
                   <p>Si donnons en mandement par ces presentes aux bailli et gens des comptes de <placeName ref="#Beaujolais">Beaujeuloiz</placeName>, et a tous les autres justiciers et officiers roïaulx et de <persName ref="#JeanI">mondit seigneur et pere</persName> et nostre, ou a leurs lieuxtenans, et a chacun d’eulx, si comme a lui appartiendra, que lesdiz supplians, de nostre presente grace et octroy, facent, laissent et seuffrent joïr et user paisiblement, en conraignant ou faisant contraindre par toutes voiez deuez et raisonnables les contredisans ou reffusans a paier ce que ils devront pour ledit aide de deux deniers pour livre, car ainsi nous plaist et le voulons et ourdonnons estre fait.</p>
                   <p>En tesmoing de ce, nous avons fait mettre nostre seel a ces presentes.</p>
@@ -1916,6 +1974,64 @@
                   <p>Confians a plain du sens, loyaulté et preudommie de nostre amé et feal secretaire et maistre des estangs des païs de <placeName ref="#Bourbonnais">Bourbonnois</placeName> et de <placeName ref="#Combrailles">Combraille</placeName>, <persName ref="#CousinM">Mahiet Cousin</persName><note type="na"><p><hi rend="i">Mahiet Cousin</hi> suivi de <hi rend="i">nous</hi> barré.</p></note>, icellui avons fait et constitué, et par la teneur de ces presentes faisons et constituons nostre procureur et messaigé certain, especial et exprez a prendre et recevoir de nostre tres chier et amé cousin messire <persName ref="#VillemurJ">Jacques, viconte de Villemur</persName>, la some de deux mille deux cens cinquante livres tournois advaluez a quinze cens cinquante six escus et demi d’or viez, laquelle some d’or ou la monnoie a l’equivalent, mondit seigneur et pere bailla ou fist bailler par maniere de prest ou autrement a nostredit cousin de Villemur sur et a occasion<note type="na"><p><hi rend="i">A occasion</hi> précédé de <hi rend="i">occasion</hi> barré.</p></note> de certain traictié de transport qui fere se devoit a mondit seigneur et pere de ladite <placeName ref="#Villemur">viconté et seigneurie de Villemur</placeName>, lequel traictié n’a esté fait ne acompli au regart de mondit seigneur et pere, mais depuis a esté faite vendicion et transport d’icelle viconté et seigneurie de Villemur a nostre tres chier et tres amé cousin le <persName ref="#FoixJ">comte de Foix</persName>, qui par icellui transport et vendicion, pour seurté de lui et pour acquicter et descharger ladicte viconté envers nostredit seigneur et pere et les siens, avoit retenu devers soy la somme de deux mille escus d’or, auquel Mahiet nous, au nom de nostredit seigneur et pere et mere, avons donné et donnons &lt;plein&gt; pouvoir &lt;et autorité&gt; de prendre et recevoir ladite somme de II<hi rend="sup">M</hi> II<hi rend="sup">C</hi> L l. t. advaluez comme dit est, et de bailler quitance ou quittances souffisant de ladite somme advaluee comme dit est, et aussi<note type="na"><p>Dans l’interligne au-dessus de <hi rend="i">et aussi</hi> se trouve <hi rend="i">auquel Mahiet</hi>, rayé.</p></note> lui avons baillé les lettres d’obligation de ladicte some &lt;deus a<note type="na"><p><hi rend="i">Deue a (cause)</hi> remplace <hi rend="i">et pour (cause)</hi>, rayé.</p></note>&gt; cause dudit traictié et transport que fere se devoit a mondit seigneur et pere, pour les rendre et bailler a nostredit cousin de Foix, apres et ensamble le paiement desdiz II<hi rend="sup">M</hi> II<hi rend="sup">C</hi> L l. t. advaluez comme dit est, et promectons &lt;en bonne foy et en parolle de prince, avoir<note type="na"><p><hi rend="i">(Et promectons) en bonnes foy et en parolle de prince avoir</hi> remplace <hi rend="i">(et promectons) avoir</hi>, rayé</p></note>&gt; ferme et agreable tout ce que es choses dessusdites sera fait, receu, quittié et baillé par nostredit procureur, et non venir au contraire, soubz l’obligacion de tous nos biens presens et ad venir.</p>
                   <p>En tesmoing de ce, nous avons fait mectre nostre seel a ces presentes et signé de nostre main.</p>
                   <p>Donné le premier jour de fevrier, l’an de grace mil CCCC vint et nuef.</p>
+               </div>
+            </body>
+         </text>
+         <text type="acte" subtype="original" xml:id="Ch-26" n="26">
+            <front>
+               <docDate>
+                  <date when="1430-02-15">1430 (n. st.), 15 février</date>
+                  <placeName ref="#Montlucon">Montluçon</placeName>
+               </docDate>
+               <argument/>
+               <argument>
+                  <p>Charles, comte de Clermont, ayant délégation de pouvoir, donne en viager à son écuyer d'écurie Jean de Villars, dit Barrilhet, la terre de Blancs-Fossés, appartenant jadis à Antoine de l’Espinace, seigneur de Chazeuil, et avant lui à sa mère, Annette de La Pierre.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original sur parchemin, signé, endommagé. 420 x 275 mm., dont repli 70 mm. Archives nationales, P 1378<hi rend="sup">2</hi>, cote 3056.</witness>
+                  <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 242, n° 5362.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p>Charles de Bourbon, conte de Clermont, ainsné filz de mon tres redoubté seigneur et pere, monseigneur le duc de Bourbonnoys et d’Auvergne, ayant le gouvernement de ses païs, terres et seignouries en son absence, a tous ceulx qui ces presentes lettres verront, salut.</p>
+                  <p>Savoir faisons que pour les bons et agreables services que nostre amé et feal escuïer d’escuierie <persName ref="#VillarsJ">Jehan de Villars</persName>, dit Barrilhet, nous a faiz en plusieurs et maintes manieres, fait et s’efforce de faire chascun jour et esperons qu’il fera par le temps ad venir, a icelluy nostredit escuïer d’escuierie avons donné et donnons par ces presentes le lieu, chastel et forteresse de <placeName ref="#BlancsFosses">Blans Foussés</placeName>, ensemble la terre, revenue, cens, rentes, droitz, proffiz et esmolumens, maison, granges, mestarie, eaunés<note type="na"><p><hi rend="i">Eaunes</hi> : aune.</p></note>, estans, boix, garenes, prés, pasturaiges, heritaiges et autres choses quelxconques appartenans audit chastel et lieu de Blans Foussés, quelx qu’ilz soyent et quelque part que soient et que se treuvent et puissent dire, nommer et trouver, et telx et par la maniere et forme que feu dame <persName ref="#ChazeuilA">Annete de la Pierre</persName>, femme du seigneur de <placeName ref="#Chazeuil">Chaseul</placeName>, et emprés elle <persName ref="#ChazeuilAnt">Anthoine de l’Espinace</persName>, seigneur dudit Chaseul, son filz, joïssoit, prenoit et levoit en leur vivant, et lesquelles choses voulons estre a nostredit escuïer et en joïr et user plenierement et paisiblement, entierement et par le tout, et en la maniere que fasoient ladicte dame Annete de la Pierre et emprés elle ledit Anthoine, seigneur dudit Chaseul, son filz, et au cours de la vie de nostredit escuïer seulement.</p>
+                  <p>Sy donnons en mandement par ces presentes a noz amez et feaulx conseillers les gens des comptes de mondit seigneur et de nous a <placeName ref="#Moulins">Molins</placeName>, que ledit de Villars, nostre ecuïer, mectent et instituent en possession et saisine dudit lieu, chastel et forteresse de Blans Foussés, ensemble de tous les droitz, proffis et esmolumens et autres choses dessusdictes y appartenans et afferens, et l’en laissent, facent et seuffrent joïr et user, tout par la fourme et maniere que faisoient ladicte dame Annete de la Pierre et sondit filz, et tout paisiblement [et<note type="na"><p><hi rend="i">Et</hi> : mot pris dans un trou du parchemin.</p></note>] entierement, sans luy donner, faire, ne souffrir estre donné ne estre fait empeschement ne destourbier aucun au contraire, car ainsi le voulons et nous plait estre fait, et promettons en bonne foy et parolle de prince de le tenir et attendre et de non jamaiz aller, venir ne souffrir estre fait ne venu au contraire sadicte vie durant, et non obstant quelxconques ordonnances fetes ou affaire et lettres quelxconques subreptices empettrees ou a empetrer ad ce contraires.</p>
+                  <p>En tesmoing de ce, nous avons fait mectre nostre seel a ces presentes.</p>
+                  <p>Donné a Montluçon, le quinzesme jour de fevrier, l’an de grace mil quatre cens vint et neuf.</p>
+               </div>
+               <div type="MHT">
+                  <p>Par monseigneur le conte, le <persName ref="#CholletG">prieur</persName> de <placeName ref="#Souvigny">Souvigny</placeName>, 
+                     maistre <persName ref="#RocqueR">Rogier Roque</persName> et autres presens,</p>
+               </div>
+               <div type="sign">
+                  <p><persName ref="#Gort_sign">Gort</persName></p>
+               </div>
+            </body>
+         </text>
+         <text type="original" subtype="lettre close" xml:id="Ch-27" n="27">
+            <front>
+               <docDate>
+                  <date when="1430-05-09">[1430<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note>], 9 mai.</date>
+                  <placeName ref="#Montlucon">Montluçon</placeName>
+               </docDate>
+               <argument/>
+               <argument>
+                  <p>Charles de Bourbon, comte de Clermont, mande aux habitants de Riom qu’un de leur représentant soit présent le 25 mai prochain à Issoire pour l’assemblée des états d'Auvergne, qui se fera en présence de son frère Louis de Bourbon, comte de Montpensier.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original sur papier, signé. 315 x 145 mm. Archives municipales de Riom, AA 16, n°510.</witness>
+                  <witness n="analyse">Inventaire-sommaire… Riom, p. 5.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p><hi rend="i">(Au verso)</hi> A noz tres chiers et bien amez les consulz, bourgois et habitans de <placeName ref="#Riom">Riom</placeName>.</p>
+                  <p><hi rend="i">(Au recto)</hi> Le conte de Clermont.</p>
+                  <p>Tres chiers et bien amés, pour aucunes choses qui tres grandemant touchent le bien et seurté du <placeName ref="#Auvergne">païs d’Auvergne</placeName>, tant en comun comme en particulier, nous vous mandons et neanmoins prions que soïez en la ville d’<placeName ref="#Issoire">Issoire</placeName> le XXV<hi rend="sup">e</hi> jour de ce present moys, auquel jour et lieu beau <persName ref="#Louis_Montpensier">frere de Montpancier</persName> sera en personne, et plusieurs autres qu’avons mandés y estre pour ouÿr ce que lors sera dit et exposé de par nous par ledit beau frere et noz gens qui seront avec luy. Et en ce veullés fallir aucunemant, sur tant que avez le bien et conservacion du païs. Tres chiers et bien amés, nostre seigneur vous ait en sa sainte garde. Escript a Montluçon, le IX<hi rend="sup">e</hi> jour de may.</p>
+               </div>
+               <div type="sign">
+                  <p>Charles.</p>
                </div>
             </body>
          </text>
