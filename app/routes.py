@@ -75,22 +75,25 @@ def resultats():
 	motclef = request.args.get("keyword", None)
 	motclef_annee = request.args.get("keyword_year", None)
 	motclef_lieu_conservation = request.args.get("keyword_archives", None)
+	motclef_lieu_production = request.args.get("keyword_place", None)
 	resultats = []
 	resultats_annee = []
 	resultats_lieu_conservation = []
-	titre = "Recherche"
-	if motclef or motclef_annee or motclef_lieu_conservation:
+	resultats_lieu_production = []
+	if motclef or motclef_lieu_conservation or motclef_annee or motclef_lieu_production:
 		resultats = actes.query.filter(
 			actes.regeste.like("%{}%".format(motclef))
-			).all()
-		resultats_annee = actes.query.filter(
-			actes.annee.like("%{}%".format(motclef_annee))
 			).all()
 		resultats_lieu_conservation = actes.query.filter(
 			actes.lieu_conservation.like("%{}%".format(motclef_lieu_conservation))
 			).all()
-		#titre = "Résultat de la recherche « " + motclef + " »"
-		return render_template("pages/resultats.html", resultats=resultats, motclef=motclef, motclef_lieu_conservation=motclef_lieu_conservation, resultats_lieu_conservation=resultats_lieu_conservation)
+		resultats_annee = actes.query.filter(
+			actes.annee.like("%{}%".format(motclef_annee))
+			).all()
+		resultats_lieu_production = actes.query.filter(
+			actes.date_lieu.like("%{}%".format(motclef_lieu_production))
+			).all()
+		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_lieu_conservation=resultats_lieu_conservation, resultats_lieu_production=resultats_lieu_production)
 	else:
 		return render_template('pages/error404.html')
 

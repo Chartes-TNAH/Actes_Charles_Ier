@@ -21,7 +21,13 @@
                   </div>
                 </li>
                 <li><a href="{{url_for('duc')}}">Le&nbsp;duc</a></li>
-                <li><a href="{{url_for('corpus')}}">Actes</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">Actes</button>
+                  <div class="dropdown-content">
+                    <a href="{{url_for('corpus')}}">Liste des actes</a>
+                    <a href="{{url_for('recherche')}}">Recherche avancée</a>
+                  </div>
+                </li>
                 <li class="dropdown">
                   <button class="dropbtn">Index</button>
                   <div class="dropdown-content">
@@ -29,7 +35,7 @@
                     <a href="{{url_for('index_prosopo')}}">Index prosopographique</a>
                     <a href="{{url_for('index_lieu')}}">Index locorum</a>
                   </div>
-                </li> 
+                </li>
                 <li><a href="{{url_for('contact')}}">Contact</a></li>
                 <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
                   <input class="form-control" name="keyword" type="search" placeholder="Recherche rapide" aria-label="Recherche">         

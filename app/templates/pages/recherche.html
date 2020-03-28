@@ -4,12 +4,17 @@
     	<h1>Recherche avancée</h1>
     	<form class="form-inline" action="{{url_for('resultats')}}" method="GET">
 			Année : 
-        	<input class="form-control" name="keyword_year" type="search" placeholder="Année" aria-label="	Recherche"> 
+        	<input class="form-control" name="keyword_year" type="search" placeholder="Année" aria-label="Recherche"> 
         	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
         </form>
         <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
         	Lieu de conservation : 
         	<input class="form-control" name="keyword_archives" type="search" placeholder="Lieu de conservation" aria-label="Recherche"> 
+        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
+        </form>
+        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
+        	Lieu de production : 
+        	<input class="form-control" name="keyword_place" type="search" placeholder="Lieu de conservation" aria-label="Recherche"> 
         	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
         </form>
 </div>

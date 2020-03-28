@@ -1,28 +1,33 @@
 {% extends "conteneur.html" %}
 {% block corps %}
 <div class="contact-global">
-    	{% if resultats %}
-            <div>
-            	<h1>
-            		blabla1
-            	</h1>
-            	<ul>
-            		{% for acte in resultats %}
-                            <li><a href="{{url_for('acte', acte_id=acte.id_acte)}}">Acte n°{{acte.id_act}} : {{acte.regeste}}.</a></li>
-                    {% endfor %}
-            	</ul>
-            </div>
+    <h1>Résultats de la recherche :</h1>
+    <div>
+        {% if resultats %}
+            <ul>
+                {% for acte in resultats %}
+                        <li><a href="{{url_for('acte', acte_id=acte.id_acte)}}">Acte n°{{acte.id_acte}} : {{acte.regeste}}.</a></li>
+                {% endfor %}
+            </ul>
         {% elif resultats_lieu_conservation %}
-            <div>
-                <h1>
-                    blabla
-                </h1>
-                <ul>
-                    {% for depot in resultats_lieu_conservation %}
-                        <li><a href="{{url_for('acte', acte_id=depot.id_acte)}}">Acte n°{{depot.id_acte}} : {{depot.regeste}}.</a></li>    
-                    {% endfor %}    
-                </ul>
-            </div>
+            <ul>
+                {% for depot in resultats_lieu_conservation %}
+                    <li><a href="{{url_for('acte', acte_id=depot.id_acte)}}">Acte n°{{depot.id_acte}} : {{depot.regeste}}.</a></li>    
+                {% endfor %}    
+            </ul>
+        {% elif resultats_annee %}
+            <ul>
+                {% for annee in resultats_annee %}
+                    <li><a href="{{url_for('acte', acte_id=annee.id_acte)}}">Acte n°{{annee.id_acte}} : {{annee.regeste}}.</a></li>    
+                {% endfor %}    
+            </ul>
+        {% elif resultats_lieu_production %}
+            <ul>
+                {% for lieu in resultats_lieu_production %}
+                    <li><a href="{{url_for('acte', acte_id=lieu.id_acte)}}">Acte n°{{lieu.id_acte}} : {{lieu.regeste}}.</a></li>    
+                {% endfor %}    
+            </ul>
         {% endif %}
+    </div>
 </div>
 {% endblock %}
