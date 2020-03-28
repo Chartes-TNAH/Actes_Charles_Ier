@@ -3,45 +3,35 @@
 <div class="contact-global">
     <h1>Résultats de la recherche :</h1>
     <div>
-        {% if resultats %}
-            <ul>
-                {% for acte in resultats %}
-                        <li><a href="{{url_for('acte', acte_id=acte.id_acte)}}">Acte n°{{acte.id_acte}} : {{acte.regeste}}.</a></li>
-                {% endfor %}
-            </ul>
-        {% elif resultats_lieu_conservation %}
-            <ul>
-                {% for depot in resultats_lieu_conservation %}
-                    <li><a href="{{url_for('acte', acte_id=depot.id_acte)}}">Acte n°{{depot.id_acte}} : {{depot.regeste}}.</a></li>    
-                {% endfor %}    
-            </ul>
-        {% elif resultats_annee %}
-            <ul>
-                {% for annee in resultats_annee %}
-                    <li><a href="{{url_for('acte', acte_id=annee.id_acte)}}">Acte n°{{annee.id_acte}} : {{annee.regeste}}.</a></li>    
-                {% endfor %}    
-            </ul>
-        {% elif resultats_lieu_production %}
-            <ul>
-                {% for lieu in resultats_lieu_production %}
-                    <li><a href="{{url_for('acte', acte_id=lieu.id_acte)}}">Acte n°{{lieu.id_acte}} : {{lieu.regeste}}.</a></li>    
-                {% endfor %}    
-            </ul>
-        {% elif resultats_state %}
-            <ul>
-                {% for etat in resultats_state %}
-                    <li><a href="{{url_for('acte', acte_id=etat.id_acte)}}">Acte n°{{etat.id_acte}} : {{etat.regeste}}.</a></li>    
-                {% endfor %}    
-            </ul>
-        {% elif resultats_type %}
-            <ul>
-                {% for type in resultats_type %}
-                    <li><a href="{{url_for('acte', acte_id=type.id_acte)}}">Acte n°{{type.id_acte}} : {{type.regeste}}.</a></li>    
-                {% endfor %}    
-            </ul>
-        {% else %}
-            <p>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
-        {% endif %}
+        <ul>
+            {% if resultats %}
+                    {% for acte in resultats %}
+                            <li><a href="{{url_for('acte', acte_id=acte.id_acte)}}">Acte n°{{acte.id_acte}} : {{acte.regeste}}.</a></li>
+                    {% endfor %}
+            {% elif resultats_lieu_conservation %}
+                    {% for depot in resultats_lieu_conservation %}
+                        <li><a href="{{url_for('acte', acte_id=depot.id_acte)}}">Acte n°{{depot.id_acte}} : {{depot.regeste}}.</a></li>
+                    {% endfor %}
+            {% elif resultats_annee %}
+                    {% for annee in resultats_annee %}
+                        <li><a href="{{url_for('acte', acte_id=annee.id_acte)}}">Acte n°{{annee.id_acte}} : {{annee.regeste}}.</a></li>
+                    {% endfor %}
+            {% elif resultats_lieu_production %}
+                    {% for lieu in resultats_lieu_production %}
+                        <li><a href="{{url_for('acte', acte_id=lieu.id_acte)}}">Acte n°{{lieu.id_acte}} : {{lieu.regeste}}.</a></li>
+                    {% endfor %}
+            {% elif resultats_state %}
+                    {% for etat in resultats_state %}
+                        <li><a href="{{url_for('acte', acte_id=etat.id_acte)}}">Acte n°{{etat.id_acte}} : {{etat.regeste}}.</a></li>
+                    {% endfor %}
+            {% elif resultats_type %}
+                    {% for type in resultats_type %}
+                        <li><a href="{{url_for('acte', acte_id=type.id_acte)}}">Acte n°{{type.id_acte}} : {{type.regeste}}.</a></li>
+                    {% endfor %}
+            {% else %}
+                    <li>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
+            {% endif %}
+        </ul>
     </div>
 </div>
 {% endblock %}
