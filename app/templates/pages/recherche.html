@@ -14,7 +14,7 @@
         </form>
         <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
         	Lieu de production : 
-        	<input name="keyword_place" type="search" placeholder="Lieu de conservation" aria-label="Recherche"> 
+        	<input name="keyword_place" type="search" placeholder="Lieu de production" aria-label="Recherche"> 
         	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
         </form>
         <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
@@ -25,6 +25,11 @@
         <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
             Type diplomatique de l'acte : 
             <input name="keyword_type" type="search" placeholder="type" aria-label="Recherche"> 
+            <a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
+        </form>
+        <form action="{{url_for('resultats')}}" method="GET">
+            Recherche dans les analyses : 
+            <input name="keyword" type="search" placeholder="Recherche" aria-label="Recherche">
             <a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
         </form>
 </div>
