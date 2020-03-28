@@ -29,7 +29,7 @@
                         <li><a href="{{url_for('acte', acte_id=type.id_acte)}}">Acte n°{{type.id_acte}} : {{type.regeste}}.</a></li>
                     {% endfor %}
             {% else %}
-                    <li>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
+                    <p>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
             {% endif %}
         </ul>
     </div>
