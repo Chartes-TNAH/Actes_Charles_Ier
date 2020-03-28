@@ -574,6 +574,21 @@ blockquote p::after {
     text-indent: 2%;
 }
 
+/* RESULTATS */
+.result-global {
+
+}
+
+.result-item {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.result-item-acte {
+    font-weight: bold;
+    margin-bottom: 0.5%;
+}
+
 /* CONTACT */
 .contact-global {
     font-family: 'Open Sans', sans-serif;
