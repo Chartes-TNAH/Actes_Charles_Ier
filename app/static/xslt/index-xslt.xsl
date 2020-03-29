@@ -393,7 +393,19 @@
                     <xsl:attribute name="class">
                         <xsl:text>index-entree</xsl:text>
                     </xsl:attribute>
-                    <xsl:element name="b"><xsl:value-of select="."/></xsl:element>
+                    <xsl:element name="b">
+                        <xsl:value-of select="forename"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:if test="nameLink">
+                            <xsl:value-of select="nameLink"/>
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                        <xsl:value-of select="surname"/>
+                        <xsl:if test="addName">
+                            <xsl:text>, dit </xsl:text>
+                            <xsl:value-of select="addName"/>
+                        </xsl:if>
+                    </xsl:element>
                     <xsl:variable name="idPerson">
                         <xsl:value-of select="parent::person/@xml:id"/>
                     </xsl:variable>

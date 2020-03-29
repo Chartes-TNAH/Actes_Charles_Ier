@@ -22,9 +22,13 @@
                             <xsl:value-of select="surname"/>
                             <xsl:text>, </xsl:text>
                             <xsl:value-of select="forename"/>
-                            <xsl:if test="namelink">
+                            <xsl:if test="nameLink">
                                 <xsl:text> (</xsl:text>
-                                <xsl:value-of select="namelink"/>
+                                <xsl:value-of select="nameLink"/>
+                                <xsl:if test="addName">
+                                    <xsl:text>, dit </xsl:text>
+                                    <xsl:value-of select="addName"/>
+                                </xsl:if>
                                 <xsl:text>)</xsl:text>
                             </xsl:if>
                         </xsl:element>
