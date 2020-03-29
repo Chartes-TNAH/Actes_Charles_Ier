@@ -1,36 +1,122 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-<div class="result-global">
-    	<h1 class="h1_global">Rechercher dans le corpus</h1>
-    	<form class="form-inline" action="{{url_for('resultats')}}" method="GET">
-			Année : 
-        	<input name="keyword_year" type="search" placeholder="Année" aria-label="Recherche"> 
-        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
-        	Lieu de conservation : 
-        	<input name="keyword_archives" type="search" placeholder="Lieu de conservation" aria-label="Recherche"> 
-        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
-        	Lieu de production : 
-        	<input name="keyword_place" type="search" placeholder="Lieu de production" aria-label="Recherche"> 
-        	<a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
-            État de l'acte : 
-            <input name="keyword_state" type="search" placeholder="état" aria-label="Recherche"> 
-            <a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-        <form class="form-inline" action="{{url_for('resultats')}}" method="GET">
-            Type diplomatique de l'acte : 
-            <input name="keyword_type" type="search" placeholder="type" aria-label="Recherche"> 
-            <a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-        <form action="{{url_for('resultats')}}" method="GET">
-            Recherche dans les analyses : 
-            <input name="keyword" type="search" placeholder="Recherche" aria-label="Recherche">
-            <a href="{{url_for('resultats')}}" type="submit">Rechercher</a>
-        </form>
-</div>
+    <div class="result-global">
+        <div>
+            <h1 class="h1_global">Rechercher dans le corpus</h1>
+        </div>
+        <div class="form-global">
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche libre dans les analyses :</p>
+                <div class="form-sub">
+                    <input name="keyword" type="search" placeholder="Recherche" aria-label="Recherche" class="form-keyword-global">
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Rechercher</button>
+                    </div>
+                </div>
+            </form>
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche des actes par année :</p>
+                <div class="form-sub">
+                    <input name="keyword_year" type="search" placeholder="Année (AAAA)" aria-label="Recherche" class="form-keyword-global">
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Rechercher</button>
+                    </div>
+                </div>
+            </form>
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche selon les lieux de conservation des actes :</p>
+                <div class="form-sub">
+                    <div class="form-keyword-global">
+                        <div  class="form-keyword-sub">
+                            <select name="keyword_archives" type="search"  class="form-keyword">
+                                <option value="Archives nationales">Archives nationales de France</option>
+                                <option value="Bibliothèque nationale de France">Bibliothèque nationale de France</option>
+                                <optgroup label="Archives départementales">
+                                    <option value="Côte-d'Or">Côte-d'Or</option>
+                                    <option value="Loire-Atlantique">Loire-Atlantique</option>
+                                    <option value="Puy-de-Dôme">Puy-de-Dôme</option>
+                                    <option value="Tarn">Tarn</option>
+                                </optgroup>
+                                <optgroup label="Archives municipales">
+                                    <option value="Lyon">Lyon</option>
+                                    <option value="Moulins">Moulins</option>
+                                    <option value="Riom">Riom</option>
+                                    <option value="Saint-Flour">Saint-Flour</option>
+                                    <option value="Villefranche-sur-Saône">Villefranche-sur-Saône</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Selectionner</button>
+                    </div>
+                </div>
+            </form>
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche selon les lieux de production des actes :</p>
+                <div class="form-sub">
+                    <div class="form-keyword-global">
+                        <div  class="form-keyword-sub">
+                            <select name="keyword_place" type="search"  class="form-keyword">
+                                <optgroup label="Allier">
+                                    <option value="Gannat">Gannat</option>
+                                    <option value="Montluçon">Montluçon</option>
+                                    <option value="Moulins">Moulins</option>
+                                    <option value="Souvigny">Souvigny</option>
+                                </optgroup>
+                                <optgroup label="Indre-et-Loire">
+                                    <option value="Chinon">Chinon</option>
+                                </optgroup>
+                                <optgroup label="Puy-de-Dôme">
+                                    <option value="Riom">Riom</option>
+                                </optgroup>
+                                <optgroup label="Saône-et-Loire">
+                                    <option value="Autun">Autun</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Selectionner</button>
+                    </div>
+                </div>
+            </form>
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche selon l'état des actes :</p>
+                <div class="form-sub">
+                    <div class="form-keyword-global">
+                        <div  class="form-keyword-sub">
+                            <select name="keyword_state" type="search"  class="form-keyword">
+                                <option value="minute">Minute</option>
+                                <option value="original">Original</option>
+                                <option value="copie">Copie</option>
+                                <option value="deperditum">Deperditum</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Selectionner</button>
+                    </div>
+                </div>
+            </form>
+            <form action="{{url_for('resultats')}}" method="GET">
+                <p>Recherche selon le type des actes :</p>
+                <div class="form-sub">
+                    <div class="form-keyword-global">
+                        <div  class="form-keyword-sub">
+                            <select name="keyword_type" type="search"  class="form-keyword">
+                                <option value="Charte">Charte</option>
+                                <option value="Lettre patente">Lettre patente</option>
+                                <option value="Mandement">Mandement</option>
+                                <option value="Lettre close">Lettre close</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-button-global">
+                        <button type="submit" class="form-button">Selectionner</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock %}
