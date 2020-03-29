@@ -449,6 +449,24 @@
                   <geo source="https://fr.wikipedia.org/wiki/Issoire">45° 32′ 42″ nord, 3° 14′ 59″ est</geo>
                </location>
             </place>
+            <place xml:id="Chantelle">
+               <placeName>
+                  <name xml:lang="fr">Chantelle</name>
+               </placeName>
+               <desc>Allier</desc>
+               <location>
+                  <geo>46° 14′ 20″ nord, 3° 09′ 14″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Trevoux">
+               <placeName>
+                  <name xml:lang="fr">Trévoux</name>
+               </placeName>
+               <desc>Ain</desc>
+               <location>
+                  <geo>45° 56′ 28″ nord, 4° 46′ 30″ est</geo>
+               </location>
+            </place>
          </settingDesc>
          <particDesc>
             <listPerson type="rois">
@@ -523,6 +541,13 @@
                      <surname>Courtet</surname>
                   </persName>
                   <note>Receveur pour le baillage des Montagnes d'Auvergne de l'aide des trois états du pays d'Auvergne pour le ravitaillement d'Orléans et la guerre contre l'Angleterre</note>
+               </person>
+               <person xml:id="NoelG">
+                  <persName>
+                     <forename>Gaillard</forename>
+                     <surname>Noël</surname>
+                  </persName>
+                  <note>Receveur de l'aide du pays d'Auvergne (années 1420).</note>
                </person>
                <person xml:id="TremoilleG">
                   <persName>
@@ -622,6 +647,13 @@
                   </persName>
                   <note>Maître de l'Hôtel (cité en 1437 et 1442).</note>
                </person>
+               <person xml:id="ParentR">
+                  <persName>
+                     <forename>Robert</forename>
+                     <surname>Parent</surname>
+                  </persName>
+                  <note>Maître de la chambre aux deniers (cité en 1441).</note>
+               </person>
                <person xml:id="SurelJ">
                   <persName>
                      <forename>Jean</forename>
@@ -645,6 +677,14 @@
                      <addName>Barrilhet</addName>
                   </persName>
                   <note>Écuyer d'écurie (cité en 1430).</note>
+               </person>
+               <person xml:id="TeillayeP">
+                  <persName>
+                     <forename>Pierre</forename>
+                     <nameLink>de la</nameLink>
+                     <surname>Teillaye</surname>
+                  </persName>
+                  <note>Écuyer panetier (années 1420).</note>
                </person>
             </listPerson>
             <listPerson type="Bourbonnais">
@@ -820,6 +860,40 @@
                   <note>Garde de la prévôté de Riom.</note>
                </person>
             </listPerson>
+            <listPerson type="Forez">
+               <person xml:id="VertA">
+                  <persName>
+                     <forename>Amé</forename>
+                     <surname>Vert</surname>
+                  </persName>
+                  <note>Seigneur de Chénereilles, bailli du comté de Forez (1414-1455).</note>
+               </person>
+               <person xml:id="PelletierJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <surname>Pelletier</surname>
+                  </persName>
+                  <note>Juge ordinaire du comté de Forez (1430-1434).</note>
+               </person>
+            </listPerson>
+            <listPerson type="Beujolais">
+               <person xml:id="EspinasseJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <nameLink>de</nameLink>
+                     <surname>L’Espinasse</surname>
+                  </persName>
+                  <note>Bailli de Beaujolais (cité en 1431).</note>
+               </person>
+               <person xml:id="DubreuilJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <nameLink>du</nameLink>
+                     <surname>Breuil</surname>
+                  </persName>
+                  <note>Auditeur des comtes de la Chambre de Villefranche (cité en 1431).</note>
+               </person>
+            </listPerson>
             <listPerson type="Ch_Moulins">
                <person xml:id="ClepierO">
                   <persName>
@@ -912,14 +986,6 @@
                </person>
             </listPerson>            
             <listPerson type="princes">
-               <person xml:id="BerryJ">
-                  <persName>
-                     <forename>Jean</forename>
-                     <nameLink>de</nameLink>
-                     <surname>Berry</surname>
-                  </persName>
-                  <note>Duc de Berry (1360-1416).</note>
-               </person>
                <person xml:id="ArmagnacJ">
                   <persName>
                      <forename>Jean IV</forename>
@@ -936,9 +1002,18 @@
                   </persName>
                   <note>Comte de Pardiac (1418-1462).</note>
                </person>
+               <person xml:id="BerryJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Berry</surname>
+                  </persName>
+                  <note>Duc de Berry (1360-1416).</note>
+               </person>
                <person xml:id="JSP">
                   <persName>
                      <forename>Jean sans Peur</forename>
+                     <nameLink>de</nameLink>
                      <surname>Bourgogne</surname>
                   </persName>
                   <note>Duc de Bourgogne (1404-1419).</note>
@@ -946,6 +1021,7 @@
                <person xml:id="PhBon">
                   <persName>
                      <forename>Philippe le Bon</forename>
+                     <nameLink>de</nameLink>
                      <surname>Bourgogne</surname>
                   </persName>
                   <note>Duc de Bourgogne (1419-1467).</note>
@@ -965,6 +1041,14 @@
                      <surname>Foix</surname>
                   </persName>
                   <note>Comte de Foix (1413-1436).</note>
+               </person>
+               <person xml:id="SavoieAVIII">
+                  <persName>
+                     <forename>Amédée VIII</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Savoie</surname>
+                  </persName>
+                  <note>Duc de Savoie (1416-1440).</note>
                </person>
             </listPerson>
             <listPerson type="bourguignons">
@@ -1091,6 +1175,14 @@
                      <surname>La Forest</surname>
                   </persName>
                   <note>Chevalier.</note><!-- Savoie -->
+               </person>
+               <person xml:id="PaludF">
+                  <persName>
+                     <forename>François</forename>
+                     <nameLink>de</nameLink>
+                     <surname>La Palud</surname>
+                  </persName>
+                  <note>Seigneur de Varembon.</note>
                </person>
                <person xml:id="AiguesG">
                   <persName>
@@ -1933,10 +2025,10 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="original" xml:id="Ch-27" n="27">
+         <text type="acte" subtype="original" xml:id="Ch-27" n="27">
             <front>
                <docDate>
-                  <date when="1430-05-09">[1430<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note>], 9 mai.</date>
+                  <date when="1430-05-09">[1430<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note>], 9 mai</date>
                   <placeName ref="#Montlucon">Montluçon</placeName>
                </docDate>
                <argument>
@@ -1955,6 +2047,83 @@
                </div>
                <div type="sign">
                   <p>Charles.</p>
+               </div>
+            </body>
+         </text>
+         <text type="acte" subtype="original" xml:id="Ch-28" n="28">
+            <front>
+               <docDate>
+                  <date when="1430-09-05">1430, 5 septembre</date>
+                  <placeName ref="#Herisson">Hérisson</placeName>
+               </docDate>
+               <argument>
+                  <p>Quittance de Charles de Bourbon, comte de Clermont, pour la somme de 600 livres tournois à lui donnée par Philippe, duc de Bourgogne, à l’intention d’Agnès de Bourgogne, femme du premier et soeur du second.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original sur parchemin, signé, scellé du grand sceau équestre en cire rouge sur simple queue, très endommagé<note type="n1"><p>Un fragment de la légende supérieure gauche subsiste, ainsi que l’arrière-train du destrier. Il s’agit de la première attestation de l’utilisation d’un sceau équestre par Charles de Clermont.</p></note>. 265 x 100 mm. Archives départementales de la Côte d’Or, B 299, pièce scellée 342.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p>Nous Charles de Bourbon, conte de Clermont,</p>
+                  <p>Confessons avoir eu et receu de nostre tres chier seigneur et frere le <persName ref="#PhBon">duc de Bourgoigne</persName>, par la main de <persName ref="#RegnaultM">Mahier Renaut</persName>, receveur general de Bourgoigne, la somme de six cens livres tournois, en deduccion de plus grant somme qui deue nous est a cause de la somme d’argent que nostredit seigneur et frere nous a acoustumé de paier chascun an par raison de nostre tres chiere et tres amee compaigne <persName ref="#Agnes">la contesse</persName>, sa suer, de laquelle somme de VI<hi rend="sup">C</hi> livres t. nous quittons nostredit seigneur et frere, ledit receveur general et autres qu’il puet toucher.</p>
+                  <p>En tesmoin de laquelle chose, nous avons fait mettre nostre seel a ces presentes.</p>
+                  <p>Donné a Heriçon, le cinq<hi rend="sup">yeme</hi> jour de septembre, l’an de grace mil quatre cens et trente.</p>
+               </div>
+               <div type="MHT">
+                  <p>Par monseigneur le conte,</p>
+               </div>
+               <div type="sign">
+                  <p><persName ref="#Trichon_sign">Trichon</persName></p>
+               </div>
+            </body>
+         </text>
+         <text type="acte" subtype="original" xml:id="Ch-29" n="29">
+            <front>
+               <docDate>
+                  <date notBefore="1425-06-10" notAfter="1433-06-10">[1425-1433], 10 juin</date>
+                  <placeName ref="#Chantelle">Chantelle</placeName>
+               </docDate>
+               <argument>
+                  <p>Charles de Bourbon, comte de Clermont, mande aux habitants de Riom de payer leur part de l’aide du pays d’Auvergne à son receveur, Gaillard Noël, ce qu’ils n’ont fait jusqu’à présent, et leur envoie son écuyer panetier, Pierre de la Tellaye.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original sur papier, signé. 205 x 135 mm. Archives municipales de Riom, AA 32, sans cote de pièce.</witness>
+                  <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892, p. 12.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p><hi rend="i">(Au verso)</hi> A noz tres chiers et biens amez les cossous<note type="na"><p><hi rend="i">Cossous</hi> : consuls.</p></note>, bourgois et habitans de <placeName ref="#Riom">Ryon</placeName>.</p>
+                  <p><hi rend="i">(Au recto)</hi> Le conte de Clermont.</p>
+                  <p>Chiers et biens amez, nous avons sceu par <persName ref="#NoelG">Gaillart Noël</persName><note type="na"><p>Gaillard Noël, originaire de Saint-Flour, est « receveur général de la taille votée par le dauphin Charles à Clermont (1420-1421) » : Albert Rigaudière,<hi rend="i"> L’assiette de l’impôt direct à la fin du XIV<hi rend="sup">e</hi> siècle</hi>, Paris, PUF, 1977, p. 442. Nous n’avons pas trouvé mention de son activité dans la période 1425-1434, où Charles de Bourbon est comte de Clermont.</p></note>, receveur de l’aide naguere mise sus ou païs d’<placeName ref="#Auvergne">Aulvergne</placeName>, que encor n’en avez paié vostre part et porcion, dont nous donnons grant merveille, attendu lez neccessaers afaires ou ledit aide se doit emploier.</p>
+                  <p>Sy vous mandons que, incontinent et sans delay, vous veullez paier vostredicte part et porcion, et en ce ne veullez faillir sur tant que doubtez<note type="na"><p><hi rend="i">Doubtez</hi> suivi de <hi rend="i">nous</hi> barré.</p></note> mesprendre envers nous et amez le bien de nostre seigneurie, et au derrain fauldra que le facés et tousdiz ce visteront sur vous missions et despenses. Et pour vous dire plus a plain nostre volenté sur ce, envoions presentement nostre bien amez pannetier <persName ref="#TeillayeP">Pierre de la Tellaye</persName>, lequel creez de ce qu’il vous dira de par nous.</p>
+                     <p>Chiers et bien amez, nostre seigneur vous ait en sa garde.</p>
+                     <p>Escript a Chantelle, le X<hi rend="sup">e</hi> jour de juing.</p>
+               </div>
+               <div type="sign">
+                  <p>Charles</p>
+                  <p><persName ref="#Gort_sign">Gort</persName></p>
+               </div>
+            </body>
+         </text>
+         <text type="acte" subtype="deperditum" xml:id="Ch-30" n="30">
+            <front>
+               <docDate>
+                  <date when="1431-04-12">1431, 12 avril</date>
+               </docDate>
+               <argument>
+                  <p>Marie de Berry, duchesse de Bourbonnais et d’Auvergne, et Charles, comte de Clermont, nomment Pierre de Toulon, chancelier du Bourbonnais, Jean de l’Espinasse, bailli de Beaujolais, Amé Vert, bailli de Forez, Jean Pelletier, juge de Forez, Jean Dubreuil, auditeur des comptes de Villefranche, et Robert Parent, leurs ambassadeurs à la convention avec les officiers du duc de Savoie afin de régler les suites de la prise de Trévoux par François de La Palud, seigneur de Varembon.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original disparu.</witness>
+                  <witness n="mention">Louis Aubret, <hi rend="i">Mémoires pour servir à l’histoire de Dombes</hi>, II, Marie-Claude Guigue (éd.), Trévoux, 1868, p. 534.</witness>
+               </listWit>
+            </front>
+            <body>
+               <head><hi rend="smallcaps">Deperditum</hi></head>
+               <div type="acte">
+                  <p>Le jour de Pâques, le 12 avril 1431, ils [<persName ref="#MarieBerry">Marie de Berry</persName> et Charles de Clermont] donnèrent leurs lettres patentes conjointement, par lesquelles ils nommèrent leurs amé et féaux chevaliers et conseillers <persName ref="#ToulonP">Pierre de Thollon</persName>, chancelier de Bourbonnois, messire <persName ref="#EspinasseJ">Jean de l’Espinasse</persName>, bailli de Beaujolois, messire <persName ref="#VertA">Amé Vert</persName>, bailli de Forez, seigneur de Chenevraille<note type="na"><p>Erreur de lecture d’Aubret. Comprendre <hi rend="i">Chenerraille</hi>, aujourd'hui <hi rend="i">Chénereilles</hi> en Haute-Loire.</p></note>, messire <persName ref="#PelletierJ">Jean Pelletier</persName>, juge de Forez, maître <persName ref="#DubreuilJ">Jean Dubreuil</persName>, auditeur des comptes en Beaujolois, et <persName ref="#ParentR">Robert Parent</persName>, auxquels à trois ou quatre d’iceulx ils donnèrent pouvoir de transiger avec les ambassadeurs du <persName ref="#SavoieAVIII">duc de Savoie</persName> des délits, excès, meurtres, sacrilèges, <placeName ref="#Trevoux">pillages</placeName> et autres maux faits par le <persName ref="#PaludF">sieur de Varambon</persName> et ses adhérents.</p>
                </div>
             </body>
          </text>
