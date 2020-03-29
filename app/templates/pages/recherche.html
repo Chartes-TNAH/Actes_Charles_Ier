@@ -15,7 +15,7 @@
                 </div>
             </form>
             <form action="{{url_for('resultats')}}" method="GET">
-                <p>Recherche des actes par année :</p>
+                <p>Recherche des actes par année <i>(1421, puis à partir de 1425)</i> :</p>
                 <div class="form-sub">
                     <input name="keyword_year" type="search" placeholder="Année (AAAA)" aria-label="Recherche" class="form-keyword-global">
                     <div class="form-button-global">
@@ -59,7 +59,9 @@
                         <div  class="form-keyword-sub">
                             <select name="keyword_place" type="search"  class="form-keyword">
                                 <optgroup label="Allier">
+                                    <option value="Chantelle">Chantelle</option>
                                     <option value="Gannat">Gannat</option>
+                                    <option value="Hérisson">Hérisson</option>
                                     <option value="Montluçon">Montluçon</option>
                                     <option value="Moulins">Moulins</option>
                                     <option value="Souvigny">Souvigny</option>
@@ -106,9 +108,9 @@
                         <div  class="form-keyword-sub">
                             <select name="keyword_type" type="search"  class="form-keyword">
                                 <option value="Charte">Charte</option>
-                                <option value="Lettre patente">Lettre patente</option>
+                                <option value="Lettres patente">Lettres patentes</option>
                                 <option value="Mandement">Mandement</option>
-                                <option value="Lettre close">Lettre close</option>
+                                <option value="Lettres closes">Lettres closes</option>
                             </select>
                         </div>
                     </div>
