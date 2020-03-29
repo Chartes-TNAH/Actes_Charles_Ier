@@ -10,7 +10,9 @@
 
 <body>
     <nav class="nav-global fixed-top">
-        <a href="{{url_for('accueil')}}">Accueil</a>
+        <button class="dropbtn" style="margin-right: 3%;">
+            <a href="{{url_for('accueil')}}">Accueil</a>
+        </button>
         <div class="nav-list">
             <div class="nav-item">
                 <li class="dropdown">
@@ -20,7 +22,9 @@
                     <a href="{{url_for('bibliographie')}}">Bibliographie</a>
                   </div>
                 </li>
-                <li><a href="{{url_for('duc')}}">Le&nbsp;duc</a></li>
+                <button class="dropbtn">
+                    <a href="{{url_for('duc')}}">Le&nbsp;duc</a>
+                </button>
                 <li class="dropdown">
                   <button class="dropbtn">Actes</button>
                   <div class="dropdown-content">
@@ -36,7 +40,9 @@
                     <a href="{{url_for('index_lieu')}}">Index locorum</a>
                   </div>
                 </li>
-                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <button class="dropbtn">
+                    <a href="{{url_for('contact')}}">Contact</a>
+                </button>
             </div>
         </div>
     </nav>
