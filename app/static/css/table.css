@@ -14,12 +14,7 @@ thead th:nth-child(2) {
 }
 
 thead th:nth-child(3) {
-  width: 10%;
-  text-align: center;
-}
-
-thead th:nth-child(4) {
-  width: 67%;
+  width: 77%;
 }
 
 th {
@@ -31,11 +26,11 @@ tbody td:nth-child(1) {
   text-align: center;
 }
 
-tbody td:nth-child(3) {
+tbody td:nth-child(2) {
   text-align: center;
 }
 
-tbody td:nth-child(4) {
+tbody td:nth-child(3) {
   text-align: justify;
 }
 

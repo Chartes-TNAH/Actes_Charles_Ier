@@ -15,11 +15,19 @@
                 </div>
             </form>
             <form action="{{url_for('resultats')}}" method="GET">
-                <p>Recherche des actes par année <i>(1421, puis à partir de 1425)</i> :</p>
+                <p>Recherche des actes par année :</p>
                 <div class="form-sub">
-                    <input name="keyword_year" type="search" placeholder="Année (AAAA)" aria-label="Recherche" class="form-keyword-global">
+                    <div class="form-keyword-global">
+                        <div class="form-keyword-sub">
+                            <select name="year" type="search"  class="form-keyword">
+                                {% for item in list_years %}
+                                    <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-button-global">
-                        <button type="submit" class="form-button">Rechercher</button>
+                        <button type="submit" class="form-button">Selectionner</button>
                     </div>
                 </div>
             </form>
@@ -27,23 +35,23 @@
                 <p>Recherche selon les lieux de conservation des actes :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
-                        <div  class="form-keyword-sub">
-                            <select name="keyword_archives" type="search"  class="form-keyword">
-                                {% for item in Depots_nationaux %}
+                        <div class="form-keyword-sub">
+                            <select name="archives" type="search"  class="form-keyword">
+                                {% for item in list_institutions %}
                                     <option value="{{item}}">{{item}}</option>
                                 {% endfor %}
                                 <optgroup label="Archives départementales">
-                                    {% for item in Arch_dep %}
+                                    {% for item in list_AD %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
                                 <optgroup label="Archives municipales">
-                                    {% for item in Arch_mun %}
+                                    {% for item in list_AM %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
                                 <optgroup label="Deperdita (imprimés)">
-                                    {% for item in Deperditum %}
+                                    {% for item in list_deperdita %}
                                         <option value="deperditum">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
@@ -59,24 +67,27 @@
                 <p>Recherche selon les lieux de production des actes :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
-                        <div  class="form-keyword-sub">
-                            <select name="keyword_place" type="search"  class="form-keyword">
+                        <div class="form-keyword-sub">
+                            <select name="place" type="search"  class="form-keyword">
                                 <optgroup label="Allier">
-                                    <option value="Chantelle">Chantelle</option>
-                                    <option value="Gannat">Gannat</option>
-                                    <option value="Hérisson">Hérisson</option>
-                                    <option value="Montluçon">Montluçon</option>
-                                    <option value="Moulins">Moulins</option>
-                                    <option value="Souvigny">Souvigny</option>
+                                    {% for item in list_Allier %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
                                 <optgroup label="Indre-et-Loire">
-                                    <option value="Chinon">Chinon</option>
+                                    {% for item in list_IndreetLoire %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
-                                <optgroup label="Puy-de-Dôme">
-                                    <option value="Riom">Riom</option>
+                                <optgroup label="Loire">
+                                    {% for item in list_Loire %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
                                 <optgroup label="Saône-et-Loire">
-                                    <option value="Autun">Autun</option>
+                                    {% for item in list_SaoineetLoire %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
                             </select>
                         </div>
@@ -90,8 +101,8 @@
                 <p>Recherche selon l'état des actes :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
-                        <div  class="form-keyword-sub">
-                            <select name="keyword_state" type="search"  class="form-keyword">
+                        <div class="form-keyword-sub">
+                            <select name="state" type="search"  class="form-keyword">
                                 <option value="minute">Minute</option>
                                 <option value="original">Original</option>
                                 <option value="copie">Copie</option>
@@ -108,8 +119,8 @@
                 <p>Recherche selon le type des actes :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
-                        <div  class="form-keyword-sub">
-                            <select name="keyword_type" type="search"  class="form-keyword">
+                        <div class="form-keyword-sub">
+                            <select name="type" type="search"  class="form-keyword">
                                 <option value="Charte">Charte</option>
                                 <option value="Lettres patente">Lettres patentes</option>
                                 <option value="Mandement">Mandement</option>

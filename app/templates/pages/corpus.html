@@ -15,7 +15,6 @@
                     <tr>
                         <th>Acte</th>
                         <th>Date</th>
-                        <th>Lieu</th>
                         <th>Analyse</th>
                     </tr>
                 </thead>
@@ -24,13 +23,8 @@
                             <tr>
                                 <td><a href="{{url_for('acte', acte_id=acte.id_acte)}}">{{acte.id_acte}}</a></td>
                                 <td>{{acte.date_temps}}</td>
-                                <td>
-                                    {% if acte.date_lieu %}
-                                        {{acte.date_lieu}}
-                                    {% endif %}
-                                </td>
                                 <td><a href="{{url_for('acte', acte_id=acte.id_acte)}}">{{acte.regeste}}.</a>
-                            </td>
+                                </td>
                             </tr>
                         </tbody>
                     {% endfor %}

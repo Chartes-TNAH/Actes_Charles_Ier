@@ -69,41 +69,63 @@ def acte(acte_id):
 
 @app.route("/recherche")
 def recherche():
-	Depots_item = actes.query.group_by(actes.lieu_conservation).all()
-	list_DN = []
+	list_institutions = []
 	list_AD = []
 	list_AM = []
-	list_deperditum = []
-	for depot in actes.query.group_by(actes.lieu_conservation).all():
-		if 'nationale' in depot.lieu_conservation:
-			DN = depot.lieu_conservation
-			list_DN.append(DN)
-		if 'départementales' in depot.lieu_conservation:
-			AD = str(depot.lieu_conservation)
+	list_deperdita = []
+	list_Allier = []
+	list_Loire = []
+	list_IndreetLoire = []
+	list_SaoineetLoire = []
+	list_years = []
+	for institution in actes.query.group_by(actes.lieu_conservation).all():
+		if 'nationale' in institution.lieu_conservation:
+			national = institution.lieu_conservation
+			list_institutions.append(national)
+		elif 'départementales' in institution.lieu_conservation:
+			AD = str(institution.lieu_conservation)
 			AD = re.sub('Archives départementales (du)?(de)?(du)?(des)? ?(la)?(l\')? ?', '', AD)
 			list_AD.append(AD)
-		elif 'municipales' in depot.lieu_conservation:
-			AM = str(depot.lieu_conservation)
+		elif 'municipales' in institution.lieu_conservation:
+			AM = str(institution.lieu_conservation)
 			AM = re.sub('Archives municipales (du)?(de)?(du)?(des)? ?(la)?(d\')? ?', '', AM)
 			list_AM.append(AM)
-		elif 'deperditum' in depot.lieu_conservation:
-			deperditum = str(depot.lieu_conservation)
+		elif 'deperditum' in institution.lieu_conservation:
+			deperditum = str(institution.lieu_conservation)
 			deperditum = deperditum.replace(', deperditum', '')
-			list_deperditum.append(deperditum)
-	Depots_nationaux = list_DN
-	Arch_dep = list_AD
-	Arch_mun = list_AM
-	Deperditum = list_deperditum
-	return render_template("pages/recherche.html", Depots_nationaux=Depots_nationaux, Arch_dep=Arch_dep, Arch_mun=Arch_mun, Deperditum=Deperditum)
+			list_deperdita.append(deperditum)
+	for city in actes.query.group_by(actes.date_lieu).all():
+		if '(Allier)' in city.date_lieu:
+			allier = str(city.date_lieu)
+			allier = re.sub(' \(.*\)', '', allier)
+			list_Allier.append(allier)
+		elif '(Loire)' in city.date_lieu:
+			loire = str(city.date_lieu)
+			loire = re.sub(' \(.*\)', '', loire)
+			list_Loire.append(loire)
+		elif '(Saône-et-Loire)' in city.date_lieu:
+			saoineetloire = str(city.date_lieu)
+			saoineetloire = re.sub(' \(.*\)', '', saoineetloire)
+			list_SaoineetLoire.append(saoineetloire)
+		elif '(Indre-et-Loire)' in city.date_lieu:
+			indreetLoire = str(city.date_lieu)
+			indreetLoire = re.sub(' \(.*\)', '', indreetLoire)
+			list_IndreetLoire.append(indreetLoire)
+	for time in actes.query.group_by(actes.annee).all():
+		year = time.annee
+		list_years.append(year)
+	return render_template("pages/recherche.html", list_institutions=list_institutions, list_AD=list_AD, 
+		list_AM=list_AM, list_deperdita=list_deperdita, list_years=list_years,
+		list_Allier=list_Allier, list_Loire=list_Loire, list_IndreetLoire=list_IndreetLoire, list_SaoineetLoire=list_SaoineetLoire)
 
 @app.route("/recherche/resultats")
 def resultats():
 	motclef = request.args.get("keyword", None)
-	motclef_annee = request.args.get("keyword_year", None)
-	motclef_lieu_conservation = request.args.get("keyword_archives", None)
-	motclef_lieu_production = request.args.get("keyword_place", None)
-	motclef_state = request.args.get("keyword_state", None)
-	motclef_type = request.args.get("keyword_type", None)
+	motclef_annee = request.args.get("year", None)
+	motclef_lieu_conservation = request.args.get("archives", None)
+	motclef_lieu_production = request.args.get("place", None)
+	motclef_state = request.args.get("state", None)
+	motclef_type = request.args.get("type", None)
 	resultats = []
 	resultats_annee = []
 	resultats_lieu_conservation = []
@@ -129,7 +151,12 @@ def resultats():
 		resultats_type = actes.query.filter(
 			actes.typeActe.like("%{}%".format(motclef_type))
 			).all()
-		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_lieu_conservation=resultats_lieu_conservation, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+		return render_template("pages/resultats.html", resultats=resultats, 
+			resultats_annee=resultats_annee, 
+			resultats_lieu_conservation=resultats_lieu_conservation, 
+			resultats_lieu_production=resultats_lieu_production, 
+			resultats_type=resultats_type, 
+			resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 
