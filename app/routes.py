@@ -76,6 +76,7 @@ def recherche():
 	list_Allier = []
 	list_Loire = []
 	list_IndreetLoire = []
+	list_Puy = []
 	list_SaoineetLoire = []
 	list_years = []
 	for institution in actes.query.group_by(actes.lieu_conservation).all():
@@ -103,6 +104,10 @@ def recherche():
 			loire = str(city.date_lieu)
 			loire = re.sub(' \(.*\)', '', loire)
 			list_Loire.append(loire)
+		elif '(Puy-de-Dôme)' in city.date_lieu:
+			puy = str(city.date_lieu)
+			puy = re.sub(' \(.*\)', '', puy)
+			list_Puy.append(puy)
 		elif '(Saône-et-Loire)' in city.date_lieu:
 			saoineetloire = str(city.date_lieu)
 			saoineetloire = re.sub(' \(.*\)', '', saoineetloire)
@@ -115,8 +120,8 @@ def recherche():
 		year = time.annee
 		list_years.append(year)
 	return render_template("pages/recherche.html", list_institutions=list_institutions, list_AD=list_AD, 
-		list_AM=list_AM, list_deperdita=list_deperdita, list_years=list_years,
-		list_Allier=list_Allier, list_Loire=list_Loire, list_IndreetLoire=list_IndreetLoire, list_SaoineetLoire=list_SaoineetLoire)
+		list_AM=list_AM, list_deperdita=list_deperdita, list_years=list_years, list_Allier=list_Allier, 
+		list_Loire=list_Loire, list_IndreetLoire=list_IndreetLoire, list_SaoineetLoire=list_SaoineetLoire, list_Puy=list_Puy)
 
 @app.route("/recherche/resultats")
 def resultats():

@@ -69,7 +69,7 @@
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="place" type="search"  class="form-keyword">
-                                <optgroup label="Allier">
+                                <optgroup label="Allier (duché de Bourbonnais)">
                                     {% for item in list_Allier %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
@@ -79,8 +79,13 @@
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
-                                <optgroup label="Loire">
+                                <optgroup label="Loire (comté de Forez)">
                                     {% for item in list_Loire %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
+                                </optgroup>
+                                <optgroup label="Puy-de-Dôme (duché d'Auvergne)">
+                                    {% for item in list_Puy %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
