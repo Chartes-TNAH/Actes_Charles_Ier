@@ -29,20 +29,23 @@
                     <div class="form-keyword-global">
                         <div  class="form-keyword-sub">
                             <select name="keyword_archives" type="search"  class="form-keyword">
-                                <option value="Archives nationales">Archives nationales de France</option>
-                                <option value="Bibliothèque nationale de France">Bibliothèque nationale de France</option>
+                                {% for item in Depots_nationaux %}
+                                    <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
                                 <optgroup label="Archives départementales">
-                                    <option value="Côte-d'Or">Côte-d'Or</option>
-                                    <option value="Loire-Atlantique">Loire-Atlantique</option>
-                                    <option value="Puy-de-Dôme">Puy-de-Dôme</option>
-                                    <option value="Tarn">Tarn</option>
+                                    {% for item in Arch_dep %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
                                 <optgroup label="Archives municipales">
-                                    <option value="Lyon">Lyon</option>
-                                    <option value="Moulins">Moulins</option>
-                                    <option value="Riom">Riom</option>
-                                    <option value="Saint-Flour">Saint-Flour</option>
-                                    <option value="Villefranche-sur-Saône">Villefranche-sur-Saône</option>
+                                    {% for item in Arch_mun %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
+                                </optgroup>
+                                <optgroup label="Deperdita (imprimés)">
+                                    {% for item in Deperditum %}
+                                        <option value="deperditum">{{item}}</option>
+                                    {% endfor %}
                                 </optgroup>
                             </select>
                         </div>

@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
+import re
 
 from .app import app
 from .modeles.donnees import actes
@@ -68,7 +69,32 @@ def acte(acte_id):
 
 @app.route("/recherche")
 def recherche():
-	return render_template("pages/recherche.html")
+	Depots_item = actes.query.group_by(actes.lieu_conservation).all()
+	list_DN = []
+	list_AD = []
+	list_AM = []
+	list_deperditum = []
+	for depot in actes.query.group_by(actes.lieu_conservation).all():
+		if 'nationale' in depot.lieu_conservation:
+			DN = depot.lieu_conservation
+			list_DN.append(DN)
+		if 'départementales' in depot.lieu_conservation:
+			AD = str(depot.lieu_conservation)
+			AD = re.sub('Archives départementales (du)?(de)?(du)?(des)? ?(la)?(l\')? ?', '', AD)
+			list_AD.append(AD)
+		elif 'municipales' in depot.lieu_conservation:
+			AM = str(depot.lieu_conservation)
+			AM = re.sub('Archives municipales (du)?(de)?(du)?(des)? ?(la)?(d\')? ?', '', AM)
+			list_AM.append(AM)
+		elif 'deperditum' in depot.lieu_conservation:
+			deperditum = str(depot.lieu_conservation)
+			deperditum = deperditum.replace(', deperditum', '')
+			list_deperditum.append(deperditum)
+	Depots_nationaux = list_DN
+	Arch_dep = list_AD
+	Arch_mun = list_AM
+	Deperditum = list_deperditum
+	return render_template("pages/recherche.html", Depots_nationaux=Depots_nationaux, Arch_dep=Arch_dep, Arch_mun=Arch_mun, Deperditum=Deperditum)
 
 @app.route("/recherche/resultats")
 def resultats():
