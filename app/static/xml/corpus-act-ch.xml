@@ -1259,7 +1259,7 @@
       <front>
       </front>
       <group>
-         <text type="deperditum" subtype="lettres closes" xml:id="Ch-1" n="1">
+         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-1" n="1">
             <front>
                <docDate>
                   <date notAfter="1421-01-15">[Avant le 15 janvier 1421 (n. st.)]</date>
@@ -1283,7 +1283,7 @@
                </div>
             </body>
          </text>
-         <text type="deperditum" subtype="lettres closes" xml:id="Ch-2" n="2">
+         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-2" n="2">
             <front>
                <docDate>
                   <date notAfter="1421-01-18">[Avant le 18 janvier 1421 (n. st.)]</date>
@@ -1308,7 +1308,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-3" n="3">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-3" n="3">
             <front>
                <docDate>
                   <date when="1425-02-04">1425 (n. st.), 4 février</date>
@@ -1367,7 +1367,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-4" n="4">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-4" n="4">
             <front>
                <docDate>
                   <date when="1425-02-07">1425 (n. st.), 7 février</date>
@@ -1401,7 +1401,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-5" n="5">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-5" n="5">
             <front>
                <docDate>
                   <date when="1425-08-06">1425, 6 août</date>
@@ -1431,7 +1431,7 @@
                </div>
             </body>
          </text>
-         <text type="copie" subtype="lettres patentes" xml:id="Ch-6" n="6">
+         <text type="Copie" subtype="Lettres patentes" xml:id="Ch-6" n="6">
             <front>
                <docDate>
                   <date when="1425-08-13">13 août 1425</date>
@@ -1463,7 +1463,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-7" n="7">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-7" n="7">
             <front>
                <docDate>
                   <date when="1425-12-08">1425, 8 décembre</date>
@@ -1493,7 +1493,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-8" n="8">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-8" n="8">
             <front>
                <docDate>
                   <date when="1426-03-13">1426 (n. st.), 13 mars</date>
@@ -1522,7 +1522,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres closes" xml:id="Ch-9" n="9">
+         <text type="Original" subtype="Lettres closes" xml:id="Ch-9" n="9">
             <front>
                <docDate>
                   <date notAfter="1426-10-09">[Avant le 9 octobre 1426], 30 août</date>
@@ -1549,7 +1549,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-10" n="10">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-10" n="10">
             <front>
                <docDate>
                   <date when="1426-12-16">1426, 16 décembre</date>
@@ -1580,7 +1580,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="mandement" xml:id="Ch-11" n="11">
+         <text type="Original" subtype="Mandement" xml:id="Ch-11" n="11">
             <front>
                <docDate>
                   <date when="1427-05-01">1427, 1er mai</date>
@@ -1612,7 +1612,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="mandement" xml:id="Ch-12" n="12">
+         <text type="Original" subtype="Mandement" xml:id="Ch-12" n="12">
             <front>
                <docDate>
                   <date when="1427-05-14">1427, 14 mai</date>
@@ -1644,7 +1644,7 @@
                </div>
             </body>
          </text>
-         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-13" n="13">
+         <text type="Deperditum" subtype="Lettres patentes" xml:id="Ch-13" n="13">
             <front>
                <docDate>
                   <date when="1427-06-27">1427, 27 juin</date>
@@ -1668,7 +1668,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-14" n="14">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-14" n="14">
             <front>
                <docDate>
                   <date when="1427-08-04">1427, 4 août</date>
@@ -1700,7 +1700,7 @@
                </div>
             </body>
          </text>
-         <text type="orginal" subtype="lettres patentes" xml:id="Ch-15" n="15">
+         <text type="orginal" subtype="Lettres patentes" xml:id="Ch-15" n="15">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
@@ -1737,7 +1737,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-16" n="16">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-16" n="16">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
@@ -1774,7 +1774,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-17" n="17">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-17" n="17">
             <front>
                <docDate>
                   <date when="1427-08-28">1427, 28 août</date>
@@ -1809,7 +1809,7 @@
                </div>
             </body>
          </text>
-         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-18" n="18">
+         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-18" n="18">
             <front>
                <docDate>
                   <date notAfter="1428-01-28">[Avant le 20 janvier 1428 (n. st.)]</date>
@@ -1833,7 +1833,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-19" n="19">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-19" n="19">
             <front>
                <docDate>
                   <date when="1428-01-31">1428 (n. st.), 30 janvier</date>
@@ -1864,7 +1864,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-20" n="20">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-20" n="20">
             <front>
                <docDate>
                   <date when="1428-11-04">1428, 4 novembre</date>
@@ -1899,7 +1899,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-21" n="21">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-21" n="21">
             <front>
                <docDate>
                   <date when="1428-12-12">1428, 12 décembre</date>
@@ -1957,7 +1957,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="charte" xml:id="Ch-22" n="22">
+         <text type="Original" subtype="charte" xml:id="Ch-22" n="22">
             <front>
                <docDate>
                   <date when="1429-04">1429, avril</date>
@@ -1991,7 +1991,7 @@
                </div>
             </body>
          </text>
-         <text type="vidimus" subtype="lettres patentes" xml:id="Ch-23" n="23">
+         <text type="vidimus" subtype="Lettres patentes" xml:id="Ch-23" n="23">
             <front>
                <docDate>
                   <date when="1429-04-20">1429, 20 avril</date>
@@ -2021,7 +2021,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="mandement" xml:id="Ch-24" n="24">
+         <text type="Original" subtype="Mandement" xml:id="Ch-24" n="24">
             <front>
                <docDate>
                   <date when="1429-05-19">1429, 19 mai</date>
@@ -2053,7 +2053,7 @@
                </div>
             </body>
          </text>
-         <text type="minute" subtype="lettres patentes" xml:id="Ch-25" n="25">
+         <text type="Minute" subtype="Lettres patentes" xml:id="Ch-25" n="25">
             <front>
                <docDate>
                   <date when="1430-02-01">1430 (n. st.), 1er février</date>
@@ -2079,7 +2079,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-26" n="26">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-26" n="26">
             <front>
                <docDate>
                   <date when="1430-02-15">1430 (n. st.), 15 février</date>
@@ -2113,7 +2113,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres closes" xml:id="Ch-27" n="27">
+         <text type="Original" subtype="Lettres closes" xml:id="Ch-27" n="27">
             <front>
                <docDate>
                   <date when="1430-05-09">[1430], 9 mai<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note></date>
@@ -2141,7 +2141,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres patentes" xml:id="Ch-28" n="28">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-28" n="28">
             <front>
                <docDate>
                   <date when="1430-09-05">1430, 5 septembre</date>
@@ -2172,7 +2172,7 @@
                </div>
             </body>
          </text>
-         <text type="original" subtype="lettres closes" xml:id="Ch-29" n="29">
+         <text type="Original" subtype="Lettres closes" xml:id="Ch-29" n="29">
             <front>
                <docDate>
                   <date notBefore="1425-06-10" notAfter="1433-06-10">[1425-1433], 10 juin</date>
@@ -2204,7 +2204,7 @@
                </div>
             </body>
          </text>
-         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-30" n="30">
+         <text type="Deperditum" subtype="Lettres patentes" xml:id="Ch-30" n="30">
             <front>
                <docDate>
                   <date when="1431-04-12">1431, 12 avril</date>
