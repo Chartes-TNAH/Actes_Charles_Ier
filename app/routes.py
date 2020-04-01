@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 import re
 
-from .app import app
+from .app import app, source_doc
 from .modeles.donnees import actes
 
 @app.route("/")
@@ -14,8 +14,7 @@ def accueil():
 def projet():
 	xslt_projet_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/projet-xslt.xslt")
 	xslt_projet_transformer = etree.XSLT(xslt_projet_doc)
-	source_projet_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	output_projet_doc = xslt_projet_transformer(source_projet_doc)
+	output_projet_doc = xslt_projet_transformer(source_doc)
 	return render_template("pages/projet.html", contenu_projet=output_projet_doc)
 
 @app.route("/bibliographie")
@@ -35,24 +34,21 @@ def corpus():
 def index_noms():
 	xslt_index_nom_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-nominum.xsl")
 	xslt_index_nom_transformer = etree.XSLT(xslt_index_nom_doc)
-	source_index_nom_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	output_index_nom_doc = xslt_index_nom_transformer(source_index_nom_doc)
+	output_index_nom_doc = xslt_index_nom_transformer(source_doc)
 	return render_template("pages/index_nominum.html", contenu_index_nom=output_index_nom_doc)
 
 @app.route("/index-prosopographique")
 def index_prosopo():
 	xslt_index_prosopo_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-xslt.xsl")
 	xslt_index_prosopo_transformer = etree.XSLT(xslt_index_prosopo_doc)
-	source_index_prosopo_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	output_index_prosopo_doc = xslt_index_prosopo_transformer(source_index_prosopo_doc)
+	output_index_prosopo_doc = xslt_index_prosopo_transformer(source_doc)
 	return render_template("pages/index_prosopo.html", contenu_index_prosopo=output_index_prosopo_doc)
 
 @app.route("/index-lieu")
 def index_lieu():
 	xslt_index_lieux_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-locorum.xsl")
 	xslt_index_lieux_transformer = etree.XSLT(xslt_index_lieux_doc)
-	source_index_lieux_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
-	output_index_lieux_doc = xslt_index_lieux_transformer(source_index_lieux_doc)
+	output_index_lieux_doc = xslt_index_lieux_transformer(source_doc)
 	return render_template("pages/index-lieux.html", contenu_index_lieux=output_index_lieux_doc)
 
 @app.route("/contact")
@@ -61,7 +57,6 @@ def contact():
 
 @app.route("/actes/<int:acte_id>")
 def acte(acte_id):
-	source_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 	xslt_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/corpus-xslt.xslt")
 	xslt_transformer = etree.XSLT(xslt_doc)
 	output_doc = xslt_transformer(source_doc, numero=str(acte_id))
