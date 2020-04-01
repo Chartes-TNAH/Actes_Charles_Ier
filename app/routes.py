@@ -3,8 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 import re
 
-from .app import app, source_doc
-from .modeles.donnees import Acts
+from .app import app, source_doc # import de l'application (app) et du document XML (source_doc) depuis le fichier app.py
+from .modeles.donnees import Acts # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles
 
 @app.route("/")
 def accueil():
