@@ -4,7 +4,7 @@ from lxml import etree
 import re
 
 from .app import app, source_doc
-from .modeles.donnees import actes
+from .modeles.donnees import Acts
 
 @app.route("/")
 def accueil():
@@ -27,7 +27,7 @@ def duc():
 
 @app.route("/actes")
 def corpus():
-	Actes_total = actes.query.all()
+	Actes_total = Acts.query.all()
 	return render_template("pages/corpus.html", document=Actes_total)
 
 @app.route("/index-nominum")
@@ -68,92 +68,65 @@ def recherche():
 	list_AD = []
 	list_AM = []
 	list_deperdita = []
-	list_Allier = []
-	list_Loire = []
-	list_IndreetLoire = []
-	list_Puy = []
-	list_SaoineetLoire = []
+	list_city = []
 	list_years = []
-	for institution in actes.query.group_by(actes.lieu_conservation).all():
-		if 'nationale' in institution.lieu_conservation:
-			national = institution.lieu_conservation
+	for institution in Acts.query.group_by(Acts.institution).all():
+		if 'nationale' in institution.institution:
+			national = institution.institution
 			list_institutions.append(national)
-		elif 'départementales' in institution.lieu_conservation:
-			AD = str(institution.lieu_conservation)
+		elif 'départementales' in institution.institution:
+			AD = str(institution.institution)
 			AD = re.sub('Archives départementales (du)?(de)?(du)?(des)? ?(la)?(l\')? ?', '', AD)
 			list_AD.append(AD)
-		elif 'municipales' in institution.lieu_conservation:
-			AM = str(institution.lieu_conservation)
+		elif 'municipales' in institution.institution:
+			AM = str(institution.institution)
 			AM = re.sub('Archives municipales (du)?(de)?(du)?(des)? ?(la)?(d\')? ?', '', AM)
 			list_AM.append(AM)
-		elif 'deperditum' in institution.lieu_conservation:
-			deperditum = str(institution.lieu_conservation)
+		elif 'deperditum' in institution.institution:
+			deperditum = str(institution.institution)
 			deperditum = deperditum.replace(', deperditum', '')
 			list_deperdita.append(deperditum)
-	for city in actes.query.group_by(actes.date_lieu).all():
-		if '(Allier)' in city.date_lieu:
-			allier = str(city.date_lieu)
-			allier = re.sub(' \(.*\)', '', allier)
-			list_Allier.append(allier)
-		elif '(Loire)' in city.date_lieu:
-			loire = str(city.date_lieu)
-			loire = re.sub(' \(.*\)', '', loire)
-			list_Loire.append(loire)
-		elif '(Puy-de-Dôme)' in city.date_lieu:
-			puy = str(city.date_lieu)
-			puy = re.sub(' \(.*\)', '', puy)
-			list_Puy.append(puy)
-		elif '(Saône-et-Loire)' in city.date_lieu:
-			saoineetloire = str(city.date_lieu)
-			saoineetloire = re.sub(' \(.*\)', '', saoineetloire)
-			list_SaoineetLoire.append(saoineetloire)
-		elif '(Indre-et-Loire)' in city.date_lieu:
-			indreetLoire = str(city.date_lieu)
-			indreetLoire = re.sub(' \(.*\)', '', indreetLoire)
-			list_IndreetLoire.append(indreetLoire)
-	for time in actes.query.group_by(actes.annee).all():
-		year = time.annee
-		list_years.append(year)
+	for city in Acts.query.group_by(Acts.date).all():
+		place = city.place
+		list_city.append(place)
 	return render_template("pages/recherche.html", list_institutions=list_institutions, list_AD=list_AD, 
-		list_AM=list_AM, list_deperdita=list_deperdita, list_years=list_years, list_Allier=list_Allier, 
-		list_Loire=list_Loire, list_IndreetLoire=list_IndreetLoire, list_SaoineetLoire=list_SaoineetLoire, list_Puy=list_Puy)
+		list_AM=list_AM, list_deperdita=list_deperdita, list_city=list_city)
 
 @app.route("/recherche/resultats")
 def resultats():
 	motclef = request.args.get("keyword", None)
 	motclef_annee = request.args.get("year", None)
-	motclef_lieu_conservation = request.args.get("archives", None)
+	motclef_institution = request.args.get("archives", None)
 	motclef_lieu_production = request.args.get("place", None)
 	motclef_state = request.args.get("state", None)
 	motclef_type = request.args.get("type", None)
 	resultats = []
 	resultats_annee = []
-	resultats_lieu_conservation = []
+	resultats_institution = []
 	resultats_lieu_production = []
 	resultats_state = []
 	resultats_type = []
-	if motclef or motclef_lieu_conservation or motclef_annee or motclef_lieu_production or motclef_type or motclef_state:
-		resultats = actes.query.filter(
-			actes.regeste.like("%{}%".format(motclef))
+	if motclef or motclef_institution or motclef_annee or motclef_lieu_production or motclef_type or motclef_state:
+		resultats = Acts.query.filter(
+			Acts.analyse.like("%{}%".format(motclef))
 			).all()
-		resultats_lieu_conservation = actes.query.filter(
-			actes.lieu_conservation.like("%{}%".format(motclef_lieu_conservation))
+		resultats_institution = Acts.query.filter(
+			Acts.institution.like("%{}%".format(motclef_institution))
 			).all()
-		resultats_annee = actes.query.filter(
-			actes.annee.like("%{}%".format(motclef_annee))
+		#resultats_annee = Acts.query.filter(
+			#Acts.annee.like("%{}%".format(motclef_annee))
+			#).all()
+		resultats_lieu_production = Acts.query.filter(
+			Acts.place.like("%{}%".format(motclef_lieu_production))
 			).all()
-		resultats_lieu_production = actes.query.filter(
-			actes.date_lieu.like("%{}%".format(motclef_lieu_production))
+		resultats_state = Acts.query.filter(
+			Acts.state.like("%{}%".format(motclef_state))
 			).all()
-		resultats_state = actes.query.filter(
-			actes.etatActe.like("%{}%".format(motclef_state))
-			).all()
-		resultats_type = actes.query.filter(
-			actes.typeActe.like("%{}%".format(motclef_type))
+		resultats_type = Acts.query.filter(
+			Acts.type.like("%{}%".format(motclef_type))
 			).all()
 		return render_template("pages/resultats.html", resultats=resultats, 
-			resultats_annee=resultats_annee, 
-			resultats_lieu_conservation=resultats_lieu_conservation, 
+			resultats_institution=resultats_institution, 
 			resultats_lieu_production=resultats_lieu_production, 
 			resultats_type=resultats_type, 
 			resultats_state=resultats_state)

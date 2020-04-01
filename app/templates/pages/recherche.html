@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </form>
-            <form action="{{url_for('resultats')}}" method="GET">
+            <!--<form action="{{url_for('resultats')}}" method="GET">
                 <p>Recherche des actes par année :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
@@ -30,7 +30,7 @@
                         <button type="submit" class="form-button">Selectionner</button>
                     </div>
                 </div>
-            </form>
+            </form>-->
             <form action="{{url_for('resultats')}}" method="GET">
                 <p>Recherche selon les lieux de conservation des actes :</p>
                 <div class="form-sub">
@@ -69,7 +69,10 @@
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="place" type="search"  class="form-keyword">
-                                <optgroup label="Allier (duché de Bourbonnais)">
+                                {% for item in list_city %}
+                                    <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
+                                <!--<optgroup label="Allier (duché de Bourbonnais)">
                                     {% for item in list_Allier %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
@@ -93,7 +96,7 @@
                                     {% for item in list_SaoineetLoire %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
-                                </optgroup>
+                                </optgroup>-->
                             </select>
                         </div>
                     </div>

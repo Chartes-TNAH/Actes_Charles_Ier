@@ -1,27 +1,48 @@
-from ..app import db
+from ..app import db, source_doc
 
-class actes(db.Model):
-	__tablename__ = "actes"
-	id_acte = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
-	lieu_conservation = db.Column(db.Text)
-	#(db.Integer, db.ForeignKey('depots.id_depots'))
-	cote = db.Column(db.Text)
-	annee = db.Column(db.Text)
-	date_temps = db.Column(db.Text)
-	date_lieu = db.Column(db.Text)
-	regeste = db.Column(db.Text)
-	etatActe = db.Column(db.Text)
-	typeActe = db.Column(db.Text)
-	hauteur = db.Column(db.Integer)
-	largeur = db.Column(db.Integer)
-	repli = db.Column(db.Integer)
-	"""
-	depots = db.relationship("actes", back_populates="id_depots")
+class Acts(db.Model):
+    __tablename__ = "acts"
+    id_acts = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
+    institution = db.Column(db.Text)
+    state = db.Column(db.Text)
+    type = db.Column(db.Text)
+    date = db.Column(db.Text)
+    place = db.Column(db.Text)
+    analyse = db.Column(db.Text)
 
-class depots(db.Model):
-	__tablename__ = "depots"
-	id_depots = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
-	lieu_conservation = db.Column(db.Text)
-	actes = db.relationship("depots", back_populates="actes_id_depots")
-	conservation = db.relationship("actes", backref="document")
-	"""
+    def __init__(self, id_acts, institution, state, type, date, place, analyse):
+        self.id_acts = id_acts
+        self.institution = institution
+        self.state = state
+        self.type = type
+        self.date = date
+        self.place = place
+        self.analyse = analyse
+
+list_institution = []
+list_state = []
+list_type = []
+list_date = []
+list_place = []
+list_analyse = []
+number = 0
+id = 0
+
+for item in source_doc.xpath("//group/text"):
+    number += 1
+    item_institution = source_doc.xpath("//text[@n=" + str(number) + "]//institution/text()")
+    list_institution.append(item_institution[0])
+    list_state.append(item.attrib['type'])
+    list_type.append(item.attrib['subtype'])
+    item_date = source_doc.xpath("//text[@n=" + str(number) + "]//date/text()")
+    list_date.append(item_date[0])
+    item_place = source_doc.xpath("//text[@n=" + str(number) + "]//docDate/placeName/text()")
+    list_place.append(item_place[0])
+    item_analyse = source_doc.xpath("//text[@n=" + str(number) + "]//argument[1]/p/text()")
+    list_analyse.append(item_analyse[0])
+for item in list_date:
+    db.drop_all()
+    db.create_all()
+    id +=1
+    db.session.add(Acts(id, list_institution[id - 1], list_state[id - 1], list_type[id - 1], list_date[id - 1], list_place[id - 1], list_analyse[id - 1]))
+db.session.commit()
