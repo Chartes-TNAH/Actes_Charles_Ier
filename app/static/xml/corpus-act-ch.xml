@@ -1259,17 +1259,21 @@
       <front>
       </front>
       <group>
-         <text type="acte" subtype="deperditum" xml:id="Ch-1" n="1">
+         <text type="deperditum" subtype="lettres closes" xml:id="Ch-1" n="1">
             <front>
                <docDate>
                   <date notAfter="1421-01-15">[Avant le 15 janvier 1421 (n. st.)]</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Lettre close de de Charles de Bourbon, lieutenant en Languedoc, de Jean IV, comte d’Armagnac et de Charles d’Albret, à la ville d’Albi</p>
+               </argument>
                <argument>
                   <p>Lettre close aux consuls d’Albi, signée de Charles de Bourbon, lieutenant en Languedoc, du comte d’Armagnac et de Charles d’Albret, par laquelle ils engagent les habitants à être bons, fidèles et obéissants au roi et au dauphin-régent, et à eux-mêmes comme représentants dudit régent, et non à d’autres.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu, jadis signé par les princes et scellés de leurs sceaux (<hi rend="i">sagelada de lors sagels e senhada de lors propias mas</hi>).</witness>
-                  <witness n="mention">comptes de la ville d’Albi, 1420-1421. Archives départementales du Tarn, CC 176, f. 27r.</witness>
+                  <witness n="mention">comptes de la ville d’Albi, 1420-1421. <institution>Archives départementales du Tarn</institution>, CC 176, f. 27r.</witness>
                </listWit>
             </front>
             <body>
@@ -1279,17 +1283,21 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="deperditum" xml:id="Ch-2" n="2">
+         <text type="deperditum" subtype="lettres closes" xml:id="Ch-2" n="2">
             <front>
                <docDate>
                   <date notAfter="1421-01-18">[Avant le 18 janvier 1421 (n. st.)]</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Lettre close de Charles de Bourbon, Jean IV, comte d’Armagnac, et Charles d’Albret aux villes d’Auvergne</p>
+               </argument>
                <argument>
                   <p>Charles de Bourbon, Jean IV, comte d’Armagnac, et Charles d’Albret, informent les consuls, bourgeois et habitants de Saint-Flour de bonnes nouvelles, et leur demandant de rester fidèles au roi et au régent Charles. Le porteur des lettres est chargé d’en apporter de semblables à toutes les bonnes villes d’Auvergne, du Gévaudan et du Velay.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu, jadis signé par les princes et scellés de leurs sceaux (<hi rend="i">sagelada de lors sagels e senhada de lors propias mas</hi>).</witness>
-                  <witness n="mention">compte de la ville de Saint-Flour, année 1420. Archives municipales de Saint-Flour, ch. XI, art. 2., n°32, f. 43v.</witness>
+                  <witness n="mention">compte de la ville de Saint-Flour, année 1420. <institution>Archives municipales de Saint-Flour</institution>, ch. XI, art. 2., n°32, f. 43v.</witness>
                   <witness n="indique">Albert Rigaudière, <hi rend="i">Saint-Flour, ville d’Auvergne au bas Moyen Âge</hi>, II, Paris, PUF, 1982, p. 620, n. 291.</witness>
                </listWit>
             </front>
@@ -1300,16 +1308,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-3" n="3">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-3" n="3">
             <front>
                <docDate>
                   <date when="1425-02-04">1425 (n. st.), 4 février</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Traité de mariage de Charles de Bourbon et d’Agnès de Bourgogne</p>
+               </argument>
                <argument>
                   <p>Contrat de mariage entre Charles, fils du duc de Bourbon, et Agnès, soeur du duc de Bourgogne.</p>
                </argument>
                <listWit>
-                  <witness n="A">A<hi rend="sup">1</hi>. Original sur parchemin, signé par deux notaires, jadis scellé. 600 x 830 mm., dont repli 70 mm. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
+                  <witness n="A">A<hi rend="sup">1</hi>. Original sur parchemin, signé par deux notaires, jadis scellé. 600 x 830 mm., dont repli 70 mm. <institution>Archives nationales</institution>, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
                   <witness n="A">A<hi rend="sup">2</hi>. Original sur parchemin, signé par deux notaires, scellé des sceaux en cire verte sur double queue de parchemin des chancellerie de Bourgogne et de Bourbonnais ; attaché à la ratification du contrat passée le 6 août suivant par les époux (<ref coresp="Ch-5">n°5</ref>). 580 x 860 mm., dont repli 70 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 318.</witness>
                   <witness n="B">B. Vidimus sur parchemin, collationné et signé, du 4 décembre 1426. 650 x 710 mm., dont repli 80 mm. Archives nationales, P 1364<hi rend="sup">2</hi>, cote 1384. </witness>
                   <witness n="C">C. Vidimus dans un cahier de papier de quatre folios, du 20 avril 1459. 285 x 350 mm. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
@@ -1355,17 +1367,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-4" n="4">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-4" n="4">
             <front>
                <docDate>
                   <date when="1425-02-07">1425 (n. st.), 7 février</date>
                   <placeName>Autun</placeName>
                </docDate>
                <argument>
+                  <p>Marie de Berry et Charles de Clermont promettent de respecter les engagements de Jean Ier relatifs au statut des terres apanagées des Bourbon</p>
+               </argument>
+               <argument>
                   <p>Marie de Berry, duchesse de Bourbonnais, etc., et Charles, comte de Clermont, son fils, promettent que de par le contrat de mariage entre ledit Charles et Agnes de Bourgogne, soeur de Philippe, duc de Bourgogne, ils respecteront les traités passés par le duc de Bourbon avec le roi d’Angleterre, en espérant sa libération.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, jadis scellé de deux sceaux, dont seul subsiste celui de Charles de Clermont en-dessous de la signature de son secrétaire, en cire rouge, sur double queue, endommagé<note type="n1"><p>Le sceau est brisé en deux parties, la queue de parchemin s’étant défaite. La partie inférieure est en parfait état, on peut y voir la toge d’une femme et l’écu de Bourbon portant une brisure couronnée et semé de sept fleurs de lys. Il ne reste qu’une infime section de la partie supérieure. La légende est détruite.</p></note>. 325 x 160 mm., dont repli 55 mm. Archives départementales de la Côte-d’Or, B 297, pièce scellée 316.</witness>
+                  <witness n="A">A. Original sur parchemin, jadis scellé de deux sceaux, dont seul subsiste celui de Charles de Clermont en-dessous de la signature de son secrétaire, en cire rouge, sur double queue, endommagé<note type="n1"><p>Le sceau est brisé en deux parties, la queue de parchemin s’étant défaite. La partie inférieure est en parfait état, on peut y voir la toge d’une femme et l’écu de Bourbon portant une brisure couronnée et semé de sept fleurs de lys. Il ne reste qu’une infime section de la partie supérieure. La légende est détruite.</p></note>. 325 x 160 mm., dont repli 55 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 297, pièce scellée 316.</witness>
                   <witness n="B">B. Copie du XVII<hi rend="sup">e</hi> siècle. Bibliothèque nationale de France, ms. fr. 4628, folio 564 <ref target="https://gallica.bnf.fr/ark:/12148/btv1b9060304n/f511.image">[copie numérisée]</ref>.</witness>
                   <witness n="a">a. Dom Plancher, <hi rend="i">Histoire générale et particulière de Bourgogne</hi>, IV, 1748, p. XLIX, preuve n° XLI <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k97302001/f753.image">[lire en ligne]</ref>.</witness>
                </listWit>
@@ -1386,16 +1401,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-5" n="5">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-5" n="5">
             <front>
                <docDate>
                   <date when="1425-08-06">1425, 6 août</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Charles de Clermont et Agnès de Bourgogne ratifient leur traité de mariage</p>
+               </argument>
                <argument>
                   <p>Ratification par Charles de Bourbon et Agnès de Bourgogne du traité conclu pour leur mariage.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé par un notaire, attaché au contrat de mariage passé le 4 février 1425 (n°4, A<hi rend="sup">2</hi>), muni de deux sceaux en cire brune, sur double queue, endommagés. 430 x 270 mm., repli 20 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 319.</witness>
+                  <witness n="A">A. Original sur parchemin, signé par un notaire, attaché au contrat de mariage passé le 4 février 1425 (n°4, A<hi rend="sup">2</hi>), muni de deux sceaux en cire brune, sur double queue, endommagés. 430 x 270 mm., repli 20 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 319.</witness>
                   <witness n="B">B. Vidimus sur parchemin, collationné et signé, du 20 avril 1439, non retrouvé<note type="n1"><p>Document introuvable. Indication des <hi rend="i">Titres de Bourbon</hi>.</p></note>. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919. </witness>
                   <witness n="C">C. Copie du XVII<hi rend="sup">e</hi> siècle. Bibliothèque nationale de France, ms. fr. 4628, folios 594-595 <ref target="https://gallica.bnf.fr/ark:/12148/btv1b9060304n/f540.image">[copie numérisée]</ref>.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 228, n° 5244.</witness>
@@ -1412,18 +1431,21 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="copie" xml:id="Ch-6" n="6">
+         <text type="copie" subtype="lettres patentes" xml:id="Ch-6" n="6">
             <front>
                <docDate>
                   <date when="1425-08-13">13 août 1425</date>
                   <placeName>Moulins</placeName>
                </docDate>
                <argument>
+                  <p>Charles de Clermont confirme que les duchés de Bourbonnais et d’Auvergne et les comté de Clermont et de Montpensier sont des apanages</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, promet que, conformément aux conventions antérieures, les duché de Bourbonnais et comté de Clermont, avec les duché d’Auvergne et comté de Montpensier, reviendront à la couronne de France au cas où la descendance mâle et directe de la maison de Bourbon viendrait à manquer, et s’engage à la faire ratifier par le duc son père, quand il sera libre, et par Louis de Bourbon, son frère. </p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu.</witness>
-                  <witness n="B">B. Acte inséré dans un cahier de papier sans signature de 26 folios, contenant : une lettre de Jean de Berry (f. 1r.-3v.), de Charles VI (f. 4r.-8v.), le contrat de mariage de Jean de Clermont et Marie de Berry (f. 8v.-17v.), une lettre du duc Louis II de Bourbon (f. 18r.-21r.), de Jean de Clermont (f. 21v.-22r.), de Marie de Berry (f. 22r.-23v.), et le présent acte, des folios 24 r. à 25 v., le dernier folio étant vierge. 220 x 300 mm. Archives nationales, P 1370<hi rend="sup">1</hi>, cote 1886.</witness>
+                  <witness n="B">B. Acte inséré dans un cahier de papier sans signature de 26 folios, contenant : une lettre de Jean de Berry (f. 1r.-3v.), de Charles VI (f. 4r.-8v.), le contrat de mariage de Jean de Clermont et Marie de Berry (f. 8v.-17v.), une lettre du duc Louis II de Bourbon (f. 18r.-21r.), de Jean de Clermont (f. 21v.-22r.), de Marie de Berry (f. 22r.-23v.), et le présent acte, des folios 24 r. à 25 v., le dernier folio étant vierge. 220 x 300 mm. <institution>Archives nationales</institution>, P 1370<hi rend="sup">1</hi>, cote 1886.</witness>
                   <witness n="C">C. Copie collationnée du 8 septembre 1537, dans un cahier de parchemin de sept folios, contenant les lettres de Marie de Berry sur le même sujet. Archives nationales, J 953, n° 22.</witness>
                   <witness n="D">D. Autre copie collationnée des mêmes documents, du 31 mai 1560. Archives nationales, J 953, n° 23.</witness>
                   <witness n="E">E. Copie moderne, suivi des lettres de Marie de Berry (f. 3v.-5r.). Bibliothèque nationale de France, Dupuy 434, f. 2r-3r.</witness>
@@ -1441,17 +1463,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-7" n="7">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-7" n="7">
             <front>
                <docDate>
                   <date when="1425-12-08">1425, 8 décembre</date>
                   <placeName>Riom</placeName>
                </docDate>
                <argument>
+                  <p>Quittance pour la dot d’Agnès de Bourgogne (quatorze mille francs)</p>
+               </argument>
+               <argument>
                   <p>Quittance de Charles de Bourbon, comte de Clermont, et d’Agnès de Bourgogne, sa femme, pour la somme de quatorze mille francs à eux donnée par Philippe, duc de Bourgogne, comme premier terme de la somme totale de vingt mille francs, qui devait leur être versée le jour de leur mariage, pour la dot de ladite Agnès.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, muni d’un sceau en cire rouge sur simple queue, endommagé<note type="n1"><p>Seul l’écu au sept fleurs de lys, avec la brisure couronnée, peut être distingué ; le reste est fruste ou détruit.</p></note>. 335 x 170 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 338.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, muni d’un sceau en cire rouge sur simple queue, endommagé<note type="n1"><p>Seul l’écu au sept fleurs de lys, avec la brisure couronnée, peut être distingué ; le reste est fruste ou détruit.</p></note>. 335 x 170 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 338.</witness>
                </listWit>
             </front>
             <body>
@@ -1468,16 +1493,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-8" n="8">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-8" n="8">
             <front>
                <docDate>
                   <date when="1426-03-13">1426 (n. st.), 13 mars</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Quittance pour deux mille livres accordées par le roi sur les finances de Languedoc</p>
+               </argument>
                <argument>
                   <p>Quittance de Charles, comte de Clermont, pour la somme de deux mille livres tournois reçue de Jean Seaume, receveur général de toutes finances et trésorier des guerres de Languedoc et du duché de Guyenne.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé par le secrétaire du duc, jadis scellé « en cire rouge sur queue de parchemin » (d’après B.). 290 x 70-110 mm. Bibliothèque nationale de France, ms. fr. 20389, cote 75.</witness>
+                  <witness n="A">A. Original sur parchemin, signé par le secrétaire du duc, jadis scellé « en cire rouge sur queue de parchemin » (d’après B.). 290 x 70-110 mm. <institution>Bibliothèque nationale de France</institution>, ms. fr. 20389, cote 75.</witness>
                   <witness n="B">B. Copie moderne sur papier par Gaignières, incomplète. 235 x 375 mm. Bibliothèque nationale de France, ms. fr. 20388, folio 148.</witness>
                </listWit>
             </front>
@@ -1493,17 +1522,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-9" n="9">
+         <text type="original" subtype="lettres closes" xml:id="Ch-9" n="9">
             <front>
                <docDate>
                   <date notAfter="1426-10-09">[Avant le 9 octobre 1426], 30 août</date>
                   <placeName ref="#Montbrison">Montbrison</placeName>
                </docDate>
                <argument>
-                  <p>Charles de Bourbon annonce aux habitants de Lyon la venue de ses conseillers Jean, seigneur d’Apinac et Pierre de Chantelle, chargés de leur exposer certaines choses en son nom<note type="n1"><p>La signature <hi rend="i">Charles de Bourbon</hi> parait être la première utilisée par Charles I<hi rend="sup">er</hi>, qui signe uniquement de son prénom à partir du 9 octobre 1426 (AN, AE II, c. 443 ; analyse dans Huillard-Bréholles, <hi rend="i">Titres de Bourbon</hi>, II, p. 232-233, n° 5282). Cet acte est donc postérieur à cette date.</p></note>.</p>
+                  <p>Charles de Bourbon annonce aux habitants de Lyon qu'il leur envoie ses conseillers Jean d’Apinac et Pierre de Chantelle</p>
+               </argument>
+               <argument>
+                  <p>Charles de Bourbon annonce aux habitants de Lyon la venue de ses conseillers Jean, seigneur d’Apinac et Pierre de Chantelle, chargés de leur exposer certaines choses en son nom.</p>
                </argument>
                <listWit>
-                  <witness>A. Original sur papier. 160 x 275 mm. Archives municipales de Lyon, AA 22, cote 78.</witness>
+                  <witness>A. Original sur papier. 160 x 275 mm. <institution>Archives municipales de Lyon</institution>, AA 22, cote 78.</witness>
                </listWit>
             </front>
             <body>
@@ -1512,21 +1544,25 @@
                   <p><hi rend="i">(Au recto)</hi> Tres chiers et bons amis. Nous avons chargié noz amez et feaulx conseillers<note type="na"><p><hi rend="i">Conseillers</hi> suivi de <hi rend="i">maistre</hi>, barré.</p></note> le <persName ref="#Apinac">seigneur d’Espinac</persName> et maistre <persName ref="#ChantereleP">Pierre de Chantelle</persName>, vous dire et exposer de par nous certaines choses en creance. Si vous prions que les vueilliez oïr et croire en tout ce que eulx et chacun d’eulx vous en diront a ce fee foiz de nostre part ainsi que se nous meismes le vous disions. Tres chiers et bon amis, nostre seigneur soit garde de vous. Escript a Montbrison le XXX<hi rend="sup">e</hi> jour d’aoust.</p>
                </div>
                <div type="sign">
-                  <p>Charles de Bourbon</p>
+                  <p>Charles de Bourbon<note type="na"><p>La signature <hi rend="i">Charles de Bourbon</hi> parait être la première utilisée par Charles I<hi rend="sup">er</hi>, qui signe uniquement de son prénom à partir du 9 octobre 1426 (AN, AE II, c. 443 ; analyse dans Huillard-Bréholles, <hi rend="i">Titres de Bourbon</hi>, II, p. 232-233, n° 5282). Cet acte est donc postérieur à cette date.</p></note></p>
                   <p><persName ref="#Gort_sign">Gort</persName></p>
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-10" n="10">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-10" n="10">
             <front>
                <docDate>
                   <date when="1426-12-16">1426, 16 décembre</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Reçu pour la dot d’Agnès de Bourgogne (six mille francs)</p>
+               </argument>
                <argument>
                   <p>Quittance de Charles de Bourbon, comte de Clermont, et d’Agnès de Bourgogne, sa femme, pour la somme de six mille francs tournois à eux dues par Philippe, duc de Bourgogne, comme second et dernier terme de la somme totale de vingt mille francs, qui devait leur être versée le jour de leur mariage, pour la dot de la comtesse.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, muni des sceaux de Charles et Agnès de Clermont, sur double queue, en cire rouge, endommagés<note type="n1"><p>Du sceau de Charles de Clermont, seul subsiste la partie centrale. De celui d’Agnès de Bourgogne, la partie basse.</p></note>. 330 x 185 mm., dont repli 35 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 339.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, muni des sceaux de Charles et Agnès de Clermont, sur double queue, en cire rouge, endommagés<note type="n1"><p>Du sceau de Charles de Clermont, seul subsiste la partie centrale. De celui d’Agnès de Bourgogne, la partie basse.</p></note>. 330 x 185 mm., dont repli 35 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 339.</witness>
                </listWit>
             </front>
             <body>
@@ -1544,17 +1580,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-11" n="11">
+         <text type="original" subtype="mandement" xml:id="Ch-11" n="11">
             <front>
                <docDate>
-                  <date when="1427-05-01">1427, 1<hi rend="sup">er</hi> mai</date>
+                  <date when="1427-05-01">1427, 1er mai</date>
                   <placeName>Souvigny</placeName>
                </docDate>
+               <argument>
+                  <p>Commission au lieutenant du sénéchal d’Auvergne et au garde de la prévôté de Riom pour faire réparer un chemin entre Riom et Saint-Bonnet-près-Riom, laissé en si mauvais état que la circulation des marchandises est compromise</p>
+               </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, commet Chatard de Bonnefont, lieutenant du sénéchal d’Auvergne, et Simon Escure, garde de la prévôté de Riom, à contraindre les individus, nobles et non nobles, dont les héritages joignent un grand chemin allant de Riom à Saint-Bonnet-près-Riom, un ruisseau passant par un pont appelé « es Pierre Etienne Arnault », le chemin appelé des Pibouls, et autres chemins, à réparer ces chemins qu’on laisse en mauvais état, au point que denrées et marchandises ne peuvent plus être amenées dans la ville, au grand dommage de ses habitants.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, jadis scellé, avec la commission exécutoire de Chatard de Bonnefond à Béraud Olivier, attachée (parchemin, scellé et signé), endommagé<note type="n1"><p>L’encre de la partie droite est pâle. Le bord droit est tâché, ce qui rend les fins de certaines lignes difficiles à lire.</p></note>. 395 x 180-220 mm. Archives municipales de Riom, FF 32, cote 1324.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, jadis scellé, avec la commission exécutoire de Chatard de Bonnefond à Béraud Olivier, attachée (parchemin, scellé et signé), endommagé<note type="n1"><p>L’encre de la partie droite est pâle. Le bord droit est tâché, ce qui rend les fins de certaines lignes difficiles à lire.</p></note>. 395 x 180-220 mm. <institution>Archives municipales de Riom</institution>, FF 32, cote 1324.</witness>
                   <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892, p. 126.</witness>
                </listWit>
             </front>
@@ -1573,16 +1612,19 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-12" n="12">
+         <text type="original" subtype="mandement" xml:id="Ch-12" n="12">
             <front>
                <docDate>
                   <date when="1427-05-14">1427, 14 mai</date>
                   <placeName>Gannat</placeName>
                </docDate>
                <argument>
+                  <p>Autorisation d’agrandissement de l’église Notre-Dame-du-Marthuret de Riom</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, autorise le prévôt et le chapitre du Marthuret, sur leur demande, à agrandir leur église en gagnant un espace de deux pieds sur la rue publique pour renforcer le pilier nord du chevet, sous réserve de l’enquête du sénéchal.</p>
                   <listWit>
-                     <witness n="A">A. Original sur parchemin, signé et jadis scellé. 310 x 170-205 mm. Archives départementales du Puy-de-Dôme, 25 G 24, cote 2. </witness>
+                     <witness n="A">A. Original sur parchemin, signé et jadis scellé. 310 x 170-205 mm. <institution>Archives départementales du Puy-de-Dôme</institution>, 25 G 24, cote 2. </witness>
                      <witness n="a">a. Josiane Teyssot, <hi rend="i">Riom, capitale et bonne ville d’Auvergne (1212-1557)</hi>, Nonette, Créer, 1999, p. 400-401.</witness>
                   </listWit>
                </argument>
@@ -1602,36 +1644,44 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="deperditum" xml:id="Ch-13" n="13">
+         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-13" n="13">
             <front>
                <docDate>
                   <date when="1427-06-27">1427, 27 juin</date>
+                  <placeName>NS</placeName>
                </docDate>
                <argument>
-                  <p>Charles, comte de Clermont, octroie aux habitants de <placeName ref="#Moulins">Moulins</placeName> des subsides [pour financer les réparations de leurs fortifications et les aider à supporter leurs charges quotidiennes].</p>
+                  <p>Octroie de subsides aux habitants de Moulins pour financer les réparations de leurs fortifications</p>
+               </argument>
+               <argument>
+                  <p>Charles, comte de Clermont, octroie aux habitants de Moulins des subsides [pour financer les réparations de leurs fortifications et les aider à supporter leurs charges quotidiennes].</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu.</witness>
-                  <witness n="mention">acte du 4 novembre 1428 (n°19), par lequel est accordé aux habitants de Moulins de prélever un droit sur les tonneaux de vin entrant et sortant de la ville, pour employer au fait des réparations des fortifications.</witness>
+                  <witness n="mention">acte du 4 novembre 1428 (n°19), par lequel est accordé aux habitants de Moulins de prélever un droit sur les tonneaux de vin entrant et sortant de la ville, pour employer au fait des réparations des fortifications (<institution>Archives municipales de Moulins</institution>).</witness>
                </listWit>
             </front>
             <body>
                <div type="acte">
                   <head>(Deperditum)</head>
-                  <p>En oultre certaines aides, tribus et subscides que octroyé leur avons par noz lettres donnees le XXVII<hi rend="sup">e</hi> jour de juing, l’an de grace mil CCCC vint et sept (…).</p>
+                  <p>En oultre certaines aides, tribus et subscides que octroyé leur avons [aux habitants de <placeName ref="#Moulins">Moulins</placeName>] par noz lettres donnees le XXVII<hi rend="sup">e</hi> jour de juing, l’an de grace mil CCCC vint et sept (…).</p>
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-14" n="14">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-14" n="14">
             <front>
                <docDate>
                   <date when="1427-08-04">1427, 4 août</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Alliance entre Charles de Clermont et Arthur de Richemont</p>
+               </argument>
                <argument>
                   <p>Traité d’alliance entre Charles, comte de Clermont, ayant délégation de pouvoir, et Arthur, comte de Richemont.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé Artur et Charles, jadis scellé en cire rouge sur deux simples queues<note type="n1"><p>Indication de Dom Morice (a.). L’exemplaire conservé aux Archives nationales est bien découpé en bas à droite, signe d’une ou plusieurs simples queues de parchemin.</p></note>. 285 x 180-120 mm. Archives nationales, P 1372<hi rend="sup">2</hi>, cote 2113.</witness>
+                  <witness n="A">A. Original sur parchemin, signé Artur et Charles, jadis scellé en cire rouge sur deux simples queues<note type="n1"><p>Indication de Dom Morice (a.). L’exemplaire conservé aux Archives nationales est bien découpé en bas à droite, signe d’une ou plusieurs simples queues de parchemin.</p></note>. 285 x 180-120 mm. <institution>Archives nationales</institution>, P 1372<hi rend="sup">2</hi>, cote 2113.</witness>
                   <witness n="a">a. Dom Morice, <hi rend="i">Mémoire pour servir de preuve à l’histoire ecclésiastique et civile de Bretagne</hi>, II, 1764, p. 1199-1200 <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k1041643d/f661.image">[lire en ligne]</ref>.</witness>
                   <witness n="b">b. André Leguai, <hi rend="i">Les ducs de Bourbon pendant la crise monarchique du XV<hi rend="sup">e</hi> siècle</hi>, 1962, p. 201-202, pièce justificative n°9.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 235, n° 5304.</witness>
@@ -1650,17 +1700,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="orginal" xml:id="Ch-15" n="15">
+         <text type="orginal" subtype="lettres patentes" xml:id="Ch-15" n="15">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
                   <placeName ref="#Moulins">Moulins</placeName>
                </docDate>
                <argument>
+                  <p>Reçu pour la dot d’Agnès de Bourgogne (huit cent vint livres)</p>
+               </argument>
+               <argument>
                   <p>Quittance de Charles, comte de Clermont, et d'Agnès de Bourgogne, sa femme, pour la somme de 820 livres 17 sous 10 deniers maille tournois, reçue de Philippe, duc de Bourgogne, pour paiement des intérêts de la rente annuelle de 2000 livres tournois promise par ledit Philippe à leur mariage, sur une période allant du 6 août au 31 décembre 1425.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé et scellé des sceaux de Charles et Agnès de Clermont, en cire rouge, sur double queue, endommagés<note type="n1"><p>La légende du sceau de Charles est détruite, et il manque une infime partie de la section supérieure du dessin. La légende inférieure est également détruite pour le sceau d’Agnès. En dépit de ces dommages, les deux dessins sont en bon état quoique relativement frustres. </p></note>. 355 x 195 mm., dont repli 40 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 341.</witness>
+                  <witness n="A">A. Original sur parchemin, signé et scellé des sceaux de Charles et Agnès de Clermont, en cire rouge, sur double queue, endommagés<note type="n1"><p>La légende du sceau de Charles est détruite, et il manque une infime partie de la section supérieure du dessin. La légende inférieure est également détruite pour le sceau d’Agnès. En dépit de ces dommages, les deux dessins sont en bon état quoique relativement frustres. </p></note>. 355 x 195 mm., dont repli 40 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 341.</witness>
                </listWit>
             </front>
             <body>
@@ -1684,17 +1737,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-16" n="16">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-16" n="16">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
                   <placeName ref="#Moulins">Moulins</placeName>
                </docDate>
                <argument>
+                  <p>Reçu pour la dot d’Agnès de Bourgogne (deux mille livres)</p>
+               </argument>
+               <argument>
                   <p>Quittance de Charles, comte de Clermont, et d'Agnès de Bourgogne, sa femme, pour la somme de 2000 livres tournois, reçue de Philippe, duc de Bourgogne, pour paiement d’une rente annuelle de 2000 livres tournois promise par ledit Philippe à leur mariage, pour l’ensemble de l’année 1427.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé et scellé des sceaux de Charles et Agnès de Clermont, en cire rouge, sur double queue, endommagés<note type="n1"><p>Du sceau de Charles, il ne subsiste aujourd'hui qu’une section de la partie inférieure, totalement frustre. Celui d’Agnès conserve son dessin, en bon état, mais sa légende est détruite.</p></note>. 340 x 210 mm., dont repli 40 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 340.</witness>
+                  <witness n="A">A. Original sur parchemin, signé et scellé des sceaux de Charles et Agnès de Clermont, en cire rouge, sur double queue, endommagés<note type="n1"><p>Du sceau de Charles, il ne subsiste aujourd'hui qu’une section de la partie inférieure, totalement frustre. Celui d’Agnès conserve son dessin, en bon état, mais sa légende est détruite.</p></note>. 340 x 210 mm., dont repli 40 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 340.</witness>
                </listWit>
             </front>
             <body>
@@ -1718,17 +1774,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-17" n="17">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-17" n="17">
             <front>
                <docDate>
                   <date when="1427-08-28">1427, 28 août</date>
                   <placeName ref="#Moulins">Moulins</placeName>
                </docDate>
                <argument>
+                  <p>Reconduction par Charles de Clermont, lieutenant du roi, de la concession d’une aide sur les marchandises sortant de Villefranche-sur-Saône pour aider aux réparations des fortifications de la ville</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, lieutenant du roi, concède une aide de deux deniers par livre sur toutes sortes de denrées et marchandises sortant de Villefranche-sur-Saône, afin de suppléer à un pareil octroi, dont la durée de quatre ans était expirée, accordé par le roi pour servir aux réparations de la ville, lesquelles n’avaient pu être achevées au moyen de ce précédent subside.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé et jadis scellé sur double queue de parchemin portant aujourd'hui une trace de cire rouge. 305 x 325 mm. Archives municipales de Villefranche-sur-Saône, AA 7.</witness>
+                  <witness n="A">A. Original sur parchemin, signé et jadis scellé sur double queue de parchemin portant aujourd'hui une trace de cire rouge. 305 x 325 mm. <institution>Archives municipales de Villefranche-sur-Saône</institution>, AA 7.</witness>
                   <witness n="a">a. Abel Besancon, <hi rend="i">Cartulaire municipal de la ville de Villefranche, suivi d'un appendice d'actes des archives de la ville publié d'après les manuscrits originaux</hi>, Villefranche-sur-Saône, 1907, appendice n°2, p. 142-144.</witness>
                   <witness n="analyse">Fortuné Rolle, <hi rend="i">Inventaire-sommaire des Archvies Communales antérieures à 1790, ville de Villefranche</hi>, Paris, 1865, p. 1 [ancienne cote].</witness>
                </listWit>
@@ -1750,17 +1809,21 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="deperditum" xml:id="Ch-18" n="18">
+         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-18" n="18">
             <front>
                <docDate>
                   <date notAfter="1428-01-28">[Avant le 20 janvier 1428 (n. st.)]</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Lettre close adressée à la ville d’Albi par Charles de Bourbon, Bernard d’Armagnac et Arthur de Richemont</p>
+               </argument>
                <argument>
                   <p>Lettre close adressée aux gens d’église, consuls, bourgeois et habitants d’Albi, par Charles de Bourbon, Bernard d’Armagnac et Arthur de Richemont, connétable de France, contenant divers articles.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu.</witness>
-                  <witness n="mention">comptes de la ville d’Albi, 1427-1428. Archives départementales du Tarn, CC 182, f. 27v.</witness>
+                  <witness n="mention">comptes de la ville d’Albi, 1427-1428. <institution>Archives départementales du Tarn</institution>, CC 182, f. 27v.</witness>
                </listWit>
             </front>
             <body>
@@ -1770,17 +1833,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-19" n="19">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-19" n="19">
             <front>
                <docDate>
                   <date when="1428-01-31">1428 (n. st.), 30 janvier</date>
                   <placeName ref="#Chinon">Chinon</placeName>
                </docDate>
                <argument>
+                  <p>Promesse de Charles de Clermont, Bernard d’Armagnac et Arthur de Richemont au sujet des gens d’arme du duc de Bretagne</p>
+               </argument>
+               <argument>
                   <p>Promesse de Charles, comte de Clermont, d’Arthur de Richemont et de Bernard d’Armagnac au duc Jean V de Bretagne, d’employer les gens d’arme qu’il leur a fournis à combattre Jean de Bois, sire de l’Aigle, sans offenser les gens du roi d’Angleterre.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé et muni des sceaux en cire rouge des trois comtes sur simple queue, endommagés<note type="n1"><p>Les légendes des trois sceaux manquent, mais les dessins sont bien conservés, sauf celui d’Arthur de Richemont dont il manque une section de la partie droite, et celui de Bernard d’Armagnac qui est empoussiéré.</p></note>. 340-350 x 230 mm. Archives départementales de la Loire-Atlantique, E 181, cote 16 <ref target="https://archinoe.fr/v2/ark:/42067/c722788d172f94005071bcba4ca4f6db">[original numérisé]</ref>.</witness>
+                  <witness n="A">A. Original sur parchemin, signé et muni des sceaux en cire rouge des trois comtes sur simple queue, endommagés<note type="n1"><p>Les légendes des trois sceaux manquent, mais les dessins sont bien conservés, sauf celui d’Arthur de Richemont dont il manque une section de la partie droite, et celui de Bernard d’Armagnac qui est empoussiéré.</p></note>. 340-350 x 230 mm. <institution>Archives départementales de la Loire-Atlantique</institution>, E 181, cote 16 <ref target="https://archinoe.fr/v2/ark:/42067/c722788d172f94005071bcba4ca4f6db">[original numérisé]</ref>.</witness>
                   <witness n="a">a. Eugène Cosneau, <hi rend="i">Le connétable de Richemont, Arthur de Bretagne (1393-1458)</hi>, Paris, 1886, appendice LII, p. 533.</witness>
                   <witness n="analyse">Léon Maitre, <hi rend="i">Inventaire-sommaire des Archives départementales de Loire-Inférieure</hi>, III, Série E, Nantes, 1879, p. 77.</witness>
                </listWit>
@@ -1798,17 +1864,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-20" n="20">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-20" n="20">
             <front>
                <docDate>
                   <date when="1428-11-04">1428, 4 novembre</date>
                   <placeName ref="#Moulins">Moulins</placeName>
                </docDate>
                <argument>
+                  <p>Permission aux habitants de Moulins de prendre un droit sur le vin pour financer les réparations de la ville</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, autorise les bourgeois et habitants de Moulins à prélever un droit de vingt deniers tournois sur chaque tonneau ou queue de vin entrant dans leur ville, et de quinze deniers tournois sur les sortant, pour employer aux réparations des fortifications.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, jadis scellé sur double queue de parchemin, 365-370 x 270 mm., dont repli 50 mm. Archives municipales de Moulins, liasse 223. </witness>
+                  <witness n="A">A. Original sur parchemin, signé, jadis scellé sur double queue de parchemin, 365-370 x 270 mm., dont repli 50 mm. <institution>Archives municipales de Moulins</institution>, liasse 223. </witness>
                   <witness n="B">B. Copie moderne dans un cahier de trois folios. Archives municipales de Moulins, idem.</witness>
                   <witness n="analyse">Jean-Baptiste Conny, Martial-Alphonse Chazaud, <hi rend="i">Inventaire sommaire des Archives communales antérieures à 1790, ville de Moulins</hi>, Moulins, 1882, p. 28.</witness>
                </listWit>
@@ -1830,17 +1899,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-21" n="21">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-21" n="21">
             <front>
                <docDate>
                   <date when="1428-12-12">1428, 12 décembre</date>
                   <placeName ref="#Souvigny">Souvigny</placeName>
                </docDate>
                <argument>
+                  <p>Testament de Charles de Bourbon, comte de Clermont, par lequel il choisit comme sépulture l’église des Célestins de Vichy, fait des legs à divers établissements de sa principauté et désigne Jean de Nourry, archevêque de Vienne, Pierre de Toulon, chancelier du Bourbonnais, Pierre de Montmorin et Pierre de Chantelle comme exécuteurs testamentaires</p>
+               </argument>
+               <argument>
                   <p>Testament de Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, par lequel il choisit l’église des Célestins de Vichy pour abriter sa sépulture, donne une rente perpétuelle de trente livres tournois par an à cet établissement pour qu’y soient célébrés quatre anniversaires chaque année, laisse ses exécuteurs décider de la forme que prendra son tombeau, et lègue, pour que soient dites deux messes pour le remède de son âme, dix livres tournois en une fois à Notre-Dame de Moulins et au chapitre de Montbrison, et six livres tournois en une fois à Notre-Dame des Carmes de Moulins, au collège Saint-Nicolas de Montluçon, aux collèges de Bourbon-l’Archambault, Hérisson et de Clermont-en-Beauvaisis, au chapitre de Beaujeu et aux Cordeliers de Souvigny, Saint-Pourçain-sur-Sioule, Montbrison et Villefranche-sur-Saône, et assigne cent livres tournois à distribuer aux pauvres ménages et femmes à marier ; il demande en outre que toutes ses dettes soient dûment payées. Jean de Nourry, archevêque de Vienne, Pierre de Toulon, chancelier du Bourbonnais, Pierre de Montmorin et Pierre de Chantelle sont désignés comme exécuteurs testamentaires.</p>
                </argument>
                <listWit>
-                  <witness n="A1">A.<hi rend="sup">1</hi> Original sur parchemin, signé, très endommagé<note type="n1"><p>L’ensemble du document est tâché, en particulier le long des pliures, et plusieurs trous ont endommagé le bas du parchemin.</p></note>. 455 x 440 mm., dont repli 60 mm. Archives nationales, P 1370<hi rend="sup">1</hi>, cote 1879<hi rend="sup">1</hi>.</witness>
+                  <witness n="A1">A.<hi rend="sup">1</hi> Original sur parchemin, signé, très endommagé<note type="n1"><p>L’ensemble du document est tâché, en particulier le long des pliures, et plusieurs trous ont endommagé le bas du parchemin.</p></note>. 455 x 440 mm., dont repli 60 mm. <institution>Archives nationales</institution>, P 1370<hi rend="sup">1</hi>, cote 1879<hi rend="sup">1</hi>.</witness>
                   <witness n="A2">A.<hi rend="sup">2</hi> Original sur parchemin, signé. 460 x 415 mm., dont repli 65 mm. Archives nationales, P 1370<hi rend="sup">1</hi>, cote 1879<hi rend="sup">2</hi>.</witness>
                   <witness n="a">a. André Leguai,<hi rend="i"> De la seigneurie à l’Etat. Le Bourbonnais pendant la guerre de Cent Ans</hi>, Moulins, thèse de doctorat dactylographiée, Université de Paris, 1959, p. 593-596.</witness>
                   <witness n="b">b. Marc-Édouard Gautier, « Un projet d’abandon de la nécropole des Bourbons à Souvigny : l’élection de sépulture de Charles, comte de Clermont, au couvent des Célestins de Vichy (1428) », <hi rend="i">Etudes bourbonnaises : hommage à André Leguai</hi>, 16<hi rend="sup">e</hi> série, 293-294 (2002), p. 400-402.</witness>
@@ -1885,17 +1957,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-22" n="22">
+         <text type="original" subtype="charte" xml:id="Ch-22" n="22">
             <front>
                <docDate>
                   <date when="1429-04">1429, avril</date>
                   <placeName ref="#Riom">Riom</placeName>
                </docDate>
                <argument>
+                  <p>Charte d'amortissement de l’hôtel du consulat de Riom, où seront installés une école, un physicien, le consulat, le parlement et les archives de la cité</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, accorde aux consuls de Riom l’amortissement pour un hôtel (aujourd'hui l’hôtel Chabaud<note type="n1"><p>Indication de l’inventaire-sommaire, qui ajoute que l’hôtel a été acheté aux « religieux de Mozat ».</p></note>), pour y installer une école, un physicien, le consulat et le parlement, ainsi qu’y conserver les titres de la ville ; auquel hôtel est attaché un cens de douze quartes de froment, que les consuls payeront annuellement, avec un marc d’argent fin à l’avènement de chaque nouveau duc d’Auvergne.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, endommagé, signé et jadis scellé (deux occuli sur le repli<note type="n1"><p>Une tâche rend la lecture difficile dans la partie gauche.</p></note>). 640 x 365 mm., dont repli 95 mm. Archives municipales de Riom, DD 1, cote 1644.</witness>
+                  <witness n="A">A. Original sur parchemin, endommagé, signé et jadis scellé (deux occuli sur le repli<note type="n1"><p>Une tâche rend la lecture difficile dans la partie gauche.</p></note>). 640 x 365 mm., dont repli 95 mm. <institution>Archives municipales de Riom</institution>, DD 1, cote 1644.</witness>
                   <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892 p. 102.</witness>
                </listWit>
             </front>
@@ -1916,18 +1991,21 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="vidimus" xml:id="Ch-23" n="23">
+         <text type="vidimus" subtype="lettres patentes" xml:id="Ch-23" n="23">
             <front>
                <docDate>
                   <date when="1429-04-20">1429, 20 avril</date>
                   <placeName ref="#Riom">Riom</placeName>
                </docDate>
                <argument>
+                  <p>Procuration à Pierre de Toulon pour traiter de l’achat de Calvinet et Vinzelles avec le vicomte Jacques de Villemure</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, donne pouvoir à Pierre de Toulon, seigneur de Genat, pour traiter en son nom avec le vicomte de Villemure de l’acquisition des terres et châtellenies de Calvinet et de Vinzelles.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original perdu.</witness> 
-                  <witness n="B">B. Vidimus sur parchemin, dans le contrat d’acquisition de Calvinet et de Vinzelles, jadis scellé. 575 x 675 mm., dont repli 25 mm. Archives nationales, P 1356<hi rend="sup">2</hi>, cote 294.</witness>
+                  <witness n="B">B. Vidimus sur parchemin, dans le contrat d’acquisition de Calvinet et de Vinzelles, jadis scellé. 575 x 675 mm., dont repli 25 mm. <institution>Archives nationales</institution>, P 1356<hi rend="sup">2</hi>, cote 294.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 239-240, n° 5341.</witness>
                </listWit>
             </front>
@@ -1943,17 +2021,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-24" n="24">
+         <text type="original" subtype="mandement" xml:id="Ch-24" n="24">
             <front>
                <docDate>
                   <date when="1429-05-19">1429, 19 mai</date>
                   <placeName ref="#Gannat">Gannat</placeName>
                </docDate>
                <argument>
-                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Etienne Courtet, receveur du baillage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne : Philippe Contamine, <hi rend="i">Charles VII. Une vie, une politique</hi>, Paris, Perrin, 2017, p. 145. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <hi rend="i">ibid</hi>., p. 147. Le siège est levé le 8 mai 1429, soit dix jours avant que cet acte soit produit.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
+                  <p>Mandement à Étienne Courtet, receveur du baillage des Montagnes de l’aide des états d’Auvergne, de délivrer à Janicot de Montmurat, son écuyer d’écurie, cinquante écus d’or, pour ses services au siège d’Orléans</p>
+               </argument>
+               <argument>
+                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Étienne Courtet, receveur du baillage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne : Philippe Contamine, <hi rend="i">Charles VII. Une vie, une politique</hi>, Paris, Perrin, 2017, p. 145. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <hi rend="i">ibid</hi>., p. 147. Le siège est levé le 8 mai 1429, soit dix jours avant que cet acte soit produit.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, jadis scellé. 325 x 70-110 mm. Archives nationales, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, jadis scellé. 325 x 70-110 mm. <institution>Archives nationales</institution>, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 240, n° 5344.</witness>
                </listWit>
             </front>
@@ -1972,16 +2053,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="minute" xml:id="Ch-25" n="25">
+         <text type="minute" subtype="lettres patentes" xml:id="Ch-25" n="25">
             <front>
                <docDate>
-                  <date when="1430-02-01">1430 (n. st.), 1<hi rend="sup">er</hi> février</date>
+                  <date when="1430-02-01">1430 (n. st.), 1er février</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Procuration à Mahier Cousin, secrétaire du duc et maître des étangs de Combraille, pour recevoir du viconte de Villemure 2250 livres, dans le cadre du transport de la vicomté de Villemure au comte de Foix</p>
+               </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, fils aîné du duc de Bourbonnais et d’Auvergne, donne procuration à Mahiet Cousin, son secrétaire et maître des étangs de Bourbonnais et de Combraille, pour recevoir de Jacques, vicomte de Villemur, la somme de deux mille deux cent cinquante livres tournois, prêtée audit de Villemur par le duc de Bourbonnais à l’occasion du transport de la vicomté de Villemur, qui devait être fait audit duc et qui depuis a été fait au comte de Foix.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Minute raturée sur papier, non signée ; écriture du temps<note type="n1"><p>Analyse des <hi rend="i">Titres de Bourbon</hi>. Le document est un rectangle de papier, chargé de plusieurs ratures, où l’adresse et la salutation sont absentes mais la titulature développée, de même que la corroboration et la datation. Dans les autres minutes, ces trois derniers éléments sont toujours abrégés. Les seuls éléments qui plaident pour le fait que ce soit une minute sont donc les ratures et le support en papier.</p></note>. 235 x 100 mm. Archives nationales, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
+                  <witness n="A">A. Minute raturée sur papier, non signée ; écriture du temps<note type="n1"><p>Analyse des <hi rend="i">Titres de Bourbon</hi>. Le document est un rectangle de papier, chargé de plusieurs ratures, où l’adresse et la salutation sont absentes mais la titulature développée, de même que la corroboration et la datation. Dans les autres minutes, ces trois derniers éléments sont toujours abrégés. Les seuls éléments qui plaident pour le fait que ce soit une minute sont donc les ratures et le support en papier.</p></note>. 235 x 100 mm. <institution>Archives nationales</institution>, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 242, n° 5361.</witness>
                </listWit>
             </front>
@@ -1994,17 +2079,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-26" n="26">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-26" n="26">
             <front>
                <docDate>
                   <date when="1430-02-15">1430 (n. st.), 15 février</date>
                   <placeName ref="#Montlucon">Montluçon</placeName>
                </docDate>
                <argument>
+                  <p>Don en viager de la terre de Blancs-Fossés, qui appartenait aux seigneurs de Chazeuil, à Jean de Villars, écuyer d’écurie</p>
+               </argument>
+               <argument>
                   <p>Charles, comte de Clermont, ayant délégation de pouvoir, donne en viager à son écuyer d'écurie Jean de Villars, dit Barrilhet, la terre de Blancs-Fossés, appartenant jadis à Antoine de l’Espinace, seigneur de Chazeuil, et avant lui à sa mère, Annette de La Pierre.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, endommagé. 420 x 275 mm., dont repli 70 mm. Archives nationales, P 1378<hi rend="sup">2</hi>, cote 3056.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, endommagé. 420 x 275 mm., dont repli 70 mm. <institution>Archives nationales</institution>, P 1378<hi rend="sup">2</hi>, cote 3056.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 242, n° 5362.</witness>
                </listWit>
             </front>
@@ -2025,17 +2113,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-27" n="27">
+         <text type="original" subtype="lettres closes" xml:id="Ch-27" n="27">
             <front>
                <docDate>
-                  <date when="1430-05-09">[1430<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note>], 9 mai</date>
+                  <date when="1430-05-09">[1430], 9 mai<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note></date>
                   <placeName ref="#Montlucon">Montluçon</placeName>
                </docDate>
+               <argument>
+                  <p>Convocation des représentants de Riom aux états d’Auvergne, qui se dérouleront le 25 mai suivant à Issoire en présence de Louis de Bourbon, comte de Montpensier</p>
+               </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, mande aux habitants de Riom qu’un de leur représentant soit présent le 25 mai prochain à Issoire pour l’assemblée des états d'Auvergne, qui se fera en présence de son frère Louis de Bourbon, comte de Montpensier.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur papier, signé. 315 x 145 mm. Archives municipales de Riom, AA 16, n°510.</witness>
+                  <witness n="A">A. Original sur papier, signé. 315 x 145 mm. <institution>Archives municipales de Riom</institution>, AA 16, n°510.</witness>
                   <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892, p. 5.</witness>
                </listWit>
             </front>
@@ -2050,17 +2141,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-28" n="28">
+         <text type="original" subtype="lettres patentes" xml:id="Ch-28" n="28">
             <front>
                <docDate>
                   <date when="1430-09-05">1430, 5 septembre</date>
                   <placeName ref="#Herisson">Hérisson</placeName>
                </docDate>
                <argument>
+                  <p>Quittance pour la dote d’Agnès de Bourgogne (600 livres)</p>
+               </argument>
+               <argument>
                   <p>Quittance de Charles de Bourbon, comte de Clermont, pour la somme de 600 livres tournois à lui donnée par Philippe, duc de Bourgogne, à l’intention d’Agnès de Bourgogne, femme du premier et soeur du second.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé, scellé du grand sceau équestre en cire rouge sur simple queue, très endommagé<note type="n1"><p>Un fragment de la légende supérieure gauche subsiste, ainsi que l’arrière-train du destrier. Il s’agit de la première attestation de l’utilisation d’un sceau équestre par Charles de Clermont.</p></note>. 265 x 100 mm. Archives départementales de la Côte d’Or, B 299, pièce scellée 342.</witness>
+                  <witness n="A">A. Original sur parchemin, signé, scellé du grand sceau équestre en cire rouge sur simple queue, très endommagé<note type="n1"><p>Un fragment de la légende supérieure gauche subsiste, ainsi que l’arrière-train du destrier. Il s’agit de la première attestation de l’utilisation d’un sceau équestre par Charles de Clermont.</p></note>. 265 x 100 mm. <institution>Archives départementales de la Côte d’Or</institution>, B 299, pièce scellée 342.</witness>
                </listWit>
             </front>
             <body>
@@ -2078,17 +2172,20 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="original" xml:id="Ch-29" n="29">
+         <text type="original" subtype="lettres closes" xml:id="Ch-29" n="29">
             <front>
                <docDate>
                   <date notBefore="1425-06-10" notAfter="1433-06-10">[1425-1433], 10 juin</date>
                   <placeName ref="#Chantelle">Chantelle</placeName>
                </docDate>
                <argument>
+                  <p>Charles de Clermont mande aux habitants de Riom de payer leur part de l’aide du pays d’Auvergne à son receveur, Gaillard Noël, et leur envoie son écuyer panetier, Pierre de la Tellaye</p>
+               </argument>
+               <argument>
                   <p>Charles de Bourbon, comte de Clermont, mande aux habitants de Riom de payer leur part de l’aide du pays d’Auvergne à son receveur, Gaillard Noël, ce qu’ils n’ont fait jusqu’à présent, et leur envoie son écuyer panetier, Pierre de la Tellaye.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur papier, signé. 205 x 135 mm. Archives municipales de Riom, AA 32, sans cote de pièce.</witness>
+                  <witness n="A">A. Original sur papier, signé. 205 x 135 mm. <institution>Archives municipales de Riom</institution>, AA 32, sans cote de pièce.</witness>
                   <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892, p. 12.</witness>
                </listWit>
             </front>
@@ -2107,17 +2204,21 @@
                </div>
             </body>
          </text>
-         <text type="acte" subtype="deperditum" xml:id="Ch-30" n="30">
+         <text type="deperditum" subtype="lettres patentes" xml:id="Ch-30" n="30">
             <front>
                <docDate>
                   <date when="1431-04-12">1431, 12 avril</date>
+                  <placeName>NS</placeName>
                </docDate>
+               <argument>
+                  <p>Marie de Berry et Charles de Clermont envoient Pierre de Toulon, chancelier, Jean de l’Espinasse, bailli de Beaujolais, Amé Vert et Jean Pelletier, bailli et juge de Forez, Jean Dubreuil, auditeur des comptes à Villefranche, et Robert Parent à la convention avec les officiers du duc de Savoie sur les agissements de François de La Palud, seigneur de Varembon</p>
+               </argument>
                <argument>
                   <p>Marie de Berry, duchesse de Bourbonnais et d’Auvergne, et Charles, comte de Clermont, nomment Pierre de Toulon, chancelier du Bourbonnais, Jean de l’Espinasse, bailli de Beaujolais, Amé Vert, bailli de Forez, Jean Pelletier, juge de Forez, Jean Dubreuil, auditeur des comptes de Villefranche, et Robert Parent, leurs ambassadeurs à la convention avec les officiers du duc de Savoie afin de régler les suites de la prise de Trévoux par François de La Palud, seigneur de Varembon.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original disparu.</witness>
-                  <witness n="mention">Louis Aubret, <hi rend="i">Mémoires pour servir à l’histoire de Dombes</hi>, II, Marie-Claude Guigue (éd.), Trévoux, 1868, p. 534.</witness>
+                  <witness n="mention"><institution>Louis Aubret</institution>, <hi rend="i">Mémoires pour servir à l’histoire de Dombes</hi>, II, Marie-Claude Guigue (éd.), Trévoux, 1868, p. 534.</witness>
                </listWit>
             </front>
             <body>
