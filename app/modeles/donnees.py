@@ -19,6 +19,7 @@ class Acts(db.Model):
         self.place = place
         self.analyse = analyse
 
+list_id = []
 list_institution = []
 list_state = []
 list_type = []

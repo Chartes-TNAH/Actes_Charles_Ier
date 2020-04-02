@@ -37,9 +37,11 @@
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="archives" type="search"  class="form-keyword">
-                                {% for item in list_institutions %}
-                                    <option value="{{item}}">{{item}}</option>
-                                {% endfor %}
+                                <optgroup label="Archives nationales">
+                                    {% for item in list_AN %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
+                                </optgroup>
                                 <optgroup label="Archives départementales">
                                     {% for item in list_AD %}
                                         <option value="{{item}}">{{item}}</option>
@@ -47,6 +49,11 @@
                                 </optgroup>
                                 <optgroup label="Archives municipales">
                                     {% for item in list_AM %}
+                                        <option value="{{item}}">{{item}}</option>
+                                    {% endfor %}
+                                </optgroup>
+                                <optgroup label="Bibliothèques">
+                                    {% for item in list_bib %}
                                         <option value="{{item}}">{{item}}</option>
                                     {% endfor %}
                                 </optgroup>
@@ -111,10 +118,9 @@
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="state" type="search"  class="form-keyword">
-                                <option value="minute">Minute</option>
-                                <option value="original">Original</option>
-                                <option value="copie">Copie</option>
-                                <option value="deperditum">Deperditum</option>
+                                {% for item in list_state %}
+                                    <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
                             </select>
                         </div>
                     </div>
@@ -124,15 +130,14 @@
                 </div>
             </form>
             <form action="{{url_for('resultats')}}" method="GET">
-                <p>Recherche selon le type des actes :</p>
+                <p>Recherche selon le type diplomatique des actes :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="type" type="search"  class="form-keyword">
-                                <option value="Charte">Charte</option>
-                                <option value="Lettres patente">Lettres patentes</option>
-                                <option value="Mandement">Mandement</option>
-                                <option value="Lettres closes">Lettres closes</option>
+                                {% for item in list_type %}
+                                    <option value="{{item}}">{{item}}</option>
+                                {% endfor %}
                             </select>
                         </div>
                     </div>

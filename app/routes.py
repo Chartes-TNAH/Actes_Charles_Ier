@@ -64,16 +64,21 @@ def acte(acte_id):
 
 @app.route("/recherche")
 def recherche():
-	list_institutions = []
+	list_AN = []
+	list_bib = []
 	list_AD = []
 	list_AM = []
 	list_deperdita = []
+	list_state = []
+	list_type = []
 	list_city = []
-	list_years = []
 	for institution in Acts.query.group_by(Acts.institution).all():
-		if 'nationale' in institution.institution:
+		if 'nationales' in institution.institution:
 			national = institution.institution
-			list_institutions.append(national)
+			list_AN.append(national)
+		elif 'Bibliothèque' in institution.institution:
+			library = str(institution.institution)
+			list_bib.append(library)
 		elif 'départementales' in institution.institution:
 			AD = str(institution.institution)
 			AD = re.sub('Archives départementales (du)?(de)?(du)?(des)? ?(la)?(l\')? ?', '', AD)
@@ -82,15 +87,22 @@ def recherche():
 			AM = str(institution.institution)
 			AM = re.sub('Archives municipales (du)?(de)?(du)?(des)? ?(la)?(d\')? ?', '', AM)
 			list_AM.append(AM)
-		elif 'deperditum' in institution.institution:
+		elif 'Deperditum' in institution.institution:
 			deperditum = str(institution.institution)
-			deperditum = deperditum.replace(', deperditum', '')
+			deperditum = deperditum.replace('Deperditum ', '')
 			list_deperdita.append(deperditum)
-	for city in Acts.query.group_by(Acts.date).all():
+	for item in Acts.query.group_by(Acts.state).all():
+		state = item.state
+		list_state.append(state)
+	for item in Acts.query.group_by(Acts.type).all():
+		Acttype = item.type
+		list_type.append(Acttype)
+	for city in Acts.query.group_by(Acts.place).all():
 		place = city.place
 		list_city.append(place)
-	return render_template("pages/recherche.html", list_institutions=list_institutions, list_AD=list_AD, 
-		list_AM=list_AM, list_deperdita=list_deperdita, list_city=list_city)
+	list_city.remove('NS')
+	return render_template("pages/recherche.html", list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, 
+		list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
 
 @app.route("/recherche/resultats")
 def resultats():

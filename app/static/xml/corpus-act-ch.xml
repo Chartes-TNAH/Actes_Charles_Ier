@@ -1700,7 +1700,7 @@
                </div>
             </body>
          </text>
-         <text type="orginal" subtype="Lettres patentes" xml:id="Ch-15" n="15">
+         <text type="Original" subtype="Lettres patentes" xml:id="Ch-15" n="15">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
@@ -1957,7 +1957,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="charte" xml:id="Ch-22" n="22">
+         <text type="Original" subtype="Charte" xml:id="Ch-22" n="22">
             <front>
                <docDate>
                   <date when="1429-04">1429, avril</date>
@@ -1991,7 +1991,7 @@
                </div>
             </body>
          </text>
-         <text type="vidimus" subtype="Lettres patentes" xml:id="Ch-23" n="23">
+         <text type="Vidimus" subtype="Lettres patentes" xml:id="Ch-23" n="23">
             <front>
                <docDate>
                   <date when="1429-04-20">1429, 20 avril</date>
@@ -2212,13 +2212,14 @@
                </docDate>
                <argument>
                   <p>Marie de Berry et Charles de Clermont envoient Pierre de Toulon, chancelier, Jean de l’Espinasse, bailli de Beaujolais, Amé Vert et Jean Pelletier, bailli et juge de Forez, Jean Dubreuil, auditeur des comptes à Villefranche, et Robert Parent à la convention avec les officiers du duc de Savoie sur les agissements de François de La Palud, seigneur de Varembon</p>
+                  <institution>Deperditum Histoire de Dombes (Aubret)</institution>
                </argument>
                <argument>
                   <p>Marie de Berry, duchesse de Bourbonnais et d’Auvergne, et Charles, comte de Clermont, nomment Pierre de Toulon, chancelier du Bourbonnais, Jean de l’Espinasse, bailli de Beaujolais, Amé Vert, bailli de Forez, Jean Pelletier, juge de Forez, Jean Dubreuil, auditeur des comptes de Villefranche, et Robert Parent, leurs ambassadeurs à la convention avec les officiers du duc de Savoie afin de régler les suites de la prise de Trévoux par François de La Palud, seigneur de Varembon.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original disparu.</witness>
-                  <witness n="mention"><institution>Louis Aubret</institution>, <hi rend="i">Mémoires pour servir à l’histoire de Dombes</hi>, II, Marie-Claude Guigue (éd.), Trévoux, 1868, p. 534.</witness>
+                  <witness n="mention">Louis Aubret, <hi rend="i">Mémoires pour servir à l’histoire de Dombes</hi>, II, Marie-Claude Guigue (éd.), Trévoux, 1868, p. 534.</witness>
                </listWit>
             </front>
             <body>
