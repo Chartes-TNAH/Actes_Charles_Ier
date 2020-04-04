@@ -1322,7 +1322,7 @@
                </argument>
                <listWit>
                   <witness n="A">A<hi rend="sup">1</hi>. Original sur parchemin, signé par deux notaires, jadis scellé. 600 x 830 mm., dont repli 70 mm. <institution>Archives nationales</institution>, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
-                  <witness n="A">A<hi rend="sup">2</hi>. Original sur parchemin, signé par deux notaires, scellé des sceaux en cire verte sur double queue de parchemin des chancellerie de Bourgogne et de Bourbonnais ; attaché à la ratification du contrat passée le 6 août suivant par les époux (<ref>n°5</ref>). 580 x 860 mm., dont repli 70 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 318.</witness>
+                  <witness n="A">A<hi rend="sup">2</hi>. Original sur parchemin, signé par deux notaires, scellé des sceaux en cire verte sur double queue de parchemin des chancellerie de Bourgogne et de Bourbonnais ; attaché à la ratification du contrat passée le 6 août suivant par les époux (<ref target="5">n°5</ref>). 580 x 860 mm., dont repli 70 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 318.</witness>
                   <witness n="B">B. Vidimus sur parchemin, collationné et signé, du 4 décembre 1426. 650 x 710 mm., dont repli 80 mm. Archives nationales, P 1364<hi rend="sup">2</hi>, cote 1384. </witness>
                   <witness n="C">C. Vidimus dans un cahier de papier de quatre folios, du 20 avril 1459. 285 x 350 mm. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
                   <witness n="D">D. Copie non signée, sur un cahier de parchemin de quatre folios, le dernier étant vierge, endommagé<note type="n1"><p>Une tâche en bas à droite du second folio recto rend la lecture difficile, et une déchirure se répercute sur cinq lignes à chaque folio.</p></note>, incomplet<note type="n1"><p>Le premier folio est manquant ; le second commence, dans la lettre vidimée de Jean I<hi rend="sup">er</hi>, en parlant de Marie de Berry, duchesse de Bourbonnais à « et d’Auvergne, et dudit Charles de Bourbonnois nostre aisné filz, ausquelx ceste mattiere touche ».</p></note>. 290 x 365 mm. Archives nationales, P 1365<hi rend="sup">2</hi>, cote 1452.</witness>
@@ -1414,7 +1414,7 @@
                   <p>Ratification par Charles de Bourbon et Agnès de Bourgogne du traité conclu pour leur mariage.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé par un notaire, attaché au contrat de mariage passé le 4 février 1425 (n°4, A<hi rend="sup">2</hi>), muni de deux sceaux en cire brune, sur double queue, endommagés. 430 x 270 mm., repli 20 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 319.</witness>
+                  <witness n="A">A. Original sur parchemin, signé par un notaire, attaché au contrat de mariage passé le 4 février 1425 (<ref target="4">n°4, A<hi rend="sup">2</hi></ref>), muni de deux sceaux en cire brune, sur double queue, endommagés. 430 x 270 mm., repli 20 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 299, pièce scellée 319.</witness>
                   <witness n="B">B. Vidimus sur parchemin, collationné et signé, du 20 avril 1439, non retrouvé<note type="n1"><p>Document introuvable. Indication des <hi rend="i">Titres de Bourbon</hi>.</p></note>. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919. </witness>
                   <witness n="C">C. Copie du XVII<hi rend="sup">e</hi> siècle. Bibliothèque nationale de France, ms. fr. 4628, folios 594-595 <ref target="https://gallica.bnf.fr/ark:/12148/btv1b9060304n/f540.image">[copie numérisée]</ref>.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 228, n° 5244.</witness>
@@ -1438,7 +1438,7 @@
                   <placeName>Moulins</placeName>
                </docDate>
                <argument>
-                  <p>Charles de Clermont confirme que les duchés de Bourbonnais et d’Auvergne et les comté de Clermont et de Montpensier sont des apanages</p>
+                  <p>Charles de Clermont confirme que les duchés de Bourbonnais et d’Auvergne et les comtés de Clermont et de Montpensier sont des apanages</p>
                </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, promet que, conformément aux conventions antérieures, les duché de Bourbonnais et comté de Clermont, avec les duché d’Auvergne et comté de Montpensier, reviendront à la couronne de France au cas où la descendance mâle et directe de la maison de Bourbon viendrait à manquer, et s’engage à la faire ratifier par le duc son père, quand il sera libre, et par Louis de Bourbon, son frère. </p>
@@ -1971,7 +1971,7 @@
                </argument>
                <listWit>
                   <witness n="A">A. Original sur parchemin, endommagé, signé et jadis scellé (deux occuli sur le repli<note type="n1"><p>Une tâche rend la lecture difficile dans la partie gauche.</p></note>). 640 x 365 mm., dont repli 95 mm. <institution>Archives municipales de Riom</institution>, DD 1, cote 1644.</witness>
-                  <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892 p. 102.</witness>
+                  <witness n="analyse">François Boyer, <hi rend="i">Inventaire-sommaire des Archives communales antérieures à 1790</hi>, Riom, Imprimerie Ulysse Jouvet, 1892, p. 102.</witness>
                </listWit>
             </front>
             <body>
