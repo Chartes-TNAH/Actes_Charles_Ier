@@ -467,6 +467,67 @@
                   <geo>45° 56′ 28″ nord, 4° 46′ 30″ est</geo>
                </location>
             </place>
+            <place xml:id="Donzois">
+               <placeName>
+                  <name xml:lang="fr">Donzois</name>
+               </placeName>
+               <desc>pays de</desc>
+            </place>
+            <place xml:id="Forez">
+               <placeName>
+                  <name xml:lang="fr">Forez</name>
+               </placeName>
+               <desc>comté de</desc>
+            </place>
+            <place xml:id="BourgenBresse">
+               <placeName>
+                  <name xml:lang="frm">Boure en Bresse</name>
+                  <name xml:lang="fr">Bourg-en-Bresse</name>
+               </placeName>
+               <desc>Ain</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Bourg-en-Bresse">46° 12′ 20″ nord, 5° 13′ 44″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Macon">
+               <placeName>
+                  <name xml:lang="frm">Mascon</name>
+                  <name xml:lang="fr">Mâcon</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/M%C3%A2con">46° 18′ 22″ nord, 4° 49′ 53″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Bresse">
+               <placeName>
+                  <name xml:lang="fr">Bresse</name>
+               </placeName>
+               <desc>pays de</desc>
+            </place>
+            <place xml:id="SuryleB">
+               <placeName>
+                  <name xml:lang="fr">Sury-le-Bois</name>
+               </placeName>
+               <desc>com. Valeille, Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Valeille">45° 42′ 30″ nord, 4° 18′ 27″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Nivernais">
+               <placeName>
+                  <name xml:lang="frm">Nivernois</name>
+                  <name xml:lang="fr">Nivernais</name>
+               </placeName>
+               <desc>pays de</desc>
+            </place>
+            <place xml:id="Cluny">
+               <placeName>
+                  <name xml:lang="frm">Clugny</name>
+                  <name xml:lang="fr">Cluny</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+            </place>
          </settingDesc>
          <particDesc>
             <listPerson type="rois">
@@ -766,6 +827,14 @@
                   </persName>
                   <note>Seigneur de Beauvoir, sénéchal de Bourbonnais.</note>
                </person>
+               <person xml:id="CarmoneP">
+                  <persName>
+                     <forename>Pierre</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Carmone</surname>
+                  </persName>
+                  <note>Maître, lieutenant du sénéchal (cité de 1427 à 1453), conseiller du duc.</note>
+               </person>
                <person xml:id="ChalenconL">
                   <persName>
                      <forename>Louis</forename>
@@ -885,6 +954,15 @@
                   </persName>
                   <note>Bailli de Beaujolais (cité en 1431).</note>
                </person>
+               <person xml:id="EspinassePh">
+                  <persName>
+                     <forename>Philibert</forename>
+                     <nameLink>de</nameLink>
+                     <surname>L’Espinasse</surname>
+                     <addName>dit Cormorant</addName>
+                  </persName>
+                  <note>Chevalier, seigneur de L’Espinasse, bailli de Beujolais (cité en 1431), conseiller du duc.</note>
+               </person>
                <person xml:id="DubreuilJ">
                   <persName>
                      <forename>Jean</forename>
@@ -900,7 +978,7 @@
                      <forename>Oudart</forename>
                      <surname>Cleppier</surname>
                   </persName>
-                  <note>Président de la Chambre (1426-1433).</note>
+                  <note>Président de la Chambre (1426-1433), conseiller du duc.</note>
                </person>
                <person xml:id="CholletG">
                   <persName>
@@ -1079,7 +1157,15 @@
                      <nameLink>du</nameLink>
                      <surname>Bois</surname>
                   </persName>
-                  <note>Bailli du comté de Charolais.</note>
+                  <note>Chevalier, conseiller du duc, bailli du comté de Charolais.</note>
+               </person>
+               <person xml:id="LuyrieuL">
+                  <persName>
+                     <forename>Lancelot</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Luyrieu ou Lureuil</surname>
+                  </persName>
+                  <note>Écuyer, seigneur de Luyrieu, bailli de Mâcon, conseiller et chambellan du duc.</note>
                </person>
                <person xml:id="Breneal">
                   <persName>
@@ -1112,6 +1198,20 @@
                   </persName>
                   <note>Chevalier, seigneur de Conches.</note>
                </person>
+               <person xml:id="AndrietPh">
+                  <persName>
+                     <forename>Philibert</forename>
+                     <surname>Andriet ou Andrenet</surname>
+                  </persName>
+                  <note>Chevalier, seigneur de Coursan, conseiller du duc.</note>
+               </person>
+               <person xml:id="LaGuicheG">
+                  <persName>
+                     <forename>Gérard</forename>
+                     <surname>La Guiche</surname>
+                  </persName>
+                  <note>Chevalier, seigneur de La Guiche, conseiller du duc.</note>
+               </person>
                <person xml:id="CourtiamblesJ">
                   <persName>
                      <forename>Jacques</forename>
@@ -1142,6 +1242,36 @@
                   </persName>
                   <note>Écuyer, conseiller et chambellan du duc.</note>
                </person>
+               <person xml:id="BourgoisG">
+                  <persName>
+                     <forename>Guiot</forename>
+                     <surname>Bourgois</surname>
+                  </persName>
+                  <note>Écuyer.</note>
+               </person>
+               <person xml:id="RocheteC">
+                  <persName>
+                     <forename>Claude</forename>
+                     <nameLink>du, et de la Rochette</nameLink>
+                     <surname>Seyssel</surname>
+                  </persName>
+                  <note>Maître, conseiller du duc.</note>
+               </person>
+               <person xml:id="ClunyH">
+                  <persName>
+                     <forename>Henri</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Cluny</surname>
+                  </persName>
+                  <note>Maître, conseiller du duc.</note>
+               </person>
+               <person xml:id="BastierN">
+                  <persName>
+                     <forename>Nicolas</forename>
+                     <surname>Bastier</surname>
+                  </persName>
+                  <note>Maître, conseiller du duc.</note>
+               </person>
                <person xml:id="RupesG">
                   <persName>
                      <forename>Gauthier</forename>
@@ -1168,21 +1298,43 @@
                   </persName>
                   <note>Vicomte de Villemur.</note>
                </person>
-               <person xml:id="ForestG">
+               <person xml:id="ForestG"><!-- Savoie -->
                   <persName>
                      <forename>Guillaume</forename>
                      <nameLink>de</nameLink>
                      <surname>La Forest</surname>
                   </persName>
-                  <note>Chevalier.</note><!-- Savoie -->
+                  <note>Chevalier.</note>
                </person>
-               <person xml:id="PaludF">
+               <person xml:id="SepsC"><!-- Savoie -->
+                  <persName>
+                     <forename>Claude</forename>
+                     <nameLink>du</nameLink>
+                     <surname>Seps</surname>
+                  </persName>
+                  <note>Écuyer, seigneur de Ravoire, président de la Chambre des comptes de Savoie, conseiller du duc.</note>
+               </person>
+               <person xml:id="PaludF"><!-- Savoie -->
                   <persName>
                      <forename>François</forename>
                      <nameLink>de</nameLink>
                      <surname>La Palud</surname>
                   </persName>
                   <note>Seigneur de Varembon.</note>
+               </person>
+               <person xml:id="ChampdueO"><!-- Savoie -->
+                  <persName>
+                     <forename>Oddo</forename>
+                     <surname>Champdue</surname>
+                  </persName>
+                  <note>Seigneur de Champdue, bailli de Bresse, conseiller du duc.</note>
+               </person>
+               <person xml:id="LovoulJ"><!-- Savoie -->
+                  <persName>
+                     <forename>Jacques</forename>
+                     <surname>Lovoul ou Loriot</surname>
+                  </persName>
+                  <note>Maître, docteur en lois et décrets, juge du pays de Bresse, conseiller du duc.</note>
                </person>
                <person xml:id="AiguesG">
                   <persName>
@@ -1250,6 +1402,28 @@
                      <surname>La Pierre</surname>
                   </persName>
                   <note>Dame de Chazeuil.</note>
+               </person>
+               <person xml:id="BeceyD">
+                  <persName>
+                     <forename>Denis</forename>
+                     <surname>Becey</surname>
+                  </persName>
+                  <note>Tabellion ou notaire.</note>
+               </person>
+               <person xml:id="ChavalB">
+                  <persName>
+                     <forename>Benoît</forename>
+                     <surname>Chaval</surname>
+                  </persName>
+                  <note>Tabellion ou notaire.</note>
+               </person>
+               <person xml:id="ClunyAbbe">
+                  <persName>
+                     <forename>Odon II</forename>
+                     <nameLink>de la</nameLink>
+                     <surname>Perrière</surname>
+                  </persName>
+                  <note>Abbé de Cluny (1423-1456).</note>
                </person>
             </listPerson>
          </particDesc>
@@ -2226,6 +2400,58 @@
                <head><hi rend="smallcaps">Deperditum</hi></head>
                <div type="acte">
                   <p>Le jour de Pâques, le 12 avril 1431, ils [<persName ref="#MarieBerry">Marie de Berry</persName> et Charles de Clermont] donnèrent leurs lettres patentes conjointement, par lesquelles ils nommèrent leurs amé et féaux chevaliers et conseillers <persName ref="#ToulonP">Pierre de Thollon</persName>, chancelier de Bourbonnois, messire <persName ref="#EspinasseJ">Jean de l’Espinasse</persName>, bailli de Beaujolois, messire <persName ref="#VertA">Amé Vert</persName>, bailli de Forez, seigneur de Chenevraille<note type="na"><p>Erreur de lecture d’Aubret. Comprendre <hi rend="i">Chenerraille</hi>, aujourd'hui <hi rend="i">Chénereilles</hi> en Haute-Loire.</p></note>, messire <persName ref="#PelletierJ">Jean Pelletier</persName>, juge de Forez, maître <persName ref="#DubreuilJ">Jean Dubreuil</persName>, auditeur des comptes en Beaujolois, et <persName ref="#ParentR">Robert Parent</persName>, auxquels à trois ou quatre d’iceulx ils donnèrent pouvoir de transiger avec les ambassadeurs du <persName ref="#SavoieAVIII">duc de Savoie</persName> des délits, excès, meurtres, sacrilèges, <placeName ref="#Trevoux">pillages</placeName> et autres maux faits par le <persName ref="#PaludF">sieur de Varambon</persName> et ses adhérents.</p>
+               </div>
+            </body>
+         </text>
+         <text type="Vidimus" subtype="Lettres_patentes" xml:id="Ch-31" n="31">
+            <front>
+               <docDate>
+                  <date when="1431-05-28">1431, 28 mai</date>
+                  <placeName ref="#Montlucon">Montluçon</placeName>
+               </docDate>
+               <argument>
+                  <p>Charles de Clermont promet de respecter l’accord passé avec le duc de Savoie au sujet de la prise de sa ville de Trévoux par François de La Palud, seigneur de Varembon</p>
+               </argument>
+               <argument>
+                  <p>Charles, comte de Clermont, ayant délégation de pouvoir, promet de respecter l’accord traité entre ses ambassadeurs et ceux du duc de Savoie, au sujet de la prise de sa ville de Trévoux par <persName ref="#PaludF">François de La Palud</persName>, seigneur de Varembon.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original perdu. </witness>
+                  <witness n="B">B. Inséré dans l’acte de Pierre Charpin, chambrier de l’église collégiale de Saint-Paul et de l’official de Lyon, du 18 juin 1431, certifié et signé par deux notaires. 645 x 730 mm., dont repli 30 mm. <institution>Archives nationales</institution>, P 1360<hi rend="sup">2</hi>, cote 881.</witness>
+                  <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 246, n° 5397.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p>Charles de Bourbon, conte de Clermont, aisné filz de monseigneur le duc de Bourbonnois et d’Auvergne, aïant le gouvernement de ses païs, terres et seignories, a tous ceulx qui ces presentes lettres verront, salut.</p>
+                  <p>Comme nagueres par les ambaxadeurs de <persName ref="#MarieBerry">nostre tres redouptee dame et mere</persName> et nostres, ait esté traictié et apres passé certain accord avec les ambaxeurs de nostre tres chier et tres amé cousin le <persName ref="#SavoieAVIII">duc de Savoye</persName>, touchant le fait nagueres advenu ou lieu et ville de <placeName ref="#Trevoux">Trevoux</placeName>, comme plus a plain puet apparoir par les lettres sur ce octroyees par devant <persName ref="#BeceyD">Denis Becey</persName> et <persName ref="#ChavalB">Benoit Chaval</persName>, tabellions ou notaires, en quoy lesdiz ambaxadeurs de madicte dame et de nous eussent retenu le bon vouloir d’elle et de nous a en faire declaracion dedans le dixeme jour de juing prochain venant ;</p>
+                  <p>Savoir faisons que, pour tousjours entretenir la bonne et vraie amour que tousjours a esté, est et doit estre entre nous et nostredit cousin de Savoye, et lequel, comme avons esté informez, a esté moult desplaisant dudit cas advenu audit lieu de Trevoux, et pour autres causes et consideracions a ce nous mouvans, ledit traictié et accord passé par devant lesdiz notaires comme dit est, avons agreable et voulons qu’il soit ferme et entretenu selon sa teneur.</p>
+                  <p>En tesmoing desquelles choses, nous avons fait mectre nostre seel a ces presentes, faictes et donnees a Montluçon le vingthuitiesme jour de may, l’an de grace mil quatre cens trente et ung.</p>
+                  <p>Par monseigneur le conte — <persName ref="#Cadier_sign">Cadier</persName>.</p>
+               </div>
+            </body>
+         </text>
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-32" n="32">
+            <front>
+               <docDate>
+                  <date when="1431-10-08">1431, 8 octobre</date>
+                  <placeName ref="#SuryleB">Sury-le-Bois</placeName>
+               </docDate>
+               <argument>
+                  <p>Abstinence de guerre avec la Bourgogne</p>
+               </argument>
+               <argument>
+                  <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie. Celle-ci comprend les terres de son père le duc, celles du duc de Bourgogne et du comte Charles de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny, des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, et les villes de Saint-Pierre-le-Moûtier et Sancoins. Ces dernières seront évacuées par les garnisons qui s’y trouvent, de même que Marcigny, récemment prise par le comte de Clermont. Pendant le temps de la trêve, les deux parties devront empêcher par tous les moyens que des gens d’arme ne ravagent les pays concernés, et leurs sujets ne pourront passer une frontière sans être porteurs d’un sauf-conduit délivré par le duc de Bourgogne, le comte de Clermont, ou leurs conservateurs. La Charité-sur-Loire, Rosemont, ainsi que toutes les places occupées par Perrinet Gressart, sont incluses dans l’abstinence et ce dernier s’engage par écrit à la respecter. Le maréchal de Bourgogne, le bailli du Nivernais et Perrinet Gressart sont nommés conservateurs pour Philippe le Bon ; Charles de Bourbon nomme pour sa part Blain Loup, seigneur de Beauvoir, le seigneur des Barres et Philibert de l’Espinasse, dit Cormorant, bailli du Beaujolais. Chaque partie a six semaines à partir du début de la trêve pour la rompre, en envoyant pour cela une notification à la Chambre de comptes adverse<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
+               </argument>
+               <listWit>
+                  <witness n="A">A. Original sur parchemin, signé, endommagé<note type="n1"><p>Trois trous, de taille différente, résultant visiblement d’une combustion, affectent le parchemin.</p></note>, et jadis scellé sur double queue, dont une partie de la queue de parchemin subsiste, dépourvue de son sceau. 440 x 495 mm., dont repli 80 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 11917.</witness>
+               </listWit>
+            </front>
+            <body>
+               <div type="acte">
+                  <p>Charles de Bourbon, conte de Clermont, aisné fils de nostre tres redoubté seigneur et pere monseigneur le duc de Bourbonnois et d’Auvergne, aïent le gouvernement en son absence de ses païs, terres et seigneuries, et lieutenant general de <persName ref="#ChVII">monseigneur le roi</persName> esdiz païs, Lïonnois et Masconnois et jusques a la Charité sur Loire incluse, a tous ceulx qui ces presentes lettres verront, salut.</p>
+                  <p>Come despieça aient esté prinses certaines abstinences de guerre entre les païs des <placeName ref="#BourgogneD">duchié</placeName> et <placeName ref="#BourgogneC">conté de Bourgoingne</placeName> et de <placeName ref="#Charolais">Charoleis</placeName>, et ceulx de <placeName ref="#Maconnais">Masconnois</placeName> et de <placeName ref="#Donzois">Donziois</placeName> et autres pour la partie de nostre tres chier seigneur et frere le <persName ref="#PhBon">duc de Bourgoingne</persName>, conte de Flandre, d’Artois et de Bourgoingne, declairez et compris plus a plain es lettres desdites abstinences, d’une part, et lesdiz païs de <persName ref="#JeanI">nostredit tres redoubté seigneur et pere</persName>, c’est assavoir de <placeName ref="#Bourbonnais">Bourbonnois</placeName>, <placeName ref="#Forez">Forez</placeName>, <placeName ref="#Beaujolais">Beaujollois</placeName> et autres declairez et compris en icelles lettres d’abstinence d’autre part, lesquelles abstinences de guerre ayent pluseurs fois esté confirmees, et neantmoins puis aucun temps en ca petitement gardees et entretenues, anicois ait esté en plusieurs poins corompues et enfraintes en tant que grant guerre se mouvoit et encommancoit entre lesdiz païs, dont plusieurs maulx et domages sont ensuis et estoient taille d’estre plus grans et irreparables ausdiz païs, et, pour ce, affin de y obvier et pourvier a la reparacion des choses actemptees et entreprises fetes contres esdites abstinences, et la bonne conduite et entretenement d’icelles pour le temps ad venir, par le moïen de <persName ref="#ClunyAbbe">reverend pere en Dieu l’abbé de Clugny</persName>, ait esté prise et accordee et tenue une journee a <placeName ref="#BourgenBresse">Boure en Bresse</placeName> au XXI<hi rend="sup">eme</hi> jour de ce present mois de septembre, a laquelle, de par nostredit seigneur et frere de Bourgoingne, ayent esté envoyez en ambassade messire <persName ref="#AndrietPh">Philibert Andrinet</persName>, messire <persName ref="#LaGuicheG">Gerart de la Guiche</persName> et messire <persName ref="#BoisH">Hugues du Bois</persName>, bailli de Charolais, chevalier, <persName ref="#LuyrieuL">Lancelot, seigneur de Lirrieu</persName>, escuïer, bailli de <placeName ref="#Macon">Mascon</placeName>, chambellan de nostredit seigneur et frere, <placeName ref="#BourgoisG">Guiot Burgois</placeName>, escuïer, maistres <persName ref="#RocheteC">Glaude Rochete</persName>, <persName ref="#ClunyH">Henri de Clugny</persName>, <persName ref="#BastierN">Nicolas Bastier</persName> et <persName ref="#FraignotJ">Jehan Faignot</persName>, tous conseillers de nostredit seigneur et <x>pere</x>, et de par nostre tres redoubté <persName ref="#MarieBerry">dame et mere la duchesse de Bourbonnois et d’Auvergne</persName> et nous, messire <persName ref="#EspinassePh">Phelibert, seigneur de l’Espinace</persName>, dit Comorant, chevalier, bailli de Beaujollois, maistre <persName ref="#ClepierO">Oudart Clepier</persName>, president en Bourbonnois, et maistre <persName ref="#CarmoneP">Pierre de Carmoinne</persName>, tous conseiller de nostredit seigneur et pere et de nostredite dame et mere et de nous, entre lesquelx ambesseurs et deputez de par lesdites parties, et par le moïen de <persName ref="#SepsC">Claude du Seps</persName>, escuïer, seigneur de la Ravoire et president en la chambre des comptes de Savoye, <persName ref="#ChampdueO">Oddo, seigneur de Champdue</persName>, bailli de <placeName ref="#Bresse">Bresse</placeName>, et messire <persName ref="#LovoulJ">Jacques Lovoul</persName>, docteur en loys et en decret, juge dudit païs de Bresse, tous conseillers de nostre tres chier et tres amé cousin le <persName ref="#SavoieAVIII">duc de Savoye</persName>, illec de par lui envoïez et ordonnez pour estre mediateurs entre les gens et ambasseurs de nostredit seigneur et frere le duc de Bourgoingne et de nostredite dame et mere et de nous, ayent esté traictees, appointees et accordees ledit XXI<hi rend="sup">e</hi> jour, et autres jours ensuis, sur le fait desdites abstinences, plusieurs poins et articles, ainsi et par la maniere que contenu est en certaine cedulle par eulx sur ce fete et advisee, dont la teneur s’en suit :</p>
+                  <p>« A la journee tenue au lieu de Bourc en Bresse le XXI<hi rend="sup">e</hi> jour de septembre mil CCCC XXXI et es autres jours ensuis, mise sur et arrestee par le moïen de reverend pere en Dieu monseigneur l’abbé de Clugny, sur la reprise, entretenement et bonne conduite des trevez et abstinencez de guerre prise despieça, et depuis assez souventes fois confirmees entre les païs de monseigneur le duc de Bourgoingne, c’est assavoir ses duchés et contez de Bourgoingne et de Charolais et aussi les païs de <placeName ref="#Nivernais">Nivernois</placeName>, Donzois et de Masconois, et pour les villes, chasteaulx et païs royaulx enclavez en iceulx, come <placeName ref="#Cluny">Clugny</placeName> et les terres et forteresses apartenans a monseigneur l’abbé dudit lieu de Clugny, et aussi au couvent d’icelle esglise, Marcegny les Nonnains, Tournuz, Saint Jangoul, Saincte Marie du Bois, les chasteaulx et villes de messeigneurs les evesques d’Ostun, Chalon, Mascon, et aussi des doïen et chappitre des eglises de Chalon et Mascon, et tous autres villes royaulx indifferamment enclavez en iceulx païs, d’une part, et les terres et seigneuries de monseigneur le duc de Bourbonnois, come les duchiez de Bourbonnois et d’Auvergne, et les païs de Forez, Beaujollois, Combraille, le conté de Sancerre, les villes de Saint Poursaint, Cussé, [?](a), Charlieu, Chastelneuf, et aussi Esbinelle et aussi autres villes et païs royaulx indifferamment enclavez en iceulx, ont en la presence et par le moïen de Glaude du Cez, seigneur de Rivoire, president de la chambre des comptes de monseigneur le duc de Savoie, Odot, seigneur de Champdee, bailli de Bresse, et de messire Jacques Louriol, docteur en lois et decrets, juge de Bresse, tous conseillers de mondit seigneur le duc de Savoie, envoyez et ordonnez de par icelui seigneur pour estre mediateurs desdites parties, estre accordez, traictiez et confirmez en bonne foy par les ambassadeurs d’une part et d’autre, cy a la fin de ces presentes nomez, et envoiez pour ce tout expressement et pour ceste cause a icelle journee, les poins et articles en la maniere et forme qui s’ensuit :</p>
                </div>
             </body>
          </text>
