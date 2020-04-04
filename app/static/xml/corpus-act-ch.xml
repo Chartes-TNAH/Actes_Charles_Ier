@@ -50,7 +50,7 @@
                </location>
             </place>
             <place xml:id="Moulins">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Molins</name>
                   <name xml:lang="fr">Moulins</name>
                </placeName>
@@ -158,7 +158,7 @@
                <desc>comté de</desc>
             </place>
             <place xml:id="Autun">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Ostun</name>
                   <name xml:lang="fr">Autun</name>
                </placeName>
@@ -185,7 +185,7 @@
                <note>Ajd. le fort Belin.</note>
             </place>
             <place xml:id="Souvigny">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Sovigny</name>
                   <name xml:lang="fr">Souvigny</name>
                </placeName>
@@ -231,7 +231,7 @@
                <desc>royaume de</desc>
             </place>
             <place xml:id="Riom">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Rion</name>
                   <name xml:lang="fr">Riom</name>
                </placeName>
@@ -248,7 +248,7 @@
                <desc>duché de</desc>
             </place>
             <place xml:id="Montbrison">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Montbrison</name>
                   <name xml:lang="fr">Montbrison</name>
                </placeName>
@@ -277,7 +277,7 @@
                </location>
             </place>
             <place xml:id="Gannat">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="fr">Gannat</name>
                </placeName>
                <desc>Allier</desc>
@@ -320,7 +320,7 @@
                </location>
             </place>
             <place xml:id="Chinon">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="fr">Chinon</name>
                </placeName>
                <desc>Indre-et-Loire</desc>
@@ -355,7 +355,7 @@
                </location>
             </place>
             <place xml:id="Montlucon">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="fr">Montluçon</name>
                </placeName>
                <desc>Allier</desc>
@@ -373,7 +373,7 @@
                </location>
             </place>
             <place xml:id="Herisson">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="frm">Heriçon</name>
                   <name xml:lang="fr">Hérisson</name>
                </placeName>
@@ -450,7 +450,7 @@
                </location>
             </place>
             <place xml:id="Chantelle">
-               <placeName>
+               <placeName type="production_place">
                   <name xml:lang="fr">Chantelle</name>
                </placeName>
                <desc>Allier</desc>
@@ -1259,7 +1259,7 @@
       <front>
       </front>
       <group>
-         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-1" n="1">
+         <text type="Deperditum" subtype="Lettres_closes" xml:id="Ch-1" n="1">
             <front>
                <docDate>
                   <date notAfter="1421-01-15">[Avant le 15 janvier 1421 (n. st.)]</date>
@@ -1283,7 +1283,7 @@
                </div>
             </body>
          </text>
-         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-2" n="2">
+         <text type="Deperditum" subtype="Lettres_closes" xml:id="Ch-2" n="2">
             <front>
                <docDate>
                   <date notAfter="1421-01-18">[Avant le 18 janvier 1421 (n. st.)]</date>
@@ -1308,7 +1308,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-3" n="3">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-3" n="3">
             <front>
                <docDate>
                   <date when="1425-02-04">1425 (n. st.), 4 février</date>
@@ -1322,7 +1322,7 @@
                </argument>
                <listWit>
                   <witness n="A">A<hi rend="sup">1</hi>. Original sur parchemin, signé par deux notaires, jadis scellé. 600 x 830 mm., dont repli 70 mm. <institution>Archives nationales</institution>, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
-                  <witness n="A">A<hi rend="sup">2</hi>. Original sur parchemin, signé par deux notaires, scellé des sceaux en cire verte sur double queue de parchemin des chancellerie de Bourgogne et de Bourbonnais ; attaché à la ratification du contrat passée le 6 août suivant par les époux (<ref coresp="Ch-5">n°5</ref>). 580 x 860 mm., dont repli 70 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 318.</witness>
+                  <witness n="A">A<hi rend="sup">2</hi>. Original sur parchemin, signé par deux notaires, scellé des sceaux en cire verte sur double queue de parchemin des chancellerie de Bourgogne et de Bourbonnais ; attaché à la ratification du contrat passée le 6 août suivant par les époux (<ref>n°5</ref>). 580 x 860 mm., dont repli 70 mm. Archives départementales de la Côte-d’Or, B 299, pièce scellée 318.</witness>
                   <witness n="B">B. Vidimus sur parchemin, collationné et signé, du 4 décembre 1426. 650 x 710 mm., dont repli 80 mm. Archives nationales, P 1364<hi rend="sup">2</hi>, cote 1384. </witness>
                   <witness n="C">C. Vidimus dans un cahier de papier de quatre folios, du 20 avril 1459. 285 x 350 mm. Archives nationales, P 1370<hi rend="sup">2</hi>, cote 1919.</witness>
                   <witness n="D">D. Copie non signée, sur un cahier de parchemin de quatre folios, le dernier étant vierge, endommagé<note type="n1"><p>Une tâche en bas à droite du second folio recto rend la lecture difficile, et une déchirure se répercute sur cinq lignes à chaque folio.</p></note>, incomplet<note type="n1"><p>Le premier folio est manquant ; le second commence, dans la lettre vidimée de Jean I<hi rend="sup">er</hi>, en parlant de Marie de Berry, duchesse de Bourbonnais à « et d’Auvergne, et dudit Charles de Bourbonnois nostre aisné filz, ausquelx ceste mattiere touche ».</p></note>. 290 x 365 mm. Archives nationales, P 1365<hi rend="sup">2</hi>, cote 1452.</witness>
@@ -1367,7 +1367,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-4" n="4">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-4" n="4">
             <front>
                <docDate>
                   <date when="1425-02-07">1425 (n. st.), 7 février</date>
@@ -1401,7 +1401,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-5" n="5">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-5" n="5">
             <front>
                <docDate>
                   <date when="1425-08-06">1425, 6 août</date>
@@ -1431,7 +1431,7 @@
                </div>
             </body>
          </text>
-         <text type="Copie" subtype="Lettres patentes" xml:id="Ch-6" n="6">
+         <text type="Copie" subtype="Lettres_patentes" xml:id="Ch-6" n="6">
             <front>
                <docDate>
                   <date when="1425-08-13">13 août 1425</date>
@@ -1463,7 +1463,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-7" n="7">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-7" n="7">
             <front>
                <docDate>
                   <date when="1425-12-08">1425, 8 décembre</date>
@@ -1493,7 +1493,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-8" n="8">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-8" n="8">
             <front>
                <docDate>
                   <date when="1426-03-13">1426 (n. st.), 13 mars</date>
@@ -1522,7 +1522,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres closes" xml:id="Ch-9" n="9">
+         <text type="Original" subtype="Lettres_closes" xml:id="Ch-9" n="9">
             <front>
                <docDate>
                   <date notAfter="1426-10-09">[Avant le 9 octobre 1426], 30 août</date>
@@ -1549,7 +1549,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-10" n="10">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-10" n="10">
             <front>
                <docDate>
                   <date when="1426-12-16">1426, 16 décembre</date>
@@ -1567,7 +1567,7 @@
             </front>
             <body>
                <div type="acte">
-                  <p>Nous Charles de Bourbon, conte de Cleremont, et <persName ref="#Agnes">Agnes de Bourgoingne</persName>, sa femme et compaigne et ad ce qui s’ensuit auctorisee par nous, ledit Charles, confessons avoir eu et receue de nostre tres chier et tres amé seigneur et frere messire <persName ref="#PhBon">Phelippe</persName>, duc de Bourgoigne, conte de Flandres, d’Artois et de Bourgoingne, la somme de six mille livres tournois franc pour vint solz tournois, appartenans et venuz en noz mains par la main Jehan Fraignot, son receveur general de <placeName ref="#BourgogneD">Bourgoigne</placeName>, pour le parpaiement de la somme de XX<hi rend="sup">M</hi> f. t. promis et accordez par mondit seigneur et frere, entre autres choses, nous fere baillier et delivrer par le traictié de mariaige de nous et nostredicte compaigne, a paier le jour de la celebracion de nostredit mariaige, et de laquelle somme de XX<hi rend="sup">M</hi> f. t., audit terme, nous donnasmes deslors quictance, non obtant que icelle ne eussions point receue, fors que obligacions dudit receveur general et autres receveurs particuliers des païs dudit nostre tres chier seigneur et fere qui de ce s’obligerent a certains termes passez, desquelles obligacions avons rendeues jusques a la somme de XIIII<hi rend="sup">M</hi> f. t. que derrenierement avons receue<note type="na"><p> <a href="{{url_for('acte', acte_id=9)}}">Voir l'acte n°9.</a></p></note> par la main de <persName ref="#CordierM">Michiel Cordier</persName>, tresorier general de <persName ref="#JeanI">mon tres redoubté seigneur et pere monseigneur le duc de Bourbonnois et d’Auvergne</persName>, et presentement pour la parpaie la somme six mil livres tournois avons rendues les obligacions desdiz officiers, et de laquelle somme de VI<hi rend="sup">M</hi> l. t. presentement receue et qui nous restoient a paier comme dit est desdites XX<hi rend="sup">M</hi> f. t., nous nous tenons pour content et en quictons a tous jours nostredit seigneur et frere, sondit receveur et tout autre qui ce peut touchier, sans ce que doresenavant puissions ou doyons demander aucune chose d’icelle somme de XX<hi rend="sup">M</hi> f. t.</p>
+                  <p>Nous Charles de Bourbon, conte de Cleremont, et <persName ref="#Agnes">Agnes de Bourgoingne</persName>, sa femme et compaigne et ad ce qui s’ensuit auctorisee par nous, ledit Charles, confessons avoir eu et receue de nostre tres chier et tres amé seigneur et frere messire <persName ref="#PhBon">Phelippe</persName>, duc de Bourgoigne, conte de Flandres, d’Artois et de Bourgoingne, la somme de six mille livres tournois franc pour vint solz tournois, appartenans et venuz en noz mains par la main Jehan Fraignot, son receveur general de <placeName ref="#BourgogneD">Bourgoigne</placeName>, pour le parpaiement de la somme de XX<hi rend="sup">M</hi> f. t. promis et accordez par mondit seigneur et frere, entre autres choses, nous fere baillier et delivrer par le traictié de mariaige de nous et nostredicte compaigne, a paier le jour de la celebracion de nostredit mariaige, et de laquelle somme de XX<hi rend="sup">M</hi> f. t., audit terme, nous donnasmes deslors quictance, non obtant que icelle ne eussions point receue, fors que obligacions dudit receveur general et autres receveurs particuliers des païs dudit nostre tres chier seigneur et fere qui de ce s’obligerent a certains termes passez, desquelles obligacions avons rendeues jusques a la somme de XIIII<hi rend="sup">M</hi> f. t. que derrenierement avons receue<note type="na"><p><ref target="#">Voir l'acte n°9</ref>.</p></note> par la main de <persName ref="#CordierM">Michiel Cordier</persName>, tresorier general de <persName ref="#JeanI">mon tres redoubté seigneur et pere monseigneur le duc de Bourbonnois et d’Auvergne</persName>, et presentement pour la parpaie la somme six mil livres tournois avons rendues les obligacions desdiz officiers, et de laquelle somme de VI<hi rend="sup">M</hi> l. t. presentement receue et qui nous restoient a paier comme dit est desdites XX<hi rend="sup">M</hi> f. t., nous nous tenons pour content et en quictons a tous jours nostredit seigneur et frere, sondit receveur et tout autre qui ce peut touchier, sans ce que doresenavant puissions ou doyons demander aucune chose d’icelle somme de XX<hi rend="sup">M</hi> f. t.</p>
                   <p>En tesmoing de ce, nous avons fait mettre nostre seel a ces presentes, et icelles fait signer par <persName ref="#DB_sign">Estienne de Bar</persName> et <persName ref="#Gourriet_sign">Lorin Gourriet</persName>, noz secretaires, le XVI<hi rend="sup">e</hi> jour de decembre, l’an mil CCCC vint et six.</p>
                </div>
                <div type="MHT">
@@ -1644,7 +1644,7 @@
                </div>
             </body>
          </text>
-         <text type="Deperditum" subtype="Lettres patentes" xml:id="Ch-13" n="13">
+         <text type="Deperditum" subtype="Lettres_patentes" xml:id="Ch-13" n="13">
             <front>
                <docDate>
                   <date when="1427-06-27">1427, 27 juin</date>
@@ -1668,7 +1668,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-14" n="14">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-14" n="14">
             <front>
                <docDate>
                   <date when="1427-08-04">1427, 4 août</date>
@@ -1700,7 +1700,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-15" n="15">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-15" n="15">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
@@ -1737,7 +1737,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-16" n="16">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-16" n="16">
             <front>
                <docDate>
                   <date when="1427-08-24">1427, 24 août</date>
@@ -1774,7 +1774,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-17" n="17">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-17" n="17">
             <front>
                <docDate>
                   <date when="1427-08-28">1427, 28 août</date>
@@ -1809,7 +1809,7 @@
                </div>
             </body>
          </text>
-         <text type="Deperditum" subtype="Lettres closes" xml:id="Ch-18" n="18">
+         <text type="Deperditum" subtype="Lettres_closes" xml:id="Ch-18" n="18">
             <front>
                <docDate>
                   <date notAfter="1428-01-28">[Avant le 20 janvier 1428 (n. st.)]</date>
@@ -1833,7 +1833,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-19" n="19">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-19" n="19">
             <front>
                <docDate>
                   <date when="1428-01-31">1428 (n. st.), 30 janvier</date>
@@ -1864,7 +1864,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-20" n="20">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-20" n="20">
             <front>
                <docDate>
                   <date when="1428-11-04">1428, 4 novembre</date>
@@ -1899,7 +1899,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-21" n="21">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-21" n="21">
             <front>
                <docDate>
                   <date when="1428-12-12">1428, 12 décembre</date>
@@ -1991,7 +1991,7 @@
                </div>
             </body>
          </text>
-         <text type="Vidimus" subtype="Lettres patentes" xml:id="Ch-23" n="23">
+         <text type="Vidimus" subtype="Lettres_patentes" xml:id="Ch-23" n="23">
             <front>
                <docDate>
                   <date when="1429-04-20">1429, 20 avril</date>
@@ -2053,7 +2053,7 @@
                </div>
             </body>
          </text>
-         <text type="Minute" subtype="Lettres patentes" xml:id="Ch-25" n="25">
+         <text type="Minute" subtype="Lettres_patentes" xml:id="Ch-25" n="25">
             <front>
                <docDate>
                   <date when="1430-02-01">1430 (n. st.), 1er février</date>
@@ -2079,7 +2079,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-26" n="26">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-26" n="26">
             <front>
                <docDate>
                   <date when="1430-02-15">1430 (n. st.), 15 février</date>
@@ -2113,7 +2113,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres closes" xml:id="Ch-27" n="27">
+         <text type="Original" subtype="Lettres_closes" xml:id="Ch-27" n="27">
             <front>
                <docDate>
                   <date when="1430-05-09">[1430], 9 mai<note type="n1"><p>Nous datons cette missive de 1430 en raison de l’acte des trois états du pays d’Auvergne, daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note></date>
@@ -2141,7 +2141,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres patentes" xml:id="Ch-28" n="28">
+         <text type="Original" subtype="Lettres_patentes" xml:id="Ch-28" n="28">
             <front>
                <docDate>
                   <date when="1430-09-05">1430, 5 septembre</date>
@@ -2172,7 +2172,7 @@
                </div>
             </body>
          </text>
-         <text type="Original" subtype="Lettres closes" xml:id="Ch-29" n="29">
+         <text type="Original" subtype="Lettres_closes" xml:id="Ch-29" n="29">
             <front>
                <docDate>
                   <date notBefore="1425-06-10" notAfter="1433-06-10">[1425-1433], 10 juin</date>
@@ -2204,7 +2204,7 @@
                </div>
             </body>
          </text>
-         <text type="Deperditum" subtype="Lettres patentes" xml:id="Ch-30" n="30">
+         <text type="Deperditum" subtype="Lettres_patentes" xml:id="Ch-30" n="30">
             <front>
                <docDate>
                   <date when="1431-04-12">1431, 12 avril</date>

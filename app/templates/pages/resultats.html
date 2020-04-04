@@ -7,7 +7,7 @@
             {% for acte in resultats %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=acte.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{acte.id_acts}} ({{acte.date}}) : {{acte.state}}, {{acte.type}}, {{acte.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{acte.id_acts}} ({{acte.date}},  {{acte.state}}, {{acte.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{acte.analyse}}.</i></p>
                     </a>
                 </div>
@@ -16,7 +16,7 @@
             {% for depot in resultats_institution %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=depot.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{depot.id_acts}} ({{depot.date}}) : {{depot.state}}, {{depot.type}}, {{depot.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{depot.id_acts}} ({{depot.date}}, {{depot.state}}, {{depot.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{depot.analyse}}.</i></p>
                     </a>
                 </div>
@@ -25,7 +25,7 @@
             {% for annee in resultats_annee %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=annee.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{annee.id_acts}} ({{annee.date}}) : {{annee.state}}, {{annee.type}}, {{annee.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{annee.id_acts}} ({{annee.date}}, {{annee.state}}, {{annee.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{annee.analyse}}.</i></p>
                     </a>
                 </div>
@@ -34,7 +34,7 @@
             {% for lieu in resultats_lieu_production %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=lieu.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{lieu.id_acts}} ({{lieu.date}}) : {{lieu.state}}, {{lieu.type}}, {{lieu.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{lieu.id_acts}} ({{lieu.date}}, {{lieu.state}}, {{lieu.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{lieu.analyse}}.</i></p>
                     </a>
                 </div>
@@ -43,7 +43,7 @@
             {% for etat in resultats_state %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=etat.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{etat.id_acts}} ({{etat.date}}) : {{etat.state}}, {{etat.type}}, {{etat.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{etat.id_acts}} ({{etat.date}}, {{etat.state}}, {{etat.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{etat.analyse}}.</i></p>
                     </a>
                 </div>
@@ -52,7 +52,7 @@
             {% for type in resultats_type %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=type.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{type.id_acts}} ({{type.date}}) : {{type.state}}, {{type.type}}, {{type.institution}}.</p>
+                        <p class="result-item-acte">Acte n°{{type.id_acts}} ({{type.date}}, {{type.state}}, {{type.institution}}).</p>
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{type.analyse}}.</i></p>
                     </a>
                 </div>

@@ -124,7 +124,6 @@ def recherche():
 		year = item.date
 		year = re.search('[0-9]{4}',year)
 		list_year.append(int(year.group()))
-	list_year.sort()
 	list_year = set(list_year)
 	for institution in Acts.query.group_by(Acts.institution).all():
 		if 'nationales' in institution.institution:
