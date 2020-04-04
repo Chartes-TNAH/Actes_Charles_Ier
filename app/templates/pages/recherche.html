@@ -14,13 +14,13 @@
                     </div>
                 </div>
             </form>
-            <!--<form action="{{url_for('resultats')}}" method="GET">
+            <form action="{{url_for('resultats')}}" method="GET">
                 <p>Recherche des actes par année :</p>
                 <div class="form-sub">
                     <div class="form-keyword-global">
                         <div class="form-keyword-sub">
                             <select name="year" type="search"  class="form-keyword">
-                                {% for item in list_years %}
+                                {% for item in list_year %}
                                     <option value="{{item}}">{{item}}</option>
                                 {% endfor %}
                             </select>
@@ -30,7 +30,7 @@
                         <button type="submit" class="form-button">Selectionner</button>
                     </div>
                 </div>
-            </form>-->
+            </form>
             <form action="{{url_for('resultats')}}" method="GET">
                 <p>Recherche selon les lieux de conservation des actes :</p>
                 <div class="form-sub">

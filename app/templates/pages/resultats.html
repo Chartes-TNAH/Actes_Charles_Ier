@@ -21,7 +21,7 @@
                     </a>
                 </div>
             {% endfor %}
-        <!--{% elif resultats_annee %}
+        {% elif resultats_annee %}
             {% for annee in resultats_annee %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=annee.id_acts)}}">
@@ -29,7 +29,7 @@
                         <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{annee.analyse}}.</i></p>
                     </a>
                 </div>
-            {% endfor %}-->
+            {% endfor %}
         {% elif resultats_lieu_production %}
             {% for lieu in resultats_lieu_production %}
                 <div class="result-item">

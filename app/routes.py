@@ -111,6 +111,7 @@ def recherche():
 	(2) Des requêtes sont effectuées en boucle sur la class Acts et, les éléments trouvés sont ajoutés à la liste correspondante. Dans le libellés des dépôts d'archives départemenaux et municipaux, la méthode sub() de la librairie re permet, via une regex
 	à compléter
 	"""
+	list_year = []
 	list_AN = []
 	list_bib = []
 	list_AD = []
@@ -119,6 +120,12 @@ def recherche():
 	list_state = []
 	list_type = []
 	list_city = []
+	for item in Acts.query.all():
+		year = item.date
+		year = re.search('[0-9]{4}',year)
+		list_year.append(int(year.group()))
+	list_year.sort()
+	list_year = set(list_year)
 	for institution in Acts.query.group_by(Acts.institution).all():
 		if 'nationales' in institution.institution:
 			national = institution.institution
@@ -148,7 +155,7 @@ def recherche():
 		place = city.place
 		list_city.append(place)
 	list_city.remove('NS')
-	return render_template("pages/recherche.html", list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
+	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
 
 @app.route("/recherche/resultats")
 def resultats():
@@ -171,9 +178,9 @@ def resultats():
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
 			).all()
-		#resultats_annee = Acts.query.filter(
-			#Acts.annee.like("%{}%".format(motclef_annee))
-			#).all()
+		resultats_annee = Acts.query.filter(
+			Acts.date.like("%{}%".format(motclef_annee))
+			).all()
 		resultats_lieu_production = Acts.query.filter(
 			Acts.place.like("%{}%".format(motclef_lieu_production))
 			).all()
@@ -183,7 +190,7 @@ def resultats():
 		resultats_type = Acts.query.filter(
 			Acts.type.like("%{}%".format(motclef_type))
 			).all()
-		return render_template("pages/resultats.html", resultats=resultats, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 
