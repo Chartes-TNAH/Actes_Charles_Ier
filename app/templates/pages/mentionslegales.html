@@ -1,0 +1,56 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<div class="acte_global">
+	<h1 class="h1_global">Mentions légales</h1>
+	<div class="mentions_div">
+		<p>Le site &#171;&nbsp;Actes de Charles I<sup>er</sup> de Bourbon&nbsp;&#187; est édité par Jean-Damien Généro et géré par l'École nationale des chartes, 65, rue de Richelieu, 75002 Paris.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Réalisation du site</h2>
+		<p>Le site est réalisé par Jean-Damien Généro, étudiant en deuxième année du Master &#171;&nbsp;Technologies numériques appliquées à l'histoire&nbsp;&#187; de l'École nationale des chartes.</p>	
+	</div>
+	<div class="mentions_div">
+		<h2>Propriété intellectuelle</h2>
+		<p>Les contenus présentés sur ce site sont couverts par le code de la propriété intellectuelle (CPI). </p>
+		<p>Ils sont basés sur un mémoire de Master recherche rédigé, soutenu et présenté publiquement par Jean-Damien Généro le 5&nbsp;juillet&nbsp;2018 à l'École d'histoire de la Sorbonne (Université Paris&nbsp;I Panthéon-Sorbonne).</p>
+		<p>L'ensemble du code et du contenu est consultable et téléchargeable sur le site <a href="https://github.com/" target="_blank">GitHub</a>. Ce dépôt ne signifie en aucun cas le renoncement au droit de propriété intellectuelle sur les transcriptions et les index présentés sur le site, qui résultent du travail de recherche de Jean-Damien Généro.</p>
+		<p>Pour toute demande de réutilisation des représentations iconographiques et/ou de l’ensemble des contenus éditoriaux produits pour le site : <a href="{{url_for ('contact')}}" target="_blank">page de contact</a>.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Crédits photographiques et autres mentions relatives aux droits d’auteur</h2>
+		<p>Les photographies ainsi que l’ensemble des œuvres figurant sur ce site proviennent de sources différentes. Si aucun crédit n'est indiqué (en particulier lorsqu'il s'agit de documents d'archives), l'auteur est Jean-Damien Généro.</p>
+		<p>Les crédits photographiques et autres mentions relatives aux droits d’auteur, tels que spécifiés sur ce site, doivent être respectés.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Liens</h2>
+		<p>L’établissement de liens vers le présent site est possible.</p>
+		<p>La mention explicite du site &#171;&nbsp;Actes de Charles I<sup>er</sup> de Bourbon&nbsp;&#187; dans l’intitulé du lien est souhaitée.</p>
+		<p>L'École natinoale des chartes et Jean-Damien Généro se réservent le droit de demander la suppression d’un lien qu’ils estiment non-conforme à l’objet du site &#171;&nbsp;Actes de Charles I<sup>er</sup> de Bourbon&nbsp;&#187;.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Données personnelles</h2>
+		<p>Conformément à la loi n°78-17 du 6 janvier 1978 modifiée relative à l’informatique aux fichiers et aux libertés, vous disposez d’un droit d’opposition (art.38), d’accès (art.39), de rectification ou de suppression (art.40) des données qui vous concernent.</p>
+		<p>Ce droit s’exerce, en justifiant de son identité : <a href="{{url_for ('contact')}}" target="_blank">page de contact</a>.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Témoins de connexion ou cookies</h2>
+		<p>L’utilisateur est informé que lors de ses visites sur le site des témoins de connexions ou cookies peuvent s’installer automatiquement sur son logiciel de navigation. Le cookie est un ensemble de données servant à enregistrer les informations relatives à la navigation de l’utilisateur sur le site.</p>
+		<p>Le paramétrage du logiciel de navigation permet d’informer de la présence de cookie et éventuellement, de la refuser de la manière décrite à l’adresse suivante : www.cnil.fr. L’utilisateur dispose de l’ensemble des droits susvisés s’agissant des données à caractère personnel communiquées par le biais des cookies dans les conditions indiquées ci-dessus.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Droit de réponse</h2>
+		<p>Le droit de réponse peut être exercé auprès de Jean-Damien Généro ou de l'École nationale des chartes : <a href="{{url_for ('contact')}}" target="_blank">page de contact</a>.</p>
+	</div>
+	<div class="mentions_div">
+		<h2>Avertissement</h2>
+		<p>Les informations figurant sur ce site et/ou accessibles par ce site proviennent de sources considérées comme étant fiables. Toutefois, ces informations peuvent contenir des inexactitudes techniques et des erreurs typographiques.</p>
+		<p>Les informations et/ou documents disponibles sur ce site sont susceptibles d’être modifiés à tout moment, et peuvent avoir fait l’objet de mises à jour. En particulier, ils peuvent avoir fait l’objet d’une mise à jour, entre le moment de leur téléchargement et celui où l’utilisateur en prend connaissance.</p>
+		<p>L’utilisation des informations et/ou documents disponibles sur ce site se fait sous l’entière et seule responsabilité de l’utilisateur, qui assume la totalité des conséquences pouvant en découler. Jean-Damien Généro ou l'École nationale des chartes ne pourront en aucun cas être tenus responsables de tout dommage de quelque nature qu’il soit résultant de l’interprétation ou de l’utilisation des informations et/ou documents disponibles sur ce site.</p>	
+	</div>
+	<div class="mentions_div">
+		<h2>Droit applicable</h2>
+		<p>L’utilisation de ce site est régie par le droit français, quel que soit le lieu d’utilisation.</p>
+		<p>En cas de contestation éventuelle, et après l’échec de toute tentative de recherche d’une solution amiable, les tribunaux français seront seuls compétents pour connaître de ce litige.</p>
+	</div>
+</div>
+{% endblock %}
