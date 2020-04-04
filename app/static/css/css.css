@@ -372,6 +372,8 @@ a:hover, a:active {
     padding-left: 21%;
     width: auto;
     margin: auto;
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .prec_suiv {
@@ -393,7 +395,6 @@ a:hover, a:active {
     font-size: 30px;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .date {
@@ -401,7 +402,6 @@ a:hover, a:active {
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .analyse {
@@ -410,7 +410,6 @@ a:hover, a:active {
     text-indent: 5%;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .tradition {
@@ -418,7 +417,6 @@ a:hover, a:active {
     text-align: justify;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .tradition > p {
@@ -430,7 +428,6 @@ a:hover, a:active {
     text-indent: 5%;
     margin-top: 2%;
     margin-bottom: 2.5%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .text_etabli {
@@ -442,12 +439,10 @@ a:hover, a:active {
 
 .mht {
     text-indent: 5%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .signature {
     text-indent: 5%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .note-global {
@@ -600,6 +595,13 @@ blockquote p::after {
 .contact-global > p {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+/* MENTIONS LÉGALES */
+.mentions_div {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: justify;
 }
 
 /* ERREUR 404 */

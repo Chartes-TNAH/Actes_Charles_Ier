@@ -193,6 +193,10 @@ def resultats():
 	else:
 		return render_template('pages/error404.html')
 
+@app.route("/mentionslegales")
+def mentions_legales():
+	return render_template('pages/mentionslegales.html')
+
 @app.errorhandler(404)
 def page_not_found(error):
    return render_template('pages/error404.html', title = '404'), 404

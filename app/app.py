@@ -21,4 +21,4 @@ db = SQLAlchemy(app)
 source_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 
 # Import des différentes routes depuis le fichier routes.py
-from .routes import accueil, projet, corpus, bibliographie, duc, index_noms, index_prosopo, index_lieu, contact, recherche, acte, page_not_found, resultats
+from .routes import accueil, projet, corpus, bibliographie, duc, index_noms, index_prosopo, index_lieu, contact, recherche, acte, page_not_found, mentions_legales, resultats
