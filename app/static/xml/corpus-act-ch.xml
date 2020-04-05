@@ -528,6 +528,158 @@
                </placeName>
                <desc>Saône-et-Loire</desc>
             </place>
+            <place xml:id="Marcigny">
+               <placeName>
+                  <name xml:lang="frm">Marcegny les Nonnains</name>
+                  <name xml:lang="frm">Marsegny</name>
+                  <name xml:lang="fr">Marcigny-les-Nonnais</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Marcigny">46° 16′ 32″ nord, 4° 02′ 32″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Tournus">
+               <placeName>
+                  <name xml:lang="frm">Tournuz</name>
+                  <name xml:lang="fr">Tournus</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Tournus">46° 33′ 50″ nord, 4° 54′ 33″ est</geo>
+               </location>
+            </place>
+            <place xml:id="StGengoux">
+               <placeName>
+                  <name xml:lang="frm">Saint Jengoul</name>
+                  <name xml:lang="fr">Saint-Gengoux-le-National</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Saint-Gengoux-le-National">46° 36′ 53″ nord, 4° 39′ 49″ est</geo>
+               </location>
+            </place>
+            <place xml:id="StMarieduB">
+               <placeName>
+                  <name xml:lang="frm">Saincte Marie du Bois</name>
+                  <name xml:lang="fr">Bois-Sainte-Marie</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Bois-Sainte-Marie">46° 19′ 48″ nord, 4° 21′ 21″ est</geo>
+               </location>
+            </place>
+            <place xml:id="ChalonsurSaone">
+               <placeName>
+                  <name xml:lang="frm">Chalon</name>
+                  <name xml:lang="fr">Chalon-sur-Saône</name>
+               </placeName>
+               <desc>Saône-et-Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Chalon-sur-Sa%C3%B4ne">46° 46′ 50″ nord, 4° 51′ 10″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Sancerre">
+               <placeName>
+                  <name xml:lang="fr">Sancerre</name>
+               </placeName>
+               <desc>comté de</desc>
+            </place>
+            <place xml:id="Cusset">
+               <placeName>
+                  <name xml:lang="frm">Cussé</name>
+                  <name xml:lang="fr">Cusset</name>
+               </placeName>
+               <desc>Allier</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Cusset">46° 08′ 07″ nord, 3° 27′ 26″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Charlieu">
+               <placeName>
+                  <name xml:lang="fr">Charlieu</name>
+               </placeName>
+               <desc>Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Charlieu">46° 09′ 36″ nord, 4° 10′ 21″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Chateauneuf">
+               <placeName>
+                  <name xml:lang="frm">Chastelneuf</name>
+                  <name xml:lang="fr">Châteauneuf</name>
+               </placeName>
+               <desc>Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf_(Loire)">45° 31′ 22″ nord, 4° 37′ 32″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Ambierle">
+               <placeName>
+                  <name xml:lang="fr">Ambierle</name>
+               </placeName>
+               <desc>Loire</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Ambierle">46° 06′ 19″ nord, 3° 53′ 47″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Esbinelle">
+               <placeName>
+                  <name xml:lang="fr">Esbruelle ou Esbinelle</name>
+               </placeName>
+               <desc>non-identifié</desc>
+            </place>
+            <place xml:id="NeversC">
+               <placeName>
+                  <name xml:lang="fr">Nevers</name>
+               </placeName>
+               <desc>comté de</desc>
+            </place>
+            <place xml:id="RethelC">
+               <placeName>
+                  <name xml:lang="fr">Rethel</name>
+               </placeName>
+               <desc>comté de</desc>
+            </place>
+            <place xml:id="StPierreleMoutier">
+               <placeName>
+                  <name xml:lang="frm">Saint Pierre le Moustier</name>
+                  <name xml:lang="fr">Saint-Pierre-le-Moûtier</name>
+               </placeName>
+               <desc>Nièvre</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Saint-Pierre-le-Mo%C3%BBtier">46° 47′ 30″ nord, 3° 07′ 08″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Sancoins">
+               <placeName>
+                  <name xml:lang="frm">Cenquoins</name>
+                  <name xml:lang="fr">Sancoins</name>
+               </placeName>
+               <desc>Cher</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Sancoins">46° 49′ 58″ nord, 2° 55′ 11″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Cosne">
+               <placeName>
+                  <name xml:lang="frm">Cosne</name>
+                  <name xml:lang="fr">Cosne-Cours-sur-Loire</name>
+               </placeName>
+               <desc>Nièvre</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Cosne-Cours-sur-Loire">47° 24′ 44″ nord, 2° 55′ 39″ est</geo>
+               </location>
+            </place>
+            <place xml:id="Rosemont">
+               <placeName>
+                  <name xml:lang="fr">Rosemont</name>
+               </placeName>
+               <desc>com. Luthenay-Uxeloup, Nièvre</desc>
+               <location>
+                  <geo source="https://fr.wikipedia.org/wiki/Luthenay-Uxeloup">46° 51′ 05″ nord, 3° 15′ 51″ est</geo>
+               </location>
+            </place>
          </settingDesc>
          <particDesc>
             <listPerson type="rois">
@@ -1137,6 +1289,14 @@
                   </persName>
                   <note>Seigneur d'Authumes, chancelier de Philippe le Bon.</note>
                </person>
+               <person xml:id="ToulongeonA">
+                  <persName>
+                     <forename>Antoine</forename>
+                     <nameLink>de</nameLink>
+                     <forename>Toulongeon</forename>
+                  </persName>
+                  <note>Chevalier, seigneur de Buxy, maréchal de Bourgogne.</note>
+               </person>
                <person xml:id="FraignotJ">
                   <persName>
                      <forename>Jean</forename>
@@ -1173,6 +1333,22 @@
                      <surname>Breneal</surname>
                   </persName>
                   <note>Maître, secrétaire.</note>
+               </person>
+               <person xml:id="NeversCh">
+                  <persName>
+                     <forename>Charles</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Bourgogne</surname>
+                  </persName>
+                  <note>Comte de Nevers et de Rethel (1415-1464).</note>
+               </person>
+               <person xml:id="NeversJ">
+                  <persName>
+                     <forename>Jean</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Bourgogne</surname>
+                  </persName>
+                  <note>Frère du comte de Nevers et de Rethel.</note>
                </person>
                <person xml:id="VienneG">
                   <persName>
@@ -1248,6 +1424,13 @@
                      <surname>Bourgois</surname>
                   </persName>
                   <note>Écuyer.</note>
+               </person>
+               <person xml:id="GressartP">
+                  <persName>
+                     <forename>Perrinet</forename>
+                     <surname>Gressart</surname>
+                  </persName>
+                  <note>Écuyer pannetier du duc, capitaine de La Charité-sur-Loire.</note>
                </person>
                <person xml:id="RocheteC">
                   <persName>
@@ -2438,10 +2621,14 @@
                   <placeName ref="#SuryleB">Sury-le-Bois</placeName>
                </docDate>
                <argument>
-                  <p>Abstinence de guerre avec la Bourgogne</p>
+                  <p>Ratification d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
                </argument>
                <argument>
-                  <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie. Celle-ci comprend les terres de son père le duc, celles du duc de Bourgogne et du comte Charles de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny, des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, et les villes de Saint-Pierre-le-Moûtier et Sancoins. Ces dernières seront évacuées par les garnisons qui s’y trouvent, de même que Marcigny, récemment prise par le comte de Clermont. Pendant le temps de la trêve, les deux parties devront empêcher par tous les moyens que des gens d’arme ne ravagent les pays concernés, et leurs sujets ne pourront passer une frontière sans être porteurs d’un sauf-conduit délivré par le duc de Bourgogne, le comte de Clermont, ou leurs conservateurs. La Charité-sur-Loire, Rosemont, ainsi que toutes les places occupées par Perrinet Gressart, sont incluses dans l’abstinence et ce dernier s’engage par écrit à la respecter. Le maréchal de Bourgogne, le bailli du Nivernais et Perrinet Gressart sont nommés conservateurs pour Philippe le Bon ; Charles de Bourbon nomme pour sa part Blain Loup, seigneur de Beauvoir, le seigneur des Barres et Philibert de l’Espinasse, dit Cormorant, bailli du Beaujolais. Chaque partie a six semaines à partir du début de la trêve pour la rompre, en envoyant pour cela une notification à la Chambre de comptes adverse<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
+                  <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
+                     <p>Celle-ci comprend les terres de son père le duc, celles du duc de Bourgogne et du comte Charles de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny, des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, et les villes de Saint-Pierre-le-Moûtier et Sancoins. Ces dernières seront évacuées par les garnisons qui s’y trouvent, de même que Marcigny, récemment prise par le comte de Clermont.</p>
+                  <p>Pendant le temps de la trêve, les deux parties devront empêcher par tous les moyens que des gens d’arme ne ravagent les pays concernés, et leurs sujets ne pourront passer une frontière sans être porteurs d’un sauf-conduit délivré par le duc de Bourgogne, le comte de Clermont, ou leurs conservateurs. La Charité-sur-Loire, Rosemont, ainsi que toutes les places occupées par Perrinet Gressart, sont incluses dans l’abstinence et ce dernier s’engage par écrit à la respecter.</p>
+                  <p>Antoine de Toulongeon, maréchal de Bourgogne, le bailli du Nivernais et Perrinet Gressart sont nommés conservateurs de l'abstinence pour Philippe le Bon ; Charles de Bourbon nomme pour sa part Blain Loup, seigneur de Beauvoir, Louis des Barres et Philibert de l’Espinasse, dit Cormorant, bailli du Beaujolais.</p>
+                  <p>Chaque partie a six semaines à partir du début de la trêve pour la rompre, en envoyant pour cela une notification à la Chambre des comptes adverse.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original sur parchemin, signé, endommagé<note type="n1"><p>Trois trous, de taille différente, résultant visiblement d’une combustion, affectent le parchemin.</p></note>, et jadis scellé sur double queue, dont une partie de la queue de parchemin subsiste, dépourvue de son sceau. 440 x 495 mm., dont repli 80 mm. <institution>Archives départementales de la Côte-d’Or</institution>, B 11917.</witness>
@@ -2450,8 +2637,38 @@
             <body>
                <div type="acte">
                   <p>Charles de Bourbon, conte de Clermont, aisné fils de nostre tres redoubté seigneur et pere monseigneur le duc de Bourbonnois et d’Auvergne, aïent le gouvernement en son absence de ses païs, terres et seigneuries, et lieutenant general de <persName ref="#ChVII">monseigneur le roi</persName> esdiz païs, Lïonnois et Masconnois et jusques a la Charité sur Loire incluse, a tous ceulx qui ces presentes lettres verront, salut.</p>
-                  <p>Come despieça aient esté prinses certaines abstinences de guerre entre les païs des <placeName ref="#BourgogneD">duchié</placeName> et <placeName ref="#BourgogneC">conté de Bourgoingne</placeName> et de <placeName ref="#Charolais">Charoleis</placeName>, et ceulx de <placeName ref="#Maconnais">Masconnois</placeName> et de <placeName ref="#Donzois">Donziois</placeName> et autres pour la partie de nostre tres chier seigneur et frere le <persName ref="#PhBon">duc de Bourgoingne</persName>, conte de Flandre, d’Artois et de Bourgoingne, declairez et compris plus a plain es lettres desdites abstinences, d’une part, et lesdiz païs de <persName ref="#JeanI">nostredit tres redoubté seigneur et pere</persName>, c’est assavoir de <placeName ref="#Bourbonnais">Bourbonnois</placeName>, <placeName ref="#Forez">Forez</placeName>, <placeName ref="#Beaujolais">Beaujollois</placeName> et autres declairez et compris en icelles lettres d’abstinence d’autre part, lesquelles abstinences de guerre ayent pluseurs fois esté confirmees, et neantmoins puis aucun temps en ca petitement gardees et entretenues, anicois ait esté en plusieurs poins corompues et enfraintes en tant que grant guerre se mouvoit et encommancoit entre lesdiz païs, dont plusieurs maulx et domages sont ensuis et estoient taille d’estre plus grans et irreparables ausdiz païs, et, pour ce, affin de y obvier et pourvier a la reparacion des choses actemptees et entreprises fetes contres esdites abstinences, et la bonne conduite et entretenement d’icelles pour le temps ad venir, par le moïen de <persName ref="#ClunyAbbe">reverend pere en Dieu l’abbé de Clugny</persName>, ait esté prise et accordee et tenue une journee a <placeName ref="#BourgenBresse">Boure en Bresse</placeName> au XXI<hi rend="sup">eme</hi> jour de ce present mois de septembre, a laquelle, de par nostredit seigneur et frere de Bourgoingne, ayent esté envoyez en ambassade messire <persName ref="#AndrietPh">Philibert Andrinet</persName>, messire <persName ref="#LaGuicheG">Gerart de la Guiche</persName> et messire <persName ref="#BoisH">Hugues du Bois</persName>, bailli de Charolais, chevalier, <persName ref="#LuyrieuL">Lancelot, seigneur de Lirrieu</persName>, escuïer, bailli de <placeName ref="#Macon">Mascon</placeName>, chambellan de nostredit seigneur et frere, <placeName ref="#BourgoisG">Guiot Burgois</placeName>, escuïer, maistres <persName ref="#RocheteC">Glaude Rochete</persName>, <persName ref="#ClunyH">Henri de Clugny</persName>, <persName ref="#BastierN">Nicolas Bastier</persName> et <persName ref="#FraignotJ">Jehan Faignot</persName>, tous conseillers de nostredit seigneur et <x>pere</x>, et de par nostre tres redoubté <persName ref="#MarieBerry">dame et mere la duchesse de Bourbonnois et d’Auvergne</persName> et nous, messire <persName ref="#EspinassePh">Phelibert, seigneur de l’Espinace</persName>, dit Comorant, chevalier, bailli de Beaujollois, maistre <persName ref="#ClepierO">Oudart Clepier</persName>, president en Bourbonnois, et maistre <persName ref="#CarmoneP">Pierre de Carmoinne</persName>, tous conseiller de nostredit seigneur et pere et de nostredite dame et mere et de nous, entre lesquelx ambesseurs et deputez de par lesdites parties, et par le moïen de <persName ref="#SepsC">Claude du Seps</persName>, escuïer, seigneur de la Ravoire et president en la chambre des comptes de Savoye, <persName ref="#ChampdueO">Oddo, seigneur de Champdue</persName>, bailli de <placeName ref="#Bresse">Bresse</placeName>, et messire <persName ref="#LovoulJ">Jacques Lovoul</persName>, docteur en loys et en decret, juge dudit païs de Bresse, tous conseillers de nostre tres chier et tres amé cousin le <persName ref="#SavoieAVIII">duc de Savoye</persName>, illec de par lui envoïez et ordonnez pour estre mediateurs entre les gens et ambasseurs de nostredit seigneur et frere le duc de Bourgoingne et de nostredite dame et mere et de nous, ayent esté traictees, appointees et accordees ledit XXI<hi rend="sup">e</hi> jour, et autres jours ensuis, sur le fait desdites abstinences, plusieurs poins et articles, ainsi et par la maniere que contenu est en certaine cedulle par eulx sur ce fete et advisee, dont la teneur s’en suit :</p>
-                  <p>« A la journee tenue au lieu de Bourc en Bresse le XXI<hi rend="sup">e</hi> jour de septembre mil CCCC XXXI et es autres jours ensuis, mise sur et arrestee par le moïen de reverend pere en Dieu monseigneur l’abbé de Clugny, sur la reprise, entretenement et bonne conduite des trevez et abstinencez de guerre prise despieça, et depuis assez souventes fois confirmees entre les païs de monseigneur le duc de Bourgoingne, c’est assavoir ses duchés et contez de Bourgoingne et de Charolais et aussi les païs de <placeName ref="#Nivernais">Nivernois</placeName>, Donzois et de Masconois, et pour les villes, chasteaulx et païs royaulx enclavez en iceulx, come <placeName ref="#Cluny">Clugny</placeName> et les terres et forteresses apartenans a monseigneur l’abbé dudit lieu de Clugny, et aussi au couvent d’icelle esglise, Marcegny les Nonnains, Tournuz, Saint Jangoul, Saincte Marie du Bois, les chasteaulx et villes de messeigneurs les evesques d’Ostun, Chalon, Mascon, et aussi des doïen et chappitre des eglises de Chalon et Mascon, et tous autres villes royaulx indifferamment enclavez en iceulx païs, d’une part, et les terres et seigneuries de monseigneur le duc de Bourbonnois, come les duchiez de Bourbonnois et d’Auvergne, et les païs de Forez, Beaujollois, Combraille, le conté de Sancerre, les villes de Saint Poursaint, Cussé, [?](a), Charlieu, Chastelneuf, et aussi Esbinelle et aussi autres villes et païs royaulx indifferamment enclavez en iceulx, ont en la presence et par le moïen de Glaude du Cez, seigneur de Rivoire, president de la chambre des comptes de monseigneur le duc de Savoie, Odot, seigneur de Champdee, bailli de Bresse, et de messire Jacques Louriol, docteur en lois et decrets, juge de Bresse, tous conseillers de mondit seigneur le duc de Savoie, envoyez et ordonnez de par icelui seigneur pour estre mediateurs desdites parties, estre accordez, traictiez et confirmez en bonne foy par les ambassadeurs d’une part et d’autre, cy a la fin de ces presentes nomez, et envoiez pour ce tout expressement et pour ceste cause a icelle journee, les poins et articles en la maniere et forme qui s’ensuit :</p>
+                  <p>Come despieça aient esté prinses certaines abstinences de guerre entre les païs des <placeName ref="#BourgogneD">duchié</placeName> et <placeName ref="#BourgogneC">conté de Bourgoingne</placeName> et de <placeName ref="#Charolais">Charoleis</placeName>, et ceulx de <placeName ref="#Maconnais">Masconnois</placeName> et de <placeName ref="#Donzois">Donziois</placeName> et autres pour la partie de nostre tres chier seigneur et frere le <persName ref="#PhBon">duc de Bourgoingne</persName>, conte de Flandre, d’Artois et de Bourgoingne, declairez et compris plus a plain es lettres desdites abstinences, d’une part, et lesdiz païs de <persName ref="#JeanI">nostredit tres redoubté seigneur et pere</persName>, c’est assavoir de <placeName ref="#Bourbonnais">Bourbonnois</placeName>, <placeName ref="#Forez">Forez</placeName>, <placeName ref="#Beaujolais">Beaujollois</placeName> et autres declairez et compris en icelles lettres d’abstinence d’autre part, lesquelles abstinences de guerre ayent pluseurs fois esté confirmees, et neantmoins puis aucun temps en ca petitement gardees et entretenues, aniçois ait esté en plusieurs poins corompues et enfraintes en tant que grant guerre se mouvoit et encommançoit entre lesdiz païs, dont plusieurs maulx et domages sont ensuis et estoient taille d’estre plus grans et irreparables ausdiz païs ;</p>
+                  <p>Et, pour ce, affin de y obvier et pourvier a la reparacion des choses actemptees et entreprises fetes contres esdites abstinences, et la bonne conduite et entretenement d’icelles pour le temps ad venir, par le moïen de <persName ref="#ClunyAbbe">reverend pere en Dieu l’abbé de Clugny</persName>, ait esté prise et accordee et tenue une journee a <placeName ref="#BourgenBresse">Boure en Bresse</placeName> au XXI<hi rend="sup">eme</hi> jour de ce present mois de septembre, a laquelle, de par nostredit seigneur et frere de Bourgoingne, ayent esté envoyez en ambassade messire <persName ref="#AndrietPh">Philibert Andrinet</persName>, messire <persName ref="#LaGuicheG">Gerart de la Guiche</persName> et messire <persName ref="#BoisH">Hugues du Bois</persName>, bailli de Charolais, chevalier, <persName ref="#LuyrieuL">Lancelot, seigneur de Lirrieu</persName>, escuïer, bailli de <placeName ref="#Macon">Mascon</placeName>, chambellan de nostredit seigneur et frere, <placeName ref="#BourgoisG">Guiot Burgois</placeName>, escuïer, maistres <persName ref="#RocheteC">Glaude Rochete</persName>, <persName ref="#ClunyH">Henri de Clugny</persName>, <persName ref="#BastierN">Nicolas Bastier</persName> et <persName ref="#FraignotJ">Jehan Faignot</persName>, tous conseillers de nostredit seigneur et <x>pere</x>, et de par nostre tres redoubté <persName ref="#MarieBerry">dame et mere la duchesse de Bourbonnois et d’Auvergne</persName> et nous, messire <persName ref="#EspinassePh">Phelibert, seigneur de l’Espinace</persName>, dit Comorant, chevalier, bailli de Beaujollois, maistre <persName ref="#ClepierO">Oudart Clepier</persName>, president en Bourbonnois, et maistre <persName ref="#CarmoneP">Pierre de Carmoinne</persName>, tous conseiller de nostredit seigneur et pere et de nostredite dame et mere et de nous, entre lesquelx ambesseurs et deputez de par lesdites parties, et par le moïen de <persName ref="#SepsC">Claude du Seps</persName>, escuïer, seigneur de la Ravoire et president en la chambre des comptes de Savoye, <persName ref="#ChampdueO">Oddo, seigneur de Champdue</persName>, bailli de <placeName ref="#Bresse">Bresse</placeName>, et messire <persName ref="#LovoulJ">Jacques Lovoul</persName>, docteur en loys et en decret, juge dudit païs de Bresse, tous conseillers de nostre tres chier et tres amé cousin le <persName ref="#SavoieAVIII">duc de Savoye</persName>, illec de par lui envoïez et ordonnez pour estre mediateurs entre les gens et ambasseurs de nostredit seigneur et frere le duc de Bourgoingne et de nostredite dame et mere et de nous, ayent esté traictees, appointees et accordees ledit XXI<hi rend="sup">e</hi> jour, et autres jours ensuis, sur le fait desdites abstinences, plusieurs poins et articles, ainsi et par la maniere que contenu est en certaine cedulle par eulx sur ce fete et advisee, dont la teneur s’en suit :</p>
+                  <p>&#171; A la journee tenue au lieu de Bourc en Bresse le XXI<hi rend="sup">e</hi> jour de septembre mil CCCC XXXI et es autres jours ensuis, mise sur et arrestee par le moïen de reverend pere en Dieu monseigneur l’abbé de Clugny, sur la reprise, entretenement et bonne conduite des trevez et abstinencez de guerre prise despieça, et depuis assez souventes fois confirmees entre les païs de monseigneur le duc de Bourgoingne, c’est assavoir ses duchés et contez de Bourgoingne et de Charolais et aussi les païs de <placeName ref="#Nivernais">Nivernois</placeName>, Donzois et de Masconois, et pour les villes, chasteaulx et païs royaulx enclavez en iceulx, come <placeName ref="#Cluny">Clugny</placeName> et les terres et forteresses apartenans a monseigneur l’abbé dudit lieu de Clugny, et aussi au couvent d’icelle esglise, <placeName ref="#Marcigny">Marcegny les Nonnains</placeName>, <placeName ref="#Tournus">Tournuz</placeName>, <placeName ref="#StGengoux">Saint Jangoul</placeName>, <placeName ref="#StMarieduB">Saincte Marie du Bois</placeName>, les chasteaulx et villes de messeigneurs les evesques d’<placeName ref="#Autun">Ostun</placeName>, <placeName ref="#ChalonsurSaone">Chalon</placeName>, <placeName ref="#Macon">Mascon</placeName>, et aussi des doïen et chappitre des eglises de Chalon et Mascon, et tous autres villes royaulx indifferamment enclavez en iceulx païs, d’une part, et les terres et seigneuries de monseigneur le duc de Bourbonnois, come les duchiez de Bourbonnois et d’<placeName ref="#Auvergne">Auvergne</placeName>, et les païs de Forez, Beaujollois, <placeName ref="#Combrailles">Combraille</placeName>, le conté de <placeName ref="#Sancerre">Sancerre</placeName>, les villes de <placeName ref="#StPourcain">Saint Poursaint</placeName>, <placeName ref="#Cusset">Cussé</placeName>, <placeName ref="#Ambierle">Ambierle</placeName>, <placeName ref="#Charlieu">Charlieu</placeName>, <placeName ref="#Chateauneuf">Chastelneuf</placeName>, et aussi <placeName ref="#Esbinelle">Esbinelle</placeName> et aussi autres villes et païs royaulx indifferamment enclavez en iceulx, ont en la presence et par le moïen de Glaude du Cez, seigneur de Rivoire, president de la chambre des comptes de monseigneur le duc de Savoie, Odot, seigneur de Champdee, bailli de Bresse, et de messire Jacques Louriol, docteur en lois et decrets, juge de Bresse, tous conseillers de mondit seigneur le duc de Savoie, envoyez et ordonnez de par icelui seigneur pour estre mediateurs desdites parties, estre accordez, traictiez et confirmez en bonne foy par les ambassadeurs d’une part et d’autre, cy a la fin de ces presentes nomez, et envoiez pour ce tout expressement et pour ceste cause a icelle journee, les poins et articles en la maniere et forme qui s’ensuit :</p>
+                  <p>Premierement que icelle abstinence en la forme et maniere qu’elles ont esté autrefois prises sont presentement reprises et seront doresenavant observees et bien gardees entre les païs cy dessus specifiez et declairez, ainsi et par la forme et maniere qu’il est escript et declairé assez a plain es lettres autresfois fetes sur lesdites abstinences et confirmacion d’icelles, et tellement que des païs et subgez de mondit seigneur de Bourgoingne et de messire les <persName ref="#NeversCh">contes</persName> <persName ref="##NeversJ">de</persName> <placeName ref="#NeversC">Nevers</placeName> et de <placeName ref="#RethelC">Retel</placeName> cy dessus declairez, aux païs et subgez de mondit seigneur de Bourbonnois aussi declairez cy desus, et ausdites villes et païs royaulx declairez en iceulx, ne sera fait, consenti ne procuré a fere, aucune guerre ou porté aucun domage ne inconvenient par les subgez d’iceulx païs ne par autre que l’en puisse, et s’aucun domage estoit fait que Dieu ne veuille a l’un de sesdiz païs par l’autre, ou souffert estre fait, l’en en fera faire toute reparacion possible, punicion et corection selon les cas, s’il y adviennent et tout ainsi qu’il apartient a bonne raison fere ;</p>
+                  <p>Item en ces presentes abstinences sont comprises les villes et terres de <placeName ref="#StPierreleMoutier">Saint Pierre le Moustier</placeName> et <placeName ref="#Sancoins">Cenquoins</placeName>, desquelles se font fors les ambassadeurs de mondit seigneur le duc de Bourbonnois, de madame la duchesse sa femme et de monseigneur de Clermont, en telle maniere que desdites places et païs ne sera point souffert, ne procuré estre fait, ne porté en quelque maniere que ce soit, guerre, mal, domage, prejudice ou inconvenient esdit païs de mondit seigneur de Bourgoingne, de mesdits seigneurs les contes de Nevers, leurs subgiez, ne autres villes et païs declairez en yceulx païs dessus nomez, et s’aucun inconvenient ou domage en advenoit, en sera fait reparacion, restitucion et justice comme ainsi que dessus est dit ;</p>
+                  <p>Item et avec ce feront et procureront par effect, et de ce se font fors lesdiz embassadeurs de mondit [seigneur<note type="na"><p><hi rend="i">Seigneur</hi> absent en raison d’un trou.</p></note>] de Bourbon, et aussi de madicte dame la duchesse, et de mondit seigneur de Clermont, que les garnisons des gens d’armes et de trait estans esdites places de Saint Pierre le Moustier et Cenquoins seront widiees et les feront widier et mectre hors d’icelles incontinent apres la publicacion d’icelles <hi rend="i">(trou :</hi> abstinences, au <hi rend="i">?)</hi> regart de Saint Pierre le Moustier ilz avoient delay de fere ladite vuidange jusques a la Toussains prouchainement venant, pendent lequel temps toutesvoyes ilz ne feront ne procureront estre fait en quelque maniere que ce soit aucune guerre, mal, domaige ou inconvenient es païs de <hi rend="i">(trou)</hi>, de nostredit seigneur de Nevers, leurs subgez et villes enclavees dessus nomees, et aussi ne seront mis esdites places de Saint Pierre le Moustier et Cenquoins aucuns autres gens d’armes et de trait durant le temps desdites abstinences pour fere ou porter aucun domage ou souffrir estre fait esdites <hi rend="i">(trou)</hi> seulement esdites places, les cappitaines ou les lieuxtenans avec les gens qui seront necessaires pour la garde et seurté d’icelles es despens des seigneurs ausquelx il appartient, et sont icelles places et non autrement ;</p>
+                  <p>Item et quant est de la ville de Marsegny, dernierement prinses <hi rend="i">(trou :</hi> par mondit seigneur de <hi rend="i">?)</hi> Clermont et ses gens, est traictié et accordé avec les ambesseurs de Bourbonnois que plaine vuidange sera fete d’icelle garnison, sans ce qu’il y demeure aucun de par mondit seigneur ou madite dame de Bourbon, ne mondit seigneur de Clermont, en quelque maniere que ce soit, et demorer <hi rend="i">(trou, à propos de Marcigny)</hi> en telle estat qu’elle estoit par avant ladite prise, et or imppacle que en fist devers mondit seigneur de Clermont, sans y rien fere de nouvel, ne souffrir estre fait par l’une des parties, ne par l’autre, en laquelle ville retourneront et pourront demorer paisiblement tous ceulx et celles qui pour <hi rend="i">(trou)</hi> abscensez en les maisons, biens et habitans sans aucune contradicion ou difficulté, et feront lesdiz de Bourbonnois leur loyal povoir que en faisant icelle vuidange, ne seront aucun biens des habitans dudit lieu de Marsigny, manans et habitans en icelle <hi rend="i">(trou)</hi> pillez, fouragez ne robez, et s’aucuns de ladite ville de Marsegny sont pris ne empeschez, a l’ocasion de ladite prinse ou autrement, pour le fait de la guerre, ils seront delivrez et en feront lesdiz de Bourbonnois leur loyal povoir ;</p>
+                  <p>Item feront feres les (trou, à propos des villes) dessus nomees, comprises esdites abstinences, c’est assavoir de celles esquelles a garnisons de gens d’armes et de trait, tantost apres la publicacion d’icelles abstinences, en telle maniere qu’il ne demora esdites places aucunes gens d’armes ou autres voulans fere guerre, et sans esdit (trou) souffrir estre mis fors seulement gens preudomes et souffisant en nombre moderé pour la garde d’icelles places, et aux desppens de ceulx a qui elles sont ; </p>
+                  <p>Item les officiers et subgez de mondit seigneur de Bourgoingne, et aussi ceulx de nosdit seigneurs de Nevers, feront et garderont en <hi rend="i">(trou :</hi> toute <hi rend="i">?)</hi> possibilité qu’aucun passage ne sera donné ou souffert a quelxconques gens que ce soient que vueillent porter dommage esdiz païs de mondit seigneur de Bourbonnois et ses subgez, et avec ce garderont de leur puissance que nulz ne passeront ne comerceront par lesdiz païs, et mectes que veuille porter guerre ou domage ausdiz païs dessus nomez, ne a aucuns d’iceulx, et ne leur bailleront vivres ou denrees, recept en aucune maniere, et s’aucun domaige y avoit esté fait et l’en trouveront sur les païs dessusdiz gens, saisis de personnes, bestiaulx et autres biens pris esdiz païs de mondit seigneur de Bourbon, l’en les restoierra qui pourra, et en fera l’en fere restitucion et punicion selon le cas, ainsi que l’apartient par raison ;</p>
+                  <p>Semblablement, de la part dudit monseigneur de Bourbon, ne sera donné ne souffert, aucun passage de gens que vueillent porter guerre ne domage es païs de mondit seigneur de Bourgoingne et de nosdiz seigneur de Nevers, leur subgez et autres villes royaulx et enclavez dessus nomez, ne passent ou comersent gens qui facent domage ou guerre ausdits païs de mondit seigneur de Bourgoingne et de nosdiz seigneurs de Nevers, et ne leur baillera les vivres ou donra l’en recept en aucune maniere, et s’il advenoit que aucun domage y fust fait, l’en le fera reparer comme dessus, et, avec ce, ceulx qui seront trouvez saisis de personnes, bestiaulx et autres biens desdis païs, seront destroussez, s’il est possible, de leur prinse, et en sera fete reparacion, restitucion et punicion selon le cas ;</p>
+                  <p>Item est accordé entre lesdiz embassadeurs que pendent ladite abstinence, aucune desdites parties, leurs subgiez et serviteurs, ne pourront prandre, gaigner ne occupper aucunes places, villes, chasteaulx ou forteresses, fors, moustiers, ne autres places quelxconques, es païs de sadite partie adverse, terres enclavées en iceulx ou autres dessusdis, soit par force, par fait, par emblee, par traïson, par eschelles, ne autrement en quelque maniere que ce soit, de jour ne de nuit, subposé orez que les cappitaines gardes desdiz lieux, ou autres, les leur voulsissent mectre en main, et s’il advenoit que le contraire se feist, les conservateurs desdites abstinences les feront reparer, et pour cecy ne sera point ladite abstinence rompue ne enfrainte, mais demorera tousjours en sa force et vertu ;</p>
+                  <p>Item est encores accordé entre lesdiz embassadeurs, et par les moyens que dessus, que en cesdites presentes abstinences sont comprises les villes et forteresse de <placeName ref="#Charite">La Charité</placeName>, <placeName ref="#Cosne">Cosne</placeName> et <placeName ref="#Rosemont">Rosemont</placeName>, et autres places estant en Nivernois et Donzois que tient a present et dont a le gouvernement Perrenet Grasset, tout par la forme et maniere contenue en la cedulle signee dudit <persName ref="#GressartP">Perrenet Grasset</persName>, de laquelle la teneur s’en suit :</p>
+                  <p>&#171; Je, Perrenet Grasset, escuïer et pannetier de mon tres redoubté segineur monseigneur le duc de Bourgoingne, capitaine de la Charité sur Loire, savoir faiz a tous qui ces presentes lettres verront, que je promés les foy et serment de mon corps, que les abstinences de guerre qui presentement sont reprises au lieu de Bourc en Bresse ou ailleurs par messires les ambassadeurs et gens du conseil dudit tres redoubté seigneur monseigneur le duc, et de mes tres redoubtés seigneur messeigneurs les contes de Nevers et de Retel, ses enfans, avec les gens et embassadeurs de monseigneur le duc de Bourbon, entre les païs de Bourgoingne, Charolais, Nivernois et Donzois d’une part, et les païs de Bourbonnois, Forez, Beaujollois, Combraille et la conté de Sancerre d’autre part, bonnement et loyalement, sans fraude, barrat ne malengin, je entretiendray et feray observer et entretenir par mes compaignies assistans a La Charité, Rosemont et autres places dont j’ay en Nivernois et en Donzois la garde et gouvernement, sans icelle enfraindre ne corrompre en aucune maniere, ne soubz quelque couleur que ce soit, pourveu toutesvoies que icelles abstinence pareillement ne soient entretenues sans fraude, barat ne malengin par les garnisons de Saint Pierre le Moustier et de Cenquoins et autres places desdiz païs de Bourbonnois, et que pendent icelles abstinences, ilz ne feront ne porteront domages en quelque maniere que ce soit esdit païs de Nivernois et Donzois, ne esdites places dont j’ay la garde et gouvernement. En tesmoing de ce, j’ay signé de mon seing manuel ces presentes, et seellee de mon signet en l’absence de mon seel, le XV<hi rend="sup">e</hi> jour de septembre, l’an mil CCCC XXXI. &#187; Ainsi signé : &#171; P. Gressart &#187;.</p>
+                  <p>Et pour ce que lesdiz embassadeurs de Bourbonnois doubtent que au surplus ledit Perrinet ne voulsist en aucuns autres poins entreprandre aucunes choses prejudiciables a ladite abstinence, ledit Perrenet ratiffiera ces presentes abstinences mesmement au regart de Saint Pierre le Moustier, Cenquoins, le païs d’Auvergne et terres royaulx enclavees, lequel consentements sera envoyé a madite dame de Bourbon, et aussi, par les dessusdiz de Saint Pierre le Moustier, Cenquoins, ne autres compris en ladite abstinences, ne sera fait ne souffert estre fait aucune chose ou prejudice dudit Perrenet Gressart, ne des places qu’il tient, par quelque maniere que ce soit ;</p>
+                  <p>Item est encores accordé que les manans et hintans des païs et terres dessus nomez ne pouront aler ne venir les uns avec les autres par fait de marchand ne autrement, sinon par sau conduit, et encores que ce soit sans fraude, barat ou malengin, et sans porter harnois ne avoir entencion de porter mal, domage ou misaire esdiz païs en quelque maniere que ce soit, lesquelx sau conduit se donneront, de la partie de mondit seigneur de Bourgogne, par lui, son mareschal, ou les conservateurs de par lui de ceste abstinence, et de la part de mesdiz seigneurs et dame de Bourbon et monseigneur de Clermont, par mondit seigneur de Clermont et les conservateurs de leur costé, et ne sera presens ne relevé, pour seel et escripture de chacun sau conduit, et pour tant de par povoir qu’il y aura chiefs en son voyage, que ung salut d’or pour le temps d’un an et au-dessoubz, selon le temps desdiz sau-conduis ;</p>
+                  <p>Item lesdiz treves et abstinences sont ainsi fetes et accordees a six sepmaines de desdit d’un costé et d’autre, a compter du jour de la nottificacion, c’est assavoir <hi rend="i">(trou :</hi> toutes <hi rend="i">?)</hi> les fois que il plaira, a chacune desdites parties contraire, la guerre et avecque mespris ces presentes abstinence, faire le pourra en desditsans icelles abstinences et le notifiant et faisant notiffier savoir a la partie adverse six sepmaines avant qu’il puisse ne doie <hi rend="i">(trou :</hi> faire <hi rend="i">?</hi> commencer <hi rend="i">?)</hi> la guerre, et sera ledit desdit fait savoir aux lieux et aux personnes contenues esdites precedentes abstinences, c’est assavoir en la chambre des comptes au lieu de <placeName ref="#Dijon">Dijon</placeName> pour la partie de mondit seigneur de Bourbon, et en la chambre des comptes a <placeName ref="#Moulins">Molins</placeName> en Bourbonnois de la partie de mondit seigneur de Bourgoigne ;</p>
+                  <p>Item lesdites parties nomment et eslisent conservateurs de ladite abstinence, c’est assavoir pour mondit seigneur de Bourgoingne et pour sa partie, monseigneur le <persName ref="#ToulongeonA">mareschal de Bourgoingne</persName> generalement et pour le tout, le bailli de Nivernois et ledit Perrenet Gressart, panetier de mondit seigneur le duc de Bourgoingne et capitaine de La Charité sur Loire, et chacun d’eulx, et pour la partie de mesdits seigneur et dame de Bourbon et de Clermont, messire <persName ref="#LoupB">Blain Loup</persName>, chevalier, seigneur de Beauvoir, le <persName ref="#BarresL">seigneur des Bares</persName> et messire <persName ref="#EspinassePh">Philibert de l’Espinace</persName>, dit Cormorant, bailli de Beaujollois, et chacun d’eulx, ausquelx et a chacun d’eulx lesdiz ambassadeurs donnent plain povoir, octorité et consentement de punir et corriger lesdiz entrefetes, s’aucun en sont, et de cognoissance jugez et determinez desdiz entrefetes et entreprises come fere se devra par raison ;</p>
+                  <p>Item que au regart des actemptas et entreprise qui ont esté fetes durant le temps et ou prejudice desdites presentes treves et abstinences et du temps passé, et dont lesdites partie d’un costé et d’autre ont requis et demande restitucion et reparacion pour raison des domaiges et interests qu’ilz pretendent avoir souffers et soustenuz, d’un costé et d’autre il est reservé ausdites parties, et a chacune d’icelle, du consentement desdiz ambassadeurs, de en povoir fere porsuite en temps et en lieu et ainsi qu’il apartiendra selon l’ensemble ; et sera ceste presente<note type="na"><p><hi rend="i">Presente</hi> répété.</p></note> reprise desdites abstinences publiee notablement a son de trompe de dans vin jours prochains, es bonnes villes d’un costé et d’autre, et en autres lieux ou l’en a acoustumé en cas semblable de faire cris et publicacions, affin que nul de ce ne puisse pretendre aucune ignorance.</p>
+                  <p>Fait et passé a Bourc-en-Bresse le XXIIII<hi rend="sup">e</hi> jour de septembre, l’an mil CCCC XXXI, par messire Philibert Andriet, messire Gerart de La Guiche, messire Hugues du Bois, chevalier, Lancelot, seigneur de Luirieu, Guiot Bourgoing, escuïer, maistre Glaude Rochete, Henry de Clugny, Nicolas Bastier et Jehan Fraignot, tous conseillers, embassadeurs et commissere dudit monseigneur de Bourgoingne, ourdonnés par ses lettres patentes seellees de son grant seel, et par messire Phelibert de l’Espinace, dit Cormorant, maistre Oudart Clepier, president en Bourbonnois, et Pierre des Carmonne, ambassadeurs et commiseres de madite dame de Bourbon et de mondit seigneur de Clermont, par eulx et chacun d’eulx ordonnez par leurs lettres patentes seellees a leurs sceaulx. &#187;</p>
+                  <p>Savoir faisons que nous, qui pour reverance de Dieu principalement, et aprés pour le bien des païs dessusdis et des subgiez d’iceulx, et pour eviter et esvacuer les maulx, domages et inconvenient qui adviennnent par fait de guerre, et les faire cesser esdiz païs de nostre povoir, et aussi de plusieurs autres raisons, causes et consideracions a ce nous mouvans, voulons et desirons l’entretenement des abstinences desssusdites, avons pour et ou nom de mondit seigneur et pere et de nous, le contenu en ladite cedulle cy devant incorporee, eu et avons pour agreable, et l’avons loué et agree, louons et agreons, et aprouvons en promectant de bonne foy l’entretenir et fere entretenir de nostre costé, sans l’enfraindre, souffrir enfraindre, ne fere ou souffrir fere par quelconque voye ou maniere que ce soit aucune chose contraire, mais ancores, se fait estoit, le reparer ou fere reparer et y pourveoir de nostre loyal povoir, selon la forme et teneur de ladite cedulle cy-devant incorporée, et que a bonne et loyale abstinence appartient.</p>
+                  <p>Si donnons en mandement au seigneur des Barres, a messire Blain Loup, seigneur de Beauvoir, audit bailli de Beaujollois, conservateurs desdites abstinences pour le côté de nostredit seigneur et pere, de nostredite dame et mere et de nous, a ce nomez, et a tous cappitaines, chiefs de guerre, gens d’armes et de trait, et a tous autres baillis, justiciers et officiers et subgiez des païs de nostredit seigneur et pere, de nostredite dame et mere et de nous, prions et requerons tous autres a qui il appartient, et chacun en droit foy, que les poins, articles, et tout le contenu en la cedulle dessusdite, gardent, entretiennent et observent en la mectant a execucion en ce que requiert execucion, et facent garder, entretenir et observer fermement et inviolablement sans l’enfraindre, souffrir enfraindre, ne fere ne souffrir fere, en quelque maniere que ce puisse estre, aucune chose a l’encontre ;</p>
+                  <p>Et ce que fait actempté ou iniorez seroit, facent chacun en droit luy et mesmement les conservateurs dessus nomez, lesquelx a ce commectons par la teneur de ces presentes a dressez, reparer et tout remectre <hi rend="i">(trou)</hi> et deu, en gardant et entretenant lesdites abstinences en lesdis poins et articles cy-dessus declarez, selon le contenu d’iceulx, car de ce fere leur avons donné et donnons plein povoir ;</p>
+                  <p><hi rend="i">(Trou :</hi> Mesmement commandons <hi rend="i">?)</hi> a tous les officiers, justiciers et subgiez de nostredit seigneur et pere, de nostredite dame et mere et de nous, prions et requerons tous autres qu’il appartient, que a eulx et a chacun d’eulx et leurs <hi rend="i">(trou)</hi> faisant et les deppend, obeissent et entendent diligemment, et prestent et donnent conseil, confort et aide et assistance a toute puissance, se mestier est, et requis en son <hi rend="i">(trou)</hi> ;</p>
+                  <p>Et en oultre ausdiz conservateurs et a tous les seneschaulx, baillis et autres justiciers et officiers de nostredit seigneur et pere, de nostredite dame et mere et de nous, prions et requerons aussi <hi rend="i">(trou :</hi> aux justiciers <hi rend="i">?)</hi> et officiers que ce pourra toucher et regarder, que ces presentes lettres, affin que lesdites abstinences et choses cy davent declairees soient mieulx entretenues, et que aucun n’en ayt <hi rend="i">(trou :</hi> cause d’ <hi rend="i">?)</hi> igniorance, publient et facent publier notablement a son de trompe et cris publiques par tous les lieulx pour le costé de nostredit seigneur et pere et de nostredite dame et mere et de nous, <hi rend="i">(trou)</hi> acoustumés de fere notable cas et publicacion, aux vidimus desquelles lettres presentes, faiz soubz les seaulx de nostredit segineur et pere et de nostredite dame et mere et de nous, sont autentiques pour ce que d’icelles l’en pourra avoir a fere tout a une fois en divers lieux, voulons esdites fois adjoustee comme a ce mesme original. </p>
+                  <p>En tesmoing de ce, nous avons fait seeller ces presentes de nostre seel.</p>
+                  <p>Donné a Sury le Bois, le huitiesme jour d’octobre, l’an de grace mil CCCC trente et ung.</p>
+               </div>
+               <div type="MHT">
+                  <p>Par monseigneur le conte en son conseil,</p>
+               </div>
+               <div type="sign">
+                  <p><persName ref="#DB_sign">De Bar</persName>.</p>
                </div>
             </body>
          </text>
