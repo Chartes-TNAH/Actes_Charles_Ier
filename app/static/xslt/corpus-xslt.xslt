@@ -39,11 +39,16 @@
        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="argument[1]"/>
-    <xsl:template match="argument[2]/p">
-        <xsl:element name="p">
+    <xsl:template match="argument[2]">
+        <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>analyse</xsl:text>
             </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="argument[2]/p">
+        <xsl:element name="p">
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
