@@ -168,887 +168,835 @@
         </xsl:element>
     </xsl:template>
     <xsl:template name="A">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'A')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'A')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="B">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'B')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'B')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="C">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'C')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'C')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="D">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'D')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'D')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="E">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'E')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'E')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="F">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'F')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'F')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="G">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'G')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'G')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="H">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'H')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'H')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="I">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'I')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'I')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="J">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'J')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'J')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="K">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'K')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'K')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="L">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'L')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'L')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="M">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'M')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'M')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="N">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'N')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'N')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="O">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'O')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'O')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="P">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'P')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'P')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="Q">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'Q')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'Q')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="R">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'R')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'R')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="S">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'S')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'S')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="T">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'T')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'T')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="U">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'U')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'U')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="V">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'V')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'V')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="W">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'W')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'W')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="X">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'X')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'X')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="Y">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'Y')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'Y')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template name="Z">
-        <xsl:element name="div">
-            <xsl:for-each select="//place//name[@xml:lang='fr']">
-                <xsl:sort select="." order="ascending"/>
-                <xsl:if test="starts-with(.,'Z')">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:text> (</xsl:text>
-                        <xsl:value-of select="ancestor::place/desc"/>
-                        <xsl:text>)</xsl:text>
-                        <xsl:variable name="Placeid">
-                            <xsl:value-of select="ancestor::place/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> : </xsl:text>
-                        <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()">.</xsl:if>
-                        </xsl:for-each>
+        <xsl:for-each select="//place//name[@xml:lang='fr']">
+            <xsl:sort select="." order="ascending"/>
+            <xsl:if test="starts-with(.,'Z')">
+                <xsl:element name="p">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-entree</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="b">
+                        <xsl:value-of select="."/>
                     </xsl:element>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:element>
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="ancestor::place/desc"/>
+                    <xsl:text>)</xsl:text>
+                    <xsl:variable name="Placeid">
+                        <xsl:value-of select="ancestor::place/@xml:id"/>
+                    </xsl:variable>
+                    <xsl:text> : </xsl:text>
+                    <xsl:for-each select="ancestor::TEI//text//placeName[translate(@ref, '#','')=$Placeid]">
+                        <xsl:element name="a">
+                            <xsl:attribute name="href">
+                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="ancestor::text/@n"/>
+                        </xsl:element>
+                        <xsl:if test="position()!= last()">, </xsl:if>
+                        <xsl:if test="position() = last()">.</xsl:if>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>

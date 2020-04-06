@@ -246,7 +246,6 @@
         </xsl:element>
     </xsl:template>
     <xsl:template name="A">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'A')">
@@ -285,10 +284,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="B">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'B')">
@@ -327,10 +324,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="C">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'C')">
@@ -369,10 +364,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="D">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'D')">
@@ -411,10 +404,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="E">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'E')">
@@ -453,10 +444,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="F">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'F')">
@@ -495,10 +484,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="G">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'G')">
@@ -537,10 +524,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="H">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'H')">
@@ -579,10 +564,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="I">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'I')">
@@ -621,10 +604,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="J">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'J')">
@@ -663,10 +644,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="K">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'K')">
@@ -705,10 +684,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="L">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'L')">
@@ -747,10 +724,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="M">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'M')">
@@ -789,10 +764,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="N">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'N')">
@@ -831,10 +804,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="O">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'O')">
@@ -873,10 +844,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="P">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'P')">
@@ -915,10 +884,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="Q">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'Q')">
@@ -957,10 +924,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="R">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'R')">
@@ -999,10 +964,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="S">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'S')">
@@ -1041,10 +1004,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="T">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'T')">
@@ -1083,10 +1044,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="U">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'U')">
@@ -1125,10 +1084,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="V">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'V')">
@@ -1167,10 +1124,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="W">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'W')">
@@ -1209,10 +1164,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="X">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'X')">
@@ -1251,10 +1204,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="Y">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'Y')">
@@ -1293,10 +1244,8 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
     <xsl:template name="Z">
-        <xsl:element name="div">
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:if test="starts-with(surname,'Z')">
@@ -1335,6 +1284,5 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
