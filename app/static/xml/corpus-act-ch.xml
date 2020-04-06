@@ -26,12 +26,12 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>Cette application est développée dans le cadre des enseignements du Master « Technologies numériques appliquées à l'histoire » de l'École nationale des chartes (XML-TEI, XSLT, HTML, CSS, Python). Il s'agit de présenter un échantillon des actes de Charles I<hi rend="sup">er</hi> de Bourbon sous la forme d'une édition diplomatique, et d'en tirer automatiquement un <hi rend="i">index locorum</hi> et un <hi rend="i">index nominum</hi>.</p>
+            <p>Cette application est développée dans le cadre des enseignements du Master « Technologies numériques appliquées à l'histoire » de l'École nationale des chartes (XML-TEI, XSLT, HTML, CSS, SQL, Python). Il s'agit de présenter un échantillon des actes de Charles I<hi rend="sup">er</hi> de Bourbon sous la forme d'une édition diplomatique, et d'en tirer automatiquement un <hi rend="i">index locorum</hi> et un <hi rend="i">index nominum</hi>.</p>
             <p>Pour cela, les actes sont encodés dans un document XML-TEI, et des feuilles de transformation XSL sont rédigées en fonction des besoins de l'application. Le package lxml de Python, après avoir parsé ces documents, permet d'appliquer au fichier XML la feuille de transformation XSL correspondante à la page demandée. Le résultat est placée dans un fichier HTML par le bais d'une template, et le contenu de ce fichier est affiché dans le navigateur web via le framework Flask.</p>
             <p>Les actes avaient été réunis, transcrits et édités dans le cadre d'un Master recherche dirigé par le Pr. Olivier Mattéoni et soutenu à l'École d'histoire de l'Université Paris I Panthéon-Sorbonne en 2018. Prenant appui sur ce travail d'édition, le mémoire proposait également une étude de la chancellerie ducale au milieu du XV<hi rend="sup">e</hi> siècle.</p>
             <p>Depuis plusieurs années, les éditions de corpus d'actes princiers de la fin du Moyen Âge et les études des chancelleries qui les ont produits se multiplient et bénéficient d'un regain d'intérêt. Ce mouvement est notamment porté par deux programmes d'envergure, concernant les actes de Jean de Berry (1340-1416) et ceux des ducs et duchesses de Bourbon de la fin du XIII<hi rend="sup">e</hi> siècle au milieu du XV<hi rend="sup">e</hi> siècle. Le premier, mené dans le cadre d'un séminaire commun à l'École nationale des chartes et à l'Université Paris I Panthéon-Sorbonne, a donné lieu à l'organisation d'un colloque à Bourges les 16 et 17 juin 2016, dont les actes sont parus en 2019. Le second, dirigé par Olivier Mattéoni, s'est traduit par plusieurs articles et deux mémoires de recherche.</p>
             <p>De nombreuses éditions similaires avaient été menées précédemment. Elles concernaient notamment la production diplomatique des ducs de Bretagne et de Bourgogne. Toutes, jusqu'aux plus récentes, étaient exclusivement publiées sous forme « papier ». La diplomatique princière ne s'est en effet que très partiellement saisie des outils développés par les humanités numériques, et il est très rare de trouver des corpus complets mis en ligne. Le projet d'édition des actes du duc de Berry se distingue en cela par la présentation de quatorze actes sur le site des Archives départementales du Cher.</p>
-            <p>La présente application cherche à s'inscrire dans la suite de cette première expérience, tout en s'inspirant de projets concernant d'autres champs de recherche (cartulaires d'Île-de-France, testaments de poilus, etc). L'ensemble du code est disponible sur GitHub.</p>
+            <p>La présente application cherche à s'inscrire dans la suite de cette première expérience. L'ensemble du code est disponible sur GitHub.</p>
          </projectDesc>
       </encodingDesc>
       <profileDesc>
@@ -1293,7 +1293,7 @@
                   <persName>
                      <forename>Antoine</forename>
                      <nameLink>de</nameLink>
-                     <forename>Toulongeon</forename>
+                     <surname>Toulongeon</surname>
                   </persName>
                   <note>Chevalier, seigneur de Buxy, maréchal de Bourgogne.</note>
                </person>
@@ -2621,7 +2621,7 @@
                   <placeName ref="#SuryleB">Sury-le-Bois</placeName>
                </docDate>
                <argument>
-                  <p>Ratification d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
+                  <p>Ratiffication d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
                </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
