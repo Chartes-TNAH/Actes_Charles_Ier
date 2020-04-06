@@ -543,6 +543,10 @@ blockquote p::after {
     margin-bottom: 0%;
 }
 
+.index-alphabetical-list {
+    margin-bottom: 10%;
+}
+
 .index-rules {
     margin-top: 4%;
 }
