@@ -120,7 +120,7 @@
             <place xml:id="Beaujolais">
                <placeName>
                   <name xml:lang="frm">Beauljeulois</name>
-                  <name xml:lang="fr">Beujolais</name>
+                  <name xml:lang="fr">Beaujolais</name>
                </placeName>
                <desc>seigneurie de</desc>
             </place>
@@ -1472,6 +1472,46 @@
                   <note>Comte de Tonnerre</note>
                </person>
             </listPerson>
+            <listPerson type="savoyards">
+               <person xml:id="ForestG">
+                  <persName>
+                     <forename>Guillaume</forename>
+                     <nameLink>de</nameLink>
+                     <surname>La Forest</surname>
+                  </persName>
+                  <note>Chevalier, seigneur de La Forest, conseiller et chambellan du duc.</note>
+               </person>
+               <person xml:id="SepsC">
+                  <persName>
+                     <forename>Claude</forename>
+                     <nameLink>du</nameLink>
+                     <surname>Seps</surname>
+                  </persName>
+                  <note>Écuyer, seigneur de Ravoire, président de la Chambre des comptes de Savoie, conseiller du duc.</note>
+               </person>
+               <person xml:id="ChampdueO">
+                  <persName>
+                     <forename>Oddo</forename>
+                     <surname>Champdue</surname>
+                  </persName>
+                  <note>Seigneur de Champdue, bailli de Bresse, conseiller du duc.</note>
+               </person>
+               <person xml:id="LovoulJ">
+                  <persName>
+                     <forename>Jacques</forename>
+                     <surname>Lovoul ou Loriot</surname>
+                  </persName>
+                  <note>Maître, docteur en lois et décrets, juge du pays de Bresse, conseiller du duc.</note>
+               </person>
+               <person xml:id="PaludF">
+                  <persName>
+                     <forename>François</forename>
+                     <nameLink>de</nameLink>
+                     <surname>La Palud</surname>
+                  </persName>
+                  <note>Seigneur de Varembon.</note>
+               </person>
+            </listPerson>
             <listPerson type="autres">
                <person xml:id="VillemurJ">
                   <persName>
@@ -1480,45 +1520,7 @@
                      <surname>Villemur</surname>
                   </persName>
                   <note>Vicomte de Villemur.</note>
-               </person>
-               <person xml:id="ForestG"><!-- Savoie -->
-                  <persName>
-                     <forename>Guillaume</forename>
-                     <nameLink>de</nameLink>
-                     <surname>La Forest</surname>
-                  </persName>
-                  <note>Chevalier.</note>
-               </person>
-               <person xml:id="SepsC"><!-- Savoie -->
-                  <persName>
-                     <forename>Claude</forename>
-                     <nameLink>du</nameLink>
-                     <surname>Seps</surname>
-                  </persName>
-                  <note>Écuyer, seigneur de Ravoire, président de la Chambre des comptes de Savoie, conseiller du duc.</note>
-               </person>
-               <person xml:id="PaludF"><!-- Savoie -->
-                  <persName>
-                     <forename>François</forename>
-                     <nameLink>de</nameLink>
-                     <surname>La Palud</surname>
-                  </persName>
-                  <note>Seigneur de Varembon.</note>
-               </person>
-               <person xml:id="ChampdueO"><!-- Savoie -->
-                  <persName>
-                     <forename>Oddo</forename>
-                     <surname>Champdue</surname>
-                  </persName>
-                  <note>Seigneur de Champdue, bailli de Bresse, conseiller du duc.</note>
-               </person>
-               <person xml:id="LovoulJ"><!-- Savoie -->
-                  <persName>
-                     <forename>Jacques</forename>
-                     <surname>Lovoul ou Loriot</surname>
-                  </persName>
-                  <note>Maître, docteur en lois et décrets, juge du pays de Bresse, conseiller du duc.</note>
-               </person>
+               </person>    
                <person xml:id="AiguesG">
                   <persName>
                      <forename>Guillaume</forename>
