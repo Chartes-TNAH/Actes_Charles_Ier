@@ -166,12 +166,25 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="div[@type='MHT']/p">
+    <xsl:template match="div[@type='MHT']">
         <xsl:element name="p">
             <xsl:attribute name="class">
                 <xsl:text>mht</xsl:text>
             </xsl:attribute>
-            <i style="font-size: small;">(Sur le repli :) </i><xsl:apply-templates/>
+            <xsl:choose>
+                <xsl:when test="@subtype='gauche'">
+                    <i style="font-size: small;">(À gauche :) </i><xsl:apply-templates/>
+                </xsl:when>
+                <xsl:when test="@subtype='droite'">
+                    <i style="font-size: small;">(À droite :) </i><xsl:apply-templates/>
+                </xsl:when>
+                <xsl:when test="@subtype='replidroite'">
+                    <i style="font-size: small;">(Sur le repli, à droite :) </i><xsl:apply-templates/>
+                </xsl:when>
+                <xsl:when test="@subtype='repligauche'">
+                    <i style="font-size: small;">(Sur le repli, à gauche :) </i><xsl:apply-templates/>
+                </xsl:when>
+            </xsl:choose>
         </xsl:element>
     </xsl:template>
     <xsl:template match="div[@type='sign']/p">
