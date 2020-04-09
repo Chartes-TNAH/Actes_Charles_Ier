@@ -566,9 +566,9 @@ blockquote p::after {
     margin-left: 4%
 }
 
-.index-entree {
-    margin-top: 0%;
-    margin-bottom: 0.5%;
+.index-section-main > p {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 .index-note {

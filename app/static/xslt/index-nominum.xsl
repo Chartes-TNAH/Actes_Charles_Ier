@@ -14,9 +14,6 @@
             <xsl:for-each select="//listPerson//persName">
                 <xsl:sort select="surname" order="ascending"/>
                 <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-entree</xsl:text>
-                    </xsl:attribute>
                     <xsl:element name="b">
                         <xsl:value-of select="surname"/>
                         <xsl:text>, </xsl:text>

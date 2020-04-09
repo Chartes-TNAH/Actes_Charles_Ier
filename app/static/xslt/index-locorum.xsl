@@ -14,9 +14,6 @@
             <xsl:for-each select="//place//name[@xml:lang='fr']">
                 <xsl:sort select="." order="ascending"/>
                 <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-entree</xsl:text>
-                    </xsl:attribute>
                     <xsl:element name="b">
                         <xsl:value-of select="."/>
                     </xsl:element>
