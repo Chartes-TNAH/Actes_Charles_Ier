@@ -13,7 +13,7 @@ app = Flask(
     static_folder=statics,
 )
 
-# Configuration de la base de donnée et stockage du résultat dans db.
+# Configuration de la base de donnée et stockage du résultat dans db. chemin relatif trois slash et point ///./
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/jdgenero/Desktop/M2_Cours/dev/Actes_Charles_Ier/app/corpus.sqlite'
 db = SQLAlchemy(app)
 
