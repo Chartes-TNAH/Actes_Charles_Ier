@@ -21,7 +21,7 @@
                     {% for acte in document %}
                         <tbody>
                             <tr>
-                                <td><a href="{{url_for('acte', acte_id=acte.id_acts)}}">{{acte.id_acts}}</a></td>
+                                <td>{{acte.id_acts}}</td>
                                 <td>{{acte.date}}</td>
                                 <td><a href="{{url_for('acte', acte_id=acte.id_acts)}}">{{acte.analyse}}.</a>
                                 </td>
