@@ -5,16 +5,19 @@
         {% if id>1 %}
             <div class="h1_global">
                 <h1>Acte {{id}}</h1>
-                <div class="prec_suiv">
-                    <p class="prec"><a href="{{url_for('acte', acte_id=id-1)}}">&lt; précédent</a> </p>
-                    <p class="suiv"><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
-                </div>
+            </div>
+            <div class="prec_suiv">
+                    <p>
+                        <a href="{{url_for('acte', acte_id=id-1)}}">&lt; précédent</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a>
+                    </p>
             </div>
         {% else %}
             <div class="h1_global">
                 <h1>Acte {{id}}</h1>
                 <div class="prec_suiv">
-                    <p class="suiv"><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
+                    <p><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
                 </div>
             </div>
         {% endif %}
@@ -23,8 +26,12 @@
 		<p style="font-weight: bold; text-align: center; margin-top: 3%;">
             Attention : la numérotation des actes commence à 1. <a href="{{url_for('acte', acte_id=1)}}">Afficher l'acte n° 1.</a>
         </p>
+    {% elif id>374 %}
+        <p style="font-weight: bold; text-align: center; margin-top: 3%;">
+            Attention : le corpus compte 374 actes. <a href="{{url_for('corpus')}}">Revenir à la liste des actes.</a>
+        </p>
 	{% else %}
-        <p>L'acte n°{{id}} n'est pas encore transcrit. <a href="{{url_for('acte', acte_id=32)}}">Revenir au dernier acte transcrit (n°32)</a> ou <a href="{{url_for('accueil')}}">revenir à l'accueil.</a></p>
+        <p style="font-weight: bold; text-align: center; margin-top: 3%;">L'acte n°{{id}} n'est pas encore transcrit. <a href="{{url_for('acte', acte_id=32)}}">Revenir au dernier acte transcrit (n°32)</a>.</p>
     {% endif %}
 </div>
 {% endblock %}
