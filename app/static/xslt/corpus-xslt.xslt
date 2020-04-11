@@ -187,12 +187,16 @@
             </xsl:choose>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="div[@type='sign']/p">
-        <xsl:element name="p">
+    <xsl:template match="div[@type='sign']">
+        <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>signature</xsl:text>
             </xsl:attribute>
-            <i style="font-size: small;">(Signé :) </i><xsl:apply-templates/>
+            <xsl:for-each select="child::p">
+                <xsl:element name="p">
+                    <i style="font-size: small;">(Signé :) </i><xsl:apply-templates/>
+                </xsl:element>
+            </xsl:for-each>
         </xsl:element>
     </xsl:template>
     <xsl:template match="note[@type='n1']/p">
