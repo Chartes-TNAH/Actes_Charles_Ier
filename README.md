@@ -20,7 +20,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
   
 ---
 
-## Installation et lancement
+## Installation
 
 *Nota : commandes à exécuter dans le terminal.*
 
@@ -45,17 +45,19 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
     * Vérifier que tout est installé : ```pip freeze``` ;
     
     * Sortir de l'environnement : ```deactivate``` ;
-    
-  * Lancer l'application :
+
+---
+
+## Lancement
   
-    * Activer l'environnement : ```source [nom de l'environnement]/bin/activate``` ;
+  * Activer l'environnement : ```source [nom de l'environnement]/bin/activate``` ;
     
-    * Lancement : ```python run.py``` ;
+  * Lancement : ```python run.py``` ;
     
-    * Aller sur ```http://127.0.0.1:5000/``` ;
+  * Aller sur ```http://127.0.0.1:5000/``` ;
     
-    * Déactivation : ```ctrl + c``` ;
+  * Déactivation : ```ctrl + c``` ;
     
-    * Sortir de l'environnement : ```deactivate```.
+  * Sortir de l'environnement : ```deactivate```.
 
 ---
