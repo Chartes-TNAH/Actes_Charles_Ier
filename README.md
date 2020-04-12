@@ -17,3 +17,45 @@ Elle est développée par Jean-Damien Généro dans le cadre des enseignements d
   * Des recherches par facettes (texte libre, années, lieux de production, lieux de conservation, états des actes, types des actes). Elles fonctionnent à partir de la librairie ```SQLAlchemy``` de ```Python``` et d'une base de données ```SQLite```.
   
   * Des pages de présentation, de bibliographie et de biographie afin de contextualiser le projet.
+  
+---
+
+## Installation et lancement
+
+*Nota : commandes à exécuter dans le terminal.*
+
+  * Télécharger le dossier : ```git clone https://github.com/jeandamien-genero/Actes_Charles_Ier```
+  
+  * Installer l'environnement virtuel :
+  
+    * Vérifier que la version de Python est bien 3.x : ```python --version```;
+    
+    * Aller dans le dossier : ```cd Actes_Charles_Ier```;
+    
+    * Installer l'environnement : ```python3 -m venv [nom de l'environnement]```.
+  
+  * Installer les packages et librairies :
+  
+    * Activer l'environnement : ```source [nom de l'environnement]/bin/activate```;
+    
+    * Flask et lxml : ```pip3 install [nom]``` ;
+    
+    * SQLAlchemy : ```pip install flask_sqlalchemy==2.3.2``` ;
+    
+    * Vérifier que tout est installé : ```pip freeze``` ;
+    
+    * Sortir de l'environnement : ```deactivate``` ;
+    
+  * Lancer l'application :
+  
+    * Activer l'environnement : ```source [nom de l'environnement]/bin/activate``` ;
+    
+    * Lancement : ```python run.py``` ;
+    
+    * Aller sur ```http://127.0.0.1:5000/``` ;
+    
+    * Déactivation : ```ctrl + c``` ;
+    
+    * Sortir de l'environnement : ```deactivate```.
+
+---
