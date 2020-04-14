@@ -61,3 +61,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
   * Sortir de l'environnement : ```deactivate```.
 
 ---
+
+## Contact
+
+Pour toutes questions ou remarques : :email: [jean-damien.genero@chartes.psl.eu](mailto:jean-damien.genero@chartes.psl.eu).
