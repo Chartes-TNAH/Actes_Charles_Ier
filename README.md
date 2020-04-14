@@ -22,7 +22,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
 ## Installation
 
-*Nota : commandes à exécuter dans le terminal.*
+*Nota : commandes à exécuter dans le terminal (Linux ou macOS).*
 
   * Télécharger le dossier : ```git clone https://github.com/jeandamien-genero/Actes_Charles_Ier```
   
