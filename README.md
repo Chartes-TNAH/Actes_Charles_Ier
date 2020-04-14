@@ -12,7 +12,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
   * Une édition diplomatique d'un échantillon des actes ducaux, sur une période allant de 1421 à 1431. Les actes se trouvent dans un fichier ```XML-TEI``` auquel est appliqué une feuille de transformation ```XSL``` dynamique. Celle-ci s'aplique à la section du fichier ```XML-TEI``` correspondant à l'```ìd``` de l'acte demandé dans l'url grâce à la librairie ```lxml``` de ```Python```. Le résultat de la transformation est ensuite placé dans un document ```HTML``` via des ```templates```, le contenu de ce document étant enfin affiché dans le navigateur.
   
-  * Des indexs (anthroponymique, toponymique, prosopographique), constitués via le même système que l'édition diplomatique.
+  * Des index (anthroponymique, toponymique, prosopographique), constitués via le même système que l'édition diplomatique.
   
   * Des recherches par facettes (texte libre, années, lieux de production, lieux de conservation, états des actes, types des actes). Elles fonctionnent à partir de la librairie ```SQLAlchemy``` de ```Python``` et d'une base de données ```SQLite``` constituée automatiquement à partir du fichier ```XML-TEI```.
   
