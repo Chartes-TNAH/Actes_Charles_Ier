@@ -56,7 +56,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
     
   * Aller sur ```http://127.0.0.1:5000/``` ;
     
-  * Déactivation : ```ctrl + c``` ;
+  * Désactivation : ```ctrl + c``` ;
     
   * Sortir de l'environnement : ```deactivate```.
 
