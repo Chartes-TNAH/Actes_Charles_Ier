@@ -3,15 +3,24 @@
     <xsl:output method="html" indent="yes"/>
     <xsl:param name="numero"/>
     <xsl:template match="/" >
-                <xsl:apply-templates select="//text/group/text[@n=$numero]"/>
-                <div>
-                    <div class="note-global">
-                        <xsl:apply-templates select="//text/group/text[@n=$numero]//note[@type='na']/p"/>
-                    </div>
-                    <div class="note-global">
-                        <xsl:apply-templates select="//text/group/text[@n=$numero]//note[@type='n1']/p"/>
-                    </div>
-                </div>
+        <xsl:apply-templates select="//text/group/text[@n=$numero]"/>
+        <div>
+            <div class="note-global">
+                <xsl:apply-templates select="//text/group/text[@n=$numero]//note[@type='na']/p"/>
+            </div>
+            <div class="note-global">
+                <xsl:apply-templates select="//text/group/text[@n=$numero]//note[@type='n1']/p"/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="graphic">
+        <xsl:element name="div">
+            <xsl:element name="img">
+                <xsl:element name="src">
+                    <xsl:text>{{url_for('static', filename='</xsl:text><xsl:value-of select="@url"/><xsl:text>')}}</xsl:text>
+                </xsl:element>
+            </xsl:element>
+        </xsl:element>
     </xsl:template>
     <xsl:template match="docDate">
         <xsl:element name="p">
@@ -36,7 +45,7 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="docDate/placeName">
-       <xsl:apply-templates/>
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="argument[1]"/>
     <xsl:template match="argument[2]">
@@ -58,18 +67,21 @@
                 <xsl:text>tradition</xsl:text>
             </xsl:attribute>
             <xsl:apply-templates/>
-            <!--
-                <xsl:for-each select="witness">
-                <xsl:element name="p">
-                    <xsl:apply-templates/>
-                    <xsl:if test="@n='analyse'">
-                        <xsl:text>Analyse :</xsl:text>
-                        <xsl:apply-templates/>
-                    </xsl:if>
-                </xsl:element>
-            </xsl:for-each>
-            -->
         </xsl:element>
+        <xsl:if test="ancestor::TEI//facsimile[@n=$numero]">
+            <xsl:element name="div">
+                <xsl:element name="details">
+                    <xsl:element name="summary">
+                        <xsl:text>Afficher une reproduction de l'acte.</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="img">
+                        <xsl:attribute name="src"><xsl:value-of select="//graphic/@url"/></xsl:attribute><!-- /facsimile[@n=$numero] -->
+                        <xsl:attribute name="width">100%</xsl:attribute>
+                        <xsl:attribute name="height">auto</xsl:attribute>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:element>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="witness">
         <xsl:choose>
@@ -135,7 +147,7 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-        <xsl:template match="div[@type='acte']">
+    <xsl:template match="div[@type='acte']">
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>act</xsl:text>
