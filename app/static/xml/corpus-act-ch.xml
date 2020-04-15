@@ -1608,8 +1608,67 @@
          </particDesc>
       </profileDesc>
    </teiHeader>
-   <facsimile n="4">
+   <facsimile corresp="#Ch-1" n="1">
+      <graphic url="../../static/img/actes/acte1.png">
+         <desc>Reproduction fournie par les Archives départementales du Tarn.</desc>
+      </graphic>
+   </facsimile>
+   <facsimile corresp="#Ch-4" n="4">
       <graphic url="../../static/img/actes/acte4.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-7" n="7">
+      <graphic url="../../static/img/actes/acte7.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-9" n="9">
+      <graphic url="../../static/img/actes/acte9.jpg">
+         <desc>© Gilles Bernasconi / Archives municipales de Lyon</desc>
+      </graphic>
+   </facsimile>
+   <facsimile corresp="#Ch-10" n="10">
+      <graphic url="../../static/img/actes/acte10.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-12" n="12">
+      <graphic url="../../static/img/actes/acte12.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-14" n="14">
+      <graphic url="../../static/img/actes/acte14.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-15" n="15">
+      <graphic url="../../static/img/actes/acte15.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-16" n="16">
+      <graphic url="../../static/img/actes/acte16.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-17" n="17">
+      <graphic url="../../static/img/actes/acte17.jpg">
+         <desc>Reproduction fournie par les Archives municipales de Villefranche-sur-Saône.</desc>
+      </graphic>
+   </facsimile>
+   <facsimile corresp="#Ch-18" n="18">
+      <graphic url="../../static/img/actes/acte18.png">
+         <desc>Reproduction fournie par les Archives départementales du Tarn.</desc>
+      </graphic>
+   </facsimile>
+   <facsimile corresp="#Ch-20" n="20">
+      <graphic url="../../static/img/actes/acte20.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-21" n="21">
+      <graphic url="../../static/img/actes/acte21.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-24" n="24">
+      <graphic url="../../static/img/actes/acte24.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-25" n="25">
+      <graphic url="../../static/img/actes/acte25.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-26" n="26">
+      <graphic url="../../static/img/actes/acte26.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-27" n="27">
+      <graphic url="../../static/img/actes/acte27.jpg"/>
+   </facsimile>
+   <facsimile corresp="#Ch-29" n="29">
+      <graphic url="../../static/img/actes/acte29.jpg"/>
    </facsimile>
    <text>
       <front>
@@ -1929,11 +1988,13 @@
                <div type="MHT" subtype="repligauche">
                   <p>Par monseigneur le conte,</p>
                </div>
+               <div type="sign">
+                  <p>De Bar</p>
+               </div>
                <div type="MHT" subtype="replidroit">
                   <p>Par madamoiselle la contesse,</p>
                </div>
                <div type="sign">
-                  <p>De Bar</p>
                   <p>Gourrier</p>
                </div>
             </body>
