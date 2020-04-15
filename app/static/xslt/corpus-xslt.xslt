@@ -72,13 +72,18 @@
             <xsl:element name="div">
                 <xsl:element name="details">
                     <xsl:element name="summary">
-                        <xsl:text>Afficher une reproduction de l'acte.</xsl:text>
+                        <xsl:text>Cliquer pour afficher une image de l'acte.</xsl:text>
                     </xsl:element>
                     <xsl:element name="img">
-                        <xsl:attribute name="src"><xsl:value-of select="//graphic/@url"/></xsl:attribute><!-- /facsimile[@n=$numero] -->
+                        <xsl:attribute name="src"><xsl:value-of select="//facsimile[@n=$numero]/graphic/@url"/></xsl:attribute>
                         <xsl:attribute name="width">100%</xsl:attribute>
                         <xsl:attribute name="height">auto</xsl:attribute>
                     </xsl:element>
+                    <xsl:if test="//facsimile[@n=$numero]/graphic/desc">
+                       <xsl:element name="p">
+                           <xsl:value-of select="//facsimile[@n=$numero]/graphic/desc"/>
+                       </xsl:element>
+                   </xsl:if>
                 </xsl:element>
             </xsl:element>
         </xsl:if>
@@ -190,7 +195,7 @@
                 <xsl:when test="@subtype='droite'">
                     <i style="font-size: small;">(À droite :) </i><xsl:apply-templates/>
                 </xsl:when>
-                <xsl:when test="@subtype='replidroite'">
+                <xsl:when test="@subtype='replidroit'">
                     <i style="font-size: small;">(Sur le repli, à droite :) </i><xsl:apply-templates/>
                 </xsl:when>
                 <xsl:when test="@subtype='repligauche'">
