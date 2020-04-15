@@ -1608,6 +1608,9 @@
          </particDesc>
       </profileDesc>
    </teiHeader>
+   <facsimile n="4">
+      <graphic url="../../static/img/actes/acte4.jpg"/>
+   </facsimile>
    <text>
       <front>
       </front>
