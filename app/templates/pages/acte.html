@@ -21,7 +21,7 @@
                 </div>
             </div>
         {% endif %}
-	{{contenu_acte|safe}}
+        {{contenu_acte|safe}}
 	{% elif id<1 %}
 		<p style="font-weight: bold; text-align: center; margin-top: 3%;">
             Attention : la numérotation des actes commence à 1. <a href="{{url_for('acte', acte_id=1)}}">Afficher l'acte n° 1.</a>
