@@ -38,7 +38,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
   
     * Activer l'environnement : ```source [nom de l'environnement]/bin/activate```;
     
-    * Flask et lxml : ```pip3 install [nom]``` ;
+    * Flask et lxml : ```pip3 install flask``` et ```pip3 install lxml``` ;
     
     * SQLAlchemy : ```pip install flask_sqlalchemy==2.3.2``` ;
     
