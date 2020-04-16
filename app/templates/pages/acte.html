@@ -31,7 +31,7 @@
             Attention : le corpus compte 374 actes. <a href="{{url_for('corpus')}}">Revenir à la liste des actes.</a>
         </p>
 	{% else %}
-        <p style="font-weight: bold; text-align: center; margin-top: 3%;">L'acte n°{{id}} n'est pas encore transcrit. <a href="{{url_for('acte', acte_id=32)}}">Revenir au dernier acte transcrit (n°32)</a>.</p>
+        <p style="font-weight: bold; text-align: center; margin-top: 3%;">L'acte n°{{id}} n'est pas encore en ligne. <a href="{{url_for('acte', acte_id=32)}}">Revenir au dernier acte mis en ligne (n°32)</a>.</p>
     {% endif %}
 </div>
 {% endblock %}
