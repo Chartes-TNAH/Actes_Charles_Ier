@@ -13,7 +13,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats.iter_pages() %}
+                {%- for page in resultats.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats.page %}
                         <a href="{{ url_for('resultats', keyword=motclef, page=page) }}">{{ page }}</a>
@@ -35,7 +35,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats_annee.iter_pages() %}
+                {%- for page in resultats_annee.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats_annee.page %}
                         <a href="{{ url_for('resultats', year=motclef_annee, page=page) }}">{{ page }}</a>
@@ -57,7 +57,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats_institution.iter_pages() %}
+                {%- for page in resultats_institution.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats_institution.page %}
                         <a href="{{ url_for('resultats', archives=motclef_institution, page=page) }}">{{ page }}</a>
@@ -79,7 +79,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats_production.iter_pages() %}
+                {%- for page in resultats_production.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats_production.page %}
                         <a href="{{ url_for('resultats', place=motclef_lieu_production, page=page) }}">{{ page }}</a>
@@ -101,7 +101,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats_state.iter_pages() %}
+                {%- for page in resultats_state.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats_state.page %}
                         <a href="{{ url_for('resultats', state=motclef_state, page=page) }}">{{ page }}</a>
@@ -123,7 +123,7 @@
                 </div>
             {% endfor %}
             <div>
-                {%- for page in resultats_type.iter_pages() %}
+                {%- for page in resultats_type.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
                 {% if page %}
                     {% if page != resultats_type.page %}
                         <a href="{{ url_for('resultats', type=motclef_type, page=page) }}">{{ page }}</a>
