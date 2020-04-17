@@ -182,27 +182,27 @@ def resultats():
 			Acts.analyse.like("%{}%".format(motclef))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		return render_template("pages/resultats.html", motclef=motclef, resultats=resultats)
-	if motclef_annee:
+	elif motclef_annee:
 		resultats_annee = Acts.query.filter(
 			Acts.date.like("%{}%".format(motclef_annee))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		return render_template("pages/resultats.html", motclef_annee=motclef_annee, resultats_annee=resultats_annee)
-	if motclef_institution :
+	elif motclef_institution :
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		return render_template("pages/resultats.html", motclef_institution=motclef_institution, resultats_institution=resultats_institution)
-	if motclef_lieu_production:
+	elif motclef_lieu_production:
 		resultats_production = Acts.query.filter(
 			Acts.place.like("%{}%".format(motclef_lieu_production))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production, resultats_production=resultats_production)
-	if motclef_state:
+	elif motclef_state:
 		resultats_state = Acts.query.filter(
 			Acts.state.like("%{}%".format(motclef_state))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		return render_template("pages/resultats.html", motclef_state=motclef_state, resultats_state=resultats_state)
-	if motclef_type:
+	elif motclef_type:
 		resultats_type = Acts.query.filter(
 			Acts.type.like("%{}%".format(motclef_type))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
