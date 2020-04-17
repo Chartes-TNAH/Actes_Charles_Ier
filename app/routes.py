@@ -6,6 +6,8 @@ import re
 from .app import app, source_doc # import de l'application (app) et du document XML (source_doc) depuis le fichier app.py
 from .modeles.donnees import Acts # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles
 
+RESULT_PAR_PAGES = 5
+
 @app.route("/")
 def accueil():
 	"""Route permettant d'afficher la page accueil en retournant une template via l'objet Flask render_template(), où est défini le document html où le retour de la fonction sera affiché.
@@ -164,32 +166,47 @@ def resultats():
 	motclef_lieu_production = request.args.get("place", None)
 	motclef_state = request.args.get("state", None)
 	motclef_type = request.args.get("type", None)
+	page = request.args.get("page", 1)
+	if isinstance(page, str) and page.isdigit():
+		page = int(page)
+	else:
+		page = 1
 	resultats = []
 	resultats_annee = []
 	resultats_institution = []
-	resultats_lieu_production = []
+	resultats_production = []
 	resultats_state = []
 	resultats_type = []
-	if motclef or motclef_institution or motclef_annee or motclef_lieu_production or motclef_type or motclef_state:
+	if motclef :
 		resultats = Acts.query.filter(
 			Acts.analyse.like("%{}%".format(motclef))
-			).all()
-		resultats_institution = Acts.query.filter(
-			Acts.institution.like("%{}%".format(motclef_institution))
-			).all()
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef=motclef, resultats=resultats)
+	if motclef_annee:
 		resultats_annee = Acts.query.filter(
 			Acts.date.like("%{}%".format(motclef_annee))
-			).all()
-		resultats_lieu_production = Acts.query.filter(
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef_annee=motclef_annee, resultats_annee=resultats_annee)
+	if motclef_institution :
+		resultats_institution = Acts.query.filter(
+			Acts.institution.like("%{}%".format(motclef_institution))
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef_institution=motclef_institution, resultats_institution=resultats_institution)
+	if motclef_lieu_production:
+		resultats_production = Acts.query.filter(
 			Acts.place.like("%{}%".format(motclef_lieu_production))
-			).all()
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production, resultats_production=resultats_production)
+	if motclef_state:
 		resultats_state = Acts.query.filter(
 			Acts.state.like("%{}%".format(motclef_state))
-			).all()
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef_state=motclef_state, resultats_state=resultats_state)
+	if motclef_type:
 		resultats_type = Acts.query.filter(
 			Acts.type.like("%{}%".format(motclef_type))
-			).all()
-		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", motclef_type=motclef_type, resultats_type=resultats_type)
 	else:
 		return render_template('pages/error404.html')
 

@@ -4,7 +4,7 @@
     <h1 class="h1_global">Résultats de la recherche</h1>
     <div>
         {% if resultats %}
-            {% for acte in resultats %}
+            {% for acte in resultats.items %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=acte.id_acts)}}">
                         <p class="result-item-acte">Acte n°{{acte.id_acts}} ({{acte.date}},  {{acte.state}}, {{acte.institution}}).</p>
@@ -12,17 +12,21 @@
                     </a>
                 </div>
             {% endfor %}
-        {% elif resultats_institution %}
-            {% for depot in resultats_institution %}
-                <div class="result-item">
-                    <a href="{{url_for('acte', acte_id=depot.id_acts)}}">
-                        <p class="result-item-acte">Acte n°{{depot.id_acts}} ({{depot.date}}, {{depot.state}}, {{depot.institution}}).</p>
-                        <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{depot.analyse}}.</i></p>
-                    </a>
-                </div>
-            {% endfor %}
+            <div>
+                {%- for page in resultats.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats.page %}
+                        <a href="{{ url_for('resultats', keyword=motclef, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
         {% elif resultats_annee %}
-            {% for annee in resultats_annee %}
+            {% for annee in resultats_annee.items %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=annee.id_acts)}}">
                         <p class="result-item-acte">Acte n°{{annee.id_acts}} ({{annee.date}}, {{annee.state}}, {{annee.institution}}).</p>
@@ -30,8 +34,43 @@
                     </a>
                 </div>
             {% endfor %}
-        {% elif resultats_lieu_production %}
-            {% for lieu in resultats_lieu_production %}
+            <div>
+                {%- for page in resultats_annee.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats_annee.page %}
+                        <a href="{{ url_for('resultats', year=motclef_annee, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
+        {% elif resultats_institution %}
+            {% for depot in resultats_institution.items %}
+                <div class="result-item">
+                    <a href="{{url_for('acte', acte_id=depot.id_acts)}}">
+                        <p class="result-item-acte">Acte n°{{depot.id_acts}} ({{depot.date}}, {{depot.state}}, {{depot.institution}}).</p>
+                        <p style="margin-left: 2.5%; margin-top: 0.25%;"><i>{{depot.analyse}}.</i></p>
+                    </a>
+                </div>
+            {% endfor %}
+            <div>
+                {%- for page in resultats_institution.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats_institution.page %}
+                        <a href="{{ url_for('resultats', archives=motclef_institution, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
+        {% elif resultats_production %}
+            {% for lieu in resultats_production.items %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=lieu.id_acts)}}">
                         <p class="result-item-acte">Acte n°{{lieu.id_acts}} ({{lieu.date}}, {{lieu.state}}, {{lieu.institution}}).</p>
@@ -39,8 +78,21 @@
                     </a>
                 </div>
             {% endfor %}
+            <div>
+                {%- for page in resultats_production.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats_production.page %}
+                        <a href="{{ url_for('resultats', place=motclef_lieu_production, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
         {% elif resultats_state %}
-            {% for etat in resultats_state %}
+            {% for etat in resultats_state.items %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=etat.id_acts)}}">
                         <p class="result-item-acte">Acte n°{{etat.id_acts}} ({{etat.date}}, {{etat.state}}, {{etat.institution}}).</p>
@@ -48,8 +100,21 @@
                     </a>
                 </div>
             {% endfor %}
+            <div>
+                {%- for page in resultats_state.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats_state.page %}
+                        <a href="{{ url_for('resultats', state=motclef_state, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
         {% elif resultats_type %}
-            {% for type in resultats_type %}
+            {% for type in resultats_type.items %}
                 <div class="result-item">
                     <a href="{{url_for('acte', acte_id=type.id_acts)}}">
                         <p class="result-item-acte">Acte n°{{type.id_acts}} ({{type.date}}, {{type.state}}, {{type.institution}}).</p>
@@ -57,6 +122,19 @@
                     </a>
                 </div>
             {% endfor %}
+            <div>
+                {%- for page in resultats_type.iter_pages(left_edge=1, left_current=1, right_current=2, right_edge=1) %}
+                {% if page %}
+                    {% if page != resultats_type.page %}
+                        <a href="{{ url_for('resultats', type=motclef_type, page=page) }}">{{ page }}</a>
+                    {% else %}
+                        <strong>{{ page }}</strong>
+                    {% endif %}
+                {% else %}
+                    <span>…</span>
+                {% endif %}
+                {%- endfor %}
+            </div>
         {% else %}
             <p>Votre recherche n'a pas donné de résultat. <a href="{{url_for('recherche')}}">Retourner à la page recherche.</a></p>
         {% endif %}
