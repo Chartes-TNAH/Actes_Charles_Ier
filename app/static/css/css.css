@@ -463,42 +463,6 @@ a:hover, a:active {
 }
 
 
-/* DUC */
-
-.duc-global {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 100%;
-}
-
-.duc-citation {
-    margin-right: 2%;
-    width: 90%;
-}
-
-.duc-image {
-}
-
-blockquote {
-    margin: 0;
-}
-
-blockquote p {
-    padding: 15px;
-    background: #eee;
-    border-radius: 5px;
-}
-
-blockquote p::before {
-    content: '\201C';
-}
-
-blockquote p::after {
-    content: '\201D';
-}
-
-
 /* INDEX DES NOMS */
 .index-global {
     display: flex;
