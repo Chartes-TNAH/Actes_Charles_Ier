@@ -34,19 +34,6 @@
                     </a>
                 </div>
             {% endfor %}
-            <div>
-                {%- for page in resultats_institution.iter_pages() %}
-                {% if page %}
-                    {% if page != pagination2.page %}
-                        <a href="{{ url_for('resultats', keyword=keyword2, page=page) }}">{{ page }}</a>
-                    {% else %}
-                        <strong>{{ page }}</strong>
-                    {% endif %}
-                {% else %}
-                    <span>…</span>
-                {% endif %}
-                {%- endfor %}
-            </div>
         {% elif resultats_annee %}
             {% for annee in resultats_annee.items %}
                 <div class="result-item">

@@ -183,7 +183,7 @@ def resultats():
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
-			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+			).all()
 		resultats_annee = Acts.query.filter(
 			Acts.date.like("%{}%".format(motclef_annee))
 			).all()
@@ -199,10 +199,7 @@ def resultats():
 		pagination = Acts.query.filter(
 			Acts.analyse.like("%{}%".format(motclef))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		pagination2 = Acts.query.filter(
-			Acts.institution.like("%{}%".format(motclef_institution))
-			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", pagination=pagination, pagination2=pagination2, keyword1=motclef, keyword2=motclef_institution, resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+		return render_template("pages/resultats.html", pagination=pagination, keyword1=motclef, resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 
