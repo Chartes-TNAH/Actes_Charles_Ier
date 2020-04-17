@@ -6,6 +6,8 @@ import re
 from .app import app, source_doc # import de l'application (app) et du document XML (source_doc) depuis le fichier app.py
 from .modeles.donnees import Acts # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles
 
+RESULT_PAR_PAGES = 5
+
 @app.route("/")
 def accueil():
 	"""Route permettant d'afficher la page accueil en retournant une template via l'objet Flask render_template(), où est défini le document html où le retour de la fonction sera affiché.
@@ -164,6 +166,11 @@ def resultats():
 	motclef_lieu_production = request.args.get("place", None)
 	motclef_state = request.args.get("state", None)
 	motclef_type = request.args.get("type", None)
+	page = request.args.get("page", 1)
+	if isinstance(page, str) and page.isdigit():
+		page = int(page)
+	else:
+		page = 1
 	resultats = []
 	resultats_annee = []
 	resultats_institution = []
@@ -173,10 +180,10 @@ def resultats():
 	if motclef or motclef_institution or motclef_annee or motclef_lieu_production or motclef_type or motclef_state:
 		resultats = Acts.query.filter(
 			Acts.analyse.like("%{}%".format(motclef))
-			).all()
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
-			).all()
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
 		resultats_annee = Acts.query.filter(
 			Acts.date.like("%{}%".format(motclef_annee))
 			).all()
@@ -189,7 +196,13 @@ def resultats():
 		resultats_type = Acts.query.filter(
 			Acts.type.like("%{}%".format(motclef_type))
 			).all()
-		return render_template("pages/resultats.html", resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+		pagination = Acts.query.filter(
+			Acts.analyse.like("%{}%".format(motclef))
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		pagination2 = Acts.query.filter(
+			Acts.institution.like("%{}%".format(motclef_institution))
+			).paginate(page=page, per_page=RESULT_PAR_PAGES)
+		return render_template("pages/resultats.html", pagination=pagination, pagination2=pagination2, keyword1=motclef, keyword2=motclef_institution, resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 
