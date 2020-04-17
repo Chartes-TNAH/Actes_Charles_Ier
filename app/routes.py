@@ -196,10 +196,7 @@ def resultats():
 		resultats_type = Acts.query.filter(
 			Acts.type.like("%{}%".format(motclef_type))
 			).all()
-		pagination = Acts.query.filter(
-			Acts.analyse.like("%{}%".format(motclef))
-			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", pagination=pagination, keyword1=motclef, resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
+		return render_template("pages/resultats.html", motclef=motclef, resultats=resultats, resultats_annee=resultats_annee, resultats_institution=resultats_institution, resultats_lieu_production=resultats_lieu_production, resultats_type=resultats_type, resultats_state=resultats_state)
 	else:
 		return render_template('pages/error404.html')
 
