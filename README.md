@@ -10,7 +10,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
 ## Fonctionnalités
 
-  * Une édition diplomatique d'un échantillon des actes ducaux, sur une période allant de 1421 à 1431. Les actes se trouvent dans un fichier ```XML-TEI``` auquel est appliqué une feuille de transformation ```XSL``` dynamique. Celle-ci s'aplique à la section du fichier ```XML-TEI``` correspondant à l'```ìd``` de l'acte demandé dans l'url grâce à la librairie ```lxml``` de ```Python```. Le résultat de la transformation est ensuite placé dans un document ```HTML``` via des ```templates```, le contenu de ce document étant enfin affiché dans le navigateur.
+  * Une édition diplomatique d'un échantillon des actes ducaux, sur une période allant de 1421 à 1431. Les actes se trouvent dans un fichier ```XML-TEI``` auquel est appliquée une feuille de transformation ```XSL``` dynamique. Celle-ci s'aplique à la section du fichier ```XML-TEI``` correspondant à l'```ìd``` de l'acte demandé dans l'url grâce à la librairie ```lxml``` de ```Python```. Le résultat de la transformation est ensuite placé dans un document ```HTML``` via des ```templates```, le contenu de ce document étant enfin affiché dans le navigateur.
   
   * Des index (anthroponymique, toponymique, prosopographique), constitués via le même système que l'édition diplomatique.
   
