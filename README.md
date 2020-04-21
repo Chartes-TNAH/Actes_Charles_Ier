@@ -14,7 +14,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
   
   * Des index (anthroponymique, toponymique, prosopographique), constitués via le même système que l'édition diplomatique.
   
-  * Des recherches par facettes (texte libre, années, lieux de production, lieux de conservation, états des actes, types des actes). Elles fonctionnent à partir de la librairie ```SQLAlchemy``` de ```Python``` et d'une base de données ```SQLite``` constituée automatiquement à partir du fichier ```XML-TEI```.
+  * Des recherches par facettes (texte libre, années, lieux de production, lieux de conservation, états des actes, types des actes). Elles fonctionnent à partir de la librairie ```SQLAlchemy``` de ```Python``` et d'une base de données ```SQLite``` constituée automatiquement à partir du fichier ```XML-TEI``` et actualisée à chaque ouverture de l'application.
   
   * Des pages de présentation, de bibliographie et de biographie afin de contextualiser le projet.
   
