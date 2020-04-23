@@ -13,15 +13,6 @@
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="graphic">
-        <xsl:element name="div">
-            <xsl:element name="img">
-                <xsl:element name="src">
-                    <xsl:text>{{url_for('static', filename='</xsl:text><xsl:value-of select="@url"/><xsl:text>')}}</xsl:text>
-                </xsl:element>
-            </xsl:element>
-        </xsl:element>
-    </xsl:template>
     <xsl:template match="docDate">
         <xsl:element name="p">
             <xsl:attribute name="class">
@@ -74,11 +65,13 @@
                     <xsl:element name="summary">
                         <xsl:text>Cliquer pour afficher une image de l'acte.</xsl:text>
                     </xsl:element>
-                    <xsl:element name="img">
-                        <xsl:attribute name="src"><xsl:value-of select="//facsimile[@n=$numero]/graphic/@url"/></xsl:attribute>
-                        <xsl:attribute name="width">100%</xsl:attribute>
-                        <xsl:attribute name="height">auto</xsl:attribute>
-                    </xsl:element>
+                    <xsl:if test="//facsimile[@n=$numero]/graphic/@url">
+                        <xsl:element name="img">
+                            <xsl:attribute name="src"><xsl:value-of select="//facsimile[@n=$numero]/graphic/@url"/></xsl:attribute>
+                            <xsl:attribute name="width">100%</xsl:attribute>
+                            <xsl:attribute name="height">auto</xsl:attribute>
+                        </xsl:element>
+                    </xsl:if>
                     <xsl:if test="//facsimile[@n=$numero]/graphic/desc">
                        <xsl:element name="p">
                            <xsl:value-of select="//facsimile[@n=$numero]/graphic/desc"/>
