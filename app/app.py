@@ -1,21 +1,21 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import os
+import os # module permettant de communiquer avec le système d'exploitation sous-jacent.
 
-chemin_actuel = os.path.dirname(os.path.abspath(__file__))
-templates = os.path.join(chemin_actuel, "templates")
-statics = os.path.join(chemin_actuel, "static")
+chemin_actuel = os.path.dirname(os.path.abspath(__file__)) # stockage du chemin du fichier courant
+templates = os.path.join(chemin_actuel, "templates") # stockage du chemin vers les templates
+statics = os.path.join(chemin_actuel, "static") # stockage du chemin les statics
 
 app = Flask(
     "Application",
     template_folder=templates,
     static_folder=statics,
-)
+) # instantiation de l'application dans la variable app et définition des dossiers templates et statics en fonction des chemins os définis au-dessus.
 
-# Configuration de la base de donnée et stockage du résultat dans db. chemin relatif trois slash et point ///./
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/jdgenero/Desktop/M2_Cours/dev/Actes_Charles_Ier/app/corpus.sqlite'
+# Configuration de la base de donnée
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./corpus.sqlite'
+# stockage de la base dans l'objet db
 db = SQLAlchemy(app)
 
-# Import des différentes routes depuis le fichier routes.py
-from .routes import accueil, projet, corpus, bibliographie, duc, index_noms, index_prosopo, index_lieu, contact, recherche, acte, page_not_found, mentions_legales, resultats
-
+# Import de la route principal depuis le fichier routes.py
+from .routes import accueil
