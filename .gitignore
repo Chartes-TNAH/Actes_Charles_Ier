@@ -6,3 +6,5 @@ sommaire2.html
 sommaire.html
 db.sqlite
 sommaire-2.xsl
+__pycache__
+app/modeles/__pycache__/
