@@ -17,5 +17,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./corpus.sqlite'
 # stockage de la base dans l'objet db
 db = SQLAlchemy(app)
 
-# Import de la route principal depuis le fichier routes.py
+# Import de la route principalle depuis le fichier routes.py
 from .routes import accueil
