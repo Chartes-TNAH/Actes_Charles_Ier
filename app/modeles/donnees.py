@@ -1,4 +1,7 @@
-from ..app import db, source_doc
+# import de la base de données (db) depuis le fichier app.py situé dans le dossier parent (..) :
+from ..app import db
+# import du document XML (source_doc) depuis le fichier constantes.py situé dans le dossier parent (..) :
+from ..constantes import source_doc
 
 class Acts(db.Model):
     __tablename__ = "acts"

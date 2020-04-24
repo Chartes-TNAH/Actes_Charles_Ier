@@ -3,8 +3,12 @@ from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 import re
 
-from .app import app, source_doc # import de l'application (app) et du document XML (source_doc) depuis le fichier app.py
-from .modeles.donnees import Acts # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles
+# import de l'application (app) depuis le fichier app.py :
+from .app import app
+# import du document XML (source_doc) depuis le fichier constantes.py :
+from .constantes import source_doc, xslt_projet_doc, xslt_index_nom_doc, xslt_index_prosopo_doc, xslt_index_lieux_doc
+# import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
+from .modeles.donnees import Acts 
 
 RESULT_PAR_PAGES = 5
 
@@ -22,7 +26,6 @@ def projet():
 	(3) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_projet_doc ;
 	(4) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/projet.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_projet).
 	"""
-	xslt_projet_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/projet-xslt.xslt")
 	xslt_projet_transformer = etree.XSLT(xslt_projet_doc)
 	output_projet_doc = xslt_projet_transformer(source_doc)
 	return render_template("pages/projet.html", contenu_projet=output_projet_doc)
@@ -55,7 +58,6 @@ def index_noms():
 	(3) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_nom_doc ;
 	(4) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index_nominum.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_nom).
 	"""
-	xslt_index_nom_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-nominum.xsl")
 	xslt_index_nom_transformer = etree.XSLT(xslt_index_nom_doc)
 	output_index_nom_doc = xslt_index_nom_transformer(source_doc)
 	return render_template("pages/index_nominum.html", contenu_index_nom=output_index_nom_doc)
@@ -68,7 +70,6 @@ def index_prosopo():
 	(3) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_prosopo_doc ;
 	(4) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index_prosopo.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_prosopo).
 	"""
-	xslt_index_prosopo_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-xslt.xsl")
 	xslt_index_prosopo_transformer = etree.XSLT(xslt_index_prosopo_doc)
 	output_index_prosopo_doc = xslt_index_prosopo_transformer(source_doc)
 	return render_template("pages/index_prosopo.html", contenu_index_prosopo=output_index_prosopo_doc)
@@ -81,7 +82,6 @@ def index_lieu():
 	(3) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_lieux_doc ;
 	(4) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index-lieux.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_lieux).
 	"""
-	xslt_index_lieux_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/index-locorum.xsl")
 	xslt_index_lieux_transformer = etree.XSLT(xslt_index_lieux_doc)
 	output_index_lieux_doc = xslt_index_lieux_transformer(source_doc)
 	return render_template("pages/index-lieux.html", contenu_index_lieux=output_index_lieux_doc)
