@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from lxml import etree
 import os
 
 chemin_actuel = os.path.dirname(os.path.abspath(__file__))
