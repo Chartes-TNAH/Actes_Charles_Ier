@@ -1,5 +1,7 @@
 from lxml import etree
 
+RESULT_PAR_PAGES = 5
+
 # Parsage du document XML-TEI avec la méthode .parse() d'etree, et stockage du résultat dans source_doc :
 source_doc = etree.parse("../Actes_Charles_Ier/app/static/xml/corpus-act-ch.xml")
 
