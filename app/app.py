@@ -4,7 +4,7 @@ import os # module permettant de communiquer avec le système d'exploitation sou
 
 chemin_actuel = os.path.dirname(os.path.abspath(__file__)) # stockage du chemin du fichier courant
 templates = os.path.join(chemin_actuel, "templates") # stockage du chemin vers les templates
-statics = os.path.join(chemin_actuel, "static") # stockage du chemin les statics
+statics = os.path.join(chemin_actuel, "static") # stockage du chemin vers les statics
 
 app = Flask(
     "Application",
@@ -17,5 +17,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./corpus.sqlite'
 # stockage de la base dans l'objet db
 db = SQLAlchemy(app)
 
-# Import de la route principalle depuis le fichier routes.py
+# Import de la route principale depuis le fichier routes.py
 from .routes import accueil

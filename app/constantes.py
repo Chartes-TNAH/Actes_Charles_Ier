@@ -1,5 +1,6 @@
 from lxml import etree
 
+# Variable pour la page de résultat
 RESULT_PAR_PAGES = 5
 
 # Parsage du document XML-TEI avec la méthode .parse() d'etree, et stockage du résultat dans source_doc :
