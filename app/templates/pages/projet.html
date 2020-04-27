@@ -1,14 +1,14 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-<div class="projet-desc-global">
+<div class="projet-global">
 	<div>
-		<figure class="projet-desc-img-global">
+		<figure class="projet-img-global">
 			<div>
 				<div>
 					<img src="{{url_for('static', filename='img/projet_acte_1435.jpg')}}" alt="Acte du 1er octobre 1435" width="100%" height="auto" />
 				</div>
 			</div>
-			<figcaption class="projet-desc-img-legend">
+			<figcaption class="projet-img-legend">
 				<p class="caption-main">Acte du 1<sup>er</sup> octobre 1435, par lequel Charles de Bourbon et les ambassadeurs du roi à la convention d'Arras accusent réception de deux lettres de Philippe le Bon. Archives départementales du Nord, B 304, cote 15.660 (685 x 1160 mm., dont repli 60 mm.).</p>
 			</figcaption>
 		</figure>
@@ -17,7 +17,7 @@
 		<div class="h1_global">
 			<h1>Description du projet</h1>
 		</div>
-		<div class="projet-desc-text">
+		<div class="projet-text">
 			{{contenu_projet|safe}}
 		</div>
 	</div>

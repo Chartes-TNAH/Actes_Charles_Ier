@@ -1,24 +1,24 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-<div class="projet-desc-global">
-	<div style="width: 100%; margin-right: 1%;">
-		<figure class="projet-desc-img-global">
+<div class="projet-global">
+	<div>
+		<figure class="projet-img-global">
 			<div>
 				<div>
 					<img src="{{url_for('static', filename='img/armorial_toison_or.jpeg')}}" alt="Armorial de l'Europe et de la Toison d'or, folio 54r" class="img"/>
 				</div>
 			</div>
-			<figcaption class="projet-desc-img-legend">
+			<figcaption class="projet-img-legend">
 				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b55009806h/f115.item" target="_blank">Armorial de l'Europe et de la Toison d'or, folio 54r. L'écu du duc de Bourbon, grand du royaume, est placé immédiatement après ceux du roi, du dauphin et des princes Valois.<br />(BnF, réserve, ms. 4770, f. 54r, XV<sup>e</sup> siècle)</a></p>
 			</figcaption>
 		</figure>
-		<figure class="projet-desc-img-global">
+		<figure class="projet-img-global">
 			<div>
 				<div>
 					<img src="{{url_for('static', filename='img/armorial_revel_369.jpeg')}}" alt="Armorial de Guillaume Revel, folio 33" class="img"/>
 				</div>
 			</div>
-			<figcaption class="projet-desc-img-legend">
+			<figcaption class="projet-img-legend">
 				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b8470455b/f379.image" target="_blank">Représentation de la ville de Moulins, capitale de Charles I<sup>er</sup> et d'Agnès de Bourgogne, dans l'armorial de Guillaume Revel.<br />(BnF, ms. fr. 22297, f. 369, XV<sup>e</sup> siècle).</a></p>
 			</figcaption>
 		</figure>
@@ -27,7 +27,7 @@
 		<div class="h1_global">
 			<h1>Charles I<sup>er</sup> et Agnès de Bourgogne</h1>
 		</div>
-		<div class="projet-desc-text">
+		<div class="projet-text">
 			<div>
 				<p>Charles I<sup>er</sup> et Agnès de Bourgogne sont les cinquièmes duc et duchesse de Bourbon, régnant de 1434 à 1456. Charles, descendant direct de saint Louis par son père et de Jean II le Bon par sa mère, fait partie des grands princes du royaume, proches conseillers du roi. Ses principaux territoires sont les duchés de Bourbonnais et d’Auvergne, le comté de Forez et la seigneurie de Beaujolais, qui forment un vaste ensemble au centre du royaume ; il est en outre comte de Clermont-en-Beauvaisis et seigneur de Château-Chinon.</p>
 				<p>D’abord lieutenant général dans le Languedoc (1420-1423 ; <a href="{{url_for('acte', acte_id=1)}}" target="_blank">acte 1</a>), il est ensuite nommé dans les marches est du royaume, plus proches des terres bourbonnaises (<a href="{{url_for('acte', acte_id=17)}}" target="_blank">acte 17</a>). Son père, Jean I<sup>er</sup>, étant prisonnier des Anglais, il prend <i>de facto</i> les rênes du duché au côté de sa mère, la duchesse Marie de Berry.</p>
@@ -38,7 +38,7 @@
 				<p>Ses pages offrent la représentation d’un domaine étendu, où la noblesse se tient derrière un prince replacé dans son extraction royale. Charles I<sup>er</sup> conclut enfin des alliances matrimoniales importantes pour ses enfants avec les maisons d’Anjou (1437) et de Bourgogne (1454), et parvient à marier son héritier Jean II à Jeanne de France, fille du roi (1446).</p>
 				<p>La fin de la vie du duc est marquée par la maladie. Après une première crise de goutte en 1448, ses déplacements sont fortement limités. Son état s’aggrave dans la seconde moitié de l’année 1454, à partir de laquelle il ne quitte plus sa capitale et ses abords immédiats, où il finit par décéder le 4 décembre 1456. Agnès de Bourgogne meurt vingt-ans plus tard.</p>
 			</div>
-			<div style="font-size: 10pt; margin-top: 8%;">
+			<div class="duc-biblio">
 				<strong>Indications bibliographiques :</strong>
 				<p>Jean-Damien Généro, <i>La chancellerie de Charles I<sup>er</sup> de Bourbon (1425-1456), avec l'édition de ses actes et de ceux de son épouse, Agnès de Bourgogne</i>, mémoire de Master recherche sous la direction d'Olivier Mattéoni, École d'histoire de la Sorbone (Paris I), 2018.</p>
 				<p>André Leguai, <i>Les ducs de Bourbon pendant la crise monarchique du XV<sup>e</sup> siècle. Contribution à l’étude des apanages</i>, Paris, Société des Belles Lettres, 1962.</p>

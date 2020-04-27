@@ -1,0 +1,152 @@
+/* NAVBAR */
+.nav-global {
+    display: flex;
+    flex-direction: row;
+    background: #f8f9fa;
+    padding: 1.25%;
+    margin: auto;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav-item > li {
+    margin-right: 5%;
+    margin-left: 5%;
+    list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* DROPDOWN > https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.dropbtn {
+  background-color: inherit;
+  color: black;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #DBDBDB;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* HEADER */
+.header-global {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    padding-left: 3%;
+    margin-top: 4%;
+}
+
+.header-h1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header-text-global {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+}
+
+.l1 {
+    font-size: 90px;
+    line-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.l2 {
+    font-size: 50px;
+    line-height: 50%;
+    text-indent: 3%;
+    font-family: Helvetica;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.l3 {
+    font-size: 50px;
+    line-height: 150%;
+    text-indent: 8%;
+    font-family: Helvetica;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.charles {
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+}
+
+.bourbon {
+    font-size: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-img-global {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.header-img {
+    width: 60%;
+    height: auto;
+}
+
+.rotate div img {
+  -webkit-transition: all 0.75s ease;
+  transition: all 2s ease;
+}
+ 
+.rotate div:hover img {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(360deg);
+}

@@ -1,14 +1,14 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-<div class="projet-desc-global">
-	<div style="width: 100%; margin-right: 5%;">
-		<figure class="projet-desc-img-global">
+<div class="projet-global" id="page-wrap">
+	<div>
+		<figure class="projet-img-global" id="sidebar">
 			<div>
 				<div>
 					<img src="{{url_for('static', filename='img/bibliographie.jpg')}}" alt="Acte du 1er octobre 1435" width="100%" height="auto" />
 				</div>
 			</div>
-			<figcaption class="biblio-img-legend">
+			<figcaption class="projet-img-legend">
 				<p class="caption-main">Ratification et confirmation par Charles de Bourbon des lettres de la fondation des Célestins de Vichy par son grand-père Louis II. Copie du XVIII<sup>e</sup> siècle (Archives nationales, K 188, cote 21<sup>4</sup>).</p>
 			</figcaption>
 		</figure>
@@ -17,9 +17,9 @@
 		<div class="h1_global">
 			<h1>Indications bibliographiques</h1>
 		</div>
-		<div class="projet-desc-text">
+		<div class="projet-text" id="biblio">
 			<div>
-				<div class="biblio-text">
+				<div class="projet-text" id="biblio">
 					<h3 class="h3_global">Édition de corpus</h3>
 					<p>Valentine Martin, <i>La chancellerie bourbonnaise à la fin du XIII<sup>e</sup> siècle et sous les principats de Louis I<sup>er</sup> et Pierre I<sup>er</sup> de Bourbon (ca. 1270-1356), suivi d’un recueil des actes de la chancellerie</i>, mémoire de Master recherche sous la direction d'Olivier Mattéoni, École d'histoire de la Sorbone (Paris I), 2019.</p>
 					<p>Jean-Damien Généro, <i>La chancellerie de Charles I<sup>er</sup> de Bourbon (1425-1456), avec l'édition de ses actes et de ceux de son épouse, Agnès de Bourgogne</i>, mémoire de Master recherche sous la direction d'Olivier Mattéoni, École d'histoire de la Sorbone (Paris I), 2018.</p>
@@ -32,23 +32,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="projet-desc-text">
+		<div class="projet-text" id="biblio">
 			<div class="h2_global">
 				<h2>Autres corpus</h2>
 			</div>
-			<div class="biblio-text">
+			<div class="projet-text" id="biblio">
 				<h3 class="h3_global">Actes de Jean de Berry</h3>
 				<p><i>Jean de Berry et l'écrit. Les pratiques documentaires d'un fils de roi de France</i>, sous la direction d'Olivier&nbsp;Guyotjeannin et d'Olivier&nbsp;Mattéoni, Paris, École nationale des chartes et Éditions de la Sorbonne, 2019 <a href="https://books.openedition.org/psorbonne/54103">[lire en ligne]</a>.</p>
 				<p><a href="http://www.archives18.fr/article.php?larub=604">Les actes de Jean de Berry dans le fonds de la Sainte-Chapelle de Bourges, sur le site des Archives départementales du Cher.</a></p>
 			</div>
-			<div class="biblio-text">
+			<div class="projet-text" id="biblio">
 				<h3 class="h3_global">Actes des ducs de Bourgogne</h3>
 				<p><i>Ordonnances de Philippe le Hardi, Marguerite de Flandre et de Jean sans Peur, 1381-1419</i>, 2 vol., Paul Bonenfant, John Bartier, Andrée Van Nieuwenhuysen (éd.), Bruxelles, Commission royale pour la publication des anciennes lois et ordonnances de Belgique, 1965-1974.</p>
 				<p><i>Ordonnances de Jean sans Peur, 1405-1419</i>, Jean-Marie Cauchies (éd.), Bruxelles, Commission royale pour la publication des anciennes lois et ordonnances de Belgique, 2001.</p>
 				<p>Henri Stein, <i>Catalogue des actes de Charles le Téméraire (1467-1477)</i>, suivi de <i>Urkunden und Mandate Karls von Burgund, Grafen von Charolais (1433-1467)</i>, Sonja Dünnebeil (éd.), Sigmaringen, Jan Thorbecke, 1999.</p>
 				<p><i>La correspondance d’Isabelle de Portugal, duchesse de Bourgogne (1430-1471)</i>, Monique Sommé (éd.), Ostfildern, Jan Thorbecke, 2009.</p>
 			</div>
-			<div class="biblio-text">
+			<div class="projet-text" id="biblio">
 				<h3 class="h3_global">Actes des ducs de Bretagne</h3>
 				<p><i>Actes de Pierre de Dreux, duc de Bretagne (1213-1237)</i>, Marjolaine Lémeillat (éd.), Rennes, PUR, 2013.</p>
 				<p><i>Actes de Jean I<sup>er</sup>, duc de Bretagne (1237-1286)</i>, Lémeillat M. (éd.), Rennes, PUR, 2014.</p>
