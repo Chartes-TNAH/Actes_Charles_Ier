@@ -184,7 +184,8 @@ def recherche():
 		place = city.place
 		list_city.append(place)
 	list_city.remove('NS')
-	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
+	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, 
+		list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
 
 @app.route("/recherche/resultats")
 def resultats():
