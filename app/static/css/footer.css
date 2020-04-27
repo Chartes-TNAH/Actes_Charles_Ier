@@ -1,4 +1,6 @@
-/* FOOTER */
+/* css du footer */
+
+/* Global */
 .bloc-footer {
     background: #f8f9fa;
 }
@@ -13,6 +15,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Bloc nom - icones - texte */
 .name-icon-footer-global {
     display: flex;
     flex-direction: row;"
@@ -42,6 +45,8 @@
     margin-top: 0.5%;
     margin-bottom: 0.5%;
 }
+
+/* Bloc logo ENC */
 
 .box-img-footer {
     display: flex;

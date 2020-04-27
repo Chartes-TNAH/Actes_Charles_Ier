@@ -1,3 +1,24 @@
+/*
+    # Fichier css principal, contenant :
+
+        * Mise en forme des liens <a> ;
+
+        * Mise en forme des titres <h1>, <h2>, <h3> ;
+
+        * Mise en forme du conteneur ;
+
+        * Mise en forme des pages : Accueil, À propos, Bibliographie, Le duc, Liste des actes,
+          Actes, Index (noms, prosopographique, lieux), Contact, Mentions légales, Érreur 404.
+
+    # Pour le css des header, navbar et footer : cf. header.css et footer.css ;
+
+    # Pour le css des formulaires de recherche et de la page de résultats : cf. form.css ;
+
+    # Pour le css du tableau de la page Liste des actes : cf. table.css ;
+
+    # Pour les polices/fonts d'écriture : cf. font.css.
+*/
+
 /* LIENS */
 a:link, a:visited {
     text-decoration: none;
@@ -16,7 +37,6 @@ a:hover, a:active {
     flex-wrap: wrap;
     margin: auto;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .h2_global {
@@ -83,7 +103,6 @@ a:hover, a:active {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* PAGES PROJET = À PROPOS, BIBLIOGRAPHIE, LE DUC */
@@ -123,7 +142,6 @@ a:hover, a:active {
 
 /* CORPUS = LISTE DES ACTES */
 .corpus-global {
-    font-family: 'Open Sans', sans-serif;
     margin-top: 2%;
     margin-bottom: 4%;
 }
@@ -137,7 +155,6 @@ a:hover, a:active {
     flex-wrap: wrap;
     margin: auto;
     margin-bottom: 2%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .prec_suiv {
@@ -233,7 +250,6 @@ a:hover, a:active {
 .index-global {
     display: flex;
     flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
     margin-top: 1%;
     margin-bottom: 5%;
 }
@@ -305,7 +321,6 @@ a:hover, a:active {
 
 /* CONTACT */
 .contact-global {
-    font-family: 'Open Sans', sans-serif;
     margin-top: 6%;
     margin-bottom: 10%;
 }
@@ -323,7 +338,6 @@ a:hover, a:active {
     flex-wrap: wrap;
     margin: auto;
     margin-bottom: 2%;
-    font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
 }
@@ -342,7 +356,6 @@ a:hover, a:active {
     align-items: center;
     width: 100%;
     height: auto;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .erreur-figure {

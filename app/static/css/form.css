@@ -1,3 +1,5 @@
+/* css des formulaires de recherche : pages Accueil, Recherche, Résultats */
+
 /* RECHERCHE SUR LA PAGE ACCUEIL */
 .form-home {
 	display: flex;
@@ -77,13 +79,12 @@ form > p {
 	width: 80%;
 }
 
-/* PAGE DE RESULTAT */
+/* PAGE DES RESULTATS */
 .result-global {
     display: flex;
     flex-direction: column;
     margin-top: 3%;
     margin-bottom: 3%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .result-item {
