@@ -5,7 +5,8 @@ import re
 
 # import de l'application (app) depuis le fichier app.py :
 from .app import app
-# import de la variable RESULT_PAR_PAGES, du document XML (source_doc) et des feuilles de transformation XSLT depuis le fichier constantes.py :
+# import de la variable RESULT_PAR_PAGES, du document XML (source_doc) et des feuilles de transformation XSLT depuis
+# le fichier constantes.py :
 from .constantes import RESULT_PAR_PAGES, source_doc, xslt_projet_doc, xslt_index_nom_doc, xslt_index_prosopo_doc, xslt_index_lieux_doc
 # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
 from .modeles.donnees import Acts 
@@ -13,16 +14,21 @@ from .modeles.donnees import Acts
 
 @app.route("/")
 def accueil():
-	"""Route permettant d'afficher la page accueil en retournant une template via l'objet Flask render_template(), où est défini le document html où le retour de la fonction sera affiché.
+	"""Route permettant d'afficher la page accueil en retournant une template via l'objet Flask render_template(),
+	   où est défini le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("accueil.html")
 
 @app.route("/projet")
 def projet():
 	"""Route permettant d'afficher la page projet :
-	(1) la méthode .XSLT() d'etree est appliquée à xslt_projet_doc, le résultat est stocké dans la variable xslt_projet_transformer ;
-	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_projet_doc ;
-	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/projet.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_projet).
+	(1) la méthode .XSLT() d'etree est appliquée à xslt_projet_doc, le résultat est stocké dans la variable
+		xslt_projet_transformer ;
+	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké
+		dans la variable output_projet_doc ;
+	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers
+		le document html où le retour de la fonction sera affiché (pages/projet.html) et la template Flask
+		qui contient le résultat de la transformation XSL (contenu_projet).
 	"""
 	xslt_projet_transformer = etree.XSLT(xslt_projet_doc)
 	output_projet_doc = xslt_projet_transformer(source_doc)
@@ -30,20 +36,24 @@ def projet():
 
 @app.route("/bibliographie")
 def bibliographie():
-	"""Route permettant d'afficher la page bibliographie en retournant une template via l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
+	"""Route permettant d'afficher la page bibliographie en retournant une template via l'objet Flask render_template(),
+		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/bibliographie.html")
 
 @app.route("/duc")
 def duc():
-	"""Route permettant d'afficher la page de biographie du duc en retournant une template via l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
+	"""Route permettant d'afficher la page de biographie du duc en retournant une template via l'objet Flask render_template(),
+		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/duc.html")
 
 @app.route("/actes")
 def corpus():
-	"""Route permettant d'afficher la page de présentation du corpus des actes ducaux en retournant une template via l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
-	La variable Actes_total contient le résultat d'une requête sur l'ensemble de la classe Acts et est stockée dans la template Flask document.
+	"""Route permettant d'afficher la page de présentation du corpus des actes ducaux en retournant une template via
+		l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
+		La variable Actes_total contient le résultat d'une requête sur l'ensemble de la classe Acts et est stockée
+		dans la template Flask document.
 	"""
 	Actes_total = Acts.query.all()
 	return render_template("pages/corpus.html", document=Actes_total)
@@ -51,9 +61,13 @@ def corpus():
 @app.route("/index-nominum")
 def index_noms():
 	"""Route permettant d'afficher la page de l'index nominum :
-	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_nom_doc, le résultat est stocké dans la variable xslt_index_nom_transformer ;
-	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_nom_doc ;
-	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index_nominum.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_nom).
+	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_nom_doc, le résultat est stocké dans la variable
+		xslt_index_nom_transformer ;
+	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable
+		output_index_nom_doc ;
+	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document
+		html où le retour de la fonction sera affiché (pages/index_nominum.html) et la template Flask qui contient le
+		résultat de la transformation XSL (contenu_index_nom).
 	"""
 	xslt_index_nom_transformer = etree.XSLT(xslt_index_nom_doc)
 	output_index_nom_doc = xslt_index_nom_transformer(source_doc)
@@ -62,9 +76,13 @@ def index_noms():
 @app.route("/index-prosopographique")
 def index_prosopo():
 	"""Route permettant d'afficher la page de l'index prosopographique :
-	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_prosopo_doc, le résultat est stocké dans la variable xslt_index_prosopo_transformer ;
-	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_prosopo_doc ;
-	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index_prosopo.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_prosopo).
+	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_prosopo_doc, le résultat est stocké dans la variable
+		xslt_index_prosopo_transformer ;
+	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la
+		variable output_index_prosopo_doc ;
+	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le
+		document html où le retour de la fonction sera affiché (pages/index_prosopo.html) et la template Flask
+		qui contient le résultat de la transformation XSL (contenu_index_prosopo).
 	"""
 	xslt_index_prosopo_transformer = etree.XSLT(xslt_index_prosopo_doc)
 	output_index_prosopo_doc = xslt_index_prosopo_transformer(source_doc)
@@ -73,9 +91,13 @@ def index_prosopo():
 @app.route("/index-lieu")
 def index_lieu():
 	"""Route permettant d'afficher la page de l'index locorum :
-	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_lieux_doc, le résultat est stocké dans la variable xslt_index_lieux_transformer ;
-	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_index_lieux_doc ;
-	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le document html où le retour de la fonction sera affiché (pages/index-lieux.html) et la template Flask qui contient le résultat de la transformation XSL (contenu_index_lieux).
+	(1) la méthode .XSLT() d'etree est appliquée à xslt_index_lieux_doc, le résultat est stocké dans la variable
+		xslt_index_lieux_transformer ;
+	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la
+		variable output_index_lieux_doc ;
+	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis le chemin vers le
+		document html où le retour de la fonction sera affiché (pages/index-lieux.html) et la template Flask qui
+		contient le résultat de la transformation XSL (contenu_index_lieux).
 	"""
 	xslt_index_lieux_transformer = etree.XSLT(xslt_index_lieux_doc)
 	output_index_lieux_doc = xslt_index_lieux_transformer(source_doc)
@@ -83,7 +105,8 @@ def index_lieu():
 
 @app.route("/contact")
 def contact():
-	"""Route permettant d'afficher la page de contact en retournant une template via l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
+	"""Route permettant d'afficher la page de contact en retournant une template via l'objet Flask render_template(),
+		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/contact.html")
 
@@ -92,10 +115,12 @@ def acte(acte_id):
 	"""Route permettant d'afficher la page de présentation d'un acte :
 	:param acte_id: numéro de l'acte
 	(1) la méthode .XSLT() d'etree est appliquée à xslt_doc, le résultat est stocké dans la variable xslt_transformer ;
-	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable output_doc ;
+	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké dans la variable
+		output_doc ;
 	(3) la fonction retourne une template via l'objet Flask render_template(), où sont définis :
 			* Le chemin vers le document html où le retour de la fonction sera affiché (pages/acte.html) ;
-			* Les templates Flask qui contiennent le résultat de la transformation XSL (contenu_acte) et le numéro de l'acte (id).
+			* Les templates Flask qui contiennent le résultat de la transformation XSL (contenu_acte) et le numéro
+			  de l'acte (id).
 	"""
 	xslt_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/corpus-xslt.xslt")
 	xslt_transformer = etree.XSLT(xslt_doc)
@@ -106,9 +131,11 @@ def acte(acte_id):
 def recherche():
 	"""Route permettant d'afficher la page recherche.
 	(1) Des listes vides sont définies.
-	(2) Des requêtes sont effectuées en boucle sur la class Acts et les éléments trouvés sont ajoutés à la liste correspondante.
-		Dans le libellés des dépôts d'archives départemenaux et municipaux, la méthode sub() de la librairie re permet,
-		via une regex, de n'ajouter à la liste correspondante que le nom du département ou de la commune.
+	(2) Des requêtes sont effectuées en boucle sur la classe Acts et les éléments trouvés sont ajoutés à la liste
+		correspondante.
+		Dans le libellés des dépôts d'archives départemenaux et municipaux, la méthode sub() de la librairie
+		re permet, via une regex, de n'ajouter à la liste correspondante que le nom du département ou de la
+		commune.
 	(3) Les mentions 'NS' ([ville] non spécifiée) est retirée de list_city.
 	(4) La fonction retourne une template via l'objet Flask render_template(), où sont définis :
 			* Le chemin vers le document html où le retour de la fonction sera affiché (pages/recherche.html) ;
@@ -216,7 +243,8 @@ def resultats():
 
 @app.route("/mentionslegales")
 def mentions_legales():
-	"""Route permettant d'afficher la page des mentions légales en retournant une template via l'objet Flask render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
+	"""Route permettant d'afficher la page des mentions légales en retournant une template via l'objet Flask
+		render_template(), où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template('pages/mentionslegales.html')
 
