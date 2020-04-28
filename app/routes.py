@@ -8,9 +8,13 @@ from .app import app
 # import de la variable RESULT_PAR_PAGES, du document XML (source_doc) et des feuilles de transformation XSLT depuis
 # le fichier constantes.py :
 from .constantes import RESULT_PAR_PAGES, source_doc, xslt_projet_doc, xslt_index_nom_doc, xslt_index_prosopo_doc, xslt_index_lieux_doc
+# import de la fonction database_init depuis le fichier data.py
+from .data import database_init
 # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
 from .modeles.donnees import Acts 
 
+# activation de la fonction d'initialisation de la base de données
+database_init()
 
 @app.route("/")
 def accueil():
