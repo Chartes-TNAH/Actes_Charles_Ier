@@ -13,8 +13,8 @@ from .data import database_init
 # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
 from .modeles.donnees import Acts 
 
-# activation de la fonction d'initialisation de la base de données
-database_init()
+# activation de la fonction d'initialisation de la base de données avec pour paramètre souce_doc
+database_init(source_doc)
 
 @app.route("/")
 def accueil():
