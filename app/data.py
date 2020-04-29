@@ -6,10 +6,16 @@ from .constantes import source_doc
 from .modeles.donnees import Acts 
 
 def database_init():
-    """Fonction permettant de compléter la base de données db avec les information issu de source_doc.
-        (1) Définition de listes vides et d'un compteur (id).
-        (2) Boucle sur chaque élément texte de l'arbre XML pour remplir les listes :
-            * 
+    """Fonction permettant de compléter la base de données db avec les informations issues de source_doc.
+        (1) Définition de listes vides, correspondant aux colonnes de la base, et de deux compteurs.
+        (2) Boucle sur chaque élément texte de l'arbre XML pour remplir les listes, number permettant
+            d'indiquer l'id des actes dans le document XML.
+        (3) Boucle sur le contenu :
+            * L'ancienne base est écrasée (db) ;
+            * Une nouvelle base est créée (db) ;
+            * Le compteur count_id augmente de un à chaque cycle de la boucle ;
+            * Sont ajoutés à db : le compteur, correspondant à l'id de l'acte, et l'entrée de chaque
+              liste avec comme index count_id - 1 (puisque le premier index d'une liste est 0).
     """
     list_id = []
     list_institution = []
@@ -19,7 +25,7 @@ def database_init():
     list_place = []
     list_analyse = []
     number = 0
-    id = 0
+    count_id = 0
     for item in source_doc.xpath("//group/text"):
         number += 1
         item_institution = source_doc.xpath("//text[@n=" + str(number) + "]//institution/text()")
@@ -35,7 +41,8 @@ def database_init():
     for item in list_date:
         db.drop_all()
         db.create_all()
-        id +=1
-        db.session.add(Acts(id, list_institution[id - 1], list_state[id - 1], list_type[id - 1], 
-            list_date[id - 1], list_place[id - 1], list_analyse[id - 1]))
+        count_id +=1
+        db.session.add(Acts(count_id, list_institution[count_id - 1], list_state[count_id - 1], 
+            list_type[count_id - 1], list_date[count_id - 1], list_place[count_id - 1], 
+            list_analyse[count_id - 1]))
     db.session.commit()
