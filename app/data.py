@@ -1,3 +1,4 @@
+from lxml import etree
 # import de la base de données (db) depuis le fichier app.py :
 from .app import db
 # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :

@@ -10,7 +10,8 @@ app = Flask(
     "Application",
     template_folder=templates,
     static_folder=statics,
-) # instantiation de l'application dans la variable app et définition des dossiers templates et statics en fonction des chemins os définis au-dessus.
+) # instantiation de l'application dans la variable app et définition des dossiers templates et
+  # statics en fonction des chemins os définis au-dessus.
 
 # Configuration de la base de donnée
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./corpus.sqlite'
