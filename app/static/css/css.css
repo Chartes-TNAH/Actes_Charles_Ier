@@ -16,7 +16,7 @@
 
     # Pour le css des header, navbar et footer : cf. header.css et footer.css ;
 
-    # Pour le css des formulaires de recherche et de la page de résultats : cf. form.css ;
+    # Pour le css des pages Recherche et Résultats : cf. form.css ;
 
     # Pour le css du tableau de la page Liste des actes : cf. table.css ;
 
@@ -81,6 +81,18 @@ a:hover, a:active {
 }
 
 /* ACCUEIL */
+.global-home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.div-img, .div-img > figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
 .img {
     width: 90%;
     height: auto;
@@ -101,16 +113,10 @@ a:hover, a:active {
     margin-top: none;
 }
 
-.global_home {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-bottom: 7%;
-}
-
-.p_home {
+.home-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
 }
@@ -331,13 +337,12 @@ a:hover, a:active {
 
 /* CONTACT */
 .contact-global {
-    margin-top: 6%;
-    margin-bottom: 10%;
+    margin: 8% auto 15% auto;
 }
 
 .contact-global > p {
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: auto auto auto 5%;
+    padding: auto 5% auto 5%;
 }
 
 /* MENTIONS LÉGALES */

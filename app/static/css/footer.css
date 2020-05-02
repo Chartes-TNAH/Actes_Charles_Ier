@@ -8,40 +8,36 @@
 
 /* Global */
 .bloc-footer {
-    background: #f8f9fa;
-}
-
-.global-footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    background: #f8f9fa;
     justify-content: space-around;
-    padding: 2%;
-    width: 80%;
-    margin: auto;
+    padding: 2% 4% 5% 4%;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* Bloc nom - icones - texte */
-.name-icon-footer-global {
-    display: flex;
-    flex-direction: row;"
-}
-
 .text-footer {
-    display: flex;
+    display: inherit;
     flex-direction: column;
+    flex-wrap: inherit;
     width: 30%;
     justify-content: center;
 }
 
-.name-footer {
+.name-icon-footer-global {
+    display: inherit;
+    flex-direction: row;
+}
+
+.name-icon-footer-global > div > p {
     font-size: small;
-    width: 70%;
-    height: auto;
+    margin-bottom: 1%;
 }
 
 .icon-footer {
-    width: 95%;
+    width: 2.5%;
     height: auto;
 }
 
@@ -55,13 +51,16 @@
 /* Bloc logo ENC */
 
 .box-img-footer {
-    display: flex;
+    display: inherit;
     flex-direction: column;
+    flex-wrap: inherit;
     justify-content: center;
     width: 30%;
 }
 
 .img-footer {
+    display: inherit;
+    flex-wrap: inherit;
     width: 100%;
     height: auto;
 }
