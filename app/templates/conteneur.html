@@ -10,6 +10,49 @@
 
 <body>
     <nav class="nav-global fixed-top">
+        <div class="nav-list">
+                <form class="nav-form" action="{{url_for('accueil')}}" method="get" style="margin-right: 3%;">
+                    <button class="dropbtn">Accueil</button>
+                </form>
+                <form class="dropdown nav-form">
+                    <button class="dropbtn">Projet</button>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('projet')}}">À propos</a>
+                        <a href="{{url_for('bibliographie')}}">Bibliographie</a>
+                    </div>
+                </form>
+                <form class="nav-form" action="{{url_for('duc')}}" method="get">
+                    <button class="dropbtn">Le&nbsp;duc</button>
+                </form>
+                <form class="dropdown nav-form">
+                    <button class="dropbtn">Actes</button>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('corpus')}}">Liste des actes</a>
+                        <a href="{{url_for('recherche')}}">Recherche</a>
+                    </div>
+                </form>
+                <form class="dropdown nav-form">
+                    <button class="dropbtn">Index</button>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('index_noms')}}">Index nominum</a>
+                        <a href="{{url_for('index_prosopo')}}">Index prosopographique</a>
+                        <a href="{{url_for('index_lieu')}}">Index locorum</a>
+                    </div>
+                </form>
+                <form class="nav-form" action="{{url_for('contact')}}" method="get">
+                    <button class="dropbtn">Contact</button>
+                </form>
+                <form class="nav-form" action="{{url_for('resultats')}}" method="GET">
+                    <div class="form-home">
+                        <input name="keyword" type="search" placeholder="Rechercher dans les actes" aria-label="Recherche" id="searchbar">
+                        <div>
+                            <button type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </nav>
+    <!--<nav class="nav-global fixed-top">
         <button class="dropbtn" style="margin-right: 3%;">
             <a href="{{url_for('accueil')}}">Accueil</a>
         </button>
@@ -45,8 +88,7 @@
                 </button>
             </div>
         </div>
-    </nav>
-    <div>
+    </nav>-->
         <header class="header-global">
             <div class="header-text-global">
                 <h1 class="header-h1">
@@ -61,6 +103,7 @@
                 </div>
             </div>
         </header>
+    <div>
         <div class="arriere_plan">
             {% block corps%}{%endblock%}
         </div>

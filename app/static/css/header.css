@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: row;
   background: #f8f9fa;
-  padding: 1.25%;
-  margin: auto;
+  padding: 0.5%;
+  width: 100%;
   flex-wrap: wrap;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -14,27 +14,41 @@
 .fixed-top {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: auto;
 }
 
-.nav-item {
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
+  margin: none;
 }
 
-.nav-item > li {
-  margin-right: 5%;
-  margin-left: 5%;
-  list-style: none;
-  width: 100%;
-  flex-wrap: wrap;
+.nav-form {
+  display: inline;
 }
 
-/* DROPDOWN > https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.nav-form > button, .form-home > input, .form-home > div > button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+#searchbar {
+  background-color: #ffffff;
+}
+
+.nav-form > button:hover, .form-home > div > button:hover {
+  background-color: #DBDBDB;
+}
+
+.nav-form > button:active, .form-home > div > button:active {
+  color: #ffffff;
+}
 
 .dropbtn {
   background-color: inherit;
@@ -52,6 +66,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;
   background-color: #f8f9fa;
   text-decoration: none;
   min-width: 160px;
@@ -66,17 +81,34 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #DBDBDB;}
+.dropdown-content a:hover {
+  background-color: #DBDBDB;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:active {
+  color: #ffffff;
+}
 
-/* HEADER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.form-home {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  line-height: 2.5;
+  padding: 0 15px;
+}
+
+/* HEADER v */
 .header-global {
   display: flex;
   flex-direction: row;
   background-color: #f8f9fa;
-  padding-left: 3%;
-  margin-top: 4%;
+  margin-top: 2%;
+  padding: 2% 0% 0% 4% ;
 }
 
 .header-h1 {
