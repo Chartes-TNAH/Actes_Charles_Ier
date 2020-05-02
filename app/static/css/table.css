@@ -1,4 +1,13 @@
-/* CSS du tableau, page liste des actes */
+/* 
+  ============================================
+    
+                CSS DU TABLEAU
+
+              PAGE LISTE DES ACTES
+
+  ============================================
+*/
+
 table {
 	table-layout: auto; 
 	width: 100%;
