@@ -1,30 +1,23 @@
 {% extends "conteneur.html" %}
 {% block corps %}
-<div class="projet-global">
-	<div>
-		<figure class="projet-img-global">
-			<div>
-				<div>
-					<img src="{{url_for('static', filename='img/armorial_toison_or.jpeg')}}" alt="Armorial de l'Europe et de la Toison d'or, folio 54r" class="img"/>
-				</div>
-			</div>
-			<figcaption class="projet-img-legend">
-				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b55009806h/f115.item" target="_blank">Armorial de l'Europe et de la Toison d'or, folio 54r. L'écu du duc de Bourbon, grand du royaume, est placé immédiatement après ceux du roi, du dauphin et des princes Valois.<br />(BnF, réserve, ms. 4770, f. 54r, XV<sup>e</sup> siècle)</a></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+    	<figure>
+			<img src="{{url_for('static', filename='img/armorial_toison_or.jpeg')}}" alt="Armorial de l'Europe et de la Toison d'or, folio 54r" class="img-global"/>
+			<figcaption>
+				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b55009806h/f115.item" target="_blank">Armorial de l'Europe et de la Toison d'or, folio 54r. L'écu du duc de Bourbon, grand du royaume, est placé immédiatement après ceux du roi, du dauphin et des princes Valois (BnF, réserve, ms. 4770, f. 54r, XV<sup>e</sup> siècle)</a>.</p>
 			</figcaption>
 		</figure>
 		<figure class="projet-img-global">
-			<div>
-				<div>
-					<img src="{{url_for('static', filename='img/armorial_revel_369.jpeg')}}" alt="Armorial de Guillaume Revel, folio 33" class="img"/>
-				</div>
-			</div>
+			<img src="{{url_for('static', filename='img/armorial_revel_369.jpeg')}}" alt="Armorial de Guillaume Revel, folio 33" class="img-global"/>
 			<figcaption class="projet-img-legend">
-				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b8470455b/f379.image" target="_blank">Représentation de la ville de Moulins, capitale de Charles I<sup>er</sup> et d'Agnès de Bourgogne, dans l'armorial de Guillaume Revel.<br />(BnF, ms. fr. 22297, f. 369, XV<sup>e</sup> siècle).</a></p>
+				<p class="caption-main"><a href="https://gallica.bnf.fr/ark:/12148/btv1b8470455b/f379.image" target="_blank">Représentation de la ville de Moulins, capitale de Charles I<sup>er</sup> et d'Agnès de Bourgogne, dans l'armorial de Guillaume Revel (BnF, ms. fr. 22297, f. 369, XV<sup>e</sup> siècle)</a>.</p>
 			</figcaption>
 		</figure>
-	</div>
-	<div style="width: 100%;">
-		<div class="h1_global">
+    </div>
+    <div class="col-sm-7">
+    	<div class="h1_global">
 			<h1>Charles I<sup>er</sup> et Agnès de Bourgogne</h1>
 		</div>
 		<div class="projet-text">
@@ -45,10 +38,7 @@
 				<p>André Leguai, « Agnès de Bourgogne, duchesse de Bourbon (1405 ?-1476) », <i>Études bourbonnaises</i>, 15e série, 276 (1996), p. 405-417 [rééd. dans Id., <i>Les ducs de Bourbon, le Bourbonnais et le royaume de France à la fin du Moyen Âge</i>, Yzeure, Société Bourbonnaise des Etudes Locales, 2005, p. 145-160].</p>
 			</div>
 		</div>
-	</div>
+    </div>
+  </div>
 </div>
 {% endblock %}
-
-Montluçon 381
-Montbrison 437
-Moulins 369

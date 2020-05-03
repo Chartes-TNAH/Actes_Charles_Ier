@@ -128,10 +128,6 @@
   margin: 0.25% 0 0.25% 0;
 }
 
-.header-text-l2 > sup {
-  line-height: 0;
-}
-
 .header-text-l3 {
   text-indent: 11%;
   font-family: Helvetica;
@@ -149,11 +145,6 @@
   font-family: 'Roboto', sans-serif;
   font-size: 180%;
   line-height: 1;
-}
-
-.header-img {
-  width: 100%;
-  height: auto;
 }
 
 .rotate div img {
