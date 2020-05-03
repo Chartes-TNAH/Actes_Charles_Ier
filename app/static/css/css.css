@@ -27,6 +27,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /* LIENS */
@@ -82,19 +83,11 @@ a:hover, a:active {
 
 /* ACCUEIL */
 .global-home {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-bottom: 7%;
-}
-
-.div-img, .div-img > figcaption {
-    display: flex;
-    flex-direction: column;
+    margin: 5% auto 7% auto ;
 }
 
 .img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -102,18 +95,18 @@ a:hover, a:active {
     text-align: center;
     font-style: italic;
     font-size: smaller;
-    margin-top: 1.5%;
-    margin-bottom: 0%;
+    margin: 1.5% auto 0 auto;
 }
 
 .caption-sub {
     text-align: center;
     font-style: italic;
     font-size: small;
-    margin-top: none;
+    margin-top: 0;
 }
 
 .home-text {
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

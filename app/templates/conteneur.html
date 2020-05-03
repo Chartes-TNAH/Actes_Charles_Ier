@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Actes de Charles Ier de Bourbon</title>
-    {% include "partials/css_projet.html" %}
-</head>
-<body>
-    <nav class="nav-global fixed-top">
-        <div class="nav-list">
-            <form class="nav-form" action="{{url_for('accueil')}}" method="get">
-                <button class="dropbtn">Accueil</button>
-            </form>
-            <form class="dropdown nav-form">
-                <button class="dropbtn">Projet</button>
-                <div class="dropdown-content">
-                    <a href="{{url_for('projet')}}">À propos</a>
-                    <a href="{{url_for('bibliographie')}}">Bibliographie</a>
-                </div>
-            </form>
-            <form class="nav-form" action="{{url_for('duc')}}" method="get">
-                <button class="dropbtn">Le&nbsp;duc</button>
-            </form>
-            <form class="dropdown nav-form">
-                <button class="dropbtn">Actes</button>
-                <div class="dropdown-content">
-                <a href="{{url_for('corpus')}}">Liste des actes</a>
-                <a href="{{url_for('recherche')}}">Recherche</a>
-            </div>
-            </form>
-            <form class="dropdown nav-form">
-                <button class="dropbtn">Index</button>
-                <div class="dropdown-content">
-                    <a href="{{url_for('index_noms')}}">Index nominum</a>
-                    <a href="{{url_for('index_prosopo')}}">Index prosopographique</a>
-                    <a href="{{url_for('index_lieu')}}">Index locorum</a>
-                </div>
-            </form>
-            <form class="nav-form" action="{{url_for('contact')}}" method="get">
-                <button class="dropbtn">Contact</button>
-            </form>
-            <form class="nav-form" action="{{url_for('resultats')}}" method="GET">
-                <div class="form-home">
-                    <input name="keyword" type="search" placeholder="Rechercher dans les actes" aria-label="Recherche" id="searchbar">
-                    <div>
-                        <button type="submit">Rechercher</button>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Actes de Charles Ier de Bourbon</title>
+        {% include "partials/css_projet.html" %}
+    </head>
+    <body>
+        <nav class="nav-global nav-fixed-top">
+            <div class="nav-list">
+                <form class="nav-form" action="{{url_for('accueil')}}" method="get">
+                    <button class="nav-dropbtn">Accueil</button>
+                </form>
+                <form class="nav-dropdown nav-form">
+                    <button class="nav-dropbtn">Projet</button>
+                    <div class="nav-dropdown-content">
+                        <a href="{{url_for('projet')}}">À propos</a>
+                        <a href="{{url_for('bibliographie')}}">Bibliographie</a>
                     </div>
+                </form>
+                <form class="nav-form" action="{{url_for('duc')}}" method="get">
+                    <button class="nav-dropbtn">Le&nbsp;duc</button>
+                </form>
+                <form class="nav-dropdown nav-form">
+                    <button class="nav-dropbtn">Actes</button>
+                    <div class="nav-dropdown-content">
+                    <a href="{{url_for('corpus')}}">Liste des actes</a>
+                    <a href="{{url_for('recherche')}}">Recherche</a>
                 </div>
-            </form>
-        </div>
-    </nav>
-        <header class="header-global">
-            <div class="header-text">
-                <div class="header-text-l1">
-                    <p><strong>Actes</strong></p>
-                </div>
-                <div class="header-text-l2">
-                    <p>de <strong class="charles">Charles I</strong><sup>er</sup></p>
-                </div>
-                <div class="header-text-l3">
-                    <p>de <strong class="bourbon">Bourbon</strong></p>
-                </div>
+                </form>
+                <form class="nav-dropdown nav-form">
+                    <button class="nav-dropbtn">Index</button>
+                    <div class="nav-dropdown-content">
+                        <a href="{{url_for('index_noms')}}">Index nominum</a>
+                        <a href="{{url_for('index_prosopo')}}">Index prosopographique</a>
+                        <a href="{{url_for('index_lieu')}}">Index locorum</a>
+                    </div>
+                </form>
+                <form class="nav-form" action="{{url_for('contact')}}" method="get">
+                    <button class="nav-dropbtn">Contact</button>
+                </form>
+                <form class="nav-form" action="{{url_for('resultats')}}" method="GET">
+                    <div class="form-home">
+                        <input name="keyword" type="search" placeholder="Rechercher dans les actes" aria-label="Recherche" id="nav-searchbar">
+                        <div>
+                            <button type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="rotate header-img-global">
-                <div>
-                    <img src="{{url_for('static', filename='img/sceau_accueil.png')}}" class="header-img" alt="Sceau de Charles Ier">
+        </nav>
+        <header class="header-global">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="header-text-l1"><strong>Actes</strong></p>
+                        <p class="header-text-l2">de <strong class="charles">Charles I</strong><sup>er</sup></p>
+                        <p class="header-text-l3">de <strong class="bourbon">Bourbon</strong></p>
+                    </div>
+                    <div class="col-4">
+                        <div class="rotate">
+                            <div>
+                                <img src="{{url_for('static', filename='img/sceau_accueil.png')}}" class="header-img" alt="Sceau de Charles Ier">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-    <div>
-        <div class="arriere_plan">
-            {% block corps%}{%endblock%}
+        <div>
+            <div class="arriere_plan">
+                {% block corps%}{%endblock%}
+            </div>
         </div>
-    </div>
         <footer class="bloc-footer">
-            <div class="text-footer">
-                <div class="name-icon-footer-global">
-                    <div>
-                        <p>
-                            © Jean-Damien Généro
-                            <a href="https://fr.linkedin.com/in/jean-damien-genero" target="_blank">
-                                <img src="{{url_for('static', filename='img/linkedin.png')}}" alt="Linkedin" class="icon-footer">
-                            </a>
-                            <a href="https://github.com/jeandamien-genero" target="_blank">
-                                <img src="{{url_for('static', filename='img/github.png')}}" alt="Github" class="icon-footer">
-                            </a>
-                            <a href="http://sorbonne.academia.edu/JeanDamienGenero" target="_blank">
-                                <img src="{{url_for('static', filename='img/academia.png')}}" alt="Academia" class="icon-footer">
-                            </a>
-                        </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-footer">
+                        <div class="name-icon-footer-global">
+                            <div>
+                                <p>
+                                    © Jean-Damien Généro
+                                    <a href="https://fr.linkedin.com/in/jean-damien-genero" target="_blank">
+                                        <img src="{{url_for('static', filename='img/linkedin.png')}}" alt="Linkedin" class="icon-footer">
+                                    </a>
+                                    <a href="https://github.com/jeandamien-genero" target="_blank">
+                                        <img src="{{url_for('static', filename='img/github.png')}}" alt="Github" class="icon-footer">
+                                    </a>
+                                    <a href="http://sorbonne.academia.edu/JeanDamienGenero" target="_blank">
+                                        <img src="{{url_for('static', filename='img/academia.png')}}" alt="Academia" class="icon-footer">
+                                    </a>
+                                </p>
+                            </div>
+                            <p class="credit-footer">Application développée en 2020 dans le cadre du <a href="http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire" target="_blank">Master &#171; Technologies numériques appliquées à l'histoire &#187;</a> de l'École nationale des chartes, à partir d'un mémoire de Master recherche soutenu en 2018 à l'École d'histoire de la Sorbonne (Université Paris I). <a href="{{url_for('mentions_legales')}}">Lire les mentions légales.</a></p>
+                        </div>
+                    </div>
+                    <div class="col box-img-footer">
+                        <a href="http://www.chartes.psl.eu/" target="_blank">
+                            <img src="{{url_for('static', filename='img/logo_enc.png')}}" alt="Logo de l'École des chartes" class="img-footer">
+                        </a>
                     </div>
                 </div>
-                <p class="credit-footer">Application développée en 2020 dans le cadre du <a href="http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire" target="_blank">Master &#171; Technologies numériques appliquées à l'histoire &#187;</a> de l'École nationale des chartes, à partir d'un mémoire de Master recherche soutenu en 2018 à l'École d'histoire de la Sorbonne (Université Paris I). <a href="{{url_for('mentions_legales')}}">Lire les mentions légales.</a></p>
-            </div>
-            <div class="box-img-footer">
-                <a href="http://www.chartes.psl.eu/" target="_blank">
-                    <img src="{{url_for('static', filename='img/logo_enc.png')}}" alt="Logo de l'École des chartes" class="img-footer">
-                </a>
             </div>
         </footer>
-</body>
+    </body>
 </html>

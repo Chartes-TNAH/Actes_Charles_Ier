@@ -8,27 +8,18 @@
 
 /* Global */
 .bloc-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background: #f8f9fa;
-    justify-content: space-around;
-    padding: 2% 4% 5% 4%;
+    padding: 4% 4% 4% 4%;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* Bloc nom - icones - texte */
 .text-footer {
-    display: inherit;
-    flex-direction: column;
-    flex-wrap: inherit;
-    width: 30%;
-    justify-content: center;
+    width: 100%;
+    margin-right: 10%;
 }
 
 .name-icon-footer-global {
-    display: inherit;
-    flex-direction: row;
 }
 
 .name-icon-footer-global > div > p {
@@ -51,16 +42,11 @@
 /* Bloc logo ENC */
 
 .box-img-footer {
-    display: inherit;
-    flex-direction: column;
-    flex-wrap: inherit;
-    justify-content: center;
-    width: 30%;
+    width: 70%;
+    margin-right: 0;
 }
 
 .img-footer {
-    display: inherit;
-    flex-wrap: inherit;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
