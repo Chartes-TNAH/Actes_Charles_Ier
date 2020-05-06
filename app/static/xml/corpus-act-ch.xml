@@ -1677,8 +1677,7 @@
       <graphic url="../../static/img/actes/acte29.jpg"/>
    </facsimile>
    <text>
-      <front>
-      </front>
+      <front/>
       <group>
          <text type="Deperditum" subtype="Lettres_closes" xml:id="Ch-1" n="1">
             <front>
