@@ -280,7 +280,7 @@
                     <!-- s'il y a une description de l'image-->
                     <xsl:if test="//facsimile[@n=$numero]/graphic/desc">
                         <xsl:element name="p">
-                            <xsl:apply-templates/>
+                            <xsl:value-of select="//facsimile[@n=$numero]/graphic/desc"/>
                         </xsl:element>
                     </xsl:if>
                 </xsl:element>
