@@ -253,7 +253,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    <!-- IMAGE -->
+    <!-- IMAGES -->
     <xsl:template match="listWit">
         <xsl:element name="div">
             <xsl:attribute name="class">
@@ -261,6 +261,7 @@
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
+        <xsl:apply-templates select="facsimile"/>
         <!-- image de l'acte s'il y a un <facsimile> avec @n contenant l'id de l'acte  -->
         <xsl:if test="ancestor::TEI//facsimile[@n=$numero]">
             <xsl:element name="div">
@@ -276,15 +277,15 @@
                             <xsl:attribute name="height">auto</xsl:attribute>
                         </xsl:element>
                     </xsl:if>
-                    <!-- s'il y a une description de l'image -->
+                    <!-- s'il y a une description de l'image-->
                     <xsl:if test="//facsimile[@n=$numero]/graphic/desc">
                         <xsl:element name="p">
-                            <xsl:value-of select="//facsimile[@n=$numero]/graphic/desc"/>
+                            <xsl:apply-templates/>
                         </xsl:element>
                     </xsl:if>
                 </xsl:element>
             </xsl:element>
-        </xsl:if>
+            </xsl:if>
     </xsl:template>
     <!-- TABLEAU DE LA TRADITION -->
     <xsl:template match="witness">
