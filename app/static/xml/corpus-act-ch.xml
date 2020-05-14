@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
    schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI>
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -1898,7 +1898,7 @@
                                  <biblScope unit="volume" n="IV"/>
                                  <date when="1748"/>
                                  <biblScope unit="page" n="XLIX"/>
-                                 <biblScope unit="entry" n="XLI">(fautive<note type="n1"><p>Cette édition ancienne contient plusieurs erreurs, en particulier dans les premières lignes, qui datent le document du « quinziesme jour de fevrier ».</p></note>)</biblScope>
+                                 <biblScope unit="entry" n="XLI"/>
                               </imprint>
                            </monogr>
                         </biblStruct>
@@ -2309,7 +2309,7 @@
                                  <publisher>Les Belles lettres</publisher>
                                  <date when="1962"/>
                                  <biblScope unit="page" from="201" to="202"/>
-                                 <biblScope unit="entry" n="9"></biblScope>
+                                 <biblScope unit="entry" n="9"/>
                               </imprint>
                            </monogr>
                         </biblStruct>
@@ -2440,7 +2440,7 @@
                                     <surname>Besancon</surname>
                                  </persName>
                               </author>
-                              <title type="m">Cartulaire municipal de la ville de Villefranche, suivi d'un appendice d'actes des archives de la ville publié d'après les manuscrits originaux</title>
+                              <title level="m">Cartulaire municipal de la ville de Villefranche, suivi d'un appendice d'actes des archives de la ville publié d'après les manuscrits originaux</title>
                               <imprint>
                                  <pubPlace>Villefranche-sur-Saône</pubPlace>
                                  <date when="1907"/>
@@ -2459,7 +2459,7 @@
                                     <surname>Rolle</surname>
                                  </persName>
                               </author>
-                              <title>Inventaire-sommaire des Archives Communales antérieures à 1790, ville de Villefranche</title>
+                              <title level="m">Inventaire-sommaire des Archives Communales antérieures à 1790, ville de Villefranche</title>
                               <imprint>
                                  <pubPlace>Paris</pubPlace>
                                  <date when="1865"/>
@@ -2616,7 +2616,7 @@
                               </author>
                               <title level="m">Inventaire sommaire des Archives communales antérieures à 1790, ville de Moulins</title>
                               <imprint>
-                                 <pubPlace>Moulines</pubPlace>
+                                 <pubPlace>Moulins</pubPlace>
                                  <date when="1882"/>
                                  <biblScope unit="page" n="28"/>
                               </imprint>
@@ -2668,7 +2668,7 @@
                                     <surname>Leguai</surname>
                                  </persName>
                               </author>
-                              <title level="m">De la seigneurie à l’Etat. Le Bourbonnais pendant la guerre de Cent Ans</title>
+                              <title level="m">De la seigneurie à l’État. Le Bourbonnais pendant la guerre de Cent Ans</title>
                               <imprint>
                                  <pubPlace>Moulins</pubPlace>
                                  <publisher>thèse de doctorat dactylographiée, Université de Paris</publisher>
@@ -3118,7 +3118,7 @@
                                     <surname>Aubret</surname>
                                  </persName>
                               </author>
-                              <title>Mémoires pour servir à l’histoire de Dombes</title>
+                              <title level="m">Mémoires pour servir à l’histoire de Dombes</title>
                               <ref target="https://numelyo.bm-lyon.fr/f_view/BML:BML_00GOO0100137001100002703">[ouvrage numérisé]</ref>
                               <imprint>
                                  <biblScope unit="volume" n="II"/>
