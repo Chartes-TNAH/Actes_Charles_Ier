@@ -27,12 +27,38 @@
       <encodingDesc>
          <projectDesc>
             <p>Cette application est développée dans le cadre des enseignements du Master « Technologies numériques appliquées à l'histoire » de l'École nationale des chartes (XML-TEI, XSLT, HTML, CSS, SQL, Python). Il s'agit de présenter un échantillon des actes de Charles I<hi rend="sup">er</hi> de Bourbon sous la forme d'une édition diplomatique, et d'en tirer automatiquement un <hi rend="i">index locorum</hi> et un <hi rend="i">index nominum</hi>.</p>
-            <p>Pour cela, les actes sont encodés dans un document XML-TEI, et des feuilles de transformation XSL sont rédigées en fonction des besoins de l'application. Le package lxml de Python, après avoir parsé ces documents, permet d'appliquer au fichier XML la feuille de transformation XSL correspondante à la page demandée. Le résultat est placée dans un fichier HTML par le bais d'une template, et le contenu de ce fichier est affiché dans le navigateur web via le framework Flask.</p>
+            <p> Les actes se trouvent dans un fichier XML-TEI auquel est appliquée une feuille de transformation XSL dynamique. Celle-ci transforme la section du fichier XML-TEI correspondante à l'id de l'acte demandé dans l'url grâce à la librairie lxml de Python. Le résultat de la transformation est ensuite placé dans un document HTML via des templates. Le contenu de ce document est enfin affiché dans le navigateur via le framework Flask. Les index (anthroponymique, toponymique et prosopographique) sont constitués suivant cette même méthode.</p>
             <p>Les actes avaient été réunis, transcrits et édités dans le cadre d'un Master recherche dirigé par le Pr. Olivier Mattéoni et soutenu à l'École d'histoire de l'Université Paris I Panthéon-Sorbonne en 2018. Prenant appui sur ce travail d'édition, le mémoire proposait également une étude de la chancellerie ducale au milieu du XV<hi rend="sup">e</hi> siècle.</p>
             <p>Depuis plusieurs années, les éditions de corpus d'actes princiers de la fin du Moyen Âge et les études des chancelleries qui les ont produits se multiplient et bénéficient d'un regain d'intérêt. Ce mouvement est notamment porté par deux programmes d'envergure, concernant les actes de Jean de Berry (1340-1416) et ceux des ducs et duchesses de Bourbon de la fin du XIII<hi rend="sup">e</hi> siècle au milieu du XV<hi rend="sup">e</hi> siècle. Le premier, mené dans le cadre d'un séminaire commun à l'École nationale des chartes et à l'Université Paris I Panthéon-Sorbonne, a donné lieu à l'organisation d'un colloque à Bourges les 16 et 17 juin 2016, dont les actes sont parus en 2019. Le second, dirigé par Olivier Mattéoni, s'est traduit par plusieurs articles et deux mémoires de recherche.</p>
             <p>De nombreuses éditions similaires avaient été menées précédemment. Elles concernaient notamment la production diplomatique des ducs de Bretagne et de Bourgogne. Toutes, jusqu'aux plus récentes, étaient exclusivement publiées sous forme « papier ». La diplomatique princière ne s'est en effet que très partiellement saisie des outils développés par les humanités numériques, et il est très rare de trouver des corpus complets mis en ligne. Le projet d'édition des actes du duc de Berry se distingue en cela par la présentation de quatorze actes sur le site des Archives départementales du Cher.</p>
             <p>La présente application cherche à s'inscrire dans la suite de cette première expérience. L'ensemble du code est disponible sur GitHub.</p>
          </projectDesc>
+         <samplingDecl>
+            <p>Échantillon des trente-deux premiers actes du corpus des actes de Charles Ier de Bourbon.</p>
+         </samplingDecl>
+         <editorialDecl>
+            <correction method="markup">
+               <p>La transcription est fidèle au texte d'origine. Les rares corrections sont signalées en notes.</p>
+            </correction>
+            <normalization method="silent">
+               <p>Toutes les abréviations ont été développées, mais aucun encodage ne le signale : ce document est basé sur un document texte où les abréviations ne sont pas signalées.</p>
+            </normalization>
+            <punctuation>
+               <p>La ponctuation a été normalisée, mais aucun encodage ne le signale : ce document est basé sur un document texte où les ajouts ne sont pas signalés.</p>
+            </punctuation>
+            <segmentation>
+               <p>Les textes sont segmentés selon les parties du discours diplomatiques.</p>
+            </segmentation>
+            <stdVals>
+               <p>La chancellerie du duc de Bourbon utilisait le style de Pâques. Les textes édités suivent le style du 1<hi rend="sup">er</hi> janvier. Tout changement est signalé par la mention <hi rend="i">(n. st.)</hi> (nouveau style).</p>
+            </stdVals>
+            <interpretation>
+               <p>Lorsque l'acte est analysée dans un inventaire, cette analyse a été reprise, modifiée et développée.</p>
+            </interpretation>
+         </editorialDecl>
+         <refsDecl>
+            <p>L'indication <hi rend="i">Titres de Bourbon</hi> renvoie à : <hi rend="i">Titres de l’ancienne maison ducale de Bourbon</hi>, 2, Alphonse Huillard-Bréholles, Albert Lecoy de La Marche (éd.), Paris, 1867-1874.</p>
+         </refsDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -739,14 +765,14 @@
                      <forename>Jean</forename>
                      <surname>Seaume</surname>
                   </persName>
-                  <note>Receveur general de toutes finances et tresorier des guerres en Languedoc et en Guyenne.</note>
+                  <note>Receveur general de toutes finances et trésorier des guerres en Languedoc et en Guyenne.</note>
                </person>
                <person xml:id="CourtetE">
                   <persName>
                      <forename>Estienne</forename>
                      <surname>Courtet</surname>
                   </persName>
-                  <note>Receveur pour le baillage des Montagnes d'Auvergne de l'aide des trois états du pays d'Auvergne pour le ravitaillement d'Orléans et la guerre contre l'Angleterre</note>
+                  <note>Receveur pour le bailliage des Montagnes d'Auvergne de l'aide des trois états du pays d'Auvergne pour le ravitaillement d'Orléans et la guerre contre l'Angleterre</note>
                </person>
                <person xml:id="NoelG">
                   <persName>
@@ -1080,7 +1106,7 @@
                      <forename>Amé</forename>
                      <surname>Vert</surname>
                   </persName>
-                  <note>Seigneur de Chénereilles, bailli du comté de Forez (1414-1455).</note>
+                  <note>Seigneur de Chenereilles, bailli du comté de Forez (1414-1455).</note>
                </person>
                <person xml:id="PelletierJ">
                   <persName>
@@ -1649,7 +1675,7 @@
       </graphic>
    </facsimile>
    <facsimile corresp="#Ch-19" n="19">
-      <graphic>
+      <graphic url="">
          <desc>
             <ref target="https://archinoe.fr/v2/ark:/42067/c722788d172f94005071bcba4ca4f6db">Consulter la numérisation de l'acte sur le site des Archives départementales de la Loire-Atlantique.</ref>
          </desc>
@@ -1776,7 +1802,7 @@
                   <p>Item est encore traictié et accordé entre nous lesdites parties, es noms et qualitez que dessus, que mondit seigneur le duc de Bourbonnois et nous, Marie de Berry, duchesse dudit Bourbonnois, pere et mere dudit Charles, seront tenuz de tenir et maintenir audit Charles et a laditte damoiselle Agnez, mariez ad venir, apres le mariaige consommé, leur estat honorablement selon les lieux dont ilz sont yssus, ou au moins baillerons a icellui Charles de noz terres et seignories a part souffisente pour ce faire ;</p>
                   <p>Item est tractié et accordé que nous, Phelippe, duc de Bourgoingne, serons tenus de acquicter ladite damoiselle Agnez nostre seur de tous autres debtez et ypotheque en quoy elle peut estre tennue ou lyee a present ;</p>
                   <p>Item promectons nous, lesdits duchesse de Bourbonois et Charles son filz, de l’auctorité que dessus, ratiffier et faire ratiffier ce present contracte a ladite damoiselle Agnez de Bourgoigne tantost après la consommacion dudit mariaige ;</p>
-                  <p>Promectons nous, parties dessusdites, et une chacune de nous, es nons et qualitez que dessus, par les foy et sermens de noz corps et par noz sermens pour ce donnez corporelment aux Sains Evangilles de Dieu, et soubz l’obligacion de tous noz biens meubles et non meubles<note type="na"><p><hi rend="i">Non meubles</hi> : mots aglutinés (<hi rend="i">n&#243;meubles</hi>)</p></note>, presens et ad venir quelxconques, les traictiez, accors, promesses et convenances dessus declarés, et une chascune d’icelle, par tant que a un chacun de nous touche et peut appartenir, avoir, tenir, garder, observer, enteriner et accomplir fermes, estables et agreables, sanz corrompre, selon leur forme et teneur, et contre les chouses dessusdites ou la teneur de ces presentes lettres non jamais venir, ne faire ou consentir a venir par nous ou aucuns de nous, ne par autres en jugement ou dehors, taisiblement ou en appert, en renoncans quant a ce par nous, parties dessusdites, et une chascune de nous, de l’auctorité que dessus, par tant que a un chacun de nous touche, a toutes actions, exceptions, decepcions, barres, deffenses, cauthelles, subterfuges, cavillacions et allegacions qui, tant de fait comme de droit canon, civil ou coustumier, contre la teneur de ces presentes lettres pourroient estre dites, proposees ou obviees en aucune maniere au contraire, et mesmement au droit qui dit que generale renonciacion ne vault se l’especial ne precede ;</p> 
+                  <p>Promectons nous, parties dessusdites, et une chacune de nous, es nons et qualitez que dessus, par les foy et sermens de noz corps et par noz sermens pour ce donnez corporelment aux Sains Evangilles de Dieu, et soubz l’obligacion de tous noz biens meubles et non meubles<note type="na"><p><hi rend="i">Non meubles</hi> : mots agglutinés (<hi rend="i">n&#243;meubles</hi>)</p></note>, presens et ad venir quelxconques, les traictiez, accors, promesses et convenances dessus declarés, et une chascune d’icelle, par tant que a un chacun de nous touche et peut appartenir, avoir, tenir, garder, observer, enteriner et accomplir fermes, estables et agreables, sanz corrompre, selon leur forme et teneur, et contre les chouses dessusdites ou la teneur de ces presentes lettres non jamais venir, ne faire ou consentir a venir par nous ou aucuns de nous, ne par autres en jugement ou dehors, taisiblement ou en appert, en renoncans quant a ce par nous, parties dessusdites, et une chascune de nous, de l’auctorité que dessus, par tant que a un chacun de nous touche, a toutes actions, exceptions, decepcions, barres, deffenses, cauthelles, subterfuges, cavillacions et allegacions qui, tant de fait comme de droit canon, civil ou coustumier, contre la teneur de ces presentes lettres pourroient estre dites, proposees ou obviees en aucune maniere au contraire, et mesmement au droit qui dit que generale renonciacion ne vault se l’especial ne precede ;</p> 
                   <p>Voulans, nous, lesdites parties es noms et qualitez que dessus, et une chacune de nous, par tant que a un chacun de nous touche, quant a l’observacion des chouses dessusdictes, estre contraings par la court, force et vigueur des seellez des duchié de Bourgoingne et de Bourbonnois, a la juridicion et contraincte desquelles cours nous et un chascun de nous, par tant que lui touche, avons soubzmis et obligié, soubzmectons et obligeons nous, nosdiz biens, noz hoirs et leurs biens, presens et ad venir quelxconques.</p>
                   <p>En tesmoing desquelles chouses, nous avons fait mectre les seel desdites cours desdis duchiez de Bourgoingne et de Bourbonnois a ces presentes lettres et aux semblables doubles.</p>
                   <p>Fetes et donnees en la presence de <persName ref="#Breneal">Jehan Breneaul</persName>, clerc notaire publique et juré du seelle dudit duchié de Bourgoingne, et de <persName ref="#LAndraut_sign">Laurent Andraut</persName>, conseiller et secretaire de mondit seigneur le duc de Bourbonnois et juré du seele dudit duchié de Bourbonnois, de reverends peres en Dieu monseigneur <persName ref="#ChartresR">Regnault de Chartres</persName>, arcevesque et duc de Rains, <persName ref="#PoitiersCh">Charles de Poitiers</persName>, evesques et duc de Lengres, messeigneurs <persName ref="#RolinN">Nicole</persName>, siegneur d’Authume et chancellier de Bourgoingne, <persName ref="#RoboisJ">Jehan</persName>, seigneur de Robois et de Garzelle, <persName ref="#VienneG">Guillaume de Vienne</persName>, seigneur de Saint-George et de Saincte-Croix, <persName ref="#TremoilleG">George</persName>, seigneur de Suilly et de Tremoille, <persName ref="#RupesG">Gauthier de Rupes</persName>, <persName ref="#CourtiamblesJ">Jacques de Courtiambles</persName>, seigneur de Commarien, <persName ref="#PotR">Regnier Pot</persName>, seigneur de la Prune, <persName ref="#BoisH">Hugues du Bois</persName>, <persName ref="#NourryE">Estienne de Norry</persName>, <persName ref="#PesteilG">Guy de Pesteil</persName>, <persName ref="#ChaugyJ">Jehan de Chaugy</persName>, <persName ref="#BarresL">Loys des Barres</persName>, <persName ref="#ForestG">Guillaume de la Forest</persName>, <persName ref="#AiguesG">Guillaume des Aigues</persName>, chevaliers, <persName ref="#JaucourtG">Guiot de Jaucourt</persName>, <persName ref="#SurelJ">Jehan Surel</persName>, escuïers, maistre <persName ref="#ChantereleP">Pierre de Chanterele</persName>, <persName ref="#ClepierO">Odart Clepier</persName>, <persName ref="#DenisC">Colart Denis</persName>, <persName ref="#LaVisteJ">Jehan la Vise</persName> et <persName ref="#RocqueR">Rogier Rocque</persName>, tesmoings a ce appellez et requis, l’an et jour dessusdiz.</p>
@@ -2104,7 +2130,7 @@
                   <p>Traité d’alliance entre Charles, comte de Clermont, ayant délégation de pouvoir, et Arthur, comte de Richemont.</p>
                </argument>
                <listWit>
-                  <witness n="A">A. Original sur parchemin, signé Artur et Charles, jadis scellé en cire rouge sur deux simples queues<note type="n1"><p>Indication de Dom Morice (a.). L’exemplaire conservé aux Archives nationales est bien découpé en bas à droite, signe d’une ou plusieurs simples queues de parchemin.</p></note>. 285 x 180-120 mm. <institution>Archives nationales</institution>, P 1372<hi rend="sup">2</hi>, cote 2113.</witness>
+                  <witness n="A">A. Original sur parchemin, signé <hi rend="i">Artur</hi> et <hi rend="i">Charles</hi>, jadis scellé en cire rouge sur deux simples queues<note type="n1"><p>Indication de Dom Morice (a.). L’exemplaire conservé aux Archives nationales est bien découpé en bas à droite, signe d’une ou plusieurs simples queues de parchemin.</p></note>. 285 x 180-120 mm. <institution>Archives nationales</institution>, P 1372<hi rend="sup">2</hi>, cote 2113.</witness>
                   <witness n="a">a. Dom Morice, <hi rend="i">Mémoire pour servir de preuve à l’histoire ecclésiastique et civile de Bretagne</hi>, II, 1764, p. 1199-1200 <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k1041643d/f661.image">[ouvrage numérisé]</ref>.</witness>
                   <witness n="b">b. André Leguai, <hi rend="i">Les ducs de Bourbon pendant la crise monarchique du XV<hi rend="sup">e</hi> siècle</hi>, 1962, p. 201-202, pièce justificative n°9.</witness>
                   <witness n="analyse"><hi rend="i">Titres de Bourbon</hi>, II, p. 235, n° 5304.</witness>
@@ -2212,7 +2238,7 @@
                <listWit>
                   <witness n="A">A. Original sur parchemin, signé et jadis scellé sur double queue de parchemin portant aujourd'hui une trace de cire rouge. 305 x 325 mm. <institution>Archives municipales de Villefranche-sur-Saône</institution>, AA 7.</witness>
                   <witness n="a">a. Abel Besancon, <hi rend="i">Cartulaire municipal de la ville de Villefranche, suivi d'un appendice d'actes des archives de la ville publié d'après les manuscrits originaux</hi>, Villefranche-sur-Saône, 1907, appendice n°2, p. 142-144.</witness>
-                  <witness n="analyse">Fortuné Rolle, <hi rend="i">Inventaire-sommaire des Archvies Communales antérieures à 1790, ville de Villefranche</hi>, Paris, 1865, p. 1 [ancienne cote].</witness>
+                  <witness n="analyse">Fortuné Rolle, <hi rend="i">Inventaire-sommaire des Archives Communales antérieures à 1790, ville de Villefranche</hi>, Paris, 1865, p. 1 [ancienne cote].</witness>
                </listWit>
             </front>
             <body>
@@ -2450,10 +2476,10 @@
                   <placeName ref="#Gannat">Gannat</placeName>
                </docDate>
                <argument>
-                  <p>Mandement à Étienne Courtet, receveur du baillage des Montagnes de l’aide des états d’Auvergne, de délivrer à Janicot de Montmurat, écuyer d’écurie, cinquante écus d’or, pour ses services au siège d’Orléans</p>
+                  <p>Mandement à Étienne Courtet, receveur du bailliage des Montagnes de l’aide des états d’Auvergne, de délivrer à Janicot de Montmurat, écuyer d’écurie, cinquante écus d’or, pour ses services au siège d’Orléans</p>
                </argument>
                <argument>
-                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Étienne Courtet, receveur du baillage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne : Philippe Contamine, <hi rend="i">Charles VII. Une vie, une politique</hi>, Paris, Perrin, 2017, p. 145. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <hi rend="i">ibid</hi>., p. 147. Le siège est levé le 8 mai 1429, soit dix jours avant la production de cet acte.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
+                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Étienne Courtet, receveur du bailliage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne : Philippe Contamine, <hi rend="i">Charles VII. Une vie, une politique</hi>, Paris, Perrin, 2017, p. 145. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <hi rend="i">ibid</hi>., p. 147. Le siège est levé le 8 mai 1429, soit dix jours avant la production de cet acte.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
                </argument>
                <listWit>
                   <witness n="A">A. Original sur parchemin, signé, jadis scellé. 325 x 70-110 mm. <institution>Archives nationales</institution>, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
@@ -2482,7 +2508,7 @@
                   <placeName>NS</placeName>
                </docDate>
                <argument>
-                  <p>Procuration à Mahier Cousin, secrétaire du duc et maître des étangs de Combraille, pour recevoir du viconte de Villemure 2250 livres, dans le cadre du transport de la vicomté de Villemure au comte de Foix</p>
+                  <p>Procuration à Mahier Cousin, secrétaire du duc et maître des étangs de Combraille, pour recevoir du vicomte de Villemure 2250 livres, dans le cadre du transport de la vicomté de Villemure au comte de Foix</p>
                </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, fils aîné du duc de Bourbonnais et d’Auvergne, donne procuration à Mahiet Cousin, son secrétaire et maître des étangs de Bourbonnais et de Combraille, pour recevoir de Jacques, vicomte de Villemur, la somme de deux mille deux cent cinquante livres tournois, prêtée audit de Villemur par le duc de Bourbonnais à l’occasion du transport de la vicomté de Villemur, qui devait être fait audit duc et qui depuis a été fait au comte de Foix.</p>
@@ -2649,7 +2675,7 @@
             <body>
                <head><hi rend="smallcaps">Deperditum</hi></head>
                <div type="acte">
-                  <p>Le jour de Pâques, le 12 avril 1431, ils [<persName ref="#MarieBerry">Marie de Berry</persName> et Charles de Clermont] donnèrent leurs lettres patentes conjointement, par lesquelles ils nommèrent leurs amé et féaux chevaliers et conseillers <persName ref="#ToulonP">Pierre de Thollon</persName>, chancelier de Bourbonnois, messire <persName ref="#EspinasseJ">Jean de l’Espinasse</persName>, bailli de Beaujolois, messire <persName ref="#VertA">Amé Vert</persName>, bailli de Forez, seigneur de Chenevraille<note type="na"><p>Erreur de lecture d’Aubret. Comprendre <hi rend="i">Chenerraille</hi>, aujourd'hui <hi rend="i">Chénereilles</hi> en Haute-Loire.</p></note>, messire <persName ref="#PelletierJ">Jean Pelletier</persName>, juge de Forez, maître <persName ref="#DubreuilJ">Jean Dubreuil</persName>, auditeur des comptes en Beaujolois, et <persName ref="#ParentR">Robert Parent</persName>, auxquels à trois ou quatre d’iceulx ils donnèrent pouvoir de transiger avec les ambassadeurs du <persName ref="#SavoieAVIII">duc de Savoie</persName> des délits, excès, meurtres, sacrilèges, <placeName ref="#Trevoux">pillages</placeName> et autres maux faits par le <persName ref="#PaludF">sieur de Varambon</persName> et ses adhérents.</p>
+                  <p>Le jour de Pâques, le 12 avril 1431, ils [<persName ref="#MarieBerry">Marie de Berry</persName> et Charles de Clermont] donnèrent leurs lettres patentes conjointement, par lesquelles ils nommèrent leurs amé et féaux chevaliers et conseillers <persName ref="#ToulonP">Pierre de Thollon</persName>, chancelier de Bourbonnois, messire <persName ref="#EspinasseJ">Jean de l’Espinasse</persName>, bailli de Beaujolois, messire <persName ref="#VertA">Amé Vert</persName>, bailli de Forez, seigneur de Chenevraille<note type="na"><p>Érreur de lecture d’Aubret. Comprendre <hi rend="i">Chenerraille</hi>, aujourd'hui <hi rend="i">Chenereilles</hi> en Haute-Loire.</p></note>, messire <persName ref="#PelletierJ">Jean Pelletier</persName>, juge de Forez, maître <persName ref="#DubreuilJ">Jean Dubreuil</persName>, auditeur des comptes en Beaujolois, et <persName ref="#ParentR">Robert Parent</persName>, auxquels à trois ou quatre d’iceulx ils donnèrent pouvoir de transiger avec les ambassadeurs du <persName ref="#SavoieAVIII">duc de Savoie</persName> des délits, excès, meurtres, sacrilèges, <placeName ref="#Trevoux">pillages</placeName> et autres maux faits par le <persName ref="#PaludF">sieur de Varambon</persName> et ses adhérents.</p>
                </div>
             </body>
          </text>
@@ -2688,7 +2714,7 @@
                   <placeName ref="#SuryleB">Sury-le-Bois</placeName>
                </docDate>
                <argument>
-                  <p>Ratiffication d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
+                  <p>Ratification d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
                </argument>
                <argument>
                   <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
