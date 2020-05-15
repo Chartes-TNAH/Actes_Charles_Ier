@@ -127,6 +127,17 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:text>, </xsl:text>
+        <xsl:if test=".//respStmt">
+            <!-- éditeur -->
+            <xsl:if test=".//imprint//forename">
+                <xsl:value-of select=".//imprint//forename"/>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:apply-templates select=".//imprint//surname"/>
+            <xsl:text> (</xsl:text>
+            <xsl:apply-templates select=".//imprint/respStmt/resp"/>
+            <xsl:text>), </xsl:text>
+        </xsl:if>
         <xsl:if test=".//pubPlace">
             <!-- lieu de publication -->
             <xsl:apply-templates select=".//pubPlace"/>
