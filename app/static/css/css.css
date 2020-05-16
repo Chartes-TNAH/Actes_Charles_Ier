@@ -160,11 +160,9 @@ a:hover, a:active {
     margin-bottom: 2%;
 }
 
-.prec_suiv {
+.precedent {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin : auto;
+    justify-content: right;
 }
 
 .numero {

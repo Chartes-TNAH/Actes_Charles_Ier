@@ -3,22 +3,36 @@
 <div class="acte-global">
 	{% if 1<=id<33 %}
         {% if id>1 %}
-            <div class="h1_global">
-                <h1>Acte {{id}}</h1>
-            </div>
-            <div class="prec_suiv">
-                    <p>
-                        <a href="{{url_for('acte', acte_id=id-1)}}">&lt; précédent</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a>
-                    </p>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="h1_global">Acte {{id}}</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                 <p class="precedent"><a href="{{url_for('acte', acte_id=id-1)}}">&lt; précédent</a></p>
+                </div>
+                <div class="col-6">
+                  <p><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
+                </div>
+              </div>
             </div>
         {% else %}
-            <div class="h1_global">
-                <h1>Acte {{id}}</h1>
-                <div class="prec_suiv">
-                    <p><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="h1_global">Acte {{id}}</h1>
                 </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                    <p></p>
+                </div>
+                <div class="col-6">
+                  <p><a href="{{url_for('acte', acte_id=id+1)}}">suivant &gt;</a></p>
+                </div>
+              </div>
             </div>
         {% endif %}
         {{contenu_acte|safe}}
@@ -31,6 +45,7 @@
             Attention : le corpus compte 374 actes. <a href="{{url_for('corpus')}}">Revenir à la liste des actes.</a>
         </p>
 	{% else %}
+        <h1 class="h1_global">Acte {{id}}</h1>
         <p style="font-weight: bold; text-align: center; margin-top: 3%;">L'acte n°{{id}} n'est pas encore en ligne. <a href="{{url_for('acte', acte_id=32)}}">Revenir au dernier acte mis en ligne (n°32)</a>.</p>
     {% endif %}
 </div>
