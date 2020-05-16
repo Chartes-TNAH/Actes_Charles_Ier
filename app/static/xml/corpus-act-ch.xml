@@ -2055,7 +2055,30 @@
             </front>
             <body>
                <div type="acte">
-                  <p>Nous Charles de Bourbon, comte de Clermont, confessons avoir eu et receu de <persName ref="#SeaumeJ">Jehan Seaume</persName><note type="na"><p>Jean Seaume : un itinéraire de sa vie professionnelle se trouve dans <hi rend="i">Le formulaire d’Odart Morchesne dans la version du ms. BnF France 5024</hi>, O. Guyotjeannin et S. Lusignan (éd.), Paris, Mémoires et documents de l’École nationale des chartes, 2005, [7.7] p. 204, notes <ref target="http://elec.enc.sorbonne.fr/morchesne/7-7#note1_">[ouvrage numérisé]</ref>.</p></note>, receveur general de toutes finances et tresorier des guerres es <placeName ref="#Languedoc">païs de Languedoc</placeName> et <placeName ref="#Guyenne">duchié de Guienne</placeName>, la somme de deux mille livres tournois, laquelle <persName ref="#ChVII">monseigneur le roy</persName> nous avoit et a donnee a prendre et avoir des deniers desdictes finances de Languedoc<note type="na"><p>Charles de Clermont a été lieutenant général en Languedoc et en Guyenne du 21 août 1420 (AN, P 1358<hi rend="sup">2</hi>, cote 601) au 7 octobre 1424, où il est nommé dans les marches est du royaume (AN, P 1358<hi rend="sup">2</hi>, cote 576).</p></note> pour certaines causes et consideracions, contennues et declarees en ses lettres sur ce faictes et donnees le sixème jour de fevrier derrenier passé, de laquelle somme de II<hi rend="sup">M</hi> l. t. nous nous tenons pour contens et bien paiez, et en quictons ledit receveur general et tous autres. Donné en tesmoing de ce soubz nostre seel, le XIII<hi rend="sup">e</hi> jour de mars l’an mil CCCC vint et cinq.</p>
+                  <p>Nous Charles de Bourbon, comte de Clermont, confessons avoir eu et receu de <persName ref="#SeaumeJ">Jehan Seaume</persName><note type="na"><p>Jean Seaume : un itinéraire de sa vie professionnelle se trouve dans
+                     <biblStruct>
+                        <monogr>
+                           <title level="m">Le formulaire d’Odart Morchesne dans la version du ms. BnF fr. 5024</title>
+                           <ref target="http://elec.enc.sorbonne.fr/morchesne/7-7#note1_">[ouvrage numérisé]</ref>
+                           <imprint>
+                              <pubPlace>Paris</pubPlace>
+                              <date when="2005"/>
+                              <biblScope unit="page" n="204"/>
+                              <biblScope unit="entry" n="[7.7]"/>
+                              <respStmt>
+                                 <persName>
+                                    <forename>Olivier</forename>
+                                    <surname>Guyotjeannin</surname>
+                                 </persName>
+                                 <persName>
+                                    <forename>Serge</forename>
+                                    <surname>Lusignan</surname>
+                                 </persName>
+                                 <resp>éd.</resp>
+                              </respStmt>
+                           </imprint>
+                        </monogr>
+                     </biblStruct></p></note>, receveur general de toutes finances et tresorier des guerres es <placeName ref="#Languedoc">païs de Languedoc</placeName> et <placeName ref="#Guyenne">duchié de Guienne</placeName>, la somme de deux mille livres tournois, laquelle <persName ref="#ChVII">monseigneur le roy</persName> nous avoit et a donnee a prendre et avoir des deniers desdictes finances de Languedoc<note type="na"><p>Charles de Clermont a été lieutenant général en Languedoc et en Guyenne du 21 août 1420 (AN, P 1358<hi rend="sup">2</hi>, cote 601) au 7 octobre 1424, où il est nommé dans les marches est du royaume (AN, P 1358<hi rend="sup">2</hi>, cote 576).</p></note> pour certaines causes et consideracions, contennues et declarees en ses lettres sur ce faictes et donnees le sixème jour de fevrier derrenier passé, de laquelle somme de II<hi rend="sup">M</hi> l. t. nous nous tenons pour contens et bien paiez, et en quictons ledit receveur general et tous autres. Donné en tesmoing de ce soubz nostre seel, le XIII<hi rend="sup">e</hi> jour de mars l’an mil CCCC vint et cinq.</p>
                </div>
                <div type="MHT" subtype="gauche">
                   <p>Par monseigneur le conte,</p>
@@ -2089,7 +2112,7 @@
                   <p><hi rend="i">(Au recto)</hi> Tres chiers et bons amis. Nous avons chargié noz amez et feaulx conseillers<note type="na"><p><hi rend="i">Conseillers</hi> suivi de <hi rend="i">maistre</hi>, barré.</p></note> le <persName ref="#Apinac">seigneur d’Espinac</persName> et maistre <persName ref="#ChantereleP">Pierre de Chantelle</persName>, vous dire et exposer de par nous certaines choses en creance. Si vous prions que les vueilliez oïr et croire en tout ce que eulx et chacun d’eulx vous en diront a ce fee foiz de nostre part ainsi que se nous meismes le vous disions. Tres chiers et bon amis, nostre seigneur soit garde de vous. Escript a Montbrison le XXX<hi rend="sup">e</hi> jour d’aoust.</p>
                </div>
                <div type="sign">
-                  <p>Charles de Bourbon<note type="na"><p>La signature <hi rend="i">Charles de Bourbon</hi> parait être la première utilisée par Charles I<hi rend="sup">er</hi>, qui signe uniquement de son prénom à partir du 9 octobre 1426 (AN, AE II, c. 443 ; analyse dans Huillard-Bréholles, <hi rend="i">Titres de Bourbon</hi>, II, p. 232-233, n° 5282). Cet acte est donc postérieur à cette date.</p></note></p>
+                  <p>Charles de Bourbon<note type="na"><p>La signature <hi rend="i">Charles de Bourbon</hi> parait être la première utilisée par Charles I<hi rend="sup">er</hi>, qui signe uniquement de son prénom à partir du 9 octobre 1426 (AN, AE II, c. 443 ; analyse dans <bibl><title>Titres de Bourbon</title><biblScope unit="volume" n="II"/><biblScope unit="page" from="232" to="233"/><biblScope unit="entry" n="5282"/></bibl>). Cet acte est donc postérieur à cette date.</p></note></p>
                   <p><persName ref="#Gort_sign">Gort</persName></p>
                </div>
             </body>
@@ -2849,7 +2872,24 @@
                   <p>Mandement à Étienne Courtet, receveur du bailliage des Montagnes de l’aide des états d’Auvergne, de délivrer à Janicot de Montmurat, écuyer d’écurie, cinquante écus d’or, pour ses services au siège d’Orléans</p>
                </argument>
                <argument>
-                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Étienne Courtet, receveur du bailliage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne : Philippe Contamine, <hi rend="i">Charles VII. Une vie, une politique</hi>, Paris, Perrin, 2017, p. 145. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <hi rend="i">ibid</hi>., p. 147. Le siège est levé le 8 mai 1429, soit dix jours avant la production de cet acte.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
+                  <p>Charles de Bourbon, comte de Clermont, ayant délégation de pouvoir, mande à Étienne Courtet, receveur du bailliage des Montagnes de l’aide que les états du pays d’Auvergne ont octroyé pour le ravitaillement d’Orléans<note type="n1"><p>Sur l’aide accordée par l’Auvergne :
+                     <biblStruct>
+                        <monogr>
+                           <author>
+                              <persName>
+                                 <forename>Philippe</forename>
+                                 <surname>Contamine</surname>
+                              </persName>
+                           </author>
+                           <title level="m">Charles VII. Une vie, une politique</title>
+                           <imprint>
+                              <pubPlace>Paris</pubPlace>
+                              <publisher>Perrin</publisher>
+                              <date when="2017"/>
+                              <biblScope unit="page" n="145"/>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>. Charles de Clermont avait participé, de manière peu glorieuse, au siège d’Orléans, tentant en vain de détourner un convoi anglais ; sa déconvenue l’oblige à se réfugier dans la ville : <bibl><title>ibid.</title><biblScope unit="page" n="147"/></bibl>. Le siège est levé le 8 mai 1429, soit dix jours avant la production de cet acte.</p></note>, d’assigner cinquante écus d’or à Janicot de Montmurat, son écuyer d’écurie, en plus de cent livres qu’il lui a déjà données.</p>
                </argument>
                <div type="tradition">
                   <listWit>
@@ -2894,7 +2934,7 @@
                </argument>
                <div type="tradition">
                   <listWit>
-                     <witness n="A">A. Minute raturée sur papier, non signée ; écriture du temps<note type="n1"><p>Analyse des <hi rend="i">Titres de Bourbon</hi>. Le document est rédigé sur un papier rectangulaire et chargé de plusieurs ratures. L’adresse et la salutation en sont absentes, mais la titulature est développée, de même que la corroboration et la datation. Dans les autres minutes du corpus, ces trois derniers éléments sont toujours abrégés.</p></note>. 235 x 100 mm. <orgName type="main">Archives nationales</orgName>, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
+                     <witness n="A">A. Minute raturée sur papier, non signée ; écriture du temps<note type="n1"><p>Analyse des <bibl><title>Titres de Bourbon</title></bibl>. Le document est rédigé sur un papier rectangulaire et chargé de plusieurs ratures. L’adresse et la salutation en sont absentes, mais la titulature est développée, de même que la corroboration et la datation. Dans les autres minutes du corpus, ces trois derniers éléments sont toujours abrégés.</p></note>. 235 x 100 mm. <orgName type="main">Archives nationales</orgName>, P 1356<hi rend="sup">2</hi>, cote 299.</witness>
                      <witness n="analyse">
                         <bibl>
                            <title>Titres de Bourbon</title>
@@ -2961,7 +3001,26 @@
          <text type="Original" subtype="Lettres_closes" xml:id="Ch-27" n="27">
             <front>
                <docDate>
-                  <date when="1430-05-09">[1430], 9 mai<note type="n1"><p>L'année retenue pour la datation de cette missive est 1430 en raison d'un acte des trois états du pays d’Auvergne daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <hi rend="i">Titres de Bourbon</hi>, II, n° 5369, p. 243 — édition dans Étienne Fournial, <hi rend="i">Documents sur les trois états du pays et comté de Forez</hi>, I, Saint-Etienne, Centre d’études Foréziennes et Université de Saint-Etienne, 1987, p. 231-232).</p></note></date>
+                  <date when="1430-05-09">[1430], 9 mai<note type="n1"><p>L'année retenue pour la datation de cette missive est 1430 en raison d'un acte des trois états du pays d’Auvergne daté du 27 mai 1430 : « <hi rend="i">Le vingt-septyesme jour de mey mil quatre cens et trente, en la ville d’Yssoire, ou estoient assemblez par les lettres de monseigneur le conte de Clermont les gens des trois estats du païs d’Auvergne, par monseigneur le comte de Montpencier…</hi> » : Archives nationales, P 1359<hi rend="sup">2</hi>, c. 773 (analyse dans <bibl><title>Titres de Bourbon</title><biblScope unit="volume" n="II"/><biblScope unit="page" n="243"/><biblScope unit="entry" n="5369"/></bibl> — édition dans
+                     <biblStruct>
+                        <monogr>
+                           <author>
+                              <persName>
+                                 <forename>Étienne</forename>
+                                 <surname>Fournial</surname>
+                              </persName>
+                           </author>
+                           <title level="m">Documents sur les trois états du pays et comté de Forez</title>
+                           <imprint>
+                              <biblScope unit="volume" n="I"/>
+                              <pubPlace>Saint-Étienne</pubPlace>
+                              <publisher>Centre d’études Foréziennes et Université de Saint-Etienne</publisher>
+                              <date when="1987"/>
+                              <biblScope unit="page" from="231" to="232"/>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     ).</p></note></date>
                   <placeName ref="#Montlucon">Montluçon</placeName>
                </docDate>
                <argument>
@@ -3082,7 +3141,25 @@
                <div type="acte">
                   <p><hi rend="i">(Au verso)</hi> A noz tres chiers et biens amez les cossous<note type="na"><p><hi rend="i">Cossous</hi> : consuls.</p></note>, bourgois et habitans de <placeName ref="#Riom">Ryon</placeName>.</p>
                   <p><hi rend="i">(Au recto)</hi> Le conte de Clermont.</p>
-                  <p>Chiers et biens amez, nous avons sceu par <persName ref="#NoelG">Gaillart Noël</persName><note type="na"><p>Gaillard Noël, originaire de Saint-Flour, est « receveur général de la taille votée par le dauphin Charles à Clermont (1420-1421) » : Albert Rigaudière,<hi rend="i"> L’assiette de l’impôt direct à la fin du XIV<hi rend="sup">e</hi> siècle</hi>, Paris, PUF, 1977, p. 442. Aucune mention de son activité dans la période 1425-1434, où Charles de Bourbon est comte de Clermont, n'a été retrouvée.</p></note>, receveur de l’aide naguere mise sus ou païs d’<placeName ref="#Auvergne">Aulvergne</placeName>, que encor n’en avez paié vostre part et porcion, dont nous donnons grant merveille, attendu lez neccessaers afaires ou ledit aide se doit emploier.</p>
+                  <p>Chiers et biens amez, nous avons sceu par <persName ref="#NoelG">Gaillart Noël</persName><note type="na"><p>Gaillard Noël, originaire de Saint-Flour, est « receveur général de la taille votée par le dauphin Charles à Clermont (1420-1421) » :
+                     <biblStruct>
+                        <monogr>
+                           <author>
+                              <persName>
+                                 <forename>Albert</forename>
+                                 <surname>Rigaudière</surname>
+                              </persName>
+                           </author>
+                           <title level="m">L’assiette de l’impôt direct à la fin du XIV<hi rend="sup">e</hi> siècle</title>
+                           <imprint>
+                              <pubPlace>Paris</pubPlace>
+                              <publisher>PUF</publisher>
+                              <date when="1977"/>
+                              <biblScope unit="page" n="442"/>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     . Aucune mention de son activité dans la période 1425-1434, où Charles de Bourbon est comte de Clermont, n'a été retrouvée.</p></note>, receveur de l’aide naguere mise sus ou païs d’<placeName ref="#Auvergne">Aulvergne</placeName>, que encor n’en avez paié vostre part et porcion, dont nous donnons grant merveille, attendu lez neccessaers afaires ou ledit aide se doit emploier.</p>
                   <p>Sy vous mandons que, incontinent et sans delay, vous veullez paier vostredicte part et porcion, et en ce ne veullez faillir sur tant que doubtez<note type="na"><p><hi rend="i">Doubtez</hi> suivi de <hi rend="i">nous</hi> barré.</p></note> mesprendre envers nous et amez le bien de nostre seigneurie, et au derrain fauldra que le facés et tousdiz ce visteront sur vous missions et despenses. Et pour vous dire plus a plain nostre volenté sur ce, envoions presentement nostre bien amez pannetier <persName ref="#TeillayeP">Pierre de la Tellaye</persName>, lequel creez de ce qu’il vous dira de par nous.</p>
                   <p>Chiers et bien amez, nostre seigneur vous ait en sa garde.</p>
                   <p>Escript a Chantelle, le X<hi rend="sup">e</hi> jour de juing.</p>
@@ -3193,7 +3270,25 @@
                   <p>Ratification d'une abstinence de guerre avec la Bourgogne, conclue en présence de l'abbé de Cluny et de conseillers du duc de Savoie, concernant les terres du duc de Bourbon, celles du duc de Bourgogne et du comte de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny et des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, les villes de Saint-Pierre-le-Moûtier et Sancoins, et toutes les places occupées par Perrinet Gressart, dont La Charité-sur-Loire et Rosemont</p>
                </argument>
                <argument>
-                  <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie<note type="n1"><p>Sur cette abstinence, voir André Bossuat, <hi rend="i">Perrinet Gressart et François de Surienne, agents de l'Angleterre</hi>, Paris, Droz, 1936, p. 152-153. Une autre abstinence de guerre, entre Philippe le Bon et Charles VII, avait été conclue à Chinon le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
+                  <p>Charles de Bourbon, comte de Clermont, lieutenant général du roi, ratifie au nom de son père, dont il a délégation de pouvoir, de sa mère et du sien, une nouvelle abstinence de guerre avec la Bourgogne, négociée par ses représentants entre les 21 et 24 septembre 1431 avec les députés de Philippe le Bon, en présence de l’abbé de Cluny et de trois conseillers du duc de Savoie<note type="n1"><p>Sur cette abstinence, voir
+                     <biblStruct>
+                        <monogr>
+                           <author>
+                              <persName>
+                                 <forename>André</forename>
+                                 <surname>Bossuat</surname>
+                              </persName>
+                           </author>
+                           <title level="m">Perrinet Gressart et François de Surienne, agents de l'Angleterre</title>
+                           <imprint>
+                              <pubPlace>Paris</pubPlace>
+                              <publisher>Froz</publisher>
+                              <date when="1936"/>
+                              <biblScope unit="page" from="152" to="153"/>
+                           </imprint>
+                        </monogr>
+                     </biblStruct>
+                     . Une autre abstinence de guerre avait été conclue entre Philippe le Bon et Charles VII à Chinon, le 8 septembre 1431 (AD Nord, B 304, c. 15598, copie dans un cahier de parchemin de quatre folios, avec de nombreuses ratures, 220 x 290 mm.).</p></note>.</p>
                   <p>Celle-ci comprend les terres de son père le duc, celles du duc de Bourgogne et du comte Charles de Nevers et de Rethel, les enclaves royales qui s’y trouvent, les terres de l’abbé de Cluny, des évêques, doyens et chapitres d’Autun, de Chalon et de Mâcon, et les villes de Saint-Pierre-le-Moûtier et Sancoins. Ces dernières seront évacuées par les garnisons qui s’y trouvent, de même que Marcigny, récemment prise par le comte de Clermont.</p>
                   <p>Pendant le temps de la trêve, les deux parties devront empêcher par tous les moyens que des gens d’arme ne ravagent les pays concernés, et leurs sujets ne pourront passer une frontière sans être porteurs d’un sauf-conduit délivré par le duc de Bourgogne, le comte de Clermont, ou leurs conservateurs. La Charité-sur-Loire, Rosemont, ainsi que toutes les places occupées par Perrinet Gressart, sont incluses dans l’abstinence et ce dernier s’engage par écrit à la respecter.</p>
                   <p>Antoine de Toulongeon, maréchal de Bourgogne, le bailli du Nivernais et Perrinet Gressart sont nommés conservateurs de l'abstinence pour Philippe le Bon ; Charles de Bourbon nomme pour sa part Blain Loup, seigneur de Beauvoir, Louis des Barres et Philibert de l’Espinasse, dit Cormorant, bailli du Beaujolais.</p>

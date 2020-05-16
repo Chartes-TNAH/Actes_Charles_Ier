@@ -183,6 +183,7 @@ a:hover, a:active {
     text-align: justify;
     font-style: italic;
     font-size: 18px;
+    line-height: 1.8;
 }
 
 .analyse > p {
@@ -197,6 +198,7 @@ a:hover, a:active {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .tradition > p {
@@ -209,6 +211,7 @@ a:hover, a:active {
     margin-top: 2%;
     margin-bottom: 0.5%;
     font-size: 18px;
+    line-height: 2;
 }
 
 .text_etabli {
@@ -244,6 +247,7 @@ a:hover, a:active {
 
 .note-global > p {
     margin: 0.25%;
+    text-align: justify;
 }
 
 
