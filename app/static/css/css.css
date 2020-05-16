@@ -108,12 +108,22 @@ a:hover, a:active {
 }
 
 .home-text {
-    padding-top: 7%;
+    padding-top: 4%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
+}
+
+.home-text-main {
+    font-size: large;
+    line-height: 2;
+}
+
+.home-text-sub {
+    font-size: 10pt;
+    font-style: italic;
 }
 
 /* PAGES PROJET = À PROPOS, BIBLIOGRAPHIE, LE DUC */
@@ -150,11 +160,9 @@ a:hover, a:active {
     margin-bottom: 2%;
 }
 
-.prec_suiv {
+.precedent {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin : auto;
+    justify-content: right;
 }
 
 .numero {
@@ -175,6 +183,7 @@ a:hover, a:active {
     text-align: justify;
     font-style: italic;
     font-size: 18px;
+    line-height: 1.8;
 }
 
 .analyse > p {
@@ -189,6 +198,7 @@ a:hover, a:active {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .tradition > p {
@@ -201,6 +211,7 @@ a:hover, a:active {
     margin-top: 2%;
     margin-bottom: 0.5%;
     font-size: 18px;
+    line-height: 2;
 }
 
 .text_etabli {
@@ -236,6 +247,7 @@ a:hover, a:active {
 
 .note-global > p {
     margin: 0.25%;
+    text-align: justify;
 }
 
 

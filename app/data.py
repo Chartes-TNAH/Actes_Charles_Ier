@@ -28,7 +28,7 @@ def database_init(xml_file):
     count_id = 0
     for item in xml_file.xpath("//group/text"):
         number += 1
-        item_institution = xml_file.xpath("//text[@n=" + str(number) + "]//institution/text()")
+        item_institution = xml_file.xpath("//text[@n=" + str(number) + "]//orgName/text()")
         list_institution.append(item_institution[0])
         list_state.append(item.attrib['type'])
         list_type.append(item.attrib['subtype'])
