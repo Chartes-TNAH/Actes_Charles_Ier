@@ -19,7 +19,44 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-sub-section</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="rois"/>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-section-main</xsl:text>
+                    </xsl:attribute>
+                    <xsl:for-each select="//listPerson[@type='rois']//persName">
+                        <xsl:element name="div">
+                            <xsl:element name="p">
+                                <xsl:attribute name="class">
+                                    <xsl:text>index-entree</xsl:text>
+                                </xsl:attribute>
+                                <xsl:element name="b">
+                                    <xsl:value-of select="."/>
+                                </xsl:element>
+                                <xsl:variable name="idPerson">
+                                    <xsl:value-of select="parent::person/@xml:id"/>
+                                </xsl:variable>
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                            <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                        </xsl:attribute>
+                                        <xsl:value-of select="ancestor::text/@n"/>
+                                    </xsl:element>
+                                    <xsl:if test="position()!= last()">, </xsl:if>
+                                    <xsl:if test="position() = last()"></xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>).</xsl:text>
+                            </xsl:element>
+                            <xsl:element name="p">
+                                <xsl:attribute name="class">
+                                    <xsl:text>index-note</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="following::note"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
         <!-- <div> pour les noms des hommes du roi de France -->
@@ -37,7 +74,44 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-sub-section</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="off_roi"/>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-section-main</xsl:text>
+                    </xsl:attribute>
+                    <xsl:for-each select="//listPerson[@type='hommes_du_roi']//persName">
+                        <xsl:element name="div">
+                            <xsl:element name="p">
+                                <xsl:attribute name="class">
+                                    <xsl:text>index-entree</xsl:text>
+                                </xsl:attribute>
+                                <xsl:element name="b">
+                                    <xsl:value-of select="."/>
+                                </xsl:element>
+                                <xsl:variable name="idPerson">
+                                    <xsl:value-of select="parent::person/@xml:id"/>
+                                </xsl:variable>
+                                <xsl:text> (</xsl:text>
+                                <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                            <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                        </xsl:attribute>
+                                        <xsl:value-of select="ancestor::text/@n"/>
+                                    </xsl:element>
+                                    <xsl:if test="position()!= last()">, </xsl:if>
+                                    <xsl:if test="position() = last()"></xsl:if>
+                                </xsl:for-each>
+                                <xsl:text>).</xsl:text>
+                            </xsl:element>
+                            <xsl:element name="p">
+                                <xsl:attribute name="class">
+                                    <xsl:text>index-note</xsl:text>
+                                </xsl:attribute>
+                                <xsl:value-of select="following::note"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
         <!-- <div> pour les noms des Bourbon -->
@@ -55,7 +129,42 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-sub-section</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="bourbon_famille"/>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-section-main</xsl:text>
+                    </xsl:attribute>
+                    <xsl:for-each select="//listPerson[@type='Bourbon']//persName">
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-entree</xsl:text>
+                            </xsl:attribute>
+                            <xsl:element name="b">
+                                <xsl:value-of select="."/>
+                            </xsl:element>
+                            <xsl:text> (</xsl:text>
+                            <xsl:variable name="idPerson">
+                                <xsl:value-of select="parent::person/@xml:id"/>
+                            </xsl:variable>
+                            <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="ancestor::text/@n"/>
+                                </xsl:element>
+                                <xsl:if test="position()!= last()">, </xsl:if>
+                                <xsl:if test="position() = last()"></xsl:if>
+                            </xsl:for-each>
+                            <xsl:text>).</xsl:text>
+                        </xsl:element>
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-note</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="following::note"/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
         <!-- <div> pour les noms des hommes du duc de Bourbon -->
@@ -234,7 +343,40 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-sub-section</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="bourguignons"/>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-section-main</xsl:text>
+                    </xsl:attribute>
+                    <xsl:for-each select="//listPerson[@type='bourguignons']//persName">
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-entree</xsl:text>
+                            </xsl:attribute>
+                            <xsl:element name="b"><xsl:value-of select="."/></xsl:element>
+                            <xsl:variable name="idPerson">
+                                <xsl:value-of select="parent::person/@xml:id"/>
+                            </xsl:variable>
+                            <xsl:text> (</xsl:text>
+                            <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="ancestor::text/@n"/>
+                                </xsl:element>
+                                <xsl:if test="position()!= last()">, </xsl:if>
+                                <xsl:if test="position() = last()"></xsl:if>
+                            </xsl:for-each>
+                            <xsl:text>).</xsl:text>
+                        </xsl:element>
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-note</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="following::note"/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
         <!-- <div> pour les noms des hommes du duc de Savoie -->
@@ -252,128 +394,44 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-sub-section</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="savoyards"/>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-section-main</xsl:text>
+                    </xsl:attribute>
+                    <xsl:for-each select="//listPerson[@type='savoyards']//persName">
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-entree</xsl:text>
+                            </xsl:attribute>
+                            <xsl:element name="b"><xsl:value-of select="."/></xsl:element>
+                            <xsl:variable name="idPerson">
+                                <xsl:value-of select="parent::person/@xml:id"/>
+                            </xsl:variable>
+                            <xsl:text> (</xsl:text>
+                            <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="ancestor::text/@n"/>
+                                </xsl:element>
+                                <xsl:if test="position()!= last()">, </xsl:if>
+                                <xsl:if test="position() = last()"></xsl:if>
+                            </xsl:for-each>
+                            <xsl:text>).</xsl:text>
+                        </xsl:element>
+                        <xsl:element name="p">
+                            <xsl:attribute name="class">
+                                <xsl:text>index-note</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="following::note"/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
     </xsl:template>
-    <xsl:template name="rois">
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>index-section-main</xsl:text>
-            </xsl:attribute>
-            <xsl:for-each select="//listPerson[@type='rois']//persName">
-                <xsl:element name="div">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:variable name="idPerson">
-                            <xsl:value-of select="parent::person/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> (</xsl:text>
-                        <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()"></xsl:if>
-                        </xsl:for-each>
-                        <xsl:text>).</xsl:text>
-                    </xsl:element>
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-note</xsl:text>
-                        </xsl:attribute>
-                        <xsl:value-of select="following::note"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template name="off_roi">
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>index-section-main</xsl:text>
-            </xsl:attribute>
-            <xsl:for-each select="//listPerson[@type='hommes_du_roi']//persName">
-                <xsl:element name="div">
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-entree</xsl:text>
-                        </xsl:attribute>
-                        <xsl:element name="b">
-                            <xsl:value-of select="."/>
-                        </xsl:element>
-                        <xsl:variable name="idPerson">
-                            <xsl:value-of select="parent::person/@xml:id"/>
-                        </xsl:variable>
-                        <xsl:text> (</xsl:text>
-                        <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:element>
-                            <xsl:if test="position()!= last()">, </xsl:if>
-                            <xsl:if test="position() = last()"></xsl:if>
-                        </xsl:for-each>
-                        <xsl:text>).</xsl:text>
-                    </xsl:element>
-                    <xsl:element name="p">
-                        <xsl:attribute name="class">
-                            <xsl:text>index-note</xsl:text>
-                        </xsl:attribute>
-                        <xsl:value-of select="following::note"/>
-                    </xsl:element>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template name="bourbon_famille">
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>index-section-main</xsl:text>
-            </xsl:attribute>
-            <xsl:for-each select="//listPerson[@type='Bourbon']//persName">
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-entree</xsl:text>
-                    </xsl:attribute>
-                    <xsl:element name="b">
-                        <xsl:value-of select="."/>
-                    </xsl:element>
-                    <xsl:text> (</xsl:text>
-                    <xsl:variable name="idPerson">
-                        <xsl:value-of select="parent::person/@xml:id"/>
-                    </xsl:variable>
-                    <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="ancestor::text/@n"/>
-                        </xsl:element>
-                        <xsl:if test="position()!= last()">, </xsl:if>
-                        <xsl:if test="position() = last()"></xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>).</xsl:text>
-                </xsl:element>
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-note</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="following::note"/>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
+    <!-- Templates avec les règles pour les hommes du duc de Bourbon -->
     <xsl:template name="bourbon_off">
         <xsl:element name="div">
             <xsl:attribute name="class">
@@ -710,76 +768,5 @@
             </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    <xsl:template name="bourguignons">
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>index-section-main</xsl:text>
-            </xsl:attribute>
-            <xsl:for-each select="//listPerson[@type='bourguignons']//persName">
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-entree</xsl:text>
-                    </xsl:attribute>
-                    <xsl:element name="b"><xsl:value-of select="."/></xsl:element>
-                    <xsl:variable name="idPerson">
-                        <xsl:value-of select="parent::person/@xml:id"/>
-                    </xsl:variable>
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="ancestor::text/@n"/>
-                        </xsl:element>
-                        <xsl:if test="position()!= last()">, </xsl:if>
-                        <xsl:if test="position() = last()"></xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>).</xsl:text>
-                </xsl:element>
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-note</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="following::note"/>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template name="savoyards">
-        <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>index-section-main</xsl:text>
-            </xsl:attribute>
-            <xsl:for-each select="//listPerson[@type='savoyards']//persName">
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-entree</xsl:text>
-                    </xsl:attribute>
-                    <xsl:element name="b"><xsl:value-of select="."/></xsl:element>
-                    <xsl:variable name="idPerson">
-                        <xsl:value-of select="parent::person/@xml:id"/>
-                    </xsl:variable>
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="ancestor::TEI//body//persName[translate(@ref, '#','')=$idPerson]">
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:text>/actes/</xsl:text><xsl:value-of select="ancestor::text/@n"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="ancestor::text/@n"/>
-                        </xsl:element>
-                        <xsl:if test="position()!= last()">, </xsl:if>
-                        <xsl:if test="position() = last()"></xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>).</xsl:text>
-                </xsl:element>
-                <xsl:element name="p">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-note</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="following::note"/>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element>
-    </xsl:template>
+
 </xsl:stylesheet>
