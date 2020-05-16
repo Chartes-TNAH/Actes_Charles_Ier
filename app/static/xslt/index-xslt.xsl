@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" indent="yes"/>
+    <!-- STRUCTURATION GLOBALE -->
+    <!-- (une première <div> englobante est définie dans le document HTML) -->
     <xsl:template match="/">
+        <!-- <div> pour les noms de roi -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -19,6 +22,7 @@
                 <xsl:call-template name="rois"/>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms des hommes du roi de France -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -36,6 +40,7 @@
                 <xsl:call-template name="off_roi"/>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms des Bourbon -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -53,6 +58,7 @@
                 <xsl:call-template name="bourbon_famille"/>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms des hommes du duc de Bourbon -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -63,6 +69,7 @@
                 </xsl:attribute>
                 <xsl:text>Hommes du duc de Bourbon</xsl:text>
             </xsl:element>
+            <!-- Hôtel ducal -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -77,6 +84,7 @@
                     <xsl:call-template name="hotel_ChI"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers du duché de Bourbonnais -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -91,6 +99,7 @@
                     <xsl:call-template name="bourbon_off"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers de la chancellerie -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -98,6 +107,7 @@
                     </xsl:attribute>
                     <xsl:text>Chancellerie</xsl:text>
                 </xsl:element>
+                <!-- Chanceliers -->
                 <xsl:element name="div">
                     <xsl:element name="div">
                         <xsl:element name="h4">
@@ -113,6 +123,7 @@
                             <xsl:call-template name="chanceliers"/>
                         </xsl:element>
                     </xsl:element>
+                    <!-- Secrétaires -->
                     <xsl:element name="div">
                         <xsl:element name="h4">
                             <xsl:attribute name="class">
@@ -129,6 +140,7 @@
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers de la Chambre des comptes de Moulins -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -143,6 +155,7 @@
                     <xsl:call-template name="chambre_Moulins"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers du duché d'Auvergne -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -157,6 +170,7 @@
                     <xsl:call-template name="auvergne_off"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers du comté de Forez -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -171,6 +185,7 @@
                     <xsl:call-template name="forez_off"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers de la seigneurie de Beaujolais -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
@@ -186,6 +201,7 @@
                 </xsl:element>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms de prince -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -203,6 +219,7 @@
                 <xsl:call-template name="princes"/>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms des hommes du duc de Bourgogne -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>
@@ -220,6 +237,7 @@
                 <xsl:call-template name="bourguignons"/>
             </xsl:element>
         </xsl:element>
+        <!-- <div> pour les noms des hommes du duc de Savoie -->
         <xsl:element name="div">
             <xsl:attribute name="class">
                 <xsl:text>index-section-global</xsl:text>

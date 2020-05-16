@@ -127,13 +127,14 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:text>, </xsl:text>
-        <xsl:if test=".//respStmt">
+        <xsl:if test=".//respStmt/persName">
             <!-- éditeur -->
-            <xsl:if test=".//imprint//forename">
-                <xsl:value-of select=".//imprint//forename"/>
+            <xsl:for-each select=".//respStmt/persName">
+                <xsl:apply-templates select="./forename"/>
                 <xsl:text> </xsl:text>
-            </xsl:if>
-            <xsl:apply-templates select=".//imprint//surname"/>
+                <xsl:apply-templates select="./surname"/>
+                <xsl:if test="position()!= last()">, </xsl:if>
+            </xsl:for-each>
             <xsl:text> (</xsl:text>
             <xsl:apply-templates select=".//imprint/respStmt/resp"/>
             <xsl:text>), </xsl:text>
@@ -182,7 +183,9 @@
             <xsl:text> </xsl:text>
             <xsl:apply-templates select=".//ref"/>
         </xsl:if>
-        <xsl:text>.</xsl:text>
+        <xsl:if test="parent::witness">
+            <xsl:text>.</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="bibl">
         <!-- référence bibliographique non structurée -->
