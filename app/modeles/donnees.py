@@ -3,6 +3,7 @@ from ..app import db
 # import du document XML (source_doc) depuis le fichier constantes.py situé dans le dossier parent (..) :
 from ..constantes import source_doc
 
+# défintion de la classe Acts
 class Acts(db.Model):
     __tablename__ = "acts"
     id_acts = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
@@ -13,6 +14,7 @@ class Acts(db.Model):
     place = db.Column(db.Text)
     analyse = db.Column(db.Text)
 
+# instanciation des attributs de la classe Acts
     def __init__(self, id_acts, institution, state, type, date, place, analyse):
         self.id_acts = id_acts
         self.institution = institution
