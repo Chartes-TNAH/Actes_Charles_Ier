@@ -1,3 +1,4 @@
+# import du module etree de lxml
 from lxml import etree
 # import de la base de données (db) depuis le fichier app.py :
 from .app import db
@@ -6,16 +7,16 @@ from .modeles.donnees import Acts
 
 def database_init(xml_file):
     """Fonction permettant de compléter la base de données db avec les informations issues de xml_file.
-        (1) Définition de listes vides, correspondant aux colonnes de la base, et de deux compteurs.
-        (2) Boucle sur chaque élément texte de l'arbre XML pour remplir les listes, number permettant
-            d'indiquer l'id des actes dans le document XML.
-        (3) Boucle sur le contenu :
+        (1) Définition de listes vides, correspondant aux colonnes de la base, et d'un compteur.
+        (2) Boucle sur chaque élément texte de l'arbre XML :
+            * Le compteur number augmente de un à chaque cycle de la boucle ;
+            * Les listes sont complétées, number permettant d'indiquer l'id des actes dans le document XML.
             * L'ancienne base est écrasée (db) ;
             * Une nouvelle base est créée (db) ;
-            * Le compteur count_id augmente de un à chaque cycle de la boucle ;
             * Sont ajoutés à db : le compteur, correspondant à l'id de l'acte, et l'entrée de chaque
-              liste avec comme index count_id - 1 (puisque le premier index d'une liste est 0).
+              liste avec comme index number - 1 (puisque le premier index d'une liste est 0).
         :param xml_file: un document XML parsé avec la méthode .parse() d'etree.
+        :type xml_file: str
     """
     list_id = []
     list_institution = []
@@ -25,7 +26,6 @@ def database_init(xml_file):
     list_place = []
     list_analyse = []
     number = 0
-    count_id = 0
     for item in xml_file.xpath("//group/text"):
         number += 1
         item_institution = xml_file.xpath("//text[@n=" + str(number) + "]//orgName/text()")
@@ -38,11 +38,9 @@ def database_init(xml_file):
         list_place.append(item_place[0])
         item_analyse = xml_file.xpath("//text[@n=" + str(number) + "]//argument[1]/p/text()")
         list_analyse.append(item_analyse[0])
-    for item in list_date:
         db.drop_all()
         db.create_all()
-        count_id +=1
-        db.session.add(Acts(count_id, list_institution[count_id - 1], list_state[count_id - 1], 
-            list_type[count_id - 1], list_date[count_id - 1], list_place[count_id - 1], 
-            list_analyse[count_id - 1]))
+        db.session.add(Acts(number, list_institution[number - 1], list_state[number - 1], 
+            list_type[number - 1], list_date[number - 1], list_place[number - 1], 
+            list_analyse[number - 1]))
     db.session.commit()
