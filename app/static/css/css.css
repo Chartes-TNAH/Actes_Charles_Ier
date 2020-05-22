@@ -130,6 +130,7 @@ a:hover, a:active {
 .projet-text {
     text-align: justify;
     margin: 4% auto 8% auto;
+    font-size: 18px;
 }
 
 #biblio > p {
@@ -257,6 +258,7 @@ a:hover, a:active {
     flex-direction: column;
     margin-top: 1%;
     margin-bottom: 5%;
+    font-size: 18px;
 }
 
 .index-h2 {
@@ -327,6 +329,7 @@ a:hover, a:active {
 /* CONTACT */
 .contact-global {
     margin: 8% auto 15% auto;
+    font-size: 18px;
 }
 
 .contact-global > p {
@@ -343,6 +346,7 @@ a:hover, a:active {
     margin: auto;
     margin-bottom: 2%;
     text-align: justify;
+    font-size: 18px;
 }
 }
 .mentions-div {
@@ -360,6 +364,7 @@ a:hover, a:active {
     align-items: center;
     width: 100%;
     height: auto;
+    font-size: 18px;
 }
 
 .erreur-figure {
