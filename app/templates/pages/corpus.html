@@ -5,7 +5,55 @@
         <div>
             <h2 class="h2_global">Présentation du corpus</h2>
             <p>Le corpus des actes de Charles I<sup>er</sup> de Bourbon et d'Agnès de Bourgogne se compose de 405 documents, dont 373 sont passés au nom du duc et 32 au nom de la duchesse ; parmi ceux-ci, le couple ducal passe six actes en commun.</p>
-            <p>Seul un échantillon du corpus a été mis en ligne (<b>{{document|length}} actes à ce jour</b>). Les images de plusieurs actes originaux et de deux <i>deperdita</i> sont également disponibles. À l'exception de celle de l'<a href="{{url_for('acte', acte_id=9)}}">acte n° 9</a>, il ne s'agit pas de prises de vue professionnelles.</p>
+            <p>Seul un échantillon du corpus a été mis en ligne (<b>{{document|length}} actes à ce jour</b>).</p>
+        </div>
+            <div>
+                <h2 class="h2_global">Principes d'encodage et règles de présentation</h2>
+            <p>L'encodage s'est fait à partir de transcriptions normalisées saisies dans un document <code>.doc</code> où les abréviations et leurs résolutions n'étaient pas signalées. Il suit, avec quelques adaptations, les préconisations du <a href="http://developpements.enc.sorbonne.fr/diple/schema/">projet &#171; dipl &#187; de l'École nationale des chartes</a>.</p>
+            <div>
+                <details>
+                    <summary>Cliquer pour afficher le shéma XML suivi.</summary>
+<!-- ne pas modifier l'indentation --><pre>
+    <code>
+        <b>&lt;texte</b> type="<i>état</i>" subtype="<i>type diplomatique</i>" xml:id="<i>Ch-id</i>" n="<i>id</i>"<b>&gt;</b>
+            <b>&lt;front&gt;</b>
+                <b>&lt;docDate&gt;</b>
+                    <b>&lt;date</b> when="<i>aaaa-mm-jj</i>"<b>&gt;</b><i>date de temps</i><b>&lt;/date&gt;</b>
+                    <b>&lt;placeName</b> ref="<i>#lieu</i>"<b>&gt;</b><i>date de lieu</i><b>&lt;/placeName&gt;</b>
+                <b>&lt;/docDate&gt;</b>
+                <b>&lt;argument&gt;</b>
+                    <b>&lt;p&gt;</b><i>analyse succinte, affichée dans la liste des actes</i><b>&lt;/p&gt;</b>
+                <b>&lt;/argument&gt;</b>
+                <b>&lt;argument&gt;</b>
+                    <b>&lt;p&gt;</b><i>analyse développée, affichée dans la page de l'acte</i><b>&lt;/p&gt;</b>
+                <b>&lt;/argument&gt;</b>
+                <b>&lt;div</b> type="tradition"<b>&gt;</b>
+                    <b>&lt;listWit&gt;</b>
+                        <b>&lt;witness&gt;</b><i>témoin ou édition</i>, <b>&lt;orgName&gt;</b><i>lieu de conservation</i><b>&lt;/orgName&gt;</b>, <b>&lt;idno&gt;</b><i>cote</i><b>&lt;/idno&gt;</b><b>&lt;/witness&gt;</b>
+                    <b>&lt;/listWit&gt;</b>
+                <b>&lt;/div&gt;</b>
+            <b>&lt;/front&gt;</b>
+            <b>&lt;body&gt;</b>
+                <b>&lt;div</b> type="acte"<b>&gt;</b>
+                    <b>&lt;p&gt;</b><i>texte de l'acte, segmenté en paragraphe en fonction des parties du discours</i><b>&lt;/p&gt;</b>
+                <b>&lt;/div&gt;</b>
+                <b>&lt;div</b> type="MHT" subtype="<i>position</i>"<b>&gt;</b>
+                    <b>&lt;p&gt;</b><i>mention de commandement</i><b>&lt;/p&gt;</b>
+                <b>&lt;/div&gt;</b>
+                <b>&lt;div</b> type="sign"<b>&gt;</b>
+                    <b>&lt;p&gt;</b><i>signature</i><b>&lt;/p&gt;</b>
+                <b>&lt;/div&gt;</b>
+            <b>&lt;/body&gt;</b>
+        <b>&lt;/texte&gt;</b>
+    </code>
+</pre>
+                </details>
+            </div>
+            <p style="text-align: justify;">La chancellerie du duc de Bourbon utilisait le style de Pâques. Les textes édités suivent le style du 1<sup>er</sup> janvier. Tout changement est signalé par la mention <i>(n. st.)</i> (nouveau style).</p>
+            <p style="text-align: justify;">Lorsque l'acte est analysé dans un inventaire, cette analyse a été reprise, modifiée et développée. Les analyses des actes issus de la série P des Archives nationales sont reprises de l'ouvrage <i>Titres de l’ancienne maison ducale de Bourbon</i>, édité par Alphonse Huillard-Bréholles et Albert Lecoy de La Marche (Paris, 1867-1874), qui se trouve ici abrégé en <i>Titres de Bourbon</i>.</p>
+            <p style="text-align: justify;">Les actes sont présentés selon une mise en page diplomatique, où se succèdent le numéro de l'acte, sa datation, son analyse, un tableau de sa tradition, l'acte lui-même et ses éventuelles notes. Les images de plusieurs actes originaux et de deux <i>deperdita</i> sont également disponibles. À l'exception de celle de l'<a href="{{url_for('acte', acte_id=9)}}">acte n° 9</a>, il ne s'agit pas de prises de vue professionnelles.</p>
+            </div>
+        <div>
         </div>
         <div>
             <h2 class="h2_global">Liste des {{document|length}} actes disponibles</h2>
