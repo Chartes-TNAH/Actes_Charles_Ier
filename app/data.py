@@ -1,3 +1,14 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
+"""
+    Fonction permettant d'initialiser une base de données.
+    author : Jean-Damien Généro
+    date : 31 mai 2020
+"""
+
+
 # import du module etree de lxml
 from lxml import etree
 # import de la base de données (db) depuis le fichier app.py :
@@ -5,8 +16,9 @@ from .app import db
 # import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
 from .modeles.donnees import Acts 
 
+
 def database_init(xml_file):
-    """Fonction permettant de compléter la base de données db avec les informations issues de xml_file.
+    """Fonction permettant d'initialiser une base de données avec les informations issues de xml_file.
         (1) Définition de listes vides, correspondant aux colonnes de la base, et d'un compteur.
         (2) Boucle sur chaque élément texte de l'arbre XML :
             * Le compteur number augmente de un à chaque cycle de la boucle ;

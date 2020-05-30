@@ -1,7 +1,19 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
+"""
+    Initialisation de la base de données.
+    author : Jean-Damien Généro
+    date : 31 mai 2020
+"""
+
+
 # import de la base de données (db) depuis le fichier app.py situé dans le dossier parent (..) :
 from ..app import db
 # import du document XML (source_doc) depuis le fichier constantes.py situé dans le dossier parent (..) :
 from ..constantes import source_doc
+
 
 # défintion de la classe Acts
 class Acts(db.Model):

@@ -1,3 +1,14 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
+"""
+	Initialisation de l'application.
+    author : Jean-Damien Généro
+    date : 31 mai 2020
+"""
+
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os # module permettant de communiquer avec le système d'exploitation sous-jacent.

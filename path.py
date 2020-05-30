@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
 import os
 
 chemin_actuel = os.path.dirname(os.path.abspath(__file__))

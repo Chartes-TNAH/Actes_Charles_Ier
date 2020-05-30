@@ -1,4 +1,16 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
+"""
+	Définition des variables constantes.
+    author : Jean-Damien Généro
+    date : 31 mai 2020
+"""
+
+
 from lxml import etree
+
 
 # Variable pour la page de résultat
 RESULT_PAR_PAGES = 5

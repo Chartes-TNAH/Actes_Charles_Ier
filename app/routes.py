@@ -1,31 +1,47 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+
+"""
+	Définition des routes de l'application
+    author : Jean-Damien Généro
+    date : 31 mai 2020
+"""
+
+
+# import des librairie
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from lxml import etree
 import re
 
-# import de l'application (app) depuis le fichier app.py :
+
+# import de l'application (app) depuis le fichier app.py
 from .app import app
 # import de la variable RESULT_PAR_PAGES, du document XML (source_doc) et des feuilles de transformation XSLT depuis
 # le fichier constantes.py :
 from .constantes import RESULT_PAR_PAGES, source_doc, xslt_projet_doc, xslt_index_nom_doc, xslt_index_prosopo_doc, xslt_index_lieux_doc
 # import de la fonction database_init depuis le fichier data.py
 from .data import database_init
-# import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles :
+# import de la classe Acts depuis le fichier donnees.py situé dans le dossier modeles
 from .modeles.donnees import Acts 
+
 
 # activation de la fonction d'initialisation de la base de données avec pour paramètre souce_doc
 database_init(source_doc)
 
+
 @app.route("/")
 def accueil():
-	"""Route permettant d'afficher la page accueil en retournant une template via l'objet Flask render_template(),
+	"""Route permettant d'afficher la page Accueil en retournant une template via l'objet Flask render_template(),
 	   où est défini le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("accueil.html")
 
+
 @app.route("/projet")
 def projet():
-	"""Route permettant d'afficher la page projet :
+	"""Route permettant d'afficher la page Projet :
 	(1) la méthode .XSLT() d'etree est appliquée à xslt_projet_doc, le résultat est stocké dans la variable
 		xslt_projet_transformer ;
 	(2) la feuille de transformation est appliquée au document XML (source_doc), le résultat est stocké
@@ -38,19 +54,22 @@ def projet():
 	output_projet_doc = xslt_projet_transformer(source_doc)
 	return render_template("pages/projet.html", contenu_projet=output_projet_doc)
 
+
 @app.route("/bibliographie")
 def bibliographie():
-	"""Route permettant d'afficher la page bibliographie en retournant une template via l'objet Flask render_template(),
+	"""Route permettant d'afficher la page Bibliographie en retournant une template via l'objet Flask render_template(),
 		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/bibliographie.html")
 
+
 @app.route("/duc")
 def duc():
-	"""Route permettant d'afficher la page de biographie du duc en retournant une template via l'objet Flask render_template(),
+	"""Route permettant d'afficher la page de Biographie du duc en retournant une template via l'objet Flask render_template(),
 		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/duc.html")
+
 
 @app.route("/actes")
 def corpus():
@@ -61,6 +80,7 @@ def corpus():
 	"""
 	Actes_total = Acts.query.all()
 	return render_template("pages/corpus.html", document=Actes_total)
+
 
 @app.route("/index-nominum")
 def index_noms():
@@ -77,6 +97,7 @@ def index_noms():
 	output_index_nom_doc = xslt_index_nom_transformer(source_doc)
 	return render_template("pages/index_nominum.html", contenu_index_nom=output_index_nom_doc)
 
+
 @app.route("/index-prosopographique")
 def index_prosopo():
 	"""Route permettant d'afficher la page de l'index prosopographique :
@@ -91,6 +112,7 @@ def index_prosopo():
 	xslt_index_prosopo_transformer = etree.XSLT(xslt_index_prosopo_doc)
 	output_index_prosopo_doc = xslt_index_prosopo_transformer(source_doc)
 	return render_template("pages/index_prosopo.html", contenu_index_prosopo=output_index_prosopo_doc)
+
 
 @app.route("/index-lieu")
 def index_lieu():
@@ -107,12 +129,14 @@ def index_lieu():
 	output_index_lieux_doc = xslt_index_lieux_transformer(source_doc)
 	return render_template("pages/index-lieux.html", contenu_index_lieux=output_index_lieux_doc)
 
+
 @app.route("/contact")
 def contact():
 	"""Route permettant d'afficher la page de contact en retournant une template via l'objet Flask render_template(),
 		où est défini le chemin vers le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("pages/contact.html")
+
 
 @app.route("/actes/<int:acte_id>")
 def acte(acte_id):
@@ -125,11 +149,14 @@ def acte(acte_id):
 			* Le chemin vers le document html où le retour de la fonction sera affiché (pages/acte.html) ;
 			* Les templates Flask qui contiennent le résultat de la transformation XSL (contenu_acte) et le numéro
 			  de l'acte (id).
+	:param acte_id: l'id d'un acte.
+	:type acte_id: int
 	"""
 	xslt_doc = etree.parse("../Actes_Charles_Ier/app/static/xslt/corpus-xslt.xslt")
 	xslt_transformer = etree.XSLT(xslt_doc)
 	output_doc = xslt_transformer(source_doc, numero=str(acte_id))
 	return render_template("pages/acte.html", contenu_acte=output_doc, id=acte_id)
+
 
 @app.route("/recherche")
 def recherche():
@@ -137,10 +164,10 @@ def recherche():
 	(1) Des listes vides sont définies.
 	(2) Des requêtes sont effectuées en boucle sur la classe Acts et les éléments trouvés sont ajoutés à la liste
 		correspondante.
-		Dans le libellés des dépôts d'archives départemenaux et municipaux, la méthode sub() de la librairie
+		Dans le libellé des dépôts d'archives départemenaux et municipaux, la méthode sub() de la librairie
 		re permet, via une regex, de n'ajouter à la liste correspondante que le nom du département ou de la
 		commune.
-	(3) Les mentions 'NS' ([ville] non spécifiée) est retirée de list_city.
+	(3) Les mentions 'NS' ([ville] non spécifiée) sont retirées de list_city.
 	(4) La fonction retourne une template via l'objet Flask render_template(), où sont définis :
 			* Le chemin vers le document html où le retour de la fonction sera affiché (pages/recherche.html) ;
 			* Les templates Flask qui contiennent les listes python.
@@ -191,10 +218,14 @@ def recherche():
 	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, 
 		list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
 
+
 @app.route("/recherche/resultats")
 def resultats():
 	"""Route permettant d'afficher la page de résultats.
-	(1) 
+	(1) Définition des mots-clefs pour chaque facette.
+	(2) Défintion de listes vides pour les résultats.
+	(3) En fonction du mot-clef entré, une requête est faite dans la section de la table correspondance.
+	(4) La page résultat est affichée ; s'il n'y a pas de mot-clef, la page 404 est affichée.
 	"""
 	motclef = request.args.get("keyword", None)
 	motclef_annee = request.args.get("year", None)
@@ -227,12 +258,14 @@ def resultats():
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", motclef_institution=motclef_institution, resultats_institution=resultats_institution)
+		return render_template("pages/resultats.html", motclef_institution=motclef_institution, 
+			resultats_institution=resultats_institution)
 	elif motclef_lieu_production:
 		resultats_production = Acts.query.filter(
 			Acts.place.like("%{}%".format(motclef_lieu_production))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production, resultats_production=resultats_production)
+		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production, 
+			resultats_production=resultats_production)
 	elif motclef_state:
 		resultats_state = Acts.query.filter(
 			Acts.state.like("%{}%".format(motclef_state))
@@ -246,6 +279,7 @@ def resultats():
 	else:
 		return render_template('pages/error404.html')
 
+
 @app.route("/mentionslegales")
 def mentions_legales():
 	"""Route permettant d'afficher la page des mentions légales en retournant une template via l'objet Flask
@@ -253,9 +287,14 @@ def mentions_legales():
 	"""
 	return render_template('pages/mentionslegales.html')
 
+
 @app.errorhandler(404)
 def page_not_found(error):
-   return render_template('pages/error404.html', title = '404'), 404
+	"""Route permettant d'afficher un objet flask render_template() 
+		lorsque le code erreur 404 est retourné.
+	"""
+	return render_template('pages/error404.html', title = '404'), 404
+
 
 # Ce if permet de vérifier que ce fichier est celui qui est courrament exécuté. Cela permet par exemple d'éviter
 # de lancer une fonction quand on importe ce fichier depuis un autre fichier.
