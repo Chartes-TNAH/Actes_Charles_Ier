@@ -127,6 +127,10 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:text>, </xsl:text>
+        <xsl:if test=".//imprint/biblScope[@unit='volume']">
+            <xsl:value-of select=".//imprint/biblScope[@unit='volume']/@n"/>
+            <xsl:text>, </xsl:text>
+        </xsl:if>
         <xsl:if test=".//respStmt/persName">
             <!-- éditeur -->
             <xsl:for-each select=".//respStmt/persName">
