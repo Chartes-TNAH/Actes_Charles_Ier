@@ -10,7 +10,7 @@
             <p>Unpublished first draft </p>
          </publicationStmt>
          <sourceDesc>
-            <p>Derived from <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 1 files in file:/Users/jdgenero/Desktop/M2_Cours/dev/Actes_Charles_Ier/app/static/xml/</p>
+            <p>Derived from <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 1 files in file:Actes_Charles_Ier/app/static/xml/</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
