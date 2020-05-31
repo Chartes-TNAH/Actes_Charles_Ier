@@ -1,4 +1,4 @@
-# Actes de Charles I<sup>er</sup> de Bourbon
+# :scroll: Actes de Charles I<sup>er</sup> de Bourbon
 
 "**Actes de Charles I<sup>er</sup>**" est une application Web visant à présenter un échantillon des actes de Charles I<sup>er</sup> de Bourbon et d’Agnès de Bourgogne, duc et et duchesse de Bourbon de 1434 à 1456. Elle s'appuie sur un mémoire de Master recherche dirigé par Olivier Mattéoni et présenté à l'École d'histoire de l'Université Paris I Panthéon-Sorbonne en juin 2018, dont le sujet était l'étude de la chancellerie de Charles I<sup>er</sup> au prisme de ses actes. 
 
@@ -8,7 +8,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
 ---
 
-## Fonctionnalités
+## :books: Fonctionnalités
 
   * Une édition diplomatique d'un échantillon des actes ducaux, sur une période allant de 1421 à 1431. Les actes se trouvent dans un fichier ```XML-TEI``` auquel est appliqué une feuille de transformation ```XSL``` dynamique. Celle-ci s'applique à la section du fichier ```XML-TEI``` correspondant à l'```id``` de l'acte demandé dans l'url grâce à la librairie ```lxml``` de ```Python```. Le résultat de la transformation est ensuite placé dans un document ```HTML``` via des ```templates```, le contenu de ce document étant enfin affiché dans le navigateur.
   
@@ -20,7 +20,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
   
 ---
 
-## Installation
+## :gear: Installation
 
 *Nota : commandes à exécuter dans le terminal (Linux ou macOS).*
 
@@ -48,7 +48,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
 ---
 
-## Lancement
+## :rocket: Lancement
   
   * Activer l'environnement : ```source [nom de l'environnement]/bin/activate``` ;
     
@@ -62,7 +62,7 @@ Cette application est développée par Jean-Damien Généro dans le cadre des en
 
 ---
 
-## Contact
+## :recycle: Contact
 
 Pour toute question ou remarque : :email: [jean-damien.genero@chartes.psl.eu](mailto:jean-damien.genero@chartes.psl.eu).
 
