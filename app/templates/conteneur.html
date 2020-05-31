@@ -39,23 +39,21 @@
                 <form class="nav-form" action="{{url_for('contact')}}" method="get">
                     <button class="nav-dropbtn">Contact</button>
                 </form>
-                <form class="nav-form" action="{{url_for('resultats')}}" method="GET">
+                <!--<form class="nav-form" action="{{url_for('resultats')}}" method="GET">
                     <div class="form-home">
                         <input name="keyword" type="search" placeholder="Rechercher dans les actes" aria-label="Recherche" id="nav-searchbar">
                         <div>
                             <button type="submit">Rechercher</button>
                         </div>
                     </div>
-                </form>
+                </form>-->
             </div>
         </nav>
         <header class="header-global">
             <div class="container">
                 <div class="row">
                     <div class="col-8">
-                        <p class="header-text-l1"><strong>Actes</strong></p>
-                        <p class="header-text-l2">de <strong class="charles">Charles I</strong><sup>er</sup></p>
-                        <p class="header-text-l3">de <strong class="bourbon">Bourbon</strong></p>
+                        <img src="{{url_for('static', filename='img/header.png')}}" class="img-global" alt="Sceau de Charles Ier">
                     </div>
                     <div class="col-4">
                         <div class="rotate">

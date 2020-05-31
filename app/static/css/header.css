@@ -12,8 +12,10 @@
   flex-wrap: wrap;
   background: #f8f9fa;
   width: 100%;
+  height: auto;
   padding: 0.5%;
   font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
 
 .nav-fixed-top {
@@ -111,40 +113,7 @@
 .header-global {
   background-color: #f8f9fa;
   margin: 2% 0% 2% 0%;
-  padding: 2% 0% 2% 0%;
-}
-
-.header-text-l1 {
-  font-family: 'Open Sans', sans-s75if;
-  font-size: 750%;
-  margin: 0.25% 0 0.25% 0;
-  line-height: 1;
-}
-
-.header-text-l2 {
-  text-indent: 3%;
-  font-family: Helvetica;
-  font-size: 400%;
-  margin: 0.25% 0 0.25% 0;
-}
-
-.header-text-l3 {
-  text-indent: 11%;
-  font-family: Helvetica;
-  font-size: 400%;
-  margin: 0.25% 0 0.25% 0;
-}
-
-.charles {
-  font-family: 'Lato', sans-serif;
-  font-size: 180%;
-  line-height: 1;
-}
-
-.bourbon {
-  font-family: 'Roboto', sans-serif;
-  font-size: 180%;
-  line-height: 1;
+  padding: 4.5% 0% 4.5% 0%;
 }
 
 .rotate div img {
