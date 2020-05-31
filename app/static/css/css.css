@@ -51,6 +51,14 @@ a:hover, a:active {
     color: #B1B0B0;
 }
 
+h2:target, h3:target, p:target {
+  /* pour éviter la surperposition de la navbar et des
+     <p>, <h2> et <h3> après avoir cliqué sur les liens
+     des notes des actes ou dans l'index prosopo */
+  padding-top: 3.5em;
+  margin-top: -3.5em;
+}
+
 /* Global : titres */
 .h1_global {
     margin: auto;
@@ -306,12 +314,10 @@ a:hover, a:active {
 }
 
 .index-sub-section {
-    column-count: 3;
     margin-left: 2.5%
 }
 
 .index-sub-sub-section {
-    column-count: 3;
     margin-left: 4%
 }
 

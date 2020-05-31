@@ -13,6 +13,9 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
                 </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>rois</xsl:text>
+                </xsl:attribute>
                 <xsl:text>Rois</xsl:text>
             </xsl:element>
             <xsl:element name="div">
@@ -67,6 +70,9 @@
             <xsl:element name="h2">
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
+                </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>h_roi_Fr</xsl:text>
                 </xsl:attribute>
                 <xsl:text>Hommes du roi de France</xsl:text>
             </xsl:element>
@@ -123,6 +129,9 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
                 </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>bourbon</xsl:text>
+                </xsl:attribute>
                 <xsl:text>Famille ducale de Bourbon</xsl:text>
             </xsl:element>
             <xsl:element name="div">
@@ -176,6 +185,9 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
                 </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>h_bourbon</xsl:text>
+                </xsl:attribute>
                 <xsl:text>Hommes du duc de Bourbon</xsl:text>
             </xsl:element>
             <!-- Hôtel ducal -->
@@ -183,6 +195,9 @@
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>hotel</xsl:text>
                     </xsl:attribute>
                     <xsl:text>Hôtel ducal</xsl:text>
                 </xsl:element>
@@ -193,26 +208,14 @@
                     <xsl:call-template name="hotel_ChI"/>
                 </xsl:element>
             </xsl:element>
-            <!-- Officiers du duché de Bourbonnais -->
-            <xsl:element name="div">
-                <xsl:element name="h3">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-h3</xsl:text>
-                    </xsl:attribute>
-                    <xsl:text>Duché de Bourbonnais</xsl:text>
-                </xsl:element>
-                <xsl:element name="div">
-                    <xsl:attribute name="class">
-                        <xsl:text>index-sub-section</xsl:text>
-                    </xsl:attribute>
-                    <xsl:call-template name="bourbon_off"/>
-                </xsl:element>
-            </xsl:element>
             <!-- Officiers de la chancellerie -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>chancellerie</xsl:text>
                     </xsl:attribute>
                     <xsl:text>Chancellerie</xsl:text>
                 </xsl:element>
@@ -255,6 +258,9 @@
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
                     </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>chbre_moulins</xsl:text>
+                    </xsl:attribute>
                     <xsl:text>Chambre des comptes de Moulins</xsl:text>
                 </xsl:element>
                 <xsl:element name="div">
@@ -264,11 +270,32 @@
                     <xsl:call-template name="chambre_Moulins"/>
                 </xsl:element>
             </xsl:element>
+            <!-- Officiers du duché de Bourbonnais -->
+            <xsl:element name="div">
+                <xsl:element name="h3">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-h3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>off_bourbonnais</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Duché de Bourbonnais</xsl:text>
+                </xsl:element>
+                <xsl:element name="div">
+                    <xsl:attribute name="class">
+                        <xsl:text>index-sub-section</xsl:text>
+                    </xsl:attribute>
+                    <xsl:call-template name="bourbon_off"/>
+                </xsl:element>
+            </xsl:element>
             <!-- Officiers du duché d'Auvergne -->
             <xsl:element name="div">
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>off_auvergne</xsl:text>
                     </xsl:attribute>
                     <xsl:text>Duché d'Auvergne</xsl:text>
                 </xsl:element>
@@ -285,6 +312,9 @@
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
                     </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>off_forez</xsl:text>
+                    </xsl:attribute>
                     <xsl:text>Comté de Forez</xsl:text>
                 </xsl:element>
                 <xsl:element name="div">
@@ -299,6 +329,9 @@
                 <xsl:element name="h3">
                     <xsl:attribute name="class">
                         <xsl:text>index-h3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="id">
+                        <xsl:text>off_beaujolais</xsl:text>
                     </xsl:attribute>
                     <xsl:text>Seigneurie de Beaujolais</xsl:text>
                 </xsl:element>
@@ -319,6 +352,9 @@
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
                 </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>princes</xsl:text>
+                </xsl:attribute>
                 <xsl:text>Princes</xsl:text>
             </xsl:element>
             <xsl:element name="div">
@@ -336,6 +372,9 @@
             <xsl:element name="h2">
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
+                </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>h_bourgogne</xsl:text>
                 </xsl:attribute>
                 <xsl:text>Hommes du duc de Bourgogne</xsl:text>
             </xsl:element>
@@ -387,6 +426,9 @@
             <xsl:element name="h2">
                 <xsl:attribute name="class">
                     <xsl:text>index-h2</xsl:text>
+                </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:text>h_savoie</xsl:text>
                 </xsl:attribute>
                 <xsl:text>Hommes du duc de Savoie</xsl:text>
             </xsl:element>
