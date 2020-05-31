@@ -645,6 +645,7 @@
                <placeName>
                   <name xml:lang="fr">Esbruelle ou Esbinelle</name>
                </placeName>
+               <desc>non-identifié</desc>
             </place>
             <place xml:id="NeversC">
                <placeName>
@@ -812,13 +813,6 @@
                      <surname>Bourbon</surname>
                   </persName>
                   <note>Duc de Bourbon (1356-1410).</note>
-               </person>
-               <person xml:id="AnneDauphine">
-                  <persName>
-                     <forename>Anne</forename>
-                     <surname>Dauphine</surname>
-                  </persName>
-                  <note>Duchesse de Bourbon (1371-1410).</note>
                </person>
                <person xml:id="JeanI">
                   <persName>
