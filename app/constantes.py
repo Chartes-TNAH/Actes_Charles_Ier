@@ -3,7 +3,7 @@
 
 
 """
-	Définition des variables constantes.
+    Définition des variables constantes.
     author : Jean-Damien Généro
     date : 31 mai 2020
 """
