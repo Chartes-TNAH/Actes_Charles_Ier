@@ -1,10 +1,7 @@
 .DS_Store
 mail.py
 env
-actes.py
-sommaire2.html
-sommaire.html
-db.sqlite
 sommaire-2.xsl
 __pycache__
 app/modeles/__pycache__/
+ancien_code_header.md
