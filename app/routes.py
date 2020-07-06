@@ -33,7 +33,7 @@ database_init(source_doc)
 
 @app.route("/")
 def accueil():
-	"""Route permettant d'afficher la page Accueil en retournant une template via l'objet Flask render_template(),
+	""" Route permettant d'afficher la page Accueil en retournant une template via l'objet Flask render_template(),
 	   où est défini le document html où le retour de la fonction sera affiché.
 	"""
 	return render_template("accueil.html")
@@ -215,7 +215,7 @@ def recherche():
 		place = city.place
 		list_city.append(place)
 	list_city.remove('NS')
-	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD, 
+	return render_template("pages/recherche.html", list_year=list_year, list_AN=list_AN, list_bib=list_bib, list_AD=list_AD,
 		list_AM=list_AM, list_deperdita=list_deperdita, list_state=list_state, list_type=list_type, list_city=list_city)
 
 
@@ -258,13 +258,13 @@ def resultats():
 		resultats_institution = Acts.query.filter(
 			Acts.institution.like("%{}%".format(motclef_institution))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", motclef_institution=motclef_institution, 
+		return render_template("pages/resultats.html", motclef_institution=motclef_institution,
 			resultats_institution=resultats_institution)
 	elif motclef_lieu_production:
 		resultats_production = Acts.query.filter(
 			Acts.place.like("%{}%".format(motclef_lieu_production))
 			).paginate(page=page, per_page=RESULT_PAR_PAGES)
-		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production, 
+		return render_template("pages/resultats.html", motclef_lieu_production=motclef_lieu_production,
 			resultats_production=resultats_production)
 	elif motclef_state:
 		resultats_state = Acts.query.filter(
@@ -290,7 +290,7 @@ def mentions_legales():
 
 @app.errorhandler(404)
 def page_not_found(error):
-	"""Route permettant d'afficher un objet flask render_template() 
+	"""Route permettant d'afficher un objet flask render_template()
 		lorsque le code erreur 404 est retourné.
 	"""
 	return render_template('pages/error404.html', title = '404'), 404

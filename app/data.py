@@ -38,6 +38,8 @@ def database_init(xml_file):
     list_place = []
     list_analyse = []
     number = 0
+    db.drop_all()
+    db.create_all()
     for item in xml_file.xpath("//group/text"):
         number += 1
         item_institution = xml_file.xpath("//text[@n=" + str(number) + "]//orgName/text()")
@@ -50,8 +52,6 @@ def database_init(xml_file):
         list_place.append(item_place[0])
         item_analyse = xml_file.xpath("//text[@n=" + str(number) + "]//argument[1]/p/text()")
         list_analyse.append(item_analyse[0])
-        db.drop_all()
-        db.create_all()
         db.session.add(Acts(number, list_institution[number - 1], list_state[number - 1], 
             list_type[number - 1], list_date[number - 1], list_place[number - 1], 
             list_analyse[number - 1]))
